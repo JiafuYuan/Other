@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/common_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" >
+
+        <include layout="@layout/title" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/gaga"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/guide03" />
+
+    <Button
+        android:id="@+id/bt"
+        android:layout_width="100dip"
+        android:layout_height="38dip"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dip"
+        android:background="@drawable/zdl"
+        android:gravity="center"
+        android:onClick="next" />
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bt"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:onClick="nomore"
+        android:text="下次不再提示" />
+
+</RelativeLayout>

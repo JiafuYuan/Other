@@ -1,0 +1,233 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="@Url.Content("~/Content/Easyui/extend/datagrid-detailview.js")" type="text/javascript"></script>
+<script type="text/javascript">
+    $(function () {
+        $(window).resize(function () {
+            $('#gridClassType').datagrid('resize');
+        });
+    });
+
+    function detailFormatter(index, row) {
+        return '<div style="padding:2px"><table id="ddv-' + index + '"></table></div>';
+    }
+
+    function onBeforeLoad(param) {
+        param["ClassTypeName"] = $('#txtName').val();
+        $('#gridClassType').datagrid('clearSelections');
+    }
+
+    function onExpandRow(index, data) {
+        $('#ddv-' + index).datagrid({
+            title: '班次明细',
+            striped: true,
+            rownumbers: true,
+            singleSelect: true,
+            height: 'auto',
+            url: '@Url.Action("GetClassGridList")',
+            idField: 'ID',
+            sortName: 'd_start',
+            sortOrder: 'asc',
+            columns: [[
+                { title: '班次名称', field: 'nvc_name', width: 100, align: 'center', sortable: true },
+                { title: '简称', field: 'nvc_shortname', width: 80, align: 'center' },
+                { title: '开始时间', field: 'd_start', width: 80, align: 'center', sortable: true },
+                { title: '结束时间', field: 'd_End', width: 80, align: 'center', sortable: true },
+                { title: '表示形式', field: 'nvc_descripe', width: 80, align: 'center' },
+                { title: '备注', field: 'nvc_remark', width: 120, align: 'center' }
+            ]],
+            onBeforeLoad: function (param) {
+                param["ClassTypeId"] = data.ID;
+            },
+            onResize: function () {
+                $('#gridClassType').datagrid('fixDetailRowHeight', index);
+            },
+            onLoadSuccess: function () {
+                setTimeout(function () {
+                    $('#gridClassType').datagrid('fixDetailRowHeight', index);
+                }, 0);
+            }
+        });
+        $('#gridClassType').datagrid('fixDetailRowHeight', index);
+    }
+    //新增班次类型
+    function Add() {
+
+
+        TopWindow.$.dialogwindow({
+            iconCls: 'icon-customers',
+            id: "ClassTypeEdit",
+            title: '新增班次类型',
+            width: 600,
+            height: 450,
+            url: '@Url.Action("Edit")',
+            onClose: function () {
+                $('#gridClassType').datagrid('load');
+            },
+            buttons: [{
+                text: '保存',
+                iconCls: 'icon-ok',
+                handler: function () {
+                    if (TopWindow.$('#form-classtype').form('validate')) {
+                        var rows = TopWindow.$('#gridClass').datagrid('getRows');
+                        if (rows.length == 0) {
+                            TopWindow.$.messager.alert('提示', "请添加班次！", 'warning');
+                            return;
+                        }
+                        var data = TopWindow.$('#form-classtype').serializeJson();
+                        data['ClassData'] = JSON.stringify(TopWindow.$('#gridClass').datagrid('getData').rows);
+                        $.ajax({
+                            url: '@Url.Action("Edit")',
+                            data: data,
+                            type: "POST",
+                            async: false,
+                            datatype: "json",
+                            success: function (data) {
+                                if (data.success) {
+                                    TopWindow.$.messager.alert('提示', data.message, 'info', function () {
+                                        TopWindow.$('#ClassTypeEdit').dialog('close');
+                                    });
+                                }
+                                else {
+                                    TopWindow.$.messager.alert("提示", data, "error");
+                                }
+                            },
+                            error: function (a, b, c) {
+                                TopWindow.$.messager.alert("提示", a.responseText, "error");
+                            }
+                        });
+                    }
+                }
+            }]
+        });
+    }
+    //修改班次类型
+    function Edit() {
+        var rows = $('#gridClassType').datagrid('getSelections');
+        if (rows.length == 0) {
+            TopWindow.$.messager.alert('提示', "请选择数据！", 'warning');
+            return;
+        }
+        if (rows.length > 1) {
+            TopWindow.$.messager.alert('提示', "只能选择一条数据！", 'warning');
+            return;
+        }
+        TopWindow.$.dialogwindow({
+            iconCls: 'icon-customers',
+            id: "ClassTypeEdit",
+            title: '修改班次类型',
+            width: 600,
+            height: 450,
+            url: '@Url.Action("Edit")/' + rows[0].ID,
+            onClose: function () {
+                $('#gridClassType').datagrid('load');
+            },
+            buttons: [{
+                text: '保存',
+                iconCls: 'icon-ok',
+                handler: function () {
+                    if (TopWindow.$('#form-classtype').form('validate')) {
+                        var rows = TopWindow.$('#gridClass').datagrid('getRows');
+                        if (rows.length == 0) {
+                            TopWindow.$.messager.alert('提示', "请添加班次！", 'warning');
+                            return;
+                        }
+                        var data = TopWindow.$('#form-classtype').serializeJson();
+                        data['ClassData'] = JSON.stringify(TopWindow.$('#gridClass').datagrid('getData').rows);
+                        $.ajax({
+                            url: '@Url.Action("Edit")',
+                            data: data,
+                            type: "POST",
+                            async: false,
+                            datatype: "json",
+                            success: function (data) {
+                                if (data.success) {
+                                    TopWindow.$.messager.alert('提示', data.message, 'info', function () {
+                                        TopWindow.$('#ClassTypeEdit').dialog('close');
+                                    });
+                                }
+                                else {
+                                    TopWindow.$.messager.alert("提示", data, "error");
+                                }
+                            },
+                            error: function (a, b, c) {
+                                TopWindow.$.messager.alert("提示", a.responseText, "error");
+                            }
+                        });
+                    }
+                }
+            }]
+        });
+    }
+    //删除班次类型
+    function Delete() {
+        var rows = $('#gridClassType').datagrid('getSelections');
+        if (rows.length == 0) {
+            TopWindow.$.messager.alert('提示', "请选择数据！", 'warning');
+            return;
+        }
+        var ids = [];
+        for (var i = 0, length = rows.length; i < length; i++) {
+            ids.push(rows[i].ID);
+        }
+        TopWindow.$.messager.confirm('提示', "确认删数据吗？", function (action) {
+            if (action) {
+                $.ajax({
+                    url: '@Url.Action("Delete")',
+                    data: { id: ids.toString() },
+                    type: "POST",
+                    async: false,
+                    datatype: "json",
+                    success: function (data) {
+                        if (data.success) {
+                            TopWindow.$.messager.alert('提示', data.message, 'info');
+                            $('#gridClassType').datagrid('load');
+                        }
+                        else {
+                            TopWindow.$.messager.alert("提示", data.message, "error");
+                        }
+                    },
+                    error: function (a, b, c) {
+                        TopWindow.$.messager.alert("提示", a.responseText, "error");
+                    }
+                });
+            }
+        });
+    }
+
+    function onLoadSuccess() {
+        var rows = $('#gridClassType').datagrid('getRows');
+        if (rows.length > 0) {
+            $('#btnAdd').linkbutton('disable');
+        }
+    }
+</script>
+<div id="toolbar">
+    <div class="datagrid-toolbar panel-header search">
+        类型名称：
+        @Html.TextBox("txtName", "", new { onkeydown = "if(event.keyCode==13) $('#gridClassType').datagrid('load');" })
+        @Html.LinkButton("查询", "icon-search", new { onclick = "$('#gridClassType').datagrid('load')" })
+    </div>
+    @Html.LinkButton("新增", "icon-add", true, new { onclick = "Add()", id = "btnAdd" })
+    @Html.LinkButton("修改", "icon-edit", true, new { onclick = "Edit()" })
+    @Html.LinkButton("删除", "icon-cancel", true, new { onclick = "Delete()" })
+    @Html.LinkButton("刷新", "icon-reload", true, new { onclick = "$('#gridClassType').datagrid('load')" })
+</div>
+@Html.DataGrid("gridClassType", @Url.Action("GetGridList"), ViewData["GridColumn"] as IEnumerable<object>, new
+{
+    fit = true,
+    striped = true,
+    view = new { function = "detailview" },
+    detailFormatter = new { function = "detailFormatter" },
+    idField = "ID",
+    sortName = "ID",
+    sortOrder = "asc",
+    toolbar = "#toolbar",
+    pagination = true,
+    pageSize = 20,
+    onBeforeLoad = new { function = "onBeforeLoad" },
+    onExpandRow = new { function = "onExpandRow" },
+    onLoadSuccess = new { function = "onLoadSuccess" }
+}, new { style = "overflow: hidden;" })

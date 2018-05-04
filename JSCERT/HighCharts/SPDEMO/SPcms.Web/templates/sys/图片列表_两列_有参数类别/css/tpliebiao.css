@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+/*商品样式
+------------------------------------------------------------------------------------*/
+.shcpzs { margin:5px;}
+.shcpzs li {border:1px solid #ccc; width:312px; height:125px; float:left;  margin-left:5px; margin-top:5px;  padding-top:10px; padding-left:10px; padding-bottom:10px;  }
+.shcpzs_l { float:left; width:200px; height:125px; line-height:125px;}
+.shcpzs_r { float:right; width:90px;}
+
+.shcpzs_r  h3 { font-family:"微软雅黑"; font-size:14px; color:#000; height:20px;  cursor:pointer;}
+.shcpzs_r  h4 {  color:#88776c; float:left; cursor:pointer;font-size:12px; display:block;}/* cursor:pointer 鼠标变成手的形状*/
+
+

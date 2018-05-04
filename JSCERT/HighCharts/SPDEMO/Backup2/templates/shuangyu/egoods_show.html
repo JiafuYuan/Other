@@ -1,0 +1,62 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<%set string category_title=get_category_title(model.category_id,"news")%>
+<title>{model.title} - {category_title} - {config.webename}</title>
+<meta content="{model.seo_keywords}" name="keywords" />
+<meta content="{model.seo_description}" name="description" />
+
+<link href="<%templateskin%>/css/style.css" rel="stylesheet" type="text/css" />
+<link href="<%templateskin%>/css/commen.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="<%templateskin%>/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="<%templateskin%>/js/jquery.superslide.2.1.1.js"></script>
+<script type="text/javascript" src="<%templateskin%>/js/Html5.js"></script>
+</head>
+<body>
+<!--抬头开始-->
+<%template src="_eheader.html"%>
+        <div class="nmain clearfix">
+        	<div class="naside float_l"><h5>PRODUCT</h5></div>
+            <div class="nmainbox float_r"><small>Position：<a href="<%linkurl("eindex")%>">HOME</a> - <a href="<%linkurl("enews_list","0")%>">news</a> - DETAIL</small></div>
+        </div>
+    </div>
+    <!--大图结束-->
+    <div class="clear"></div>
+    <div id="nmainbody" class="clearfix">
+    	<!--产品分类-->
+    <%template src="_eleft.html"%>
+        <div class="mainbox float_r">
+        	<div class="show_pic text_c">
+                <h4>{model.title}</h4>
+                <div class="time2"><span>posttime：{model.add_time}</span>&nbsp;&nbsp;<span>hots：<script type="text/javascript" src="{config.webpath}tools/submit_ajax.ashx?action=view_article_click&id={model.id}&click=1"></script></span></div>
+                <div class="pic_cp" align="center">
+                <%if {model.img_url}!=""%>
+                <a href="#"><img src="{model.img_url}" /></a>
+                <%/if%>
+                
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="nrr">
+                <p>{model.content}</p>
+            </div>
+            <div class="clear"></div>
+            <!--分页-->
+            <div class="fanye float_r">
+                <div>pre：<%write get_prevandnext_article("egoods_show",-1,"无上一条",0)%></div>
+                <div>next：<%write get_prevandnext_article("egoods_show",1,"无下一条",0)%></div>
+            </div> 
+        </div>
+    </div>
+</section>
+<!--主体结束-->
+<!--产品展示-->
+
+<div class="clear"></div>
+<!--底部-->
+<%template src="_foot.html"%>
+<!--底部结束-->
+<!--ui:jxq/style:cyy/code:xcx-->
+</body>
+</html>

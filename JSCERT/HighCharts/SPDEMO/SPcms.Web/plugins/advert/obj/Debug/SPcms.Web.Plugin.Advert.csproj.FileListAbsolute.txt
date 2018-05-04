@@ -1,0 +1,15 @@
+\\192.168.8.8\SP_webPlat\SPcms.Web\bin\SPcms.Web.Plugin.Advert.dll
+\\192.168.8.8\SP_webPlat\SPcms.Web\bin\SPcms.Web.Plugin.Advert.pdb
+\\192.168.8.8\SP_webPlat\SPcms.Web\plugins\advert\obj\Debug\ResolveAssemblyReference.cache
+\\192.168.8.8\SP_webPlat\SPcms.Web\plugins\advert\obj\Debug\SPcms.Web.Plugin.Advert.dll
+\\192.168.8.8\SP_webPlat\SPcms.Web\plugins\advert\obj\Debug\SPcms.Web.Plugin.Advert.pdb
+E:\SPDEMO\SPcms.Web\bin\SPcms.Web.Plugin.Advert.dll
+E:\SPDEMO\SPcms.Web\bin\SPcms.Web.Plugin.Advert.pdb
+E:\SPDEMO\SPcms.Web\plugins\advert\obj\Debug\SPcms.Web.Plugin.Advert.csprojResolveAssemblyReference.cache
+E:\SPDEMO\SPcms.Web\plugins\advert\obj\Debug\SPcms.Web.Plugin.Advert.dll
+E:\SPDEMO\SPcms.Web\plugins\advert\obj\Debug\SPcms.Web.Plugin.Advert.pdb
+C:\Users\JiafuYuan\Desktop\SPDEMO\SPcms.Web\bin\SPcms.Web.Plugin.Advert.dll
+C:\Users\JiafuYuan\Desktop\SPDEMO\SPcms.Web\bin\SPcms.Web.Plugin.Advert.pdb
+C:\Users\JiafuYuan\Desktop\SPDEMO\SPcms.Web\plugins\advert\obj\Debug\SPcms.Web.Plugin.Advert.csprojResolveAssemblyReference.cache
+C:\Users\JiafuYuan\Desktop\SPDEMO\SPcms.Web\plugins\advert\obj\Debug\SPcms.Web.Plugin.Advert.dll
+C:\Users\JiafuYuan\Desktop\SPDEMO\SPcms.Web\plugins\advert\obj\Debug\SPcms.Web.Plugin.Advert.pdb

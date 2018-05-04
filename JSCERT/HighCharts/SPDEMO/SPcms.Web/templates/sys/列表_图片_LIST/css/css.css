@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+/*
+------------------------------------------------------------------------------------*/
+*{margin:0;padding:0;}
+a{text-decoration:none;outline:none; color:#333;}
+/*产品展示*/
+.mainbox_2a dl { margin:10px 20px 0px 15px;_margin:10px 20px 0px 10px; float:left; height:220px;}
+.mainbox_2a dl dt { width:200px; height:192px;}
+.mainbox_2a dl dt img { width:194px; height:186px; border:1px solid #cecece; padding:2px;}
+.mainbox_2a dl dd { text-align:center;}
+.mainbox_2a dl dd a { color:#545454; line-height:24px; display:block;}
+

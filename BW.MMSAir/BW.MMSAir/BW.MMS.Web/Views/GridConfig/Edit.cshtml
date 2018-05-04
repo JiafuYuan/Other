@@ -1,0 +1,104 @@
+﻿@model BW.MMS.Model.GridConfigEntity
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script type="text/javascript">
+    function onSelect(record) {
+        $('#TVName').combobox({
+            url: '@Url.Action("GetTableViews")?type=' + record.value
+        });
+    }
+
+    function onBeforeLoad(param) {
+        param.type = $('#Type').combobox('getValue');
+    }
+</script>
+<form id="form1">
+@Html.HiddenFor(model => model.ID)
+<table cellpadding="5" cellspacing="0" border="0" class="table-form">
+    <tr>
+        <th>
+            Grid标识
+        </th>
+        <td>
+            @Html.TextBoxFor(model => model.GridKeyName, new { @class = "easyui-validatebox", required = "true", validType = "length[1,20]" })
+            <span style="color: Red">*</span>
+        </td>
+        <th>
+            名称
+        </th>
+        <td>
+            @Html.TextBoxFor(model => model.ChineseName, new { @class = "easyui-validatebox", required = "true", validType = "length[1,20]" })
+            <span style="color: Red">*</span>
+        </td>
+    </tr>
+    <tr>
+        <th>
+            标识/主键字段
+        </th>
+        <td>
+            @Html.TextBoxFor(model => model.IDField, new { @class = "easyui-validatebox", validType = "length[1,20]" })
+        </td>
+        <th>
+            是否显示选择列
+        </th>
+        <td>
+            @Html.ComboBoxFor(model => model.ischk, new List<ComboBoxItem> { 
+               new ComboBoxItem { text = "是", value = "True"}, 
+               new ComboBoxItem { text = "否", value = "False"}
+           }, new
+           {
+               required = true,
+               editable = false,
+               panelHeight = 50
+           }, new { style = "width:155px", })
+            <span style="color: Red">*</span>
+        </td>
+    </tr>
+    <tr>
+        <th>
+            数据源类型
+        </th>
+        <td>@Html.ComboBoxFor(model => model.Type, new List<ComboBoxItem> { 
+               new ComboBoxItem { text = "数据表", value = "u"}, 
+               new ComboBoxItem { text = "视图", value = "v"},
+               new ComboBoxItem { text = "存储过程", value = "p"}
+           }, new
+           {
+               required = true,
+               editable = false,
+               panelHeight = 70,
+               onSelect = new { function = "onSelect" }
+           }, new { style = "width:155px", })
+            <span style="color: Red">*</span>
+        </td>
+        <th>
+            所属视图/表
+        </th>
+        <td>
+            @Html.ComboBoxFor(model => model.TVName, new { valueField = "ID", textField = "Name", required = true, editable = false })
+            <span style="color: Red">*</span>
+        </td>
+    </tr>
+    <tr>
+        <th>
+            所属子系统
+        </th>
+        <td>
+            @Html.TextBoxFor(model => model.ApplicationCode, new { @class = "easyui-validatebox", required = "true", validType = "length[1,20]" })
+            <span style="color: Red">*</span>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+    </tr>
+    @*<tr>
+        <td colspan="4" class="buttons">
+            @Html.LinkButton("保存", "icon-edit", new { onclick = "Edit()" })
+            @Html.LinkButton("取消", "icon-cancel", new { onclick = "Delete()" })
+        </td>
+    </tr>*@
+</table>
+</form>

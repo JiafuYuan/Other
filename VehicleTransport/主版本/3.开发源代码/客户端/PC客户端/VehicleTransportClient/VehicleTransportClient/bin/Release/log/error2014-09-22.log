@@ -1,0 +1,67 @@
+2014-09-22 09:26:26：连接成功
+2014-09-22 09:28:19：连接成功
+2014-09-22 09:33:28：连接成功
+2014-09-22 09:33:48：insert into BW_KJ222.dbo.m_Card(i_HID,i_UseUnit) values(1,2)
+语句已终止。
+违反了 PRIMARY KEY 约束 'PK_m_Card'。不能在对象 'dbo.m_Card' 中插入重复键。   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+   在 Bestway.Windows.Tools.ADODB.OleDbHelper.ExecuteSql(String strSql, OleDbParameter[] parameters, Int32 timeout)
+2014-09-22 09:38:11：连接成功
+2014-09-22 09:40:32：连接成功
+2014-09-22 10:09:34：连接成功
+2014-09-22 10:11:18：Application_ThreadException：System.InvalidOperationException: 可为空的对象必须具有一个值。
+   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Nullable`1.get_Value()
+   在 VehicleTransportClient.FormAddressManage.btnDel_Click(Object sender, EventArgs e) 位置 D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\UI\BaseInfoManage\FormAddressManage.cs:行号 114
+   在 System.Windows.Forms.ToolStripItem.RaiseEvent(Object key, EventArgs e)
+   在 System.Windows.Forms.ToolStripButton.OnClick(EventArgs e)
+   在 System.Windows.Forms.ToolStripItem.HandleClick(EventArgs e)
+   在 System.Windows.Forms.ToolStripItem.HandleMouseUp(MouseEventArgs e)
+   在 System.Windows.Forms.ToolStripItem.FireEventInteractive(EventArgs e, ToolStripItemEventType met)
+   在 System.Windows.Forms.ToolStripItem.FireEvent(EventArgs e, ToolStripItemEventType met)
+   在 System.Windows.Forms.ToolStrip.OnMouseUp(MouseEventArgs mea)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   在 System.Windows.Forms.ToolStrip.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+方法名称:ThrowInvalidOperationException
+2014-09-22 10:12:45：Application_ThreadException：System.InvalidOperationException: 可为空的对象必须具有一个值。
+   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Nullable`1.get_Value()
+   在 VehicleTransportClient.FormAddressManage.btnDel_Click(Object sender, EventArgs e) 位置 D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\UI\BaseInfoManage\FormAddressManage.cs:行号 114
+   在 System.Windows.Forms.ToolStripItem.RaiseEvent(Object key, EventArgs e)
+   在 System.Windows.Forms.ToolStripButton.OnClick(EventArgs e)
+   在 System.Windows.Forms.ToolStripItem.HandleClick(EventArgs e)
+   在 System.Windows.Forms.ToolStripItem.HandleMouseUp(MouseEventArgs e)
+   在 System.Windows.Forms.ToolStripItem.FireEventInteractive(EventArgs e, ToolStripItemEventType met)
+   在 System.Windows.Forms.ToolStripItem.FireEvent(EventArgs e, ToolStripItemEventType met)
+   在 System.Windows.Forms.ToolStrip.OnMouseUp(MouseEventArgs mea)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   在 System.Windows.Forms.ToolStrip.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+方法名称:ThrowInvalidOperationException
+2014-09-22 10:14:56：连接成功
+2014-09-22 10:19:50：心跳返回false
+2014-09-22 10:24:03：连接成功
+2014-09-22 10:25:27：连接成功
+2014-09-22 10:26:50：连接成功
+2014-09-22 10:28:16：连接成功
+2014-09-22 10:29:55：连接成功
+2014-09-22 11:29:46：连接成功
+2014-09-22 11:31:47：连接成功
+2014-09-22 11:33:34：连接成功
+2014-09-22 11:34:32：连接成功
+2014-09-22 11:35:32：连接成功
+2014-09-22 11:36:38：连接成功
+2014-09-22 11:38:50：连接成功
+2014-09-22 11:40:07：连接成功
+2014-09-22 11:41:16：连接成功
+2014-09-22 11:56:40：连接成功
+2014-09-22 13:18:17：连接成功

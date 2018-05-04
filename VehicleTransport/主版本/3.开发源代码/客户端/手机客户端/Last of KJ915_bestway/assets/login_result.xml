@@ -1,0 +1,57 @@
+
+<?xml version=\"1.0\" encoding=\"gb2312\"?>
+<InGiveModel>
+
+    <UserID>
+15
+    </UserID>
+
+    <DepartmentID>
+2
+    </DepartmentID>
+
+    <AddressID>
+4
+    </AddressID>
+
+    <PlanID>
+171
+    </PlanID>
+
+    <DateTime>
+2014-10-17T08:53:36.7369001+08:00
+    </DateTime>
+
+    <ListM_Plan_GiveVehicle>
+
+        <m_Plan_GiveVehicle>
+
+            <ID>
+0
+            </ID>
+
+            <PlanID>
+171
+            </PlanID>
+
+            <VehicleTypeID>
+1
+            </VehicleTypeID>
+
+            <i_Count>
+1
+            </i_Count>
+
+            <vc_Memo>
+
+                <c_Memo>
+
+                    <i_Flag>
+0
+                    </i_Flag>
+                </c_Memo>
+            </vc_Memo>
+        </m_Plan_GiveVehicle>
+    </ListM_Plan_GiveVehicle>
+
+</InGiveModel>

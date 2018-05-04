@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+  <DBServer>192.168.8.138</DBServer>
+  <DBName>BW_VehicleTransportManage</DBName>
+  <DBUserName>sa</DBUserName>
+  <DBPassword>kj222</DBPassword>
+  <Developer>南京北路自动化系统有限责任公司</Developer>
+  <SoftID>1016</SoftID>
+  <SoftName>消息中心</SoftName>
+  <UserName>
+  </UserName>
+  <SerialNum>00000-00000-00000-00000-00000</SerialNum>
+  <AlarmDistance>100</AlarmDistance>
+  <LocalIP>192.168.8.138</LocalIP>
+  <Port>9999</Port>
+  <MapY>100</MapY>
+  <ServerIP>192.168.8.138</ServerIP>
+  <HaveKj222Client>3</HaveKj222Client>
+</Configuration>

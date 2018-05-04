@@ -1,0 +1,178 @@
+﻿@model BW.MMS.Model.m_SensorEntity
+@{
+    ViewBag.Title = "传感器编辑";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script type="text/javascript">
+    $.extend($.fn.datagrid.methods, {
+        editCell: function (jq, param) {
+            return jq.each(function () {
+                var opts = $(this).datagrid('options');
+                var fields = $(this).datagrid('getColumnFields', true).concat($(this).datagrid('getColumnFields'));
+                for (var i = 0; i < fields.length; i++) {
+                    var col = $(this).datagrid('getColumnOption', fields[i]);
+                    col.editor1 = col.editor;
+                    if (fields[i] != param.field) {
+                        col.editor = null;
+                    }
+                }
+                $(this).datagrid('beginEdit', param.index);
+                for (var j = 0; j < fields.length; j++) {
+                    var col = $(this).datagrid('getColumnOption', fields[j]);
+                    col.editor = col.editor1;
+                }
+            });
+        }
+    });
+    var editIndex = undefined;
+    function endEditing() {
+        if (editIndex == undefined) { return true }
+        if ($('#SensorNodes').datagrid('validateRow', editIndex)) {
+            $('#SensorNodes').datagrid('endEdit', editIndex);
+            editIndex = undefined;
+            return true;
+        } else {
+            return false;
+        }
+    }
+    //    function onClickRow(rowIndex) {
+    //        if (endEditing()) {
+    //            $('#SensorNodes').datagrid('selectRow', rowIndex).datagrid('beginEdit', rowIndex);
+    //            editIndex = rowIndex;
+    //        }
+    //    }
+
+    function editNodes() {
+
+        for (var i = 0; i < $('#SensorNodes').datagrid('getRows').length; i++) {
+            $('#SensorNodes').datagrid('beginEdit', i);
+        }
+    }
+</script>
+<form  id="form">
+@Html.HiddenFor(m => m.ID)
+<table class="table-form">
+    <tr>
+        <th>
+            传感器编号
+        </th>
+        <td>
+            @Html.TextBoxFor(model => model.vc_Code, new
+                    {
+                        @class = "easyui-validatebox",
+                        required = "true",
+                        validType = "length[1,50]"
+                    })
+            <span style="color: Red">*</span>
+        </td>
+        <th>
+            安装位置
+        </th>
+        <td>
+            @Html.TextBoxFor(model => model.vc_Address, new
+                    {
+                        @class = "easyui-validatebox",
+                        required = "true",
+                        validType = "length[1,50]"
+                    })
+            <span style="color: Red">*</span>
+        </td>
+    </tr>
+    <tr>
+        <th>
+            传感器类型
+        </th>
+        <td>
+            @Html.ComboBoxFor(model => model.TypeID, Url.Action("GetSensorType"), "ID", "vc_Name", new { editable = false, multiple = false, required = true })
+            @*   @Html.TextBoxFor(model => model.TypeID, new
+                    {
+                        @class = "easyui-combobox",
+                        editable = "false",
+                        url = @Url.Action("GetSensorType"),
+                        valueField = "ID",
+                        textField = "vc_Name",
+                        missingMessage = "请选择类型",
+                        invalidMessage = "请选择正确的类型",
+                        required = "true",
+                        validType = "length[1,32]"
+                    })*@ <span style="color: Red">*</span>
+        </td>
+        <th>
+            所属区域
+        </th>
+        <td>
+            @Html.ComboTreeFor(model => model.AreaID, Url.Action("GetAreaList", "Area"), new { editable = false, multiple = false, required = true })
+            @*  @Html.TextBoxFor(model => model.AreaID, new
+                    {
+                        @class = "easyui-validatebox",
+                        required = "true",
+                        validType = "length[1,32]"
+                    })*@ <span style="color: Red">*</span>
+        </td>
+    </tr>
+    <tr>
+        <th>
+            使用单位
+        </th>
+        <td>
+            @Html.ComboTreeFor(model => model.DeptID, Url.Action("GetDeptTree", "Dept"), new { editable = false, multiple = false, required = true })
+            @* @Html.TextBoxFor(model => model.DeptID, new
+                    {
+                        @class = "easyui-validatebox",
+                        required = "true",
+                        validType = "length[1,32]"
+                    })*@ <span style="color: Red">*</span>
+        </td>
+        <th>
+            能耗类型
+        </th>
+        <td>
+            @Html.ComboBoxFor(m => m.EnergyType, Url.Action("GetEnergyType"), "ID", "vc_EnergyTypeName", new { editable = false, multiple = false, required = true })
+            @* @Html.TextBoxFor(model => model.EnergyType, new
+                    {
+                        @class = "easyui-validatebox",
+                        required = "true",
+                        validType = "length[1,32]"
+                    })*@ <span style="color: Red">*</span>
+        </td>
+    </tr>
+    <tr>
+         <th>
+            PLC
+        </th>
+        <td colspan="3">
+            @Html.ComboBoxFor(m => m.PLCAdress, Url.Action("GetPLCID"), "id", "vc_name", new { editable = false, multiple = false, required = true })
+            @* @Html.TextBoxFor(model => model.EnergyType, new
+                    {
+                        @class = "easyui-validatebox",
+                        required = "true",
+                        validType = "length[1,32]"
+                    })*@ 
+        </td>
+    </tr>
+    <tr>
+        <th>
+            备注
+        </th>
+        <td colspan="3">
+            @Html.TextAreaFor(m => m.vc_Memo, new { validType = "length[1,100]", style = "width:430px;height:80px" })
+        </td>
+    </tr>
+    <tr>
+        <th>
+            结点明细
+        </th>
+        <td colspan="3">
+            <div id="toolbar">
+                @Html.LinkButton("编辑", "icon-edit", true, new { onclick = "editNodes()" })
+            </div>
+            @Html.DataGrid("SensorNodes", @Url.Action("GetSensorNodesList") + "?sensorId=" + Model.ID, ViewData["GridColumn"] as IEnumerable<object>, new
+            {
+                toolbar = "#toolbar",
+                idField = "nodesID"
+                //onClickRow = new { function = "onClickRow" }
+            }, new { style = "height:180px; width:440px; overflow: hidden;" })
+        </td>
+    </tr>
+</table>
+</form>

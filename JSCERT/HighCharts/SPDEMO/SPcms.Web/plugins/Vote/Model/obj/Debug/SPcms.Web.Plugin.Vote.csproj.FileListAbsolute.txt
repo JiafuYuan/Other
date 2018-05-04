@@ -1,0 +1,5 @@
+\\192.168.8.8\SP_webPlat\SPcms.Web\bin\SPcms.Web.Plugin.Vote.dll
+\\192.168.8.8\SP_webPlat\SPcms.Web\bin\SPcms.Web.Plugin.Vote.pdb
+\\192.168.8.8\SP_webPlat\SPcms.Web\plugins\Vote\obj\Debug\ResolveAssemblyReference.cache
+\\192.168.8.8\SP_webPlat\SPcms.Web\plugins\Vote\obj\Debug\SPcms.Web.Plugin.Vote.dll
+\\192.168.8.8\SP_webPlat\SPcms.Web\plugins\Vote\obj\Debug\SPcms.Web.Plugin.Vote.pdb

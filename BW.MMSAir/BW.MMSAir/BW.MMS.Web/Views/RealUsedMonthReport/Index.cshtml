@@ -1,0 +1,97 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script type="text/javascript">
+    $(function () {
+        $(window).resize(function () {
+            $('#gridRealUsedMonthReport').datagrid('resize');
+        });
+    });
+
+    function onBeforeLoad(param) {
+        $('#gridRealUsedMonthReport').datagrid('clearSelections');
+
+        if ($('#td_date').datebox('getValue').length > 0) {
+            param.date = $('#td_date').datebox('getValue');
+        }
+        else {
+            new Date().getMonth()
+            var today = new Date().getFullYear() + '-' +
+                        ((new Date().getMonth() + 1).toString().length < 2 ? '0' +
+                                (new Date().getMonth() + 1).toString() : (new Date().getMonth() + 1).toString()) + "-" +
+                        (new Date().getDate().toString().length < 2 ? '0' +
+                                 new Date().getDate().toString() : new Date().getDate().toString());
+            $('#td_date').datebox('setValue',today)
+            param.date = $('#td_date').datebox('getValue');
+        }
+        
+    }
+    function onLoadSuccess(data) {
+    mergeCellsByField("gridRealUsedMonthReport", "day,dept");
+    }
+    function mergeCellsByField(tableID, colList) {
+        var ColArray = colList.split(",");
+        var tTable = $('#' + tableID);
+        var TableRowCnts = tTable.datagrid("getRows").length;
+        var tmpA;
+        var tmpB;
+        var PerTxt = "";
+        var CurTxt = "";
+        var alertStr = "";
+        //for (j=0;j<=ColArray.length-1 ;j++ )  
+        for (j = ColArray.length - 1; j >= 0; j--) {
+            //当循环至某新的列时，变量复位。  
+            PerTxt = "";
+            tmpA = 1;
+            tmpB = 0;
+
+            //从第一行（表头为第0行）开始循环，循环至行尾(溢出一位)  
+            for (i = 0; i <= TableRowCnts; i++) {
+                if (i == TableRowCnts) {
+                    CurTxt = "";
+                }
+                else {
+                    CurTxt = tTable.datagrid("getRows")[i][ColArray[j]];
+                }
+                if (PerTxt == CurTxt) {
+                    tmpA += 1;
+                }
+                else {
+                    tmpB += tmpA;
+                    tTable.datagrid('mergeCells', {
+                        index: i - tmpA,
+                        field: ColArray[j],
+                        rowspan: tmpA,
+                        colspan: null
+                    });
+                    tmpA = 1;
+                }
+                PerTxt = CurTxt;
+            }
+        }
+    } 
+</script>
+<div id="toolbar">
+    <div class="datagrid-toolbar" style="padding: 8px;">
+        月份：
+        <input id="td_date" type="text" class="easyui-datebox"></input>
+        @Html.LinkButton("查询", "icon-search", new { onclick = "$('#gridRealUsedMonthReport').datagrid('load')" })
+    </div>
+</div>
+@Html.DataGrid("gridRealUsedMonthReport", @Url.Action("GetGridList"), ViewData["GridColumn"] as IEnumerable<object>, new
+    {
+        fit = true,
+        rownumbers = true,
+        striped = true,
+        singleSelect = true,
+        idField = "ID",
+        sortName = "ID",
+        sortOrder = "asc",
+        toolbar = "#toolbar",
+        pagination = false,
+        pageSize = 20,
+        onLoadSuccess = new { function = "onLoadSuccess" },
+        onBeforeLoad = new { function = "onBeforeLoad" }
+    }, new { style = "overflow: hidden;" })

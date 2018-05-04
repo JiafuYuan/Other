@@ -1,0 +1,19 @@
+<link href="/templates/sys/列表_文字_有简介_新闻/css/css.css" type=text/css rel=stylesheet>
+
+<div class="newsToppic">
+  <dl>
+    
+    <dt>
+<%set DataTable articalDtmKfBb=get_article_list("news", 0, 1, "status=0  and is_hot=1")%>
+<%foreach(DataRow drmKfBb in articalDtmKfBb.Rows)%>
+      <strong><a title="{drmKfBb[title]}" href="<%linkurl("news_show",{drmKfBb[id]})%>">{drmKfBb[title]}</a></strong>
+      <p>{drmKfBb[zhaiyao]}<a href="<%linkurl("news_show",{drmKfBb[id]})%>">[详细]</a></p>
+<%/foreach%>
+    </dt>
+    <%set DataTable articalDtADWnA=get_article_list("news", 0, 8, "status=0")%>
+<%foreach(DataRow drADWnA in articalDtADWnA.Rows)%>
+   <dd><span><%datetostr({drADWnA[add_time]},MM-dd)%></span><a title="{drADWnA[title]}" href="<%linkurl("news_show",{drADWnA[id]})%>">{drADWnA[title]}</a></dd>
+  <%/foreach%>
+    
+  </dl>
+</div>

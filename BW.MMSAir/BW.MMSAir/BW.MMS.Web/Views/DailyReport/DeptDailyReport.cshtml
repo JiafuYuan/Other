@@ -1,0 +1,134 @@
+﻿@{
+    ViewBag.Title = "DeptDailyReport";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script type="text/javascript">
+    $(function () {
+        $(window).resize(function () {
+            $('#DailyReport').datagrid('resize');
+        });
+    });
+
+    function onBeforeLoad(param) {
+        param.type = 22;
+        param.dt_BeginDate = formatDate($('#dt_Date').datebox('getValue'), 'yyyy-MM-dd HH:mm:ss');
+        var date = parseDate(param.dt_BeginDate);
+        var endDate = new Date(date.getFullYear(), date.getMonth(), date.getDate(), 23, 59, 59);
+        param.dt_EndDate = formatDate(endDate, 'yyyy-MM-dd HH:mm:ss');
+    }
+    function onLoadSuccess(data) {
+        var footer = $('#DailyReport').datagrid('getFooterRows');
+        var rows = data.rows;
+        var rowWind = 0;
+        var rowWater = 0;
+        var rowPower = 0;
+        var rowProduction = 0;
+        for (var i = 0, length = rows.length; i < length; i++) {
+            footer[1].Wind += rows[i].Wind;
+            footer[1].Water += rows[i].Water;
+            footer[1].Power += rows[i].Power;
+            footer[1].Production += rows[i].Production;
+            if (rows[i].Wind != 0) {
+                rowWind = rowWind + 1;
+            }
+            if (rows[i].Water != 0) {
+                rowWater = rowWater + 1;
+            }
+            if (rows[i].Power != 0) {
+                rowPower = rowPower + 1;
+            }
+            if (rows[i].Production != 0) {
+                rowProduction = rowProduction + 1;
+            }
+        }
+        if (rowWind > 0) {
+            footer[0].Wind = (footer[1].Wind / rowWind).toFixed(2);
+        } else {
+            footer[0].Wind = footer[1].Wind.toFixed(2);
+        }
+        if (rowWater > 0) {
+            footer[0].Water = (footer[1].Water / rowWater).toFixed(2);
+        } else {
+            footer[0].Water = footer[1].Water.toFixed(2);
+        }
+
+        if (rowPower > 0) {
+            footer[0].Power = (footer[1].Power / rowPower).toFixed(2);
+        } else {
+            footer[0].Power = footer[1].Power.toFixed(2);
+        }
+
+        if (rowProduction > 0) {
+            footer[0].Production = (footer[1].Production / rowProduction).toFixed(2);
+        } else {
+            footer[0].Production = footer[1].Production.toFixed(2);
+        }
+      
+
+        footer[1].Wind = footer[1].Wind.toFixed(2);
+        footer[1].Water = footer[1].Water.toFixed(2);
+        footer[1].Power = footer[1].Power.toFixed(2);
+        footer[1].Production = footer[1].Production.toFixed(2);
+
+        $('#DailyReport').datagrid('reloadFooter');
+        mergeCellsByField('DailyReport', 'ParentName');
+    }
+    function chartShow() {
+        var dt_BeginDate = formatDate($('#dt_Date').datebox('getValue'), 'yyyy-MM-dd HH:mm:ss');
+        var date = parseDate(dt_BeginDate);
+        var endDate = new Date(date.getFullYear(), date.getMonth(), date.getDate(), 23, 59, 59, 999);
+        var dt_EndDate = formatDate(endDate, 'yyyy-MM-dd HH:mm:ss');
+        TopWindow.$.dialogwindow({
+            iconCls: 'icon-customers',
+            id: "chartData",
+            title: '柱状图',
+            width: 1100,
+            height: 500,
+            iframe: true,
+            url: '@Url.Action("DailyReportChartShow")?Daily=true&&type=2&&dt_BeginDate=' + dt_BeginDate + '&&dt_EndDate=' + dt_EndDate
+        });
+    }
+
+    function AcReport(action) {
+        var params = {};
+        params['type'] = 2;
+        params['dt_BeginDate'] = formatDate($('#dt_Date').datebox('getValue'), 'yyyy-MM-dd HH:mm:ss');
+        var date = parseDate(params.dt_BeginDate);
+        var endDate = new Date(date.getFullYear(), date.getMonth(), date.getDate(), 23, 59, 59);
+        params['dt_EndDate'] = formatDate(endDate, 'yyyy-MM-dd HH:mm:ss');
+        $.post('@Url.Action("GetReportData")', params).success(function (data) {
+            LoadAcReport({
+                action: action,
+                aptPath: '@Url.Content("~/Reports/DeptDaily.apt")',
+                dataname: 'DeptDaily',
+                data: data,
+                variant: [{ name: 'dt_Date', value: formatDate($('#dt_Date').datebox('getValue'), 'yyyy-MM-dd')}]
+            });
+        }).error(function (XMLHttpRequest, textStatus, errorThrown) {
+            TopWindow.$.messager.alert("提示", a.responseText, "error");
+        });
+    }
+</script>
+<div id="toolbar" style="padding: 8px;">
+    日期：
+    @Html.TextBox("dt_Date", DateTime.Now.ToString("yyyy-MM-dd"), new { @class = "easyui-datebox", editable = false })
+    @Html.LinkButton("查询", "icon-search", new { onclick = "$('#DailyReport').datagrid('reload')" })
+    @Html.LinkButton("柱状图", "icon-chartbar", new { onclick = "chartShow()" })
+    @if (Convert.ToBoolean(ViewData["Designer"]))
+    {
+        @Html.LinkButton("报表设计", "icon-report", new { onclick = "AcReport('ShowDesigner')" })
+    }
+    @Html.LinkButton("打印预览", "icon-report", new { onclick = "AcReport('Preview')" })
+</div>
+@Html.DataGrid("DailyReport", @Url.Action("GetDailyReport"), ViewData["GridColumn"] as IEnumerable<object>, new
+{
+    fit = true,
+    rownumbers = true,
+    striped = true,
+    toolbar = "#toolbar",
+    showFooter = true,
+    singleSelect = true,
+    idField = "dt_Date",
+    onBeforeLoad = new { function = "onBeforeLoad" },
+    onLoadSuccess = new { function = "onLoadSuccess" }
+}, new { style = "overflow: hidden;" })

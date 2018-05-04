@@ -1,0 +1,8 @@
+﻿@{
+    ViewBag.Title = "PreviewGrid";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@Html.DataGrid("PreviewGrid", "", ViewData["GridColumn"] as IEnumerable<object>, new
+{
+    fit = true
+}, new { style = "overflow: hidden;" })

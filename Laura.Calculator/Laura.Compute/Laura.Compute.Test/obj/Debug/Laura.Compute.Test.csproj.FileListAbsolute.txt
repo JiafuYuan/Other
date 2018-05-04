@@ -1,0 +1,7 @@
+C:\Users\JiafuYuan\Desktop\科学计算器\2013-11-12\Laura.Compute\Laura.Compute.Test\bin\Debug\Laura.Compute.Test.exe
+C:\Users\JiafuYuan\Desktop\科学计算器\2013-11-12\Laura.Compute\Laura.Compute.Test\bin\Debug\Laura.Compute.Test.pdb
+C:\Users\JiafuYuan\Desktop\科学计算器\2013-11-12\Laura.Compute\Laura.Compute.Test\bin\Debug\Laura.Compute.dll
+C:\Users\JiafuYuan\Desktop\科学计算器\2013-11-12\Laura.Compute\Laura.Compute.Test\bin\Debug\Laura.Compute.pdb
+C:\Users\JiafuYuan\Desktop\科学计算器\2013-11-12\Laura.Compute\Laura.Compute.Test\obj\Debug\Laura.Compute.Test.csprojResolveAssemblyReference.cache
+C:\Users\JiafuYuan\Desktop\科学计算器\2013-11-12\Laura.Compute\Laura.Compute.Test\obj\Debug\Laura.Compute.Test.exe
+C:\Users\JiafuYuan\Desktop\科学计算器\2013-11-12\Laura.Compute\Laura.Compute.Test\obj\Debug\Laura.Compute.Test.pdb

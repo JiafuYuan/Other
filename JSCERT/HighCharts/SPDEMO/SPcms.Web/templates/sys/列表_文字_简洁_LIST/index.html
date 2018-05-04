@@ -1,0 +1,10 @@
+
+<link rel="stylesheet" type="text/css" href="/templates/sys/列表_文字_简洁/css/css.css">
+	<div class="mainbox_2a">
+      <ul class="clearfix">
+   <%set DataTable down_list = get_article_list("news", category_id, page, "status=0", out totalcount, out pagelist, "down_list", category_id, "__id__")%><!--取得一个分页DataTable-->
+        <%foreach(DataRow dr in down_list.Rows)%>
+        <li class="clearfix"><a class="float_l" href="xiangxi.html">&gt;&gt; {dr[title]}...</a><span class="float_r">[{dr[add_time]}]</span></li>
+ <%/foreach%>
+     </ul>
+   </div>

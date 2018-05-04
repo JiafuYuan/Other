@@ -1,0 +1,98 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script type="text/javascript">
+    $(function () {
+        $(window).resize(function () {
+            $('#datagrid-HistoryAlarm').datagrid('resize');
+        });
+    });
+    function onBeforeLoad(param) {
+        if ($("#beginDate").datebox('getValue') > $("#endDate").datebox('getValue')) {
+            TopWindow.$.messager.alert('提示:', '开始日期不能大于结束日期！', 'warning');
+            return false;
+        }
+        param.id = $('#AlarmType').combobox('getValue');
+        param.beginDate = $("#beginDate").datebox('getValue');
+        param.endDate = $("#endDate").datebox('getValue');
+    }
+    //编辑
+    function AddReason() {
+        var rows = $('#datagrid-HistoryAlarm').datagrid('getSelections');
+        if (rows.length == 0) {
+            TopWindow.$.messager.alert('提示:', '请选数据！', 'warning');
+            return;
+        }
+        if (rows.length > 1) {
+            TopWindow.$.messager.alert('提示:', '只能选择一条数据！', 'warning');
+            return;
+        }
+        TopWindow.$.dialogwindow({
+            iconCls: 'icon-customers',
+            id: "AddReason",
+            title: '添加告警原因',
+            width: 500,
+            height: 250,
+            url: '@Url.Action("Edit")/' + rows[0].ID,
+            onClose: function () {
+                $('#datagrid-HistoryAlarm').datagrid('load');
+            },
+            buttons: [{
+                text: '保存',
+                iconCls: 'icon-ok',
+                handler: function () {
+                    if (TopWindow.$("#form").form('validate')) {
+                        var data = TopWindow.$("#form").serialize();
+                        $.ajax({
+                            url: '@Url.Action("Edit")',
+                            data: data,
+                            type: "POST",
+                            async: false,
+                            datatype: "json",
+                            success: function (data) {
+                                if (data.success) {
+                                    TopWindow.$.messager.alert("提示", data.message, "info", function () {
+                                        TopWindow.$('#AddReason').dialog('close');
+                                    });
+                                }
+                                else {
+                                    TopWindow.$.messager.alert("提示", data.message, "error");
+                                }
+                            },
+                            error: function (a, b, c) {
+                                TopWindow.$.messager.alert("提示", a.responseText, "error");
+                            }
+                        });
+                    }
+                }
+            }]
+        });
+    }
+</script>
+<div id="toolbar">
+    <div class="datagrid-toolbar panel-header search">
+        告警类型：
+        @Html.ComboBox("AlarmType", new { url = Url.Action("GetAlarmTypeList", "AlarmType"), valueField = "AlarmTypeID", textField = "vc_AlarmName" })
+        日期：
+        @Html.TextBox("beginDate", (new DateTime(DateTime.Now.Year, DateTime.Now.Month, 1)).ToString("yyyy-MM-dd"), new { @class = "easyui-datebox", editable = false })
+        到
+        @Html.TextBox("endDate", DateTime.Now.ToString("yyyy-MM-dd"), new { @class = "easyui-datebox", editable = false })
+        @Html.LinkButton("查询", "icon-search", new { onclick = "$('#datagrid-HistoryAlarm').datagrid('reload')" })
+    </div>
+    @Html.LinkButton("告警原因", "icon-edit_add", true, new { onclick = "AddReason()" })
+    @Html.LinkButton("刷新", "icon-reload", true, new { onclick = "$('#datagrid-HistoryAlarm').datagrid('reload')" })
+</div>
+@Html.DataGrid("datagrid-HistoryAlarm", @Url.Action("GetGridList"), ViewData["GridColumn"] as IEnumerable<object>, new
+{
+    fit = true,
+    rownumbers = true,
+    striped = true,
+    idField = "ID",
+    sortName = "dt_BeginTime",
+    sortOrder = "asc",
+    toolbar = "#toolbar",
+    pagination = true,
+    pageSize = 20,
+    onBeforeLoad = new { function = "onBeforeLoad" }
+}, new { style = "overflow: hidden;" })

@@ -1,0 +1,36 @@
+<link rel="stylesheet" type="text/css" href="/templates/sys/类别_树形展开_cyy/css/css.css">
+      <div class="classification">
+         <div class="lan"><h3>产品分类<font>Product</font></h3></div>
+             <div class="cplb">
+                <ul> 
+                   
+<%set DataTable catedtfeAie=get_category_child_list("goods", 0)%>
+<%foreach(DataRow drfeAie in catedtfeAie.Rows)%>
+
+
+
+ <li>
+                        <h4><a href="#none">{drfeAie[title]}</a></h4>
+                        <ul>
+                         <%set DataTable catedtQSizj=get_category_child_list("goods", 0)%>
+<%foreach(DataRow drQSizj in catedtQSizj.Rows)%>
+               <li><a href="<%linkurl("goods_list",{drQSizj[id]})%>">{drQSizj[title]}</a></li>
+<%/foreach%>
+
+
+             
+                        </ul>
+                    </li>
+                   <%/foreach%>
+                </ul>
+				<script type="text/javascript">
+                    <!--
+                        <!-- $(".cplb ul li:first").children("ul").show(); -->
+                        $(".cplb ul li").click(function(){
+                            $(this).siblings("li").children("ul").hide().end().siblings("li").children("h4").children("a").removeClass("checked");
+                            $(this).children("ul").show().end().children("h4").children("a").addClass("checked");
+                        });
+                    -->
+                </script>
+            </div>
+      </div>

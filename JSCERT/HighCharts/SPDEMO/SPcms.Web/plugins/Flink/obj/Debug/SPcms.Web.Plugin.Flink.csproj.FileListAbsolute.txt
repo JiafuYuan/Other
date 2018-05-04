@@ -1,0 +1,15 @@
+\\192.168.8.8\SP_webPlat\SPcms.Web\plugins\Flink\obj\Debug\ResolveAssemblyReference.cache
+\\192.168.8.8\SP_webPlat\SPcms.Web\bin\SPcms.Web.Plugin.Flink.dll
+\\192.168.8.8\SP_webPlat\SPcms.Web\bin\SPcms.Web.Plugin.Flink.pdb
+\\192.168.8.8\SP_webPlat\SPcms.Web\plugins\Flink\obj\Debug\SPcms.Web.Plugin.Flink.dll
+\\192.168.8.8\SP_webPlat\SPcms.Web\plugins\Flink\obj\Debug\SPcms.Web.Plugin.Flink.pdb
+E:\SPDEMO\SPcms.Web\bin\SPcms.Web.Plugin.Flink.dll
+E:\SPDEMO\SPcms.Web\bin\SPcms.Web.Plugin.Flink.pdb
+E:\SPDEMO\SPcms.Web\plugins\Flink\obj\Debug\SPcms.Web.Plugin.Flink.csprojResolveAssemblyReference.cache
+E:\SPDEMO\SPcms.Web\plugins\Flink\obj\Debug\SPcms.Web.Plugin.Flink.dll
+E:\SPDEMO\SPcms.Web\plugins\Flink\obj\Debug\SPcms.Web.Plugin.Flink.pdb
+C:\Users\JiafuYuan\Desktop\SPDEMO\SPcms.Web\bin\SPcms.Web.Plugin.Flink.dll
+C:\Users\JiafuYuan\Desktop\SPDEMO\SPcms.Web\bin\SPcms.Web.Plugin.Flink.pdb
+C:\Users\JiafuYuan\Desktop\SPDEMO\SPcms.Web\plugins\Flink\obj\Debug\SPcms.Web.Plugin.Flink.csprojResolveAssemblyReference.cache
+C:\Users\JiafuYuan\Desktop\SPDEMO\SPcms.Web\plugins\Flink\obj\Debug\SPcms.Web.Plugin.Flink.dll
+C:\Users\JiafuYuan\Desktop\SPDEMO\SPcms.Web\plugins\Flink\obj\Debug\SPcms.Web.Plugin.Flink.pdb

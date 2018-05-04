@@ -1,0 +1,450 @@
+-----------------------------------------------------------------------
+时间:2015-09-15 09:15:11,234
+级别:ERROR
+描述:Socket错误：由于目标计算机积极拒绝，无法连接。 127.0.0.1:11235
+-----------------------------------------------------------------------
+时间:2015-09-15 09:15:17,458
+级别:FATAL
+描述:无法找到表 0。
+System.IndexOutOfRangeException: 无法找到表 0。
+   在 System.Data.DataTableCollection.get_Item(Int32 index)
+   在 BW.MMS.BLL.m_DeptBLL.GetModelList(String strWhere) 位置 C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.BLL\m_DeptBLL.cs:行号 101
+   在 BW.MMS.Web.Controllers.BasicInfo.DeptController.GetDeptItem() 位置 C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\Controllers\BasicInfo\DeptController.cs:行号 78
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+-----------------------------------------------------------------------
+时间:2015-09-15 09:15:19,728
+级别:FATAL
+描述:为过程或函数 p_DailyReport 指定了过多的参数。
+System.Data.SqlClient.SqlException (0x80131904): 为过程或函数 p_DailyReport 指定了过多的参数。
+   在 BW.MMS.DBUtility.DbHelperSQL.RunProcedure(String storedProcName, IDataParameter[] parameters, String tableName, Int32 Times) 位置 C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.DBUtility\DbHelperSQL.cs:行号 963
+   在 BW.MMS.DAL.ReportDAL.GetDailyReport(DateTime beginDate, DateTime endDate, Int32 type, String deptparam) 位置 C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.DAL\ReportDAL.cs:行号 29
+   在 BW.MMS.BLL.ReportBLL.GetDailyReport(DateTime beginDate, DateTime endDate, Int32 type, String deptparam) 位置 C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.BLL\ReportBLL.cs:行号 19
+   在 BW.MMS.Web.Controllers.StatisticalAnalysis.DailyReportController.GetDailyReport() 位置 C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\Controllers\StatisticalAnalysis\DailyReportController.cs:行号 178
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+-----------------------------------------------------------------------
+时间:2015-09-15 09:30:13,668
+级别:FATAL
+描述:无法找到表 0。
+System.IndexOutOfRangeException: 无法找到表 0。
+   在 System.Data.DataTableCollection.get_Item(Int32 index)
+   在 BW.MMS.BLL.m_DeptBLL.GetModelList(String strWhere) 位置 C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.BLL\m_DeptBLL.cs:行号 101
+   在 BW.MMS.Web.Controllers.BasicInfo.DeptController.GetDeptItem() 位置 C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\Controllers\BasicInfo\DeptController.cs:行号 78
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+-----------------------------------------------------------------------
+时间:2015-09-15 09:32:50,059
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-15 09:32:51,096
+级别:ERROR
+描述:Socket错误：由于目标计算机积极拒绝，无法连接。 127.0.0.1:11235
+-----------------------------------------------------------------------
+时间:2015-09-15 09:33:50,070
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-15 09:34:50,082
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-15 09:35:50,097
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-15 09:36:50,110
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-15 09:37:50,123
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-15 09:38:20,959
+级别:FATAL
+描述:无法找到表 0。
+System.IndexOutOfRangeException: 无法找到表 0。
+   在 System.Data.DataTableCollection.get_Item(Int32 index)
+   在 BW.MMS.BLL.m_DeptBLL.GetModelList(String strWhere) 位置 C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.BLL\m_DeptBLL.cs:行号 101
+   在 BW.MMS.Web.Controllers.BasicInfo.DeptController.GetDeptItem() 位置 C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\Controllers\BasicInfo\DeptController.cs:行号 78
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+-----------------------------------------------------------------------
+时间:2015-09-15 09:38:50,138
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-15 09:39:50,150
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-15 09:40:50,165
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-15 09:41:50,178
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-15 09:42:50,193
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-15 09:43:50,205
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-15 09:44:50,220
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-15 09:45:50,233
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-15 09:46:01,688
+级别:FATAL
+描述:无法找到表 0。
+System.IndexOutOfRangeException: 无法找到表 0。
+   在 System.Data.DataTableCollection.get_Item(Int32 index)
+   在 BW.MMS.BLL.m_DeptBLL.GetModelList(String strWhere) 位置 C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.BLL\m_DeptBLL.cs:行号 101
+   在 BW.MMS.Web.Controllers.BasicInfo.DeptController.GetDeptItem() 位置 C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\Controllers\BasicInfo\DeptController.cs:行号 78
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+-----------------------------------------------------------------------
+时间:2015-09-15 09:46:12,747
+级别:FATAL
+描述:无法找到表 0。
+System.IndexOutOfRangeException: 无法找到表 0。
+   在 System.Data.DataTableCollection.get_Item(Int32 index)
+   在 BW.MMS.BLL.m_DeptBLL.GetModelList(String strWhere) 位置 C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.BLL\m_DeptBLL.cs:行号 101
+   在 BW.MMS.Web.Controllers.BasicInfo.DeptController.GetDeptList() 位置 C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\Controllers\BasicInfo\DeptController.cs:行号 54
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+-----------------------------------------------------------------------
+时间:2015-09-15 09:46:25,040
+级别:FATAL
+描述:列名 'i_Sort' 无效。
+System.Exception: 列名 'i_Sort' 无效。
+   在 BW.MMS.DBUtility.DbHelperSQL.Query(String SQLString, SqlParameter[] cmdParms) 位置 C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.DBUtility\DbHelperSQL.cs:行号 845
+   在 BW.MMS.DAL.m_DeptDAL.GetModel(Int32 ID) 位置 C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.DAL\m_DeptDAL.cs:行号 195
+   在 BW.MMS.BLL.m_DeptBLL.GetModel(Int32 ID) 位置 C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.BLL\m_DeptBLL.cs:行号 78
+   在 BW.MMS.Web.Controllers.BasicInfo.DeptController.Edit(Int32 id) 位置 C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\Controllers\BasicInfo\DeptController.cs:行号 108
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+-----------------------------------------------------------------------
+时间:2015-09-15 09:46:29,153
+级别:FATAL
+描述:无法找到表 0。
+System.IndexOutOfRangeException: 无法找到表 0。
+   在 System.Data.DataTableCollection.get_Item(Int32 index)
+   在 BW.MMS.BLL.m_DeptBLL.GetModelList(String strWhere) 位置 C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.BLL\m_DeptBLL.cs:行号 101
+   在 BW.MMS.Web.Controllers.BasicInfo.DeptController.GetDeptList() 位置 C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\Controllers\BasicInfo\DeptController.cs:行号 54
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+-----------------------------------------------------------------------
+时间:2015-09-15 09:46:50,246
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-15 09:47:19,115
+级别:FATAL
+描述:无法找到表 0。
+System.IndexOutOfRangeException: 无法找到表 0。
+   在 System.Data.DataTableCollection.get_Item(Int32 index)
+   在 BW.MMS.BLL.m_DeptBLL.GetModelList(String strWhere) 位置 C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.BLL\m_DeptBLL.cs:行号 101
+   在 BW.MMS.Web.Controllers.BasicInfo.DeptController.GetDeptList() 位置 C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\Controllers\BasicInfo\DeptController.cs:行号 54
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+-----------------------------------------------------------------------
+时间:2015-09-15 09:47:50,259
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-15 09:48:31,820
+级别:ERROR
+描述:Socket错误：由于目标计算机积极拒绝，无法连接。 127.0.0.1:11235
+-----------------------------------------------------------------------
+时间:2015-09-15 09:49:02,736
+级别:FATAL
+描述:无法找到表 0。
+System.IndexOutOfRangeException: 无法找到表 0。
+   在 System.Data.DataTableCollection.get_Item(Int32 index)
+   在 BW.MMS.BLL.m_DeptBLL.GetModelList(String strWhere) 位置 C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.BLL\m_DeptBLL.cs:行号 101
+   在 BW.MMS.Web.Controllers.BasicInfo.DeptController.GetDeptList() 位置 C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\Controllers\BasicInfo\DeptController.cs:行号 54
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+-----------------------------------------------------------------------
+时间:2015-09-15 14:11:54,027
+级别:ERROR
+描述:Socket错误：由于目标计算机积极拒绝，无法连接。 127.0.0.1:11235
+-----------------------------------------------------------------------
+时间:2015-09-15 14:25:53,360
+级别:ERROR
+描述:Socket错误：由于目标计算机积极拒绝，无法连接。 127.0.0.1:11235
+-----------------------------------------------------------------------
+时间:2015-09-15 15:01:16,616
+级别:ERROR
+描述:Socket错误：由于目标计算机积极拒绝，无法连接。 127.0.0.1:11235
+-----------------------------------------------------------------------
+时间:2015-09-15 15:31:10,635
+级别:ERROR
+描述:Socket错误：由于目标计算机积极拒绝，无法连接。 127.0.0.1:11235
+-----------------------------------------------------------------------
+时间:2015-09-15 15:52:29,752
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-15 15:53:32,656
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-15 15:54:34,222
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-15 15:55:21,990
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-15 15:56:26,028
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-15 15:57:19,640
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-15 15:58:19,653
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-15 15:59:19,667
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-15 16:06:10,382
+级别:ERROR
+描述:Socket错误：由于目标计算机积极拒绝，无法连接。 127.0.0.1:11235
+-----------------------------------------------------------------------
+时间:2015-09-15 16:06:27,603
+级别:ERROR
+描述:Socket错误：由于目标计算机积极拒绝，无法连接。 127.0.0.1:11235
+-----------------------------------------------------------------------
+时间:2015-09-15 16:47:30,226
+级别:ERROR
+描述:Socket错误：由于目标计算机积极拒绝，无法连接。 127.0.0.1:11235
+-----------------------------------------------------------------------
+时间:2015-09-15 16:47:43,645
+级别:FATAL
+描述:列“Expr1”不属于表 。
+System.ArgumentException: 列“Expr1”不属于表 。
+   在 System.Data.DataRow.GetDataColumn(String columnName)
+   在 System.Data.DataRow.get_Item(String columnName)
+   在 BW.MMS.DAL.v_HistoryRecord.DataRowToModel(DataRow row) 位置 C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.DAL\v_HistoryRecord.cs:行号 325
+   在 BW.MMS.BLL.v_HistoryRecord.DataTableToList(DataTable dt) 位置 C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.BLL\v_HistoryRecord.cs:行号 102
+   在 BW.MMS.BLL.v_HistoryRecord.GetPagingList(String name, Int32 page, Int32 rows, String sort, String order, Int32& total) 位置 C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.BLL\v_HistoryRecord.cs:行号 154
+   在 BW.MMS.Web.Controllers.AirManageController.GetHistoryRecordList(Int32 page, Int32 rows, String sort, String order) 位置 C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\Controllers\AirManageController.cs:行号 59
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+-----------------------------------------------------------------------
+时间:2015-09-15 17:14:06,459
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-15 17:15:06,472
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-15 17:16:06,492
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-15 17:17:06,499
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-15 17:18:06,514
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-15 17:19:06,526
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-15 17:20:06,540
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-15 17:21:06,553
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-15 17:22:06,567
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-15 17:23:06,581
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-15 17:24:06,594
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-15 17:25:06,608
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-15 17:26:06,622
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-15 17:26:51,861
+级别:ERROR
+描述:Socket错误：由于目标计算机积极拒绝，无法连接。 127.0.0.1:11235

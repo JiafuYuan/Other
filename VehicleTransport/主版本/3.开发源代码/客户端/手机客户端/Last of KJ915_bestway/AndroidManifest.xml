@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bestway.kj915"
+    android:versionCode="1"
+    android:versionName="1.01" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+
+    <uses-feature
+        android:name="android.hardware.nfc"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+   
+
+    <application
+        android:name="com.bestway.kj915.exception.CrashApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+        <activity
+            android:name="com.bestway.kj915.activity.GuideActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.bestway.kj915.activity.SplashActivity" >
+            <intent-filter>
+                <action android:name="com.bestway.kj915.activity.SplashActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.bestway.kj915.activity.SetIpActivity" >
+            <intent-filter>
+                <action android:name="com.bestway.kj915.activity.SetIpActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.bestway.kj915.activity.IndexActivity" >
+            <intent-filter>
+                <action android:name="com.bestway.kj915.activity.IndexActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.bestway.kj915.activity.LoginActivity" >
+            <intent-filter>
+                <action android:name="com.bestway.kj915.activity.LoginActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.nfc.action.TECH_DISCOVERED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.nfc.action.TECH_DISCOVERED"
+                android:resource="@xml/nfc_teach_filter" />
+        </activity>
+        <activity android:name="com.bestway.kj915.activity.BasicActivity" >
+            <intent-filter>
+                <action android:name="com.bestway.kj915.activity.BasicActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- Home界面的几个Activity -->
+        <activity android:name="com.bestway.kj915.activity.home.MyPlanActivity" >
+            <intent-filter>
+                <action android:name="com.bestway.kj915.activity.home.MyPlanActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.bestway.kj915.activity.home.apply.ApplyActivity" >
+            <intent-filter>
+                <action android:name="com.bestway.kj915.activity.home.ApplyActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.bestway.kj915.activity.home.MyGoodsActivity" >
+            <intent-filter>
+                <action android:name="com.bestway.kj915.activity.home.MyGoodsActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.bestway.kj915.activity.home.handle.HandleGoodsActivity" >
+            <intent-filter>
+                <action android:name="com.bestway.kj915.activity.home.HandleGoodsActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.bestway.kj915.activity.home.VehicleDistributionActivity" >
+            <intent-filter>
+                <action android:name="com.bestway.kj915.activity.home.VehicleDistributionActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.bestway.kj915.activity.home.VehicleInfoActivity" >
+            <intent-filter>
+                <action android:name="com.bestway.kj915.activity.home.VehicleInfoActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.bestway.kj915.activity.home.loadvehilce.VehicleLoadHelpActivity" >
+            <intent-filter>
+                <action android:name="com.bestway.kj915.activity.home.loadvehilce.VehicleLoadHelpActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.bestway.kj915.activity.home.unloadvehicle.UnLoadVehicleActivity" >
+            <intent-filter>
+                <action android:name="com.bestway.kj915.activity.home.unloadvehicle.UnLoadVehicleActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.bestway.kj915.activity.home.backvehicle.BackVehicleActivity" >
+            <intent-filter>
+                <action android:name="com.bestway.kj915.activity.home.backvehicle.BackVehicleActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- Home界面的几个Activity -->
+
+
+        <!-- 第二层界面—装卸车 -->
+        <activity android:name="com.bestway.kj915.activity.home.handle.nfc.NFC_ScannerActivity" >
+            <intent-filter>
+                <action android:name="com.bestway.kj915.activity.home.handle.nfc.NFC_ScannerActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.nfc.action.TECH_DISCOVERED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.nfc.action.TECH_DISCOVERED"
+                android:resource="@xml/nfc_teach_filter" />
+        </activity>
+        <activity android:name="com.bestway.kj915.activity.home.handle.nfc.Extra" >
+            <intent-filter>
+                <action android:name="com.bestway.kj915.activity.home.handle.nfc.Extra" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 第二层界面—装卸车 -->
+
+
+        <!-- 第二层 -供车 -->
+        <activity
+            android:name="com.bestway.kj915.activity.home.supply.SupplyVehicleActivity"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <action android:name="com.bestway.kj915.activity.home.supply.SupplyVehicleActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.bestway.kj915.activity.home.apply.ChoosePlanResultActivity"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <action android:name="com.bestway.kj915.activity.home.apply.ChoosePlanResultActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 第二层 -供车 -->
+
+
+        <!-- 第二层装车界面 -->
+        <activity android:name="com.bestway.kj915.activity.home.loadvehilce.QueryWaybillActivity" >
+            <intent-filter>
+                <action android:name="com.bestway.kj915.activity.home.loadvehilce.QueryWaybillActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.bestway.kj915.activity.home.loadvehilce.QuerryWaybillUiActivity" >
+            <intent-filter>
+                <action android:name="com.bestway.kj915.activity.home.loadvehilce.QuerryWaybillUiActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.bestway.kj915.activity.home.loadvehilce.QueryWaybillShowResultActivity" >
+            <intent-filter>
+                <action android:name="com.bestway.kj915.activity.home.loadvehilce.QueryWaybillShowResultActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.bestway.kj915.activity.home.loadvehilce.LoadSubmitActivity" >
+            <intent-filter>
+                <action android:name="com.bestway.kj915.activity.home.loadvehilce.LoadSubmitActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.bestway.kj915.activity.home.loadvehilce.LoadChooseActivity" >
+            <intent-filter>
+                <action android:name="com.bestway.kj915.activity.home.loadvehilce.LoadChooseActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.bestway.kj915.activity.home.loadvehilce.LoadNFCActivity" >
+            <intent-filter>
+                <action android:name="com.bestway.kj915.activity.home.loadvehilce.LoadNFCActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <intent-filter>
+                    <action android:name="android.nfc.action.TECH_DISCOVERED" />
+                </intent-filter>
+
+                <meta-data
+                    android:name="android.nfc.action.TECH_DISCOVERED"
+                    android:resource="@xml/nfc_teach_filter" />
+            </intent-filter>
+        </activity>
+        <!-- 第二层装车界面 -->
+
+
+        <!-- 第二层界面—申请 -->
+        <activity
+            android:name="com.bestway.kj915.activity.home.apply.Apply_GoodsActivity"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <action android:name="com.bestway.kj915.activity.home.apply.Apply_GoodsActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.bestway.kj915.activity.home.apply.Apply_VehiclesActivity"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <action android:name="com.bestway.kj915.activity.home.apply.Apply_VehiclesActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- 第二层界面—申请 -->
+        <!-- 第二层界面—交接车 -->
+
+        <activity
+            android:name="com.bestway.kj915.activity.home.handover.HandoverAcitvity"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <action android:name="com.bestway.kj915.activity.home.handover.HandoverAcitvity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.bestway.kj915.activity.home.handover.HandoverNFCActivity" >
+            <intent-filter>
+                <action android:name="com.bestway.kj915.activity.home.handover.HandoverNFCActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <intent-filter>
+                    <action android:name="android.nfc.action.TECH_DISCOVERED" />
+                </intent-filter>
+
+                <meta-data
+                    android:name="android.nfc.action.TECH_DISCOVERED"
+                    android:resource="@xml/nfc_teach_filter" />
+            </intent-filter>
+        </activity>
+
+        <!-- 第二层界面—交接车 -->
+
+
+        <!-- 第二层界面—还车 -->
+        <activity android:name="com.bestway.kj915.activity.home.backvehicle.BackVehicleActivityNFCActivity" >
+            <intent-filter>
+                <action android:name="com.bestway.kj915.activity.home.backvehicle.BackVehicleActivityNFCActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <intent-filter>
+                    <action android:name="android.nfc.action.TECH_DISCOVERED" />
+                </intent-filter>
+
+                <meta-data
+                    android:name="android.nfc.action.TECH_DISCOVERED"
+                    android:resource="@xml/nfc_teach_filter" />
+            </intent-filter>
+        </activity>
+        <!-- 第二层界面—还车 -->
+        <!-- 第二层界面—卸车 -->
+        <activity android:name="com.bestway.kj915.activity.home.unloadvehicle.UnLoadVehicleNFCActivity" >
+            <intent-filter>
+                <action android:name="com.bestway.kj915.activity.home.unloadvehicle.UnLoadVehicleNFCActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <intent-filter>
+                    <action android:name="android.nfc.action.TECH_DISCOVERED" />
+                </intent-filter>
+
+                <meta-data
+                    android:name="android.nfc.action.TECH_DISCOVERED"
+                    android:resource="@xml/nfc_teach_filter" />
+            </intent-filter>
+        </activity>
+        <!-- 第二层界面—卸车 -->
+
+
+        <!-- 第二层界面—设置 -->
+        <activity android:name="com.bestway.kj915.activity.home.set.SettingActivity" >
+            <intent-filter>
+                <action android:name="com.bestway.kj915.activity.home.SettingActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.bestway.kj915.activity.home.set.ChangePasswordActivity" >
+            <intent-filter>
+                <action android:name="com.bestway.kj915.activity.home.set.ChangePasswordActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 第二层界面—设置 -->
+
+
+        <!-- 服务 -->
+        <service android:name="com.bestway.kj915.service.HeartService" >
+            <intent-filter>
+                <action android:name="com.bestway.kj915.service.HeartService" />
+            </intent-filter>
+        </service>
+        <!-- 服务 -->
+
+
+        <!-- 内容提供者 -->
+        <provider
+            android:name="com.bestway.kj915.provider.Basic_db_Provider"
+            android:authorities="com.bestway.kj915.provider.Basic_db_Provider" >
+        </provider>
+        <!-- 内容提供者 -->
+    </application>
+
+</manifest>

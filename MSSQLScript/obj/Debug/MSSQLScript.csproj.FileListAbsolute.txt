@@ -1,0 +1,16 @@
+d:\Users\majiang\Documents\Visual Studio 2008\Projects\MSSQLScript\bin\Debug\MSSQLScript.exe
+d:\Users\majiang\Documents\Visual Studio 2008\Projects\MSSQLScript\bin\Debug\MSSQLScript.pdb
+d:\Users\majiang\Documents\Visual Studio 2008\Projects\MSSQLScript\obj\Debug\ResolveAssemblyReference.cache
+d:\Users\majiang\Documents\Visual Studio 2008\Projects\MSSQLScript\obj\Debug\MSSQLScript.MainForm.resources
+d:\Users\majiang\Documents\Visual Studio 2008\Projects\MSSQLScript\obj\Debug\MSSQLScript.Properties.Resources.resources
+d:\Users\majiang\Documents\Visual Studio 2008\Projects\MSSQLScript\obj\Debug\MSSQLScript.csproj.GenerateResource.Cache
+d:\Users\majiang\Documents\Visual Studio 2008\Projects\MSSQLScript\obj\Debug\MSSQLScript.exe
+d:\Users\majiang\Documents\Visual Studio 2008\Projects\MSSQLScript\obj\Debug\MSSQLScript.pdb
+F:\Users\Administrator\Desktop\MSSQLScript\obj\Debug\MSSQLScript.exe
+F:\Users\Administrator\Desktop\MSSQLScript\obj\Debug\MSSQLScript.pdb
+F:\Users\Administrator\Desktop\MSSQLScript\bin\Debug\MSSQLScript.exe
+F:\Users\Administrator\Desktop\MSSQLScript\bin\Debug\MSSQLScript.pdb
+F:\Users\Administrator\Desktop\MSSQLScript\obj\Debug\MSSQLScript.MainForm.resources
+F:\Users\Administrator\Desktop\MSSQLScript\obj\Debug\MSSQLScript.Properties.Resources.resources
+F:\Users\Administrator\Desktop\MSSQLScript\obj\Debug\MSSQLScript.csproj.GenerateResource.Cache
+F:\Users\Administrator\Desktop\MSSQLScript\obj\Debug\MSSQLScript.csprojResolveAssemblyReference.cache

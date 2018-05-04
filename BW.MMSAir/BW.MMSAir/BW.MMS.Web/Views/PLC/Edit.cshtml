@@ -1,0 +1,65 @@
+﻿@model BW.MMS.Model.m_PLCEntity
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="@Url.Content("~/Scripts/easyui.validate.exp.js")" type="text/javascript"></script>
+<script type="text/javascript">
+    function save() {
+        if (TopWindow.$("#form").form('validate')) {
+            var data = $("#form").serialize();
+            $.ajax({
+                url: '@Url.Action("Edit")',
+                data: data,
+                type: "POST",
+                async: false,
+                datatype: "json",
+                success: function (data) {
+                    if (data.success) {
+                        TopWindow.$.messager.alert("提示", data.message, "info", function () {
+                            TopWindow.$('#PLCEdit').dialog('close');
+                        });
+                    }
+                    else {
+                        TopWindow.$.messager.alert("提示", data.message, "error");
+                    }
+                },
+                error: function (a, b, c) {
+                    TopWindow.$.messager.alert("提示", a.responseText, "error");
+                }
+            });
+        }
+    }
+</script>
+<form id="form" action="">
+@Html.HiddenFor(model => model.id)
+<table class="table-form">
+    <tr>
+        
+        <th>
+            PLC名称
+        </th>
+        <td>
+            @Html.TextBoxFor(model => model.vc_name, new { @class = "easyui-validatebox", required = "true", validType = "length[1,20]" })
+            <span style="color: Red">*</span>
+        </td>
+   
+        <th>
+            IP
+        </th>
+        <td colspan="3">
+            @Html.TextBoxFor(model => model.vc_IP, new { @class = "easyui-validatebox", required = "true", validType = "ip" })
+            <span style="color: Red">*</span>
+        </td>
+    </tr>
+    <tr>
+        <th>
+            备注
+        </th>
+        <td colspan="3">
+            @Html.TextAreaFor(model => model.vc_remark, new { style = "width:413px;height:80px;", @class = "easyui-validatebox", validType = "length[1,200]" })
+        </td>
+    </tr>
+</table>
+</form>

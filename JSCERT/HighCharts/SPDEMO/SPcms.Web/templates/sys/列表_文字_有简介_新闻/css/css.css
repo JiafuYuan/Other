@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+/*新闻资讯样式
+------------------------------------------------------------------------------------*/
+.newsToppic dl dt{margin-bottom:6px;border-bottom:1px solid #EEE;}
+	.newsToppic dl dt strong{display:block;margin:0 auto 10px auto;font:15px "Microsoft Yahei";border:0;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;}
+	.newsToppic dl dt strong a{color:#3B8DD1;}
+	.newsToppic dl dt strong a:hover{color:#0089cd;}
+	.newsToppic dl dt p{padding-bottom:10px;line-height:18px;color:#999; }
+	.newsToppic dl dd{font-size:12px;height:28px;line-height:28px;}
+	.newsToppic dl dd a{color:#666;}
+	.newsToppic dl dd a:hover{color:#0089CD;}
+	.newsToppic dl dd span{float:right;color:#999;}

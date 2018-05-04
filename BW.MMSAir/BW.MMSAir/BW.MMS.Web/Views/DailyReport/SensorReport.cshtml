@@ -1,0 +1,79 @@
+﻿@{
+    ViewBag.Title = "SensorReport";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script type="text/javascript">
+    $(function () {
+        $(window).resize(function () {
+            $('#DailyReport').datagrid('resize');
+        });
+    });
+
+    function onBeforeLoad(param) {
+        param.type = 4;
+        param.dt_BeginDate = formatDate($('#dt_BeginDate').datebox('getValue'), 'yyyy-MM-dd HH:mm:ss');
+        param.dt_EndDate = formatDate($('#dt_EndDate').datebox('getValue'), 'yyyy-MM-dd HH:mm:ss');
+        param.deptParam = $('#Address').val();
+    }
+    function onLoadSuccess(data) {
+        mergeCellsByField('DailyReport', 'vc_Name');
+    }
+    function chartShow() {
+        var dt_BeginDate = formatDate($('#dt_BeginDate').datebox('getValue'), 'yyyy-MM-dd HH:mm:ss');
+        var dt_EndDate = formatDate($('#dt_EndDate').datebox('getValue'), 'yyyy-MM-dd HH:mm:ss');
+        TopWindow.$.dialogwindow({
+            iconCls: 'icon-customers',
+            id: "chartData",
+            title: '柱状图',
+            width: 1100,
+            height: 500,
+            iframe: true,
+            url: '@Url.Action("DailyReportChartShow")?type=2&&dt_BeginDate=' + dt_BeginDate + '&&dt_EndDate=' + dt_EndDate
+        });
+    }
+
+    function AcReport(action) {
+        var params = {};
+        params['type'] = 2;
+        params['dt_BeginDate'] = formatDate($('#dt_BeginDate').datebox('getValue'), 'yyyy-MM-dd HH:mm:ss');
+        params['dt_EndDate'] = formatDate($('#dt_EndDate').datebox('getValue'), 'yyyy-MM-dd HH:mm:ss');
+        $.post('@Url.Action("GetReportData")', params).success(function (data) {
+            LoadAcReport({
+                action: action,
+                aptPath: '@Url.Content("~/Reports/DeptReport.apt")',
+                dataname: 'DeptReport',
+                data: data,
+                variant: [{
+                    name: 'dt_BeginDate',
+                    value: params.dt_BeginDate
+                }, {
+                    name: 'dt_EndDate',
+                    value: params.dt_EndDate
+                }]
+            });
+        }).error(function (XMLHttpRequest, textStatus, errorThrown) {
+            TopWindow.$.messager.alert("提示", a.responseText, "error");
+        });
+    }
+</script>
+<div id="toolbar" style="padding: 8px;">
+    日期：
+    @Html.TextBox("dt_BeginDate", (new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, 0, 0, 0, 0)).ToString("yyyy-MM-dd HH:mm:ss"), new { @class = "easyui-datetimebox", editable = false })
+    到
+    @Html.TextBox("dt_EndDate", DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), new { @class = "easyui-datetimebox", editable = false })
+    安装位置：
+    @Html.TextBox("Address")
+    @Html.LinkButton("查询", "icon-search", new { onclick = "$('#DailyReport').datagrid('reload')" })
+</div>
+@Html.DataGrid("DailyReport", @Url.Action("GetDailyReport"), ViewData["GridColumn"] as IEnumerable<object>, new
+{
+    fit = true,
+    rownumbers = true,
+    striped = true,
+    toolbar = "#toolbar",
+    showFooter = false,
+    singleSelect = true,
+    idField = "dt_Date",
+    onBeforeLoad = new { function = "onBeforeLoad" },
+    onLoadSuccess = new { function = "onLoadSuccess" }
+}, new { style = "overflow: hidden;" })

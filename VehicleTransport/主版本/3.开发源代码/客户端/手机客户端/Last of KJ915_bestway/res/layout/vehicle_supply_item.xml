@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bestway="http://schemas.android.com/apk/res/com.bestway.kj915"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <View style="@style/list_item_seperator_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="5" >
+
+        <ImageButton
+            android:id="@+id/ib_tanchu"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/backgroud_selector"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:scaleType="centerInside"
+            android:singleLine="true"
+            android:src="@drawable/delete_tanchu"
+            android:width="0dip" />
+
+        <View style="@style/list_item_cell_seperator_layout" />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:gravity="center" >
+
+            <com.bestway.kj915.custom.MyDropdownBox
+                android:id="@+id/catagory"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center" />
+        </LinearLayout>
+
+        <View style="@style/list_item_cell_seperator_layout" />
+
+        <LinearLayout
+            android:id="@+id/catagory"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:gravity="center" >
+
+            <EditText
+                android:id="@+id/number"
+                android:layout_width="90dip"
+                android:layout_height="40dip"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:ellipsize="end"
+                android:focusable="true"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="9"
+                android:singleLine="true"
+                android:text="1"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+
+        <View style="@style/list_item_cell_seperator_layout" />
+
+        <ImageButton
+            android:id="@+id/ib_delete"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/backgroud_selector"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:scaleType="centerInside"
+            android:singleLine="true"
+            android:src="@drawable/delete"
+            android:width="0dip" />
+    </LinearLayout>
+
+    <View style="@style/list_item_seperator_layout" />
+
+</LinearLayout>

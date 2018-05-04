@@ -1,0 +1,15 @@
+\\192.168.8.8\SP_webPlat\SPcms.Web\plugins\baseback\obj\Debug\ResolveAssemblyReference.cache
+\\192.168.8.8\SP_webPlat\SPcms.Web\bin\SPcms.Web.Plugin.BaseBack.dll
+\\192.168.8.8\SP_webPlat\SPcms.Web\bin\SPcms.Web.Plugin.BaseBack.pdb
+\\192.168.8.8\SP_webPlat\SPcms.Web\plugins\baseback\obj\Debug\SPcms.Web.Plugin.BaseBack.dll
+\\192.168.8.8\SP_webPlat\SPcms.Web\plugins\baseback\obj\Debug\SPcms.Web.Plugin.BaseBack.pdb
+E:\SPDEMO\SPcms.Web\bin\SPcms.Web.Plugin.BaseBack.dll
+E:\SPDEMO\SPcms.Web\bin\SPcms.Web.Plugin.BaseBack.pdb
+E:\SPDEMO\SPcms.Web\plugins\baseback\obj\Debug\SPcms.Web.Plugin.BaseBack.csprojResolveAssemblyReference.cache
+E:\SPDEMO\SPcms.Web\plugins\baseback\obj\Debug\SPcms.Web.Plugin.BaseBack.dll
+E:\SPDEMO\SPcms.Web\plugins\baseback\obj\Debug\SPcms.Web.Plugin.BaseBack.pdb
+C:\Users\JiafuYuan\Desktop\SPDEMO\SPcms.Web\bin\SPcms.Web.Plugin.BaseBack.dll
+C:\Users\JiafuYuan\Desktop\SPDEMO\SPcms.Web\bin\SPcms.Web.Plugin.BaseBack.pdb
+C:\Users\JiafuYuan\Desktop\SPDEMO\SPcms.Web\plugins\baseback\obj\Debug\SPcms.Web.Plugin.BaseBack.csprojResolveAssemblyReference.cache
+C:\Users\JiafuYuan\Desktop\SPDEMO\SPcms.Web\plugins\baseback\obj\Debug\SPcms.Web.Plugin.BaseBack.dll
+C:\Users\JiafuYuan\Desktop\SPDEMO\SPcms.Web\plugins\baseback\obj\Debug\SPcms.Web.Plugin.BaseBack.pdb

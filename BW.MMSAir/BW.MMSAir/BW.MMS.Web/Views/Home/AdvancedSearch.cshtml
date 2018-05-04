@@ -1,0 +1,90 @@
+﻿@{
+    ViewBag.Title = "AdvancedSearch";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script type="text/javascript">
+    function addCondition() {
+        if ($("#form-Search").form('validate')) {
+            var rows = $('#grid-condition').datagrid('getRows');
+            if (rows.length > 0) {
+                for (var i = 0; i < rows.length; i++) {
+                    if (rows[i].mark == '结束') {
+                        $.messager.alert('提示', "条件语句已经包含结束，无法添加条件！", 'warning');
+                        return;
+                    }
+                }
+            }
+            $('#grid-condition').datagrid('appendRow', {
+                field: $("#field").combobox('getText'),
+                operator: $("#operator").combobox('getText'),
+                value: $("#value").val(),
+                mark: $("#mark").combobox('getText')
+            });
+        }
+    }
+
+    function deleteCondition(index) {
+        $('#grid-condition').datagrid("deleteRow", index);
+    }
+
+    function formatAction(value, row, index) {
+        return '<a href="#" onclick="deleteCondition(' + index + ')"><span style="background-position-x: left; padding-left: 20px;" class="icon-cancel">删除</span></a>';
+
+    }
+</script>
+<form id="form-Search">
+<table style="width: 100%; border-collapse: separate; border-spacing: 1px; background-color: rgb(192, 192, 192);">
+    <tbody>
+        <tr>
+            <th align="left" style="padding: 5px; height: 30px; background-color: rgb(241, 246, 255);"
+                colspan="5">
+                <span class="icon-searchall" style="padding-left: 20px; background-position-x: left;">
+                    高级查询，输入查询条以过滤数据</span>
+            </th>
+        </tr>
+        <tr>
+            <td style="padding: 5px; width: 120px; background-color: rgb(250, 252, 255);">
+                <input class="easyui-combobox" id="field" style="width: 120px;" data-options="editable:false">
+            </td>
+            <td style="padding: 5px; width: 120px; background-color: rgb(250, 252, 255);">
+                <input class="easyui-combobox" id="operator" style="width: 80px;" data-options="editable:false">
+            </td>
+            <td style="padding: 5px; width: 120px; background-color: rgb(250, 252, 255);">
+                <input class="easyui-validatebox" id="value" style="width: 100px;" data-options="required:true">
+            </td>
+            <td style="padding: 5px; width: 120px; background-color: rgb(250, 252, 255);">
+                <input class="easyui-combobox" id="mark" style="width: 70px;" data-options="editable:false">
+            </td>
+            <td style="padding: 5px; width: 120px; background-color: rgb(250, 252, 255);">
+                <a class="easyui-linkbutton" href="#" data-options="iconCls:'icon-edit_add'"></a>
+            </td>
+        </tr>
+        <tr>
+            <td style="padding: 5px; height: 30px; background-color: rgb(250, 252, 255);" colspan="5">
+                <table class="easyui-datagrid" id="grid-condition" style="width: 505px; height: 150px;"
+                    data-options="rownumbers:true">
+                    <thead>
+                        <tr>
+                            <th data-options="field:'field',width:120,halign:'center'">
+                                字段
+                            </th>
+                            <th data-options="field:'operator',width:75,halign:'center'">
+                                运算符
+                            </th>
+                            <th data-options="field:'value',width:100,halign:'center'">
+                                值
+                            </th>
+                            <th data-options="field:'mark',width:60,halign:'center'">
+                                标记
+                            </th>
+                            <th data-options="field:'action',width:60,align:'center',formatter:formatAction">
+                                操作
+                            </th>
+                        </tr>
+                    </thead>
+                </table>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</form>

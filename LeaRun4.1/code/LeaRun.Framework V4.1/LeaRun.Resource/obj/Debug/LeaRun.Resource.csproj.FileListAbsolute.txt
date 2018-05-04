@@ -1,0 +1,12 @@
+E:\SVNData\快速信息化系统开发框架\trunk\code\LeaRun.Framework V4.1\LeaRun.Resource\bin\Debug\LeaRun.Resource.dll
+E:\SVNData\快速信息化系统开发框架\trunk\code\LeaRun.Framework V4.1\LeaRun.Resource\bin\Debug\LeaRun.Resource.pdb
+E:\SVNData\快速信息化系统开发框架\trunk\code\LeaRun.Framework V4.1\LeaRun.Resource\bin\Debug\zh-CN\LeaRun.Resource.resources.dll
+E:\SVNData\快速信息化系统开发框架\trunk\code\LeaRun.Framework V4.1\LeaRun.Resource\bin\Debug\zh-TW\LeaRun.Resource.resources.dll
+E:\SVNData\快速信息化系统开发框架\trunk\code\LeaRun.Framework V4.1\LeaRun.Resource\obj\Debug\LeaRun.Resource.CommonResource.resources
+E:\SVNData\快速信息化系统开发框架\trunk\code\LeaRun.Framework V4.1\LeaRun.Resource\obj\Debug\LeaRun.Resource.CommonResource.zh-CN.resources
+E:\SVNData\快速信息化系统开发框架\trunk\code\LeaRun.Framework V4.1\LeaRun.Resource\obj\Debug\LeaRun.Resource.CommonResource.zh-TW.resources
+E:\SVNData\快速信息化系统开发框架\trunk\code\LeaRun.Framework V4.1\LeaRun.Resource\obj\Debug\LeaRun.Resource.csproj.GenerateResource.Cache
+E:\SVNData\快速信息化系统开发框架\trunk\code\LeaRun.Framework V4.1\LeaRun.Resource\obj\Debug\zh-CN\LeaRun.Resource.resources.dll
+E:\SVNData\快速信息化系统开发框架\trunk\code\LeaRun.Framework V4.1\LeaRun.Resource\obj\Debug\zh-TW\LeaRun.Resource.resources.dll
+E:\SVNData\快速信息化系统开发框架\trunk\code\LeaRun.Framework V4.1\LeaRun.Resource\obj\Debug\LeaRun.Resource.dll
+E:\SVNData\快速信息化系统开发框架\trunk\code\LeaRun.Framework V4.1\LeaRun.Resource\obj\Debug\LeaRun.Resource.pdb

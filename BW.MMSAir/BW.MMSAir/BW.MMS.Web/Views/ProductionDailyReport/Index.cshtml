@@ -1,0 +1,165 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="@Url.Content("~/Content/My97DatePicker/WdatePicker.js")" type="text/javascript"></script>
+<script type="text/javascript">
+    $(function () {
+        $(window).resize(function () {
+            $('#gridProductionReport').datagrid('resize');
+        });
+        chartContainer();
+    });
+
+    function onBeforeLoad(param) {
+        $('#gridProductionReport').datagrid('clearSelections');
+        if ($('#td_date').val().length > 0) {
+            param.dtdate = $('#td_date').val();
+        }
+        else {
+            //var dateFull = new Date().toLocaleString();
+            var nowDate = new Date();
+            var year = nowDate.getFullYear();
+            var month = nowDate.getMonth() + 1 < 10 ? "0" + (nowDate.getMonth() + 1)
+   : nowDate.getMonth() + 1;
+            var day = nowDate.getDate() < 10 ? "0" + nowDate.getDate() : nowDate
+   .getDate();
+            var dateStr = year + "年" + month + "月" + day + "日";
+            $('#td_date').val(dateStr);
+            $('#td_date1').val(dateStr);
+            param.dtdate = $('#td_date').val();
+        }
+
+    }
+
+    function onLoadSuccess(data) {
+        mergeCellsByField("gridProductionReport", "parentName,vc_name");
+
+    }
+    function chartContainer() {
+        var arr = getxAxis();
+
+        var dic = getSeries();
+
+        $('#container').highcharts({ 
+            chart: {
+                type: 'column'
+            },
+            title: {
+                text: '单位产量能耗日报表'
+            },
+            subtitle: {
+                text: ''
+            },
+            xAxis: {
+                categories: arr
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: '累计'
+                }
+            },
+            tooltip: {
+                headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                    '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+                footerFormat: '</table>',
+                shared: true,
+                useHTML: true
+            },
+            plotOptions: {
+                column: {
+                    pointPadding: 0.2,
+                    borderWidth: 0
+                }
+            },
+            series: dic
+        });
+    }
+    function getxAxis() {
+        var paramcol = [];
+        $.ajax({
+            url: '@Url.Action("getxAxis")',
+            data: { dtDate: $('#td_date1').val() },
+            type: "POST",
+            async: false,
+            datatype: "json",
+            success: function (data) {
+                paramcol = data;
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                $.messager.alert("提示", XMLHttpRequest.responseText, "error");
+            }
+        });
+        return paramcol;
+    }
+    function getSeries() {
+        var paramSeries;
+        $.ajax({
+            url: '@Url.Action("getSeries")',
+            data: { dtDate: $('#td_date1').val() },
+            type: "POST",
+            async: false,
+            datatype: "json",
+            success: function (data) {
+                paramSeries = data;
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                $.messager.alert("提示", XMLHttpRequest.responseText, "error");
+            }
+        });
+        return paramSeries;
+    }
+    function reloadPage() {
+        $('#gridProductionReport').datagrid('load');
+    }
+    function reloadChart() {
+        chartContainer();
+    }
+</script>
+<div id="aa" class="easyui-accordion" data-options="fit:true">
+    <div title="日报表" data-options="iconCls:'icon-save'" style="overflow: auto; padding: 10px;">
+        <div id="toolbar">
+            <div class="datagrid-toolbar" style="padding: 8px;">
+                @*<input type="text" id="d243" onfocus="WdatePicker({skin:'whyGreen',dateFmt:'yyyy年'})" class="Wdate"/>*@
+                @Html.DatePicker("td_date", new
+   {
+       dateFmt = "'yyyy年MM月dd日'",
+       skin = "'whyGreen'"
+   })
+                @Html.LinkButton("查询", "icon-search", new { onclick = "reloadPage()" })
+            </div>
+        </div>
+        @Html.DataGrid("gridProductionReport", @Url.Action("GetGridList"), ViewData["GridColumn"] as IEnumerable<object>, new
+    {
+        fit = true,
+        rownumbers = true,
+        striped = true,
+        idField = "ID",
+        sortName = "ID",
+        sortOrder = "asc",
+        toolbar = "#toolbar",
+        pagination = false,
+        pageSize = 20,
+        onLoadSuccess = new { function = "onLoadSuccess" },
+        onBeforeLoad = new { function = "onBeforeLoad" }
+    }, new { style = "overflow: hidden;" })
+    </div>
+    <div title="日报图表" data-options="iconCls:'icon-reload',selected:true" style="padding: 10px;">
+        <div id="toolbar1">
+            <div class="datagrid-toolbar" style="padding: 8px;">
+                @*<input type="text" id="d243" onfocus="WdatePicker({skin:'whyGreen',dateFmt:'yyyy年'})" class="Wdate"/>*@
+                @Html.DatePicker("td_date1", new
+   {
+       dateFmt = "'yyyy年MM月dd日'",
+       skin = "'whyGreen'"
+   })
+                @Html.LinkButton("查询", "icon-search", new { onclick = "reloadChart()" })
+            </div>
+            <div id="container" data-options="fit:true">
+            </div>
+        </div>
+    </div>
+</div>
+@*@Html.Chart("chart1", ChartType.column, "单产能耗", "累计量", ViewData["xAxis"] as string[], ViewData["series"] as Dictionary<string, List<float>>)*@

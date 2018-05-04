@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical" >
+    
+    <LinearLayout 
+        android:id="@+id/itemInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp">
+        <TextView 
+            android:id="@+id/bleitemName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="E3AAAAAAAAAA"
+            android:textColor="@android:color/black"/>
+        <TextView 
+            android:id="@+id/bleitemMac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="EE:EE:EE:EE:EE:EE"
+            android:textColor="@android:color/black"/>
+    </LinearLayout>
+    <LinearLayout 
+        android:id="@+id/itemInfo2"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_toEndOf="@id/itemInfo"
+        android:paddingStart="20dp"
+        android:paddingEnd="5dp">
+        <TextView 
+            android:id="@+id/bleitemRssi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-20"
+            android:textColor="@android:color/black"/>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/itemInfo3"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp">
+        <ImageView 
+            android:id="@+id/bleitemSeleted"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/e3_blue_room_selected"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,78 @@
+D:\Work\Project\平台版本\v1.1\SPcms_sql_src\SPcms.BLL\bin\Debug\SPcms.BLL.dll
+D:\Work\Project\平台版本\v1.1\SPcms_sql_src\SPcms.BLL\bin\Debug\SPcms.BLL.pdb
+D:\Work\Project\平台版本\v1.1\SPcms_sql_src\SPcms.BLL\bin\Debug\SPcms.Common.dll
+D:\Work\Project\平台版本\v1.1\SPcms_sql_src\SPcms.BLL\bin\Debug\SPcms.DAL.dll
+D:\Work\Project\平台版本\v1.1\SPcms_sql_src\SPcms.BLL\bin\Debug\SPcms.Model.dll
+D:\Work\Project\平台版本\v1.1\SPcms_sql_src\SPcms.BLL\bin\Debug\SPcms.DBUtility.dll
+D:\Work\Project\平台版本\v1.1\SPcms_sql_src\SPcms.BLL\bin\Debug\SPcms.Common.pdb
+D:\Work\Project\平台版本\v1.1\SPcms_sql_src\SPcms.BLL\bin\Debug\SPcms.DAL.pdb
+D:\Work\Project\平台版本\v1.1\SPcms_sql_src\SPcms.BLL\bin\Debug\SPcms.Model.pdb
+D:\Work\Project\平台版本\v1.1\SPcms_sql_src\SPcms.BLL\bin\Debug\SPcms.DBUtility.pdb
+D:\Work\Project\平台版本\v1.1\SPcms_sql_src\SPcms.BLL\obj\Debug\ResolveAssemblyReference.cache
+D:\Work\Project\平台版本\v1.1\SPcms_sql_src\SPcms.BLL\obj\Debug\SPcms.BLL.dll
+D:\Work\Project\平台版本\v1.1\SPcms_sql_src\SPcms.BLL\obj\Debug\SPcms.BLL.pdb
+\\192.168.8.8\SP_webPlat\SPcms.BLL\bin\Debug\SPcms.BLL.dll
+\\192.168.8.8\SP_webPlat\SPcms.BLL\bin\Debug\SPcms.BLL.pdb
+\\192.168.8.8\SP_webPlat\SPcms.BLL\bin\Debug\SPcms.Common.dll
+\\192.168.8.8\SP_webPlat\SPcms.BLL\bin\Debug\SPcms.DAL.dll
+\\192.168.8.8\SP_webPlat\SPcms.BLL\bin\Debug\SPcms.Model.dll
+\\192.168.8.8\SP_webPlat\SPcms.BLL\bin\Debug\SPcms.DBUtility.dll
+\\192.168.8.8\SP_webPlat\SPcms.BLL\bin\Debug\SPcms.Common.pdb
+\\192.168.8.8\SP_webPlat\SPcms.BLL\bin\Debug\SPcms.DAL.pdb
+\\192.168.8.8\SP_webPlat\SPcms.BLL\bin\Debug\SPcms.Model.pdb
+\\192.168.8.8\SP_webPlat\SPcms.BLL\bin\Debug\SPcms.DBUtility.pdb
+\\192.168.8.8\SP_webPlat\SPcms.BLL\obj\Debug\ResolveAssemblyReference.cache
+\\192.168.8.8\SP_webPlat\SPcms.BLL\obj\Debug\SPcms.BLL.dll
+\\192.168.8.8\SP_webPlat\SPcms.BLL\obj\Debug\SPcms.BLL.pdb
+E:\SP 版本\SP_webPlat_v1.1.1\SPcms.BLL\bin\Debug\SPcms.BLL.dll
+E:\SP 版本\SP_webPlat_v1.1.1\SPcms.BLL\bin\Debug\SPcms.BLL.pdb
+E:\SP 版本\SP_webPlat_v1.1.1\SPcms.BLL\bin\Debug\SPcms.Common.dll
+E:\SP 版本\SP_webPlat_v1.1.1\SPcms.BLL\bin\Debug\SPcms.DAL.dll
+E:\SP 版本\SP_webPlat_v1.1.1\SPcms.BLL\bin\Debug\SPcms.Model.dll
+E:\SP 版本\SP_webPlat_v1.1.1\SPcms.BLL\bin\Debug\SPcms.DBUtility.dll
+E:\SP 版本\SP_webPlat_v1.1.1\SPcms.BLL\bin\Debug\SPcms.Common.pdb
+E:\SP 版本\SP_webPlat_v1.1.1\SPcms.BLL\bin\Debug\SPcms.DAL.pdb
+E:\SP 版本\SP_webPlat_v1.1.1\SPcms.BLL\bin\Debug\SPcms.Model.pdb
+E:\SP 版本\SP_webPlat_v1.1.1\SPcms.BLL\bin\Debug\SPcms.DBUtility.pdb
+E:\SP 版本\SP_webPlat_v1.1.1\SPcms.BLL\obj\Debug\ResolveAssemblyReference.cache
+E:\SP 版本\SP_webPlat_v1.1.1\SPcms.BLL\obj\Debug\SPcms.BLL.dll
+E:\SP 版本\SP_webPlat_v1.1.1\SPcms.BLL\obj\Debug\SPcms.BLL.pdb
+E:\SPDEMO\SPcms.BLL\bin\Debug\SPcms.BLL.dll
+E:\SPDEMO\SPcms.BLL\bin\Debug\SPcms.BLL.pdb
+E:\SPDEMO\SPcms.BLL\bin\Debug\SPcms.Common.dll
+E:\SPDEMO\SPcms.BLL\bin\Debug\SPcms.DAL.dll
+E:\SPDEMO\SPcms.BLL\bin\Debug\SPcms.Model.dll
+E:\SPDEMO\SPcms.BLL\bin\Debug\SPcms.DBUtility.dll
+E:\SPDEMO\SPcms.BLL\bin\Debug\SPcms.Common.pdb
+E:\SPDEMO\SPcms.BLL\bin\Debug\SPcms.DAL.pdb
+E:\SPDEMO\SPcms.BLL\bin\Debug\SPcms.Model.pdb
+E:\SPDEMO\SPcms.BLL\bin\Debug\SPcms.DBUtility.pdb
+E:\SPDEMO\SPcms.BLL\obj\Debug\SPcms.BLL.csprojResolveAssemblyReference.cache
+E:\SPDEMO\SPcms.BLL\obj\Debug\SPcms.BLL.dll
+E:\SPDEMO\SPcms.BLL\obj\Debug\SPcms.BLL.pdb
+C:\Users\JiafuYuan\Desktop\SPDEMO\SPcms.BLL\bin\Debug\SPcms.BLL.dll
+C:\Users\JiafuYuan\Desktop\SPDEMO\SPcms.BLL\bin\Debug\SPcms.BLL.pdb
+C:\Users\JiafuYuan\Desktop\SPDEMO\SPcms.BLL\bin\Debug\SPcms.Common.dll
+C:\Users\JiafuYuan\Desktop\SPDEMO\SPcms.BLL\bin\Debug\SPcms.DAL.dll
+C:\Users\JiafuYuan\Desktop\SPDEMO\SPcms.BLL\bin\Debug\SPcms.Model.dll
+C:\Users\JiafuYuan\Desktop\SPDEMO\SPcms.BLL\bin\Debug\SPcms.DBUtility.dll
+C:\Users\JiafuYuan\Desktop\SPDEMO\SPcms.BLL\bin\Debug\SPcms.Common.pdb
+C:\Users\JiafuYuan\Desktop\SPDEMO\SPcms.BLL\bin\Debug\SPcms.DAL.pdb
+C:\Users\JiafuYuan\Desktop\SPDEMO\SPcms.BLL\bin\Debug\SPcms.Model.pdb
+C:\Users\JiafuYuan\Desktop\SPDEMO\SPcms.BLL\bin\Debug\SPcms.DBUtility.pdb
+C:\Users\JiafuYuan\Desktop\SPDEMO\SPcms.BLL\obj\Debug\SPcms.BLL.csprojResolveAssemblyReference.cache
+C:\Users\JiafuYuan\Desktop\SPDEMO\SPcms.BLL\obj\Debug\SPcms.BLL.dll
+C:\Users\JiafuYuan\Desktop\SPDEMO\SPcms.BLL\obj\Debug\SPcms.BLL.pdb
+E:\快盘\Work\JSCERT\HighCharts\SPDEMO\SPcms.BLL\bin\Debug\SPcms.BLL.dll
+E:\快盘\Work\JSCERT\HighCharts\SPDEMO\SPcms.BLL\bin\Debug\SPcms.BLL.pdb
+E:\快盘\Work\JSCERT\HighCharts\SPDEMO\SPcms.BLL\bin\Debug\SPcms.Common.dll
+E:\快盘\Work\JSCERT\HighCharts\SPDEMO\SPcms.BLL\bin\Debug\SPcms.DAL.dll
+E:\快盘\Work\JSCERT\HighCharts\SPDEMO\SPcms.BLL\bin\Debug\SPcms.Model.dll
+E:\快盘\Work\JSCERT\HighCharts\SPDEMO\SPcms.BLL\bin\Debug\SPcms.DBUtility.dll
+E:\快盘\Work\JSCERT\HighCharts\SPDEMO\SPcms.BLL\bin\Debug\SPcms.Common.pdb
+E:\快盘\Work\JSCERT\HighCharts\SPDEMO\SPcms.BLL\bin\Debug\SPcms.DAL.pdb
+E:\快盘\Work\JSCERT\HighCharts\SPDEMO\SPcms.BLL\bin\Debug\SPcms.Model.pdb
+E:\快盘\Work\JSCERT\HighCharts\SPDEMO\SPcms.BLL\bin\Debug\SPcms.DBUtility.pdb
+E:\快盘\Work\JSCERT\HighCharts\SPDEMO\SPcms.BLL\obj\Debug\SPcms.BLL.csprojResolveAssemblyReference.cache
+E:\快盘\Work\JSCERT\HighCharts\SPDEMO\SPcms.BLL\obj\Debug\SPcms.BLL.dll
+E:\快盘\Work\JSCERT\HighCharts\SPDEMO\SPcms.BLL\obj\Debug\SPcms.BLL.pdb

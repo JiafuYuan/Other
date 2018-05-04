@@ -1,0 +1,62 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <%set string category_title=get_category_title(category_id,"产品中心")%>
+    <title>{category_title} -{config.webtitle}</title>
+    <meta content="{config.webkeyword}" name="keywords" />
+    <meta content="{config.webdescription}" name="description" />
+    <link href="<%templateskin%>/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="<%templateskin%>/css/commen.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="<%templateskin%>/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="<%templateskin%>/js/jquery.superslide.2.1.1.js"></script>
+    <script type="text/javascript" src="<%templateskin%>/js/Html5.js"></script>
+</head>
+<body>
+    <!--抬头开始-->
+    <%template src="_header.html"%>
+    <div class="nmain clearfix">
+        <div class="naside float_l">
+            <h5>
+                产品目录</h5>
+        </div>
+        <div class="nmainbox float_r">
+            <small>当前位置：<a href="<%linkurl("index")%>">首页</a> - 产品展厅</small></div>
+    </div>
+    </div>
+    <!--大图结束-->
+    <div class="clear">
+    </div>
+    <div id="nmainbody" class="clearfix">
+        <!--产品分类-->
+        <%template src="_left.html"%>
+        <div class="mainbox float_r">
+            <div class="mainbox_2a">
+                <%set DataTable news_list = get_article_list("goods", category_id, page, "status=0", out totalcount, out pagelist, "goods_list", category_id, "__id__")%><%foreach(DataRow dr in news_list.Rows)%>
+                <dl>
+                    <dt><a href="<%linkurl("goods_show",{dr[id]})%>">
+                        <img src="{dr[img_url]}" /></a></dt>
+                    <dd>
+                        <a href="<%linkurl("goods_show",{dr[id]})%>">{dr[title]}</a></dd>
+                </dl>
+                <%/foreach%>
+            </div>
+            <div class="clear">
+            </div>
+            <!--分页-->
+            <div class="sh_page text_c">
+                {pagelist}
+            </div>
+        </div>
+    </div>
+    </section>
+    <!--主体结束-->
+    <!--产品展示-->
+    <div class="clear">
+    </div>
+    <!--底部-->
+    <%template src="_foot.html"%>
+    <!--底部结束-->
+    <!--ui:jxq/style:cyy/code:xcx-->
+</body>
+</html>

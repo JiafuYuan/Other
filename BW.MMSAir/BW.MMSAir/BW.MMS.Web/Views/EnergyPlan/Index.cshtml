@@ -1,0 +1,175 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="@Url.Content("~/Content/My97DatePicker/WdatePicker.js")" type="text/javascript"></script>
+<script type="text/javascript">
+    $.extend($.fn.datagrid.methods, {
+        editCell: function (jq, param) {
+            return jq.each(function () {
+                var opts = $(this).datagrid('options');
+                var fields = $(this).datagrid('getColumnFields', true).concat($(this).datagrid('getColumnFields'));
+                for (var i = 0; i < fields.length; i++) {
+                    var col = $(this).datagrid('getColumnOption', fields[i]);
+                    col.editor1 = col.editor;
+                    if (fields[i] != param.field) {
+                        col.editor = null;
+                    }
+                }
+                $(this).datagrid('beginEdit', param.index);
+                for (var j = 0; j < fields.length; j++) {
+                    var col = $(this).datagrid('getColumnOption', fields[j]);
+                    col.editor = col.editor1;
+                }
+            });
+        }
+    });
+    var editIndex = undefined;
+    function endEditing() {
+        if (editIndex == undefined) { return true }
+        if ($('#BatchSetArrayClass').datagrid('validateRow', editIndex)) {
+            $('#BatchSetArrayClass').datagrid('endEdit', editIndex);
+            mergeCellsByField('BatchSetArrayClass', 'ParentName,DeptID');
+            editIndex = undefined;
+            return true;
+        } else {
+            return false;
+        }
+    }
+    function onClickCell(rowIndex, field) {
+        if (endEditing()) {
+            var year = (new Date()).getFullYear();
+            var month = (new Date()).getMonth() + 1;
+            var title = $('#BatchSetArrayClass').datagrid('getColumnOption', field).title;
+            var column = title.substring(0, title.indexOf('月'))
+            var rowData = $('#BatchSetArrayClass').datagrid('getData').rows[rowIndex];
+            if (rowData.Years < year) {
+                return;
+            }
+            if (parseInt(column) < month) {
+                return;
+            }
+            $('#BatchSetArrayClass').datagrid('selectRow', rowIndex).datagrid('editCell', { index: rowIndex, field: field });
+            editIndex = rowIndex;
+        }
+    }
+    function reject() {
+        $('#BatchSetArrayClass').datagrid('rejectChanges');
+        editIndex = undefined;
+    }
+    function saveGrid() {
+        if (endEditing()) {
+            //
+            //var rows = $("#BatchSetArrayClass").datagrid('getRows');
+            var rows = $('#BatchSetArrayClass').datagrid('getChanges');
+            var gridData = [];
+            for (var i = 0; i < rows.length; i++) {
+                if (rows[i].DeptID != null && rows[i].DeptID > 0) {
+                    gridData.push(rows[i]);
+                }
+            }
+            if (gridData.length > 0) {
+                $.ajax({
+                    url: '@Url.Action("SaveGrid")',
+                    data: { grid: JSON.stringify(gridData) },
+                    type: "POST",
+                    async: false,
+                    datatype: "json",
+                    success: function (data) {
+                        if (data.success) {
+                            $.messager.alert("提示", data.message, "info", function () {
+                                $('#BatchSetArrayClass').datagrid('load');
+                            });
+                        }
+                        else {
+                            $.messager.alert("提示", data.message, "error");
+                        }
+                    },
+                    error: function (a, b, c) {
+                        $.messager.alert("提示", a.responseText, "error");
+                    }
+                });
+            }
+
+        }
+    }
+
+    function formatDept(value, row, index) {
+        return row.vc_Name;
+    }
+    function formatType(value, row, index) {
+        if (value == "1") return "风(m³)"
+        if (value == "2") return "水(m³)"
+        if (value == "3") return "电(kW‧h)"
+    }
+
+    function onBeforeLoad(param) {
+        $('#gridProductionReport').datagrid('clearSelections');
+        if ($('#txtYear').val().length > 0) {
+            param.dtdate = $('#txtYear').val();
+        }
+        else {
+            //var dateFull = new Date().toLocaleString();
+            var nowDate = new Date();
+            var year = nowDate.getFullYear();
+            $('#txtYear').val(year + '年');
+            param.dtdate = year + '年';
+        }
+    }
+    function onLoadSuccess(data) {
+        mergeCellsByField('BatchSetArrayClass', 'ParentName,DeptID');
+    }
+    function ShowReport(action) {
+        var params = {};
+        if ($('#txtYear').val().length > 0) {
+            params['dtdate'] = $('#txtYear').val();
+        }
+        else {
+            var nowDate = new Date();
+            var year = nowDate.getFullYear();
+            params['dtdate'] = year + '年';
+        }
+        $.post('@Url.Action("GetReportData")', params).success(function (data) {
+            LoadAcReport({
+                action: action,
+                aptPath: '@Url.Content("~/Reports/EnergyPlan.apt")',
+                dataname: 'EnergyPlan',
+                data: data,
+                variant: [{ name: 'txtYear', value: $('#txtYear').val()}]
+            });
+        }).error(function (XMLHttpRequest, textStatus, errorThrown) {
+            TopWindow.$.messager.alert("提示", a.responseText, "error");
+        });
+        //ShowDesigner('@Url.Action("GetReportData")', '年报表', params);
+    }
+
+</script>
+<div id="toolbar">
+    <div class="datagrid-toolbar panel-header search">
+        @Html.DatePicker("txtYear", new
+   {
+       dateFmt = "'yyyy年'"
+   }, new { @class = "Wdate" })
+        @Html.LinkButton("查询", "icon-search", new { onclick = "$('#BatchSetArrayClass').datagrid('load')" })
+        @if (Convert.ToBoolean(ViewData["Designer"]))
+        {
+        @Html.LinkButton("报表设计", "icon-report", new { onclick = "ShowReport('ShowDesigner')" })
+        }
+    @Html.LinkButton("报表打印预览", "icon-report", new { onclick = "ShowReport('Preview')" })
+    </div>
+    @Html.LinkButton("提交", "icon-disk", true, new { onclick = "endEditing();saveGrid()" })
+    @Html.LinkButton("撤消", "icon-undo", true, new { onclick = "reject()" })
+    @Html.LinkButton("刷新", "icon-reload", true, new { onclick = "$('#BatchSetArrayClass').datagrid('reload')" })
+    
+</div>
+@Html.DataGrid("BatchSetArrayClass", Url.Action("GetGridList"), ViewData["GridColumn"] as IEnumerable<object>, new
+{
+    fit = true,
+    striped = true,
+    singleSelect = true,
+    idField = "ID",
+    toolbar = "#toolbar",
+    onClickCell = new { function = "onClickCell" },
+    onLoadSuccess = new { function = "onLoadSuccess" },
+    onBeforeLoad = new { function = "onBeforeLoad" }
+}, new { style = "overflow: hidden;" })

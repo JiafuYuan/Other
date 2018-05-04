@@ -1,0 +1,13 @@
+定义请求的Bean的时候需要注意一下几点
+  一：为保证能够统一序列化，实现BasicReqInner接口
+	@1：复写getCmdType();次方法用于确定外部xml根节点的名称，比如Flow_Apply
+	@2:复写 getInnerRootMode()；用于确定内部xml跟节点的名称，比如InApplyModel
+
+  二：为保证xml中字段名称一致
+	@3：建立的主bean类的所有类型的字段包括子定义类，字段名称必须与节点的名称一致。
+	@4：对于List集合必须拿一个容器包裹，容器类的的字段必须与list集合的外层节点名称一致
+	@5：只有容器中的字段能够使用集合：并且集合要加上注解，例如：@XStreamImplicit(itemFieldName = "m_Plan_ApplyMaterie")
+  三：为了便于管理，查看结构，美观
+ 	@1：对于简单的类，字段类型只有字符串和int型，直接建立类似ReqLigin这样的类
+ 	@3：对于复杂的bean单独建立包
+ 	@2：对于所有的请求主类，都使用Req开头

@@ -1,0 +1,15 @@
+@charset "gb2312";
+/* CSS Document */
+html{overflow:-moz-scrollbars-vertical ; overflow:scroll; overflow-x:hidden; overflow-y:hidden;} /*图片太高时出现了右侧滚动条  滚动条会让ul宽度变化的效果看起来有点震动！ 所以这里去掉*/
+*{padding:0 ; margin:0 ;}
+ul{list-style:none;}
+body{background:#CCCCCC;}
+.container{width:100%; height:100%; margin-top:3%;}
+.content{background:#ffffff; margin:0 auto; position:relative; width:220px; height:100px; border: 15px solid #ffffff;}
+.content li{position:absolute; top:0; left:0; display:none;}
+.content span{position:absolute; left:47%; top:45%;}
+.content .left,.content .right{position:absolute; top:0; z-index:11;}
+.content .left{cursor:url(images/cur-left.cur.ico), auto; left:0;}
+.content .right{right:0; cursor:url(images/cur-right.cur.ico), auto;}
+.bottom{height:0px; background:#ffffff; margin:0 auto; overflow:hidden; line-height:50px; padding: 0 15px; display:block;}
+

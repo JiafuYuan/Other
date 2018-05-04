@@ -1,0 +1,11 @@
+C:\Users\JiafuYuan\Desktop\科学计算器\2013-11-12\Laura.Calculator\bin\Debug\Laura.Calculator.exe
+C:\Users\JiafuYuan\Desktop\科学计算器\2013-11-12\Laura.Calculator\bin\Debug\Laura.Calculator.pdb
+C:\Users\JiafuYuan\Desktop\科学计算器\2013-11-12\Laura.Calculator\bin\Debug\Laura.Compute.dll
+C:\Users\JiafuYuan\Desktop\科学计算器\2013-11-12\Laura.Calculator\bin\Debug\Laura.Compute.pdb
+C:\Users\JiafuYuan\Desktop\科学计算器\2013-11-12\Laura.Calculator\obj\x86\Debug\Laura.Calculator.csprojResolveAssemblyReference.cache
+C:\Users\JiafuYuan\Desktop\科学计算器\2013-11-12\Laura.Calculator\obj\x86\Debug\Laura.Calculator.AboutForm.resources
+C:\Users\JiafuYuan\Desktop\科学计算器\2013-11-12\Laura.Calculator\obj\x86\Debug\Laura.Calculator.MainForm.resources
+C:\Users\JiafuYuan\Desktop\科学计算器\2013-11-12\Laura.Calculator\obj\x86\Debug\Laura.Calculator.Properties.Resources.resources
+C:\Users\JiafuYuan\Desktop\科学计算器\2013-11-12\Laura.Calculator\obj\x86\Debug\Laura.Calculator.csproj.GenerateResource.Cache
+C:\Users\JiafuYuan\Desktop\科学计算器\2013-11-12\Laura.Calculator\obj\x86\Debug\Laura.Calculator.exe
+C:\Users\JiafuYuan\Desktop\科学计算器\2013-11-12\Laura.Calculator\obj\x86\Debug\Laura.Calculator.pdb

@@ -1,0 +1,251 @@
+﻿@model BW.MMS.Model.m_SensorEntity
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="@Url.Content("~/Content/Easyui/extend/datagrid-detailview.js")" type="text/javascript"></script>
+<script type="text/javascript">
+    $(function () {
+        $(window).resize(function () {
+            $('#gridSensorList').datagrid('resize');
+        });
+    });
+    function detailFormatter(index, row) {
+        return '<div style="padding:2px"><table id="ddv-' + index + '"></table></div>';
+    }
+    function onBeforeLoad(param) {
+        $('#gridSensorList').datagrid('clearSelections');
+        param.name = $('#txtName').val();
+        param.type = $('#ddlTypeID').combotree("getText");
+        param.area = $('#ddlAreaID').combotree("getValue");
+        param.dept = $('#ddlDeptID').combotree("getValue");
+        param.energy = $('#cmbEnergyType').combobox("getText");
+
+    }
+
+    //新增
+    function Add() {
+
+        TopWindow.$.dialogwindow({
+            iconCls: 'icon-customers',
+            id: "SensorEdit",
+            title: '新增日报',
+            width: 600,
+            height: 500,
+            url: '@Url.Action("Edit")',
+            onClose: function () {
+                $('#gridSensorList').datagrid('reload');
+            },
+            buttons: [{
+                text: '保存',
+                iconCls: 'icon-ok',
+                handler: function () {
+                    if (TopWindow.$("#form").form('validate')) {
+                        //var data = TopWindow.$("#form").serialize();
+                        for (var i = 0; i < TopWindow.$('#SensorNodes').datagrid('getRows').length; i++) {
+                            TopWindow.$('#SensorNodes').datagrid('endEdit', i);
+                        }
+                        var rows = TopWindow.$('#SensorNodes').datagrid('getRows');
+                        //                        for (var i = 0; i < rows.length; i++) {
+                        //                            if (rows[i].vc_Address != null && rows[i].vc_Address > 0) {
+                        //                                //gridData.push(rows[i]);
+                        //                            }
+                        //                            else {
+                        //                                TopWindow.$.messager.alert('提示', "请添加结点【" + rows[i].vc_Name + "】地址！", 'warning');
+                        //                                for (var i = 0; i < TopWindow.$('#SensorNodes').datagrid('getRows').length; i++) {
+                        //                                    TopWindow.$('#SensorNodes').datagrid('beginEdit', i);
+                        //                                }
+                        //                                return;
+                        //                            }
+                        //                        }
+                        var data = TopWindow.$('#form').serializeJson();
+                        data['NodesData'] = JSON.stringify(TopWindow.$('#SensorNodes').datagrid('getChanges'));
+                        $.ajax({
+                            url: '@Url.Action("Edit")',
+                            data: data,
+                            type: "POST",
+                            async: false,
+                            datatype: "json",
+                            success: function (data) {
+                                if (data.success) {
+                                    TopWindow.$.messager.alert("提示", data.message, "info", function () {
+                                        TopWindow.$('#SensorEdit').dialog('close');
+                                    });
+                                }
+                                else {
+                                    TopWindow.$.messager.alert("提示", data.message, "error");
+                                }
+                            },
+                            error: function (a, b, c) {
+                                TopWindow.$.messager.alert("提示", a.responseText, "error");
+                            }
+                        });
+                    }
+                }
+            }]
+        });
+    }
+    //编辑
+    function Edit() {
+        var rows = $('#gridSensorList').datagrid('getSelections');
+        if (rows.length == 0) {
+            TopWindow.$.messager.alert('提示:', '请选数据！', 'warning');
+            return;
+        }
+        if (rows.length > 1) {
+            TopWindow.$.messager.alert('提示:', '只能选择一条数据！', 'warning');
+            return;
+        }
+        TopWindow.$.dialogwindow({
+            iconCls: 'icon-save',
+            id: "SensorEdit",
+            title: '修改日报信息',
+            width: 600,
+            height: 500,
+            url: '@Url.Action("Edit")/' + rows[0].ID,
+            onClose: function () {
+                $('#gridSensorList').datagrid('reload');
+            },
+            buttons: [{
+                text: '保存',
+                iconCls: 'icon-ok',
+                handler: function () {
+                    if (TopWindow.$("#form").form('validate')) {
+                        for (var i = 0; i < TopWindow.$('#SensorNodes').datagrid('getRows').length; i++) {
+                            TopWindow.$('#SensorNodes').datagrid('endEdit', i);
+                        }
+                        var rows = TopWindow.$('#SensorNodes').datagrid('getRows');
+                        //                        for (var i = 0; i < rows.length; i++) {
+                        //                            if (rows[i].vc_Address != null && rows[i].vc_Address > 0) {
+                        //                                //gridData.push(rows[i]);
+                        //                            }
+                        //                            else {
+                        //                                TopWindow.$.messager.alert('提示', "请添加结点【" + rows[i].vc_Name + "】地址！", 'warning');
+                        //                                for (var i = 0; i < TopWindow.$('#SensorNodes').datagrid('getRows').length; i++) {
+                        //                                    TopWindow.$('#SensorNodes').datagrid('beginEdit', i);
+                        //                                }
+                        //                                return;
+                        //                            }
+                        //                        }
+                        var data = TopWindow.$("#form").serializeJson();
+                        data['NodesData'] = JSON.stringify(TopWindow.$('#SensorNodes').datagrid('getChanges'));
+                        //var data = TopWindow.$("#form").serialize();
+                        $.ajax({
+                            url: '@Url.Action("Edit")',
+                            data: data,
+                            type: "POST",
+                            async: false,
+                            datatype: "json",
+                            success: function (data) {
+                                if (data.success) {
+                                    TopWindow.$.messager.alert("提示", data.message, "info", function () {
+                                        TopWindow.$('#SensorEdit').dialog('close');
+                                    });
+                                }
+                                else {
+                                    TopWindow.$.messager.alert("提示", data.message, "error");
+                                }
+                            },
+                            error: function (a, b, c) {
+                                TopWindow.$.messager.alert("提示", a.responseText, "error");
+                            }
+                        });
+                    }
+                }
+            }]
+        });
+    }
+    //删除
+    function Delete() {
+        var rows = $('#gridSensorList').datagrid('getSelections');
+        if (rows.length == 0) {
+            TopWindow.$.messager.alert('提示', '请选择要删除的数据！', 'info');
+            return;
+        }
+        var ids = [];
+        for (var i = 0; i < rows.length; i++) {
+            ids.push(rows[i].ID);
+        }
+        TopWindow.$.messager.confirm('确认', '您确定要删除数据吗？', function (action) {
+            if (action) {
+                var url = '@Url.Action("Delete")';
+                var params = { id: ids.toString() }
+                $.post(url, params).success(function (data, textStatus) {
+                    if (data.success) {
+                        $('#gridSensorList').datagrid('load');
+                        TopWindow.$.messager.alert("提示", data.message, "info");
+                    }
+                    else {
+                        TopWindow.$.messager.alert("提示", data.message, "error");
+                    }
+
+                }).error(function (XMLHttpRequest, textStatus, errorThrown) {
+                    TopWindow.$.messager.alert("提示", XMLHttpRequest.responseText, "error");
+                });
+            }
+        });
+    }
+    function onExpandRow(index, data) {
+        $('#ddv-' + index).datagrid({
+            title: '结点明细',
+            striped: true,
+            rownumbers: true,
+            singleSelect: true,
+            height: 'auto',
+            url: '@Url.Action("GetSensorNodesList")',
+            idField: 'ID',
+            sortName: 'd_start',
+            sortOrder: 'asc',
+            columns: [[
+                { title: '结点名称', field: 'vc_Name', width: 100, align: 'center' },
+                { title: '结点地址', field: 'vc_Address', width: 120, align: 'center' }
+            ]],
+            onBeforeLoad: function (param) {
+                param["sensorId"] = data.ID;
+            },
+            onResize: function () {
+                $('#gridSensorList').datagrid('fixDetailRowHeight', index);
+            },
+            onLoadSuccess: function () {
+                setTimeout(function () {
+                    $('#gridSensorList').datagrid('fixDetailRowHeight', index);
+                }, 0);
+            }
+        });
+        $('#gridSensorList').datagrid('fixDetailRowHeight', index);
+    }
+
+  
+</script>
+<div id="toolbar">
+    <div class="datagrid-toolbar panel-header search">
+        传感器编号:
+        @Html.TextBox("txtName", "", new { style = "width:100px", @class = "easyui-validatebox", onkeydown = "if(event.keyCode==13) $('#gridSensorList').datagrid('load');" })
+        传感器类型:
+        @Html.ComboBox("ddlTypeID", new { url = Url.Action("GetSensorType"), valueField = "ID", textField = "vc_Name", editable = true, multiple = false }, new { style = "width:100px" })
+        能耗类型:
+        @Html.ComboBox("cmbEnergyType", new { style = "width:100px", url = Url.Action("GetEnergyType"), editable = true, multiple = false, valueField = "ID", textField = "vc_EnergyTypeName" })
+        所属区域:
+        @Html.ComboTree("ddlAreaID", new { url = Url.Action("GetAreaDirectory", "Area"), valueField = "id", textField = "nvc_name", editable = false, multiple = false })
+        使用单位:
+        @Html.ComboTree("ddlDeptID", new { url = Url.Action("GetDeptItem", "Dept"), editable = false, multiple = false })
+        @Html.LinkButton("查询", "icon-search", new { onclick = "$('#gridSensorList').datagrid('load')" })
+    </div>
+    @Html.LinkButton("新增", "icon-add", true, new { onclick = "Add()" })
+    @Html.LinkButton("修改", "icon-edit", true, new { onclick = "Edit()" })
+    @Html.LinkButton("删除", "icon-cancel", true, new { onclick = "Delete()" })
+    @Html.LinkButton("刷新", "icon-reload", true, new { onclick = "$('#gridSensorList').datagrid('load')" })
+</div>
+@Html.DataGrid("gridSensorList", @Url.Action("GetSensorList"), ViewData["GridColumn"] as IEnumerable<object>, new
+{
+    fit = true,
+    rownumbers = true,
+    striped = true,
+    idField = "ID",
+    sortName = "ID",
+    sortOrder = "asc",
+    toolbar = "#toolbar",
+    pagination = true,
+    pageSize = 20,
+    onBeforeLoad = new { function = "onBeforeLoad" }
+}, new { style = "overflow: hidden;" })

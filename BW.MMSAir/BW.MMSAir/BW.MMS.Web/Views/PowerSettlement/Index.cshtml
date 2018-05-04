@@ -1,0 +1,57 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script type="text/javascript">
+    function submit() {
+        if ($("#form").form('validate')) {
+            var data = $("#form").serialize();
+            $.ajax({
+                url: '@Url.Action("SaveConfig")',
+                data: { hour: $('#hour').timespinner('getValue'), day: $('#day').numberspinner('getValue') },
+                type: "POST",
+                async: false,
+                datatype: "json",
+                success: function (data) {
+                    if (data.success) {
+                        TopWindow.$.messager.alert("提示", data.message, "info");
+                    }
+                    else {
+                        TopWindow.$.messager.alert("提示", data.message, "error");
+                    }
+                },
+                error: function (a, b, c) {
+                    TopWindow.$.messager.alert("提示", a.responseText, "error");
+                }
+            });
+        }
+    }
+</script>
+<form id="form">
+<table cellpadding="5" cellspacing="0" border="0" class="table-form">
+    <tr>
+        <th style="width: 200px;">
+            日报结算点时间：
+        </th>
+        <td>
+            <input id="hour" class="easyui-timespinner"
+    data-options="required:true,min:'00:00',value:'@ViewData["Hour"]'" />
+        </td>
+    </tr>
+    <tr>
+        <th>
+            月报结算点日期：
+        </th>
+        <td>
+            <input id="day" class="easyui-numberspinner"
+    data-options="required:true,min:1,max:31,value:@ViewData["Day"]" />
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" align="center">
+            <a href="#" class="easyui-linkbutton" data-options="iconCls:'icon-ok'" onclick="submit()">
+                保存</a>
+        </td>
+    </tr>
+</table>
+</form>

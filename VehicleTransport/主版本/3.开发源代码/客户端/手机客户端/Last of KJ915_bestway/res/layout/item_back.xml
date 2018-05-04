@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dip"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:weightSum="4" >
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="0dip"
+        android:layout_height="40dip"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:text="NO：99992"
+        android:textSize="20dip" />
+
+    <TextView
+        android:id="@+id/type"
+        android:layout_width="0dip"
+        android:layout_height="40dip"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:text="类型： 花车"
+        android:textSize="20dip" />
+
+</LinearLayout>

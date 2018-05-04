@@ -1,0 +1,7 @@
+﻿@charset "utf-8";
+/* 分页按钮 */
+.digg{ margin:3px; padding:3px; text-align:center;}
+.digg a{ margin:2px; padding:5px 8px; border:1px solid #aad; color:#009; text-decoration:none;}
+.digg a:active, .digg a:hover{ border:1px solid #009; color:#000;}
+.digg span.current{ margin:2px; padding:5px 8px; border:1px solid #009; font-weight:bold; color:#fff; background:#009;}
+.digg span.disabled{ margin:2px; padding:5px 8px; border:1px solid #eee; color:#ddd;}

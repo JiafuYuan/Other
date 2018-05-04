@@ -1,0 +1,572 @@
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\BW.MMS\BW.MMS.Web\bin\Log4Net.config
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.Web.dll
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.Web.pdb
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.BLL.dll
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.Log.dll
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.Model.dll
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\BW.MMS\BW.MMS.Web\bin\BW.SocketDataModel.SensorModel.dll
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\BW.MMS\BW.MMS.Web\bin\BW_Socket.dll
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\BW.MMS\BW.MMS.Web\bin\Microsoft.AspNet.SignalR.Core.dll
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\BW.MMS\BW.MMS.Web\bin\Microsoft.AspNet.SignalR.Owin.dll
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\BW.MMS\BW.MMS.Web\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\BW.MMS\BW.MMS.Web\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\BW.MMS\BW.MMS.Web\bin\Microsoft.Web.Infrastructure.dll
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\BW.MMS\BW.MMS.Web\bin\Newtonsoft.Json.dll
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\BW.MMS\BW.MMS.Web\bin\Owin.dll
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\BW.MMS\BW.MMS.Web\bin\System.Net.Http.dll
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\BW.MMS\BW.MMS.Web\bin\System.Net.Http.WebRequest.dll
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.Helpers.dll
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.Mvc.dll
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.Razor.dll
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.WebPages.Deployment.dll
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.WebPages.dll
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.WebPages.Razor.dll
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\BW.MMS\BW.MMS.Web\bin\WebActivatorEx.dll
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.DAL.dll
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\BW.MMS\BW.MMS.Web\bin\log4net.dll
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.DBUtility.dll
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.BLL.pdb
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.Log.pdb
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.Model.pdb
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\BW.MMS\BW.MMS.Web\bin\Microsoft.AspNet.SignalR.Core.xml
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\BW.MMS\BW.MMS.Web\bin\Microsoft.AspNet.SignalR.Owin.xml
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\BW.MMS\BW.MMS.Web\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\BW.MMS\BW.MMS.Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\BW.MMS\BW.MMS.Web\bin\Newtonsoft.Json.xml
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\BW.MMS\BW.MMS.Web\bin\System.Net.Http.xml
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\BW.MMS\BW.MMS.Web\bin\System.Net.Http.WebRequest.xml
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.Helpers.xml
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.Mvc.xml
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.Razor.xml
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.WebPages.xml
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.WebPages.Deployment.xml
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.WebPages.Razor.xml
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.DAL.pdb
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\BW.MMS\BW.MMS.Web\bin\log4net.xml
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.DBUtility.pdb
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\BW.MMS\BW.MMS.Web\bin\zh-Hans\System.Net.Http.resources.dll
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\BW.MMS\BW.MMS.Web\bin\zh-Hans\System.Net.Http.WebRequest.resources.dll
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\BW.MMS\BW.MMS.Web\bin\zh-Hans\System.Web.Helpers.resources.dll
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\BW.MMS\BW.MMS.Web\bin\zh-Hans\System.Web.Mvc.resources.dll
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\BW.MMS\BW.MMS.Web\bin\zh-Hans\System.Web.Razor.resources.dll
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\BW.MMS\BW.MMS.Web\bin\zh-Hans\System.Web.WebPages.resources.dll
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\BW.MMS\BW.MMS.Web\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\BW.MMS\BW.MMS.Web\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\BW.MMS\BW.MMS.Web\obj\Debug\Interop.AcReport.dll
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\BW.MMS\BW.MMS.Web\obj\Debug\BW.MMS.Web.csproj.ResolveComReference.cache
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\BW.MMS\BW.MMS.Web\obj\Debug\BW.MMS.Web.dll
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\BW.MMS\BW.MMS.Web\obj\Debug\BW.MMS.Web.pdb
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\BW.MMS\BW.MMS.Web\bin\BW_CommunicationFrame.dll
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\BW.MMS\BW.MMS.Web\bin\BW_Serializer.dll
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\BW.MMS\BW.MMS.Web\obj\Debug\BW.MMS.Web.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Web\bin\Log4Net.config
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.Web.dll
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.Web.pdb
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.BLL.dll
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.Log.dll
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.Model.dll
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Web\bin\BW.SocketDataModel.SensorModel.dll
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Web\bin\BW_CommunicationFrame.dll
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Web\bin\BW_Serializer.dll
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Web\bin\BW_Socket.dll
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Web\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Web\bin\Microsoft.AspNet.SignalR.Owin.dll
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Web\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Web\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Web\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Web\bin\Newtonsoft.Json.dll
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Web\bin\Owin.dll
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Web\bin\System.Net.Http.dll
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Web\bin\System.Net.Http.Formatting.dll
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Web\bin\System.Net.Http.WebRequest.dll
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.Helpers.dll
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.Http.dll
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.Http.WebHost.dll
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.Mvc.dll
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.Razor.dll
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.WebPages.dll
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.WebPages.Razor.dll
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Web\bin\WebActivatorEx.dll
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.DAL.dll
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Web\bin\log4net.dll
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.DBUtility.dll
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.BLL.pdb
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.Log.pdb
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.Model.pdb
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Web\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Web\bin\Microsoft.AspNet.SignalR.Owin.xml
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Web\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Web\bin\Newtonsoft.Json.xml
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Web\bin\System.Net.Http.xml
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Web\bin\System.Net.Http.Formatting.xml
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Web\bin\System.Net.Http.WebRequest.xml
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.Helpers.xml
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.Http.xml
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.Http.WebHost.xml
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.Mvc.xml
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.Razor.xml
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.WebPages.xml
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.WebPages.Razor.xml
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.DAL.pdb
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Web\bin\log4net.xml
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.DBUtility.pdb
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Web\bin\zh-Hans\System.Net.Http.resources.dll
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Web\bin\zh-Hans\System.Net.Http.Formatting.resources.dll
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Web\bin\zh-Hans\System.Net.Http.WebRequest.resources.dll
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Web\bin\zh-Hans\System.Web.Helpers.resources.dll
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Web\bin\zh-Hans\System.Web.Http.resources.dll
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Web\bin\zh-Hans\System.Web.Http.WebHost.resources.dll
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Web\bin\zh-Hans\System.Web.Mvc.resources.dll
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Web\bin\zh-Hans\System.Web.Razor.resources.dll
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Web\bin\zh-Hans\System.Web.WebPages.resources.dll
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Web\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Web\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Web\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Web\obj\Debug\BW.MMS.Web.csproj.ResolveComReference.cache
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Web\obj\Debug\BW.MMS.Web.dll
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Web\obj\Debug\BW.MMS.Web.pdb
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\Log4Net.config
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.Web.dll
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.Web.pdb
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.BLL.dll
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.Log.dll
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.Model.dll
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\BW.SocketDataModel.SensorModel.dll
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\BW_CommunicationFrame.dll
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\BW_Serializer.dll
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\BW_Socket.dll
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\Microsoft.AspNet.SignalR.Owin.dll
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\Newtonsoft.Json.dll
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\Owin.dll
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\System.Net.Http.dll
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\System.Net.Http.Formatting.dll
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\System.Net.Http.WebRequest.dll
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.Helpers.dll
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.Http.dll
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.Http.WebHost.dll
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.Mvc.dll
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.Razor.dll
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.WebPages.dll
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.WebPages.Razor.dll
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\WebActivatorEx.dll
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.DAL.dll
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\log4net.dll
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.DBUtility.dll
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.BLL.pdb
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.Log.pdb
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.Model.pdb
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\Microsoft.AspNet.SignalR.Owin.xml
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\Newtonsoft.Json.xml
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\System.Net.Http.xml
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\System.Net.Http.Formatting.xml
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\System.Net.Http.WebRequest.xml
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.Helpers.xml
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.Http.xml
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.Http.WebHost.xml
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.Mvc.xml
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.Razor.xml
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.WebPages.xml
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.WebPages.Razor.xml
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.DAL.pdb
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\log4net.xml
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.DBUtility.pdb
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\zh-Hans\System.Net.Http.resources.dll
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\zh-Hans\System.Net.Http.Formatting.resources.dll
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\zh-Hans\System.Net.Http.WebRequest.resources.dll
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\zh-Hans\System.Web.Helpers.resources.dll
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\zh-Hans\System.Web.Http.resources.dll
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\zh-Hans\System.Web.Http.WebHost.resources.dll
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\zh-Hans\System.Web.Mvc.resources.dll
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\zh-Hans\System.Web.Razor.resources.dll
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\zh-Hans\System.Web.WebPages.resources.dll
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Web\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Web\obj\Debug\BW.MMS.Web.csproj.ResolveComReference.cache
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Web\obj\Debug\BW.MMS.Web.dll
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Web\obj\Debug\BW.MMS.Web.pdb
+E:\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\Log4Net.config
+E:\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.Web.dll
+E:\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.Web.pdb
+E:\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.BLL.dll
+E:\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.Log.dll
+E:\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.Model.dll
+E:\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\BW.SocketDataModel.SensorModel.dll
+E:\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\BW_CommunicationFrame.dll
+E:\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\BW_Serializer.dll
+E:\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\BW_Socket.dll
+E:\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\Microsoft.AspNet.SignalR.Core.dll
+E:\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\Microsoft.AspNet.SignalR.Owin.dll
+E:\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+E:\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\Microsoft.Web.Infrastructure.dll
+E:\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\Newtonsoft.Json.dll
+E:\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\Owin.dll
+E:\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\System.Net.Http.dll
+E:\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\System.Net.Http.WebRequest.dll
+E:\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.Helpers.dll
+E:\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.Mvc.dll
+E:\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.Razor.dll
+E:\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.WebPages.Deployment.dll
+E:\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.WebPages.dll
+E:\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.WebPages.Razor.dll
+E:\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\WebActivatorEx.dll
+E:\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.DAL.dll
+E:\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\log4net.dll
+E:\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.DBUtility.dll
+E:\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.BLL.pdb
+E:\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.Log.pdb
+E:\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.Model.pdb
+E:\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\Microsoft.AspNet.SignalR.Core.xml
+E:\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\Microsoft.AspNet.SignalR.Owin.xml
+E:\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+E:\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\Newtonsoft.Json.xml
+E:\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\System.Net.Http.xml
+E:\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\System.Net.Http.WebRequest.xml
+E:\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.Helpers.xml
+E:\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.Mvc.xml
+E:\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.Razor.xml
+E:\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.WebPages.xml
+E:\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.WebPages.Deployment.xml
+E:\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.WebPages.Razor.xml
+E:\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.DAL.pdb
+E:\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\log4net.xml
+E:\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.DBUtility.pdb
+E:\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\zh-Hans\System.Net.Http.resources.dll
+E:\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\zh-Hans\System.Net.Http.WebRequest.resources.dll
+E:\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\zh-Hans\System.Web.Helpers.resources.dll
+E:\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\zh-Hans\System.Web.Mvc.resources.dll
+E:\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\zh-Hans\System.Web.Razor.resources.dll
+E:\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\zh-Hans\System.Web.WebPages.resources.dll
+E:\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+E:\MVC实例\源代码\BW.MMS\BW.MMS.Web\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+E:\MVC实例\源代码\BW.MMS\BW.MMS.Web\obj\Debug\BW.MMS.Web.csproj.ResolveComReference.cache
+E:\MVC实例\源代码\BW.MMS\BW.MMS.Web\obj\Debug\BW.MMS.Web.dll
+E:\MVC实例\源代码\BW.MMS\BW.MMS.Web\obj\Debug\BW.MMS.Web.pdb
+E:\MVC实例\源代码\BW.MMS\BW.MMS.Web\obj\Debug\BW.MMS.Web.csprojResolveAssemblyReference.cache
+E:\Work\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\Log4Net.config
+E:\Work\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.Web.dll
+E:\Work\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.Web.pdb
+E:\Work\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.BLL.dll
+E:\Work\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.Log.dll
+E:\Work\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.Model.dll
+E:\Work\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\BW.SocketDataModel.SensorModel.dll
+E:\Work\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\BW_CommunicationFrame.dll
+E:\Work\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\BW_Serializer.dll
+E:\Work\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\BW_Socket.dll
+E:\Work\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\Microsoft.AspNet.SignalR.Core.dll
+E:\Work\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\Microsoft.AspNet.SignalR.Owin.dll
+E:\Work\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+E:\Work\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Work\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\Microsoft.Web.Infrastructure.dll
+E:\Work\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\Newtonsoft.Json.dll
+E:\Work\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\Owin.dll
+E:\Work\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\System.Net.Http.dll
+E:\Work\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\System.Net.Http.WebRequest.dll
+E:\Work\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.Helpers.dll
+E:\Work\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.Mvc.dll
+E:\Work\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.Razor.dll
+E:\Work\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.WebPages.Deployment.dll
+E:\Work\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.WebPages.dll
+E:\Work\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.WebPages.Razor.dll
+E:\Work\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\WebActivatorEx.dll
+E:\Work\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.DAL.dll
+E:\Work\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\log4net.dll
+E:\Work\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.DBUtility.dll
+E:\Work\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.BLL.pdb
+E:\Work\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.Log.pdb
+E:\Work\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.Model.pdb
+E:\Work\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\Microsoft.AspNet.SignalR.Core.xml
+E:\Work\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\Microsoft.AspNet.SignalR.Owin.xml
+E:\Work\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+E:\Work\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Work\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\Newtonsoft.Json.xml
+E:\Work\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\System.Net.Http.xml
+E:\Work\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\System.Net.Http.WebRequest.xml
+E:\Work\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.Helpers.xml
+E:\Work\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.Mvc.xml
+E:\Work\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.Razor.xml
+E:\Work\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.WebPages.xml
+E:\Work\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.WebPages.Deployment.xml
+E:\Work\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.WebPages.Razor.xml
+E:\Work\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.DAL.pdb
+E:\Work\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\log4net.xml
+E:\Work\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.DBUtility.pdb
+E:\Work\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\zh-Hans\System.Net.Http.resources.dll
+E:\Work\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\zh-Hans\System.Net.Http.WebRequest.resources.dll
+E:\Work\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\zh-Hans\System.Web.Helpers.resources.dll
+E:\Work\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\zh-Hans\System.Web.Mvc.resources.dll
+E:\Work\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\zh-Hans\System.Web.Razor.resources.dll
+E:\Work\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\zh-Hans\System.Web.WebPages.resources.dll
+E:\Work\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+E:\Work\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+E:\Work\BW_MMS\源代码\BW.MMS\BW.MMS.Web\obj\Debug\BW.MMS.Web.csprojResolveAssemblyReference.cache
+E:\Work\BW_MMS\源代码\BW.MMS\BW.MMS.Web\obj\Debug\BW.MMS.Web.csproj.ResolveComReference.cache
+E:\Work\BW_MMS\源代码\BW.MMS\BW.MMS.Web\obj\Debug\BW.MMS.Web.dll
+E:\Work\BW_MMS\源代码\BW.MMS\BW.MMS.Web\obj\Debug\BW.MMS.Web.pdb
+C:\Users\JiafuYuanTP\Desktop\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\Log4Net.config
+C:\Users\JiafuYuanTP\Desktop\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.Web.dll
+C:\Users\JiafuYuanTP\Desktop\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.Web.pdb
+C:\Users\JiafuYuanTP\Desktop\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.BLL.dll
+C:\Users\JiafuYuanTP\Desktop\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.Log.dll
+C:\Users\JiafuYuanTP\Desktop\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.Model.dll
+C:\Users\JiafuYuanTP\Desktop\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\BW.SocketDataModel.SensorModel.dll
+C:\Users\JiafuYuanTP\Desktop\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\BW_CommunicationFrame.dll
+C:\Users\JiafuYuanTP\Desktop\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\BW_Serializer.dll
+C:\Users\JiafuYuanTP\Desktop\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\BW_Socket.dll
+C:\Users\JiafuYuanTP\Desktop\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\JiafuYuanTP\Desktop\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\Microsoft.AspNet.SignalR.Owin.dll
+C:\Users\JiafuYuanTP\Desktop\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\JiafuYuanTP\Desktop\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\JiafuYuanTP\Desktop\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\JiafuYuanTP\Desktop\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\Newtonsoft.Json.dll
+C:\Users\JiafuYuanTP\Desktop\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\Owin.dll
+C:\Users\JiafuYuanTP\Desktop\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\System.Net.Http.dll
+C:\Users\JiafuYuanTP\Desktop\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\System.Net.Http.WebRequest.dll
+C:\Users\JiafuYuanTP\Desktop\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.Helpers.dll
+C:\Users\JiafuYuanTP\Desktop\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.Mvc.dll
+C:\Users\JiafuYuanTP\Desktop\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.Razor.dll
+C:\Users\JiafuYuanTP\Desktop\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.WebPages.Deployment.dll
+C:\Users\JiafuYuanTP\Desktop\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.WebPages.dll
+C:\Users\JiafuYuanTP\Desktop\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.WebPages.Razor.dll
+C:\Users\JiafuYuanTP\Desktop\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\WebActivatorEx.dll
+C:\Users\JiafuYuanTP\Desktop\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.DAL.dll
+C:\Users\JiafuYuanTP\Desktop\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\log4net.dll
+C:\Users\JiafuYuanTP\Desktop\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.DBUtility.dll
+C:\Users\JiafuYuanTP\Desktop\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.BLL.pdb
+C:\Users\JiafuYuanTP\Desktop\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.Log.pdb
+C:\Users\JiafuYuanTP\Desktop\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.Model.pdb
+C:\Users\JiafuYuanTP\Desktop\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\JiafuYuanTP\Desktop\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\Microsoft.AspNet.SignalR.Owin.xml
+C:\Users\JiafuYuanTP\Desktop\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\JiafuYuanTP\Desktop\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\JiafuYuanTP\Desktop\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\Newtonsoft.Json.xml
+C:\Users\JiafuYuanTP\Desktop\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\System.Net.Http.xml
+C:\Users\JiafuYuanTP\Desktop\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\System.Net.Http.WebRequest.xml
+C:\Users\JiafuYuanTP\Desktop\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.Helpers.xml
+C:\Users\JiafuYuanTP\Desktop\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.Mvc.xml
+C:\Users\JiafuYuanTP\Desktop\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.Razor.xml
+C:\Users\JiafuYuanTP\Desktop\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.WebPages.xml
+C:\Users\JiafuYuanTP\Desktop\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.WebPages.Deployment.xml
+C:\Users\JiafuYuanTP\Desktop\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.WebPages.Razor.xml
+C:\Users\JiafuYuanTP\Desktop\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.DAL.pdb
+C:\Users\JiafuYuanTP\Desktop\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\log4net.xml
+C:\Users\JiafuYuanTP\Desktop\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.DBUtility.pdb
+C:\Users\JiafuYuanTP\Desktop\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\zh-Hans\System.Net.Http.resources.dll
+C:\Users\JiafuYuanTP\Desktop\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\zh-Hans\System.Net.Http.WebRequest.resources.dll
+C:\Users\JiafuYuanTP\Desktop\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\zh-Hans\System.Web.Helpers.resources.dll
+C:\Users\JiafuYuanTP\Desktop\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\zh-Hans\System.Web.Mvc.resources.dll
+C:\Users\JiafuYuanTP\Desktop\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\zh-Hans\System.Web.Razor.resources.dll
+C:\Users\JiafuYuanTP\Desktop\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\zh-Hans\System.Web.WebPages.resources.dll
+C:\Users\JiafuYuanTP\Desktop\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+C:\Users\JiafuYuanTP\Desktop\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+C:\Users\JiafuYuanTP\Desktop\BW_MMS\源代码\BW.MMS\BW.MMS.Web\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\JiafuYuanTP\Desktop\BW_MMS\源代码\BW.MMS\BW.MMS.Web\obj\Debug\BW.MMS.Web.csproj.ResolveComReference.cache
+C:\Users\JiafuYuanTP\Desktop\BW_MMS\源代码\BW.MMS\BW.MMS.Web\obj\Debug\BW.MMS.Web.dll
+C:\Users\JiafuYuanTP\Desktop\BW_MMS\源代码\BW.MMS\BW.MMS.Web\obj\Debug\BW.MMS.Web.pdb
+C:\Users\JiafuYuanTP\Desktop\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\NPOI.xml
+C:\Users\JiafuYuanTP\Desktop\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\NPOI.OOXML.xml
+C:\Users\JiafuYuanTP\Desktop\BW_MMS\源代码\BW.MMS\BW.MMS.Web\bin\NPOI.OpenXml4Net.xml
+C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\bin\Log4Net.config
+C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.Web.dll
+C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.Web.pdb
+C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.BLL.dll
+C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.Log.dll
+C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.Model.dll
+C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\bin\BW.SocketDataModel.SensorModel.dll
+C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\bin\BW_CommunicationFrame.dll
+C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\bin\BW_Serializer.dll
+C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\bin\BW_Socket.dll
+C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\bin\Microsoft.AspNet.SignalR.Owin.dll
+C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\bin\Newtonsoft.Json.dll
+C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\bin\Owin.dll
+C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\bin\System.Net.Http.dll
+C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\bin\System.Net.Http.WebRequest.dll
+C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.Helpers.dll
+C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.Mvc.dll
+C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.Razor.dll
+C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.WebPages.dll
+C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.WebPages.Razor.dll
+C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\bin\WebActivatorEx.dll
+C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.DAL.dll
+C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\bin\log4net.dll
+C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.DBUtility.dll
+C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.BLL.pdb
+C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.Log.pdb
+C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.Model.pdb
+C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\bin\Microsoft.AspNet.SignalR.Owin.xml
+C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\bin\Newtonsoft.Json.xml
+C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\bin\NPOI.xml
+C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\bin\NPOI.OOXML.xml
+C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\bin\NPOI.OpenXml4Net.xml
+C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\bin\System.Net.Http.xml
+C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\bin\System.Net.Http.WebRequest.xml
+C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.Helpers.xml
+C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.Mvc.xml
+C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.Razor.xml
+C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.WebPages.xml
+C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\bin\System.Web.WebPages.Razor.xml
+C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.DAL.pdb
+C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\bin\log4net.xml
+C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\bin\BW.MMS.DBUtility.pdb
+C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\bin\zh-Hans\System.Net.Http.resources.dll
+C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\bin\zh-Hans\System.Net.Http.WebRequest.resources.dll
+C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\bin\zh-Hans\System.Web.Helpers.resources.dll
+C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\bin\zh-Hans\System.Web.Mvc.resources.dll
+C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\bin\zh-Hans\System.Web.Razor.resources.dll
+C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\bin\zh-Hans\System.Web.WebPages.resources.dll
+C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\obj\Debug\BW.MMS.Web.csproj.ResolveComReference.cache
+C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\obj\Debug\BW.MMS.Web.dll
+C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\obj\Debug\BW.MMS.Web.pdb
+C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\obj\Debug\ResolveAssemblyReference.cache
+H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Web\bin\Log4Net.config
+H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Web\bin\BW.MMS.Web.dll
+H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Web\bin\BW.MMS.Web.pdb
+H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Web\bin\BW.MMS.BLL.dll
+H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Web\bin\BW.MMS.Log.dll
+H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Web\bin\BW.MMS.Model.dll
+H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Web\bin\BW.SocketDataModel.SensorModel.dll
+H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Web\bin\BW_CommunicationFrame.dll
+H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Web\bin\BW_Serializer.dll
+H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Web\bin\BW_Socket.dll
+H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Web\bin\Microsoft.AspNet.SignalR.Core.dll
+H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Web\bin\Microsoft.AspNet.SignalR.Owin.dll
+H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Web\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Web\bin\Microsoft.Owin.Host.SystemWeb.dll
+H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Web\bin\Microsoft.Web.Infrastructure.dll
+H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Web\bin\Newtonsoft.Json.dll
+H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Web\bin\Owin.dll
+H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Web\bin\System.Net.Http.dll
+H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Web\bin\System.Net.Http.WebRequest.dll
+H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Web\bin\System.Web.Helpers.dll
+H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Web\bin\System.Web.Mvc.dll
+H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Web\bin\System.Web.Razor.dll
+H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Web\bin\System.Web.WebPages.Deployment.dll
+H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Web\bin\System.Web.WebPages.dll
+H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Web\bin\System.Web.WebPages.Razor.dll
+H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Web\bin\WebActivatorEx.dll
+H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Web\bin\BW.MMS.DAL.dll
+H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Web\bin\log4net.dll
+H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Web\bin\BW.MMS.DBUtility.dll
+H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Web\bin\BW.MMS.BLL.pdb
+H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Web\bin\BW.MMS.Log.pdb
+H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Web\bin\BW.MMS.Model.pdb
+H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Web\bin\Microsoft.AspNet.SignalR.Core.xml
+H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Web\bin\Microsoft.AspNet.SignalR.Owin.xml
+H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Web\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Web\bin\Newtonsoft.Json.xml
+H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Web\bin\NPOI.xml
+H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Web\bin\NPOI.OOXML.xml
+H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Web\bin\NPOI.OpenXml4Net.xml
+H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Web\bin\System.Net.Http.xml
+H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Web\bin\System.Net.Http.WebRequest.xml
+H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Web\bin\System.Web.Helpers.xml
+H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Web\bin\System.Web.Mvc.xml
+H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Web\bin\System.Web.Razor.xml
+H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Web\bin\System.Web.WebPages.xml
+H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Web\bin\System.Web.WebPages.Deployment.xml
+H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Web\bin\System.Web.WebPages.Razor.xml
+H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Web\bin\BW.MMS.DAL.pdb
+H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Web\bin\log4net.xml
+H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Web\bin\BW.MMS.DBUtility.pdb
+H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Web\bin\zh-Hans\System.Net.Http.resources.dll
+H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Web\bin\zh-Hans\System.Net.Http.WebRequest.resources.dll
+H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Web\bin\zh-Hans\System.Web.Helpers.resources.dll
+H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Web\bin\zh-Hans\System.Web.Mvc.resources.dll
+H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Web\bin\zh-Hans\System.Web.Razor.resources.dll
+H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Web\bin\zh-Hans\System.Web.WebPages.resources.dll
+H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Web\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Web\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Web\obj\Debug\BW.MMS.Web.csproj.ResolveComReference.cache
+H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Web\obj\Debug\BW.MMS.Web.dll
+H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Web\obj\Debug\BW.MMS.Web.pdb
+H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Web\obj\Debug\BW.MMS.Web.csprojResolveAssemblyReference.cache
+H:\SVNData\BW.MMSAir\BW.MMSAir\BW.MMS.Web\bin\Log4Net.config
+H:\SVNData\BW.MMSAir\BW.MMSAir\BW.MMS.Web\bin\BW.MMS.Web.dll
+H:\SVNData\BW.MMSAir\BW.MMSAir\BW.MMS.Web\bin\BW.MMS.Web.pdb
+H:\SVNData\BW.MMSAir\BW.MMSAir\BW.MMS.Web\bin\BW.MMS.BLL.dll
+H:\SVNData\BW.MMSAir\BW.MMSAir\BW.MMS.Web\bin\BW.MMS.Log.dll
+H:\SVNData\BW.MMSAir\BW.MMSAir\BW.MMS.Web\bin\BW.MMS.Model.dll
+H:\SVNData\BW.MMSAir\BW.MMSAir\BW.MMS.Web\bin\BW.SocketDataModel.SensorModel.dll
+H:\SVNData\BW.MMSAir\BW.MMSAir\BW.MMS.Web\bin\BW_CommunicationFrame.dll
+H:\SVNData\BW.MMSAir\BW.MMSAir\BW.MMS.Web\bin\BW_Serializer.dll
+H:\SVNData\BW.MMSAir\BW.MMSAir\BW.MMS.Web\bin\BW_Socket.dll
+H:\SVNData\BW.MMSAir\BW.MMSAir\BW.MMS.Web\bin\Microsoft.AspNet.SignalR.Core.dll
+H:\SVNData\BW.MMSAir\BW.MMSAir\BW.MMS.Web\bin\Microsoft.AspNet.SignalR.Owin.dll
+H:\SVNData\BW.MMSAir\BW.MMSAir\BW.MMS.Web\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+H:\SVNData\BW.MMSAir\BW.MMSAir\BW.MMS.Web\bin\Microsoft.Owin.Host.SystemWeb.dll
+H:\SVNData\BW.MMSAir\BW.MMSAir\BW.MMS.Web\bin\Microsoft.Web.Infrastructure.dll
+H:\SVNData\BW.MMSAir\BW.MMSAir\BW.MMS.Web\bin\Newtonsoft.Json.dll
+H:\SVNData\BW.MMSAir\BW.MMSAir\BW.MMS.Web\bin\Owin.dll
+H:\SVNData\BW.MMSAir\BW.MMSAir\BW.MMS.Web\bin\System.Net.Http.dll
+H:\SVNData\BW.MMSAir\BW.MMSAir\BW.MMS.Web\bin\System.Net.Http.WebRequest.dll
+H:\SVNData\BW.MMSAir\BW.MMSAir\BW.MMS.Web\bin\System.Web.Helpers.dll
+H:\SVNData\BW.MMSAir\BW.MMSAir\BW.MMS.Web\bin\System.Web.Mvc.dll
+H:\SVNData\BW.MMSAir\BW.MMSAir\BW.MMS.Web\bin\System.Web.Razor.dll
+H:\SVNData\BW.MMSAir\BW.MMSAir\BW.MMS.Web\bin\System.Web.WebPages.Deployment.dll
+H:\SVNData\BW.MMSAir\BW.MMSAir\BW.MMS.Web\bin\System.Web.WebPages.dll
+H:\SVNData\BW.MMSAir\BW.MMSAir\BW.MMS.Web\bin\System.Web.WebPages.Razor.dll
+H:\SVNData\BW.MMSAir\BW.MMSAir\BW.MMS.Web\bin\WebActivatorEx.dll
+H:\SVNData\BW.MMSAir\BW.MMSAir\BW.MMS.Web\bin\BW.MMS.DAL.dll
+H:\SVNData\BW.MMSAir\BW.MMSAir\BW.MMS.Web\bin\log4net.dll
+H:\SVNData\BW.MMSAir\BW.MMSAir\BW.MMS.Web\bin\BW.MMS.DBUtility.dll
+H:\SVNData\BW.MMSAir\BW.MMSAir\BW.MMS.Web\bin\BW.MMS.BLL.pdb
+H:\SVNData\BW.MMSAir\BW.MMSAir\BW.MMS.Web\bin\BW.MMS.Log.pdb
+H:\SVNData\BW.MMSAir\BW.MMSAir\BW.MMS.Web\bin\BW.MMS.Model.pdb
+H:\SVNData\BW.MMSAir\BW.MMSAir\BW.MMS.Web\bin\Microsoft.AspNet.SignalR.Core.xml
+H:\SVNData\BW.MMSAir\BW.MMSAir\BW.MMS.Web\bin\Microsoft.AspNet.SignalR.Owin.xml
+H:\SVNData\BW.MMSAir\BW.MMSAir\BW.MMS.Web\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+H:\SVNData\BW.MMSAir\BW.MMSAir\BW.MMS.Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+H:\SVNData\BW.MMSAir\BW.MMSAir\BW.MMS.Web\bin\Newtonsoft.Json.xml
+H:\SVNData\BW.MMSAir\BW.MMSAir\BW.MMS.Web\bin\NPOI.xml
+H:\SVNData\BW.MMSAir\BW.MMSAir\BW.MMS.Web\bin\NPOI.OOXML.xml
+H:\SVNData\BW.MMSAir\BW.MMSAir\BW.MMS.Web\bin\NPOI.OpenXml4Net.xml
+H:\SVNData\BW.MMSAir\BW.MMSAir\BW.MMS.Web\bin\System.Net.Http.xml
+H:\SVNData\BW.MMSAir\BW.MMSAir\BW.MMS.Web\bin\System.Net.Http.WebRequest.xml
+H:\SVNData\BW.MMSAir\BW.MMSAir\BW.MMS.Web\bin\System.Web.Helpers.xml
+H:\SVNData\BW.MMSAir\BW.MMSAir\BW.MMS.Web\bin\System.Web.Mvc.xml
+H:\SVNData\BW.MMSAir\BW.MMSAir\BW.MMS.Web\bin\System.Web.Razor.xml
+H:\SVNData\BW.MMSAir\BW.MMSAir\BW.MMS.Web\bin\System.Web.WebPages.xml
+H:\SVNData\BW.MMSAir\BW.MMSAir\BW.MMS.Web\bin\System.Web.WebPages.Deployment.xml
+H:\SVNData\BW.MMSAir\BW.MMSAir\BW.MMS.Web\bin\System.Web.WebPages.Razor.xml
+H:\SVNData\BW.MMSAir\BW.MMSAir\BW.MMS.Web\bin\BW.MMS.DAL.pdb
+H:\SVNData\BW.MMSAir\BW.MMSAir\BW.MMS.Web\bin\log4net.xml
+H:\SVNData\BW.MMSAir\BW.MMSAir\BW.MMS.Web\bin\BW.MMS.DBUtility.pdb
+H:\SVNData\BW.MMSAir\BW.MMSAir\BW.MMS.Web\bin\zh-Hans\System.Net.Http.resources.dll
+H:\SVNData\BW.MMSAir\BW.MMSAir\BW.MMS.Web\bin\zh-Hans\System.Net.Http.WebRequest.resources.dll
+H:\SVNData\BW.MMSAir\BW.MMSAir\BW.MMS.Web\bin\zh-Hans\System.Web.Helpers.resources.dll
+H:\SVNData\BW.MMSAir\BW.MMSAir\BW.MMS.Web\bin\zh-Hans\System.Web.Mvc.resources.dll
+H:\SVNData\BW.MMSAir\BW.MMSAir\BW.MMS.Web\bin\zh-Hans\System.Web.Razor.resources.dll
+H:\SVNData\BW.MMSAir\BW.MMSAir\BW.MMS.Web\bin\zh-Hans\System.Web.WebPages.resources.dll
+H:\SVNData\BW.MMSAir\BW.MMSAir\BW.MMS.Web\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+H:\SVNData\BW.MMSAir\BW.MMSAir\BW.MMS.Web\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+H:\SVNData\BW.MMSAir\BW.MMSAir\BW.MMS.Web\obj\Debug\BW.MMS.Web.csprojResolveAssemblyReference.cache
+H:\SVNData\BW.MMSAir\BW.MMSAir\BW.MMS.Web\obj\Debug\BW.MMS.Web.csproj.ResolveComReference.cache
+H:\SVNData\BW.MMSAir\BW.MMSAir\BW.MMS.Web\obj\Debug\BW.MMS.Web.dll
+H:\SVNData\BW.MMSAir\BW.MMSAir\BW.MMS.Web\obj\Debug\BW.MMS.Web.pdb
+E:\BW.MMSAir\BW.MMSAir\BW.MMS.Web\obj\Debug\BW.MMS.Web.csprojResolveAssemblyReference.cache

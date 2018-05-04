@@ -1,0 +1,7 @@
+一：实现抽象类BasicResInner
+	@1：响应类bean定义的时候需要继承BasicResInner类
+	@2：实现getMyDefineClass()方法和 getList()方法
+二：类的分层要合理恰当
+	@1：对于List集合需要在封装一层作为自定义类，作为做外层的响应类的成员变量，变量名称要与xml中对应的集合节点名称一致
+	需要在getList()中声明包裹集合类，和集合对应的字段名称
+	@2：对于自定义类，需要在响应类的getMyDefineClass()方法中声明该类对应的节点名，以及该类的字节码

@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Comment CommentText="取发送的信息">
+    <Position X="0.5" Y="1.708" Height="0.615" Width="1.762" />
+  </Comment>
+  <Comment CommentText="取部门信息">
+    <Position X="0.677" Y="4.166" Height="0.615" Width="1.762" />
+  </Comment>
+  <Comment CommentText="取物料类型信息">
+    <Position X="0.76" Y="6.77" Height="0.615" Width="1.762" />
+  </Comment>
+  <Comment CommentText="取车辆信息">
+    <Position X="0.656" Y="9.968" Height="0.615" Width="1.762" />
+  </Comment>
+  <Comment CommentText="取地点信息">
+    <Position X="0.76" Y="14.572" Height="0.615" Width="1.762" />
+  </Comment>
+  <Comment CommentText="取计划信息">
+    <Position X="0.791" Y="18.166" Height="0.615" Width="1.762" />
+  </Comment>
+  <Comment CommentText="取人员信息">
+    <Position X="0.5" Y="25.312" Height="0.615" Width="1.762" />
+  </Comment>
+  <Comment CommentText="取卡信息">
+    <Position X="0.615" Y="29.229" Height="0.615" Width="1.762" />
+  </Comment>
+  <Comment CommentText="取用户信息">
+    <Position X="0.75" Y="32.239" Height="0.615" Width="1.762" />
+  </Comment>
+  <Comment CommentText="取车辆分布信息（按区域统计空重车数量）">
+    <Position X="0.646" Y="36.614" Height="0.615" Width="1.762" />
+  </Comment>
+  <Comment CommentText="查询我的运单">
+    <Position X="0.646" Y="39.947" Height="0.615" Width="1.762" />
+  </Comment>
+  <Comment CommentText="取车辆在环节中是否可用">
+    <Position X="0.562" Y="2.916" Height="0.615" Width="1.762" />
+  </Comment>
+  <Comment CommentText="PDA接收到消息之后返回">
+    <Position X="0.646" Y="0.5" Height="0.615" Width="1.762" />
+  </Comment>
+  <Class Name="Common.Model.InCommandModel.InGetMessageModel">
+    <Position X="2.75" Y="1.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\DataCommand\InDataCommand\InGetMessageModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.Model.DataCommand.OutDataComand.OutGetDepartmentModel">
+    <Position X="5.25" Y="4.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\DataCommand\OutDataCommand\OutGetDepartmentModel.cs</FileName>
+      <NewMemberFileName>Model\DataCommand\OutDataCommand\OutGetMessageModel.cs</NewMemberFileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.Model.DataCommand.OutDataComand.OutGetMessageModel">
+    <Position X="5.5" Y="1.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\DataCommand\OutDataCommand\OutGetMessageModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DB_VehicleTransportManage.Model.m_Department">
+    <Position X="8" Y="4" Width="2.75" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Common.Model.DataCommand.OutDataComand.OutGetMaterielTypeModel">
+    <Position X="5" Y="6.75" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\DataCommand\OutDataCommand\OutGetMaterielTypeModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DB_VehicleTransportManage.Model.m_MaterielType">
+    <Position X="8.5" Y="6.75" Width="3" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Common.Model.DataCommand.OutDataCommand.OutGetVehicleModel">
+    <Position X="6" Y="10" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\DataCommand\OutDataCommand\OutGetVehicleModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DB_VehicleTransportManage.Model.m_Vehicle">
+    <Position X="9" Y="10" Width="3" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Common.Model.DataCommand.BaseDataCommandModel">
+    <Position X="0.5" Y="5.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>Model\DataCommand\BaseDataCommandModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.Model.DataCommand.InDataCommand.InGetDepartmentModel">
+    <Position X="2.75" Y="4.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\DataCommand\InDataCommand\InGetDepartmentModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.Model.DataCommand.InDataCommand.InGetMaterielTypeModel">
+    <Position X="3" Y="6.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\DataCommand\InDataCommand\InGetMaterielTypeModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.Model.DataCommand.InDataCommand.InGetVehicleModel" Collapsed="true">
+    <Position X="3" Y="10" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\DataCommand\InDataCommand\InGetVehicleModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.Model.DataCommand.InDataCommand.InGetCardModel">
+    <Position X="2.75" Y="29.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\DataCommand\InDataCommand\InGetCardModel.cs</FileName>
+      <NewMemberFileName>Model\DataCommand\InDataCommand\InGetAddressModel.cs</NewMemberFileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.Model.DataCommand.OutDataCommand.OutGetVehicleTypeModel">
+    <Position X="5.25" Y="14.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\DataCommand\OutDataCommand\OutGetVehicleTypeModel.cs</FileName>
+      <NewMemberFileName>Model\DataCommand\OutDataCommand\OutGetAddressModel.cs</NewMemberFileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DB_VehicleTransportManage.Model.m_Address">
+    <Position X="8.25" Y="14.5" Width="3.25" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Common.Model.DataCommand.InDataCommand.InGetPlanDetailModel">
+    <Position X="2.5" Y="18" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAACABAAAAAAAAAAAAAAAAgAAAAAAIAAAAAAEAAAAAA=</HashCode>
+      <FileName>Model\DataCommand\InDataCommand\InGetPlanDetailModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.Model.DataCommand.OutDataCommand.OutGetMyPlanDetailModel">
+    <Position X="5.75" Y="40" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>Model\DataCommand\OutDataCommand\OutGetMyPlanDetailModel.cs</FileName>
+      <NewMemberFileName>Model\DataCommand\OutDataCommand\OutGetPlanDetailModel.cs</NewMemberFileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DB_VehicleTransportManage.Model.m_Plan">
+    <Position X="8.75" Y="18.25" Width="3" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Common.Model.DataCommand.InDataCommand.InGetPersonModel">
+    <Position X="2.5" Y="25.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\DataCommand\InDataCommand\InGetPersonModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.Model.DataCommand.OutDataCommand.OutGetPersonModel">
+    <Position X="4.75" Y="25.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\DataCommand\OutDataCommand\OutGetPersonModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DB_VehicleTransportManage.Model.m_Person">
+    <Position X="7.75" Y="25.25" Width="2.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="DB_VehicleTransportManage.Model.m_Apply">
+    <Position X="12" Y="18.25" Width="2.75" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Common.Model.DataCommand.InDataCommand.InGetAddressModel">
+    <Position X="2.75" Y="14.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\DataCommand\InDataCommand\InGetAddressModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.Model.DataCommand.OutDataCommand.OutGetCardModel">
+    <Position X="5.25" Y="29.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Model\DataCommand\OutDataCommand\OutGetCardModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DB_VehicleTransportManage.Model.m_Card">
+    <Position X="8" Y="29" Width="2.75" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Common.Model.DataCommand.InDataCommand.InGetUserModel">
+    <Position X="3" Y="32.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\DataCommand\InDataCommand\InGetUserModel.cs</FileName>
+      <NewMemberFileName>Model\DataCommand\InDataCommand\InGetAddressModel.cs</NewMemberFileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.Model.DataCommand.OutDataCommand.OutGetUserModel">
+    <Position X="5.25" Y="32.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>Model\DataCommand\OutDataCommand\OutGetUserModel.cs</FileName>
+      <NewMemberFileName>Model\DataCommand\OutDataCommand\OutGetAddressModel.cs</NewMemberFileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DB_VehicleTransportManage.Model.m_User">
+    <Position X="8" Y="32.25" Width="2.25" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="DB_VehicleTransportManage.Model.m_Plan_ApplyMaterie">
+    <Position X="15" Y="18.25" Width="2.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="DB_VehicleTransportManage.Model.m_Plan_ApplyVehicle">
+    <Position X="17.75" Y="18.25" Width="2" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="DB_VehicleTransportManage.Model.m_Plan_CheckVehicle">
+    <Position X="20.25" Y="18.25" Width="2.25" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Common.Model.DataCommand.OutDataCommand.OutGetVehicleDistributedModel">
+    <Position X="2.75" Y="36.5" Width="4.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\DataCommand\OutDataCommand\OutGetVehicleDistributedModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DB_VehicleTransportManage.Model.v_AreaVehicle">
+    <Position X="7.5" Y="36.5" Width="2.75" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Common.Model.DataCommand.InDataCommand.InGetMyPlanDetailModel">
+    <Position X="2.75" Y="40" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\DataCommand\InDataCommand\InGetMyPlanDetailModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.Model.DataCommand.OutDataCommand.OutGetPlanDetailModel">
+    <Position X="5.25" Y="18.25" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAUAAAAAAAABAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\DataCommand\OutDataCommand\OutGetPlanDetailModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DB_VehicleTransportManage.Model.v_ApplyPlanVehicleDetail">
+    <Position X="9.5" Y="40" Width="3.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Common.Model.DataCommand.InDataCommand.InGetVehicleIsCanDoModel">
+    <Position X="2.75" Y="2.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\DataCommand\InDataCommand\InGetVehicleIsCanDoModel.cs</FileName>
+      <NewMemberFileName>Model\DataCommand\InDataCommand\InGetPlanDetailModel.cs</NewMemberFileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.Model.DataCommand.OutDataCommand.OutGetVehicleIsCanDoModel">
+    <Position X="5.5" Y="2.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Model\DataCommand\OutDataCommand\OutGetVehicleIsCanDoModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DB_VehicleTransportManage.Model.m_Message">
+    <Position X="9.25" Y="1.25" Width="2.75" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Common.Model.DataCommand.InDataCommand.InReturnMessageModel">
+    <Position X="3" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>Model\DataCommand\InDataCommand\InReturnMessageModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

@@ -1,0 +1,23 @@
+﻿@model BW.MMS.Model.Alarm_CurrentEntity
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<form id="form">
+@Html.HiddenFor(model => model.ID)
+<table class="table-form">
+    <tr>
+        <th>
+            告警原因
+        </th>
+        <td>
+            @Html.TextAreaFor(model => model.vc_AlarmReason, new
+           {
+               @class = "easyui-validatebox",
+               style = "width:98%;height:100px;",
+               validType = "length[1,20]"
+           })
+        </td>
+    </tr>
+</table>
+</form>

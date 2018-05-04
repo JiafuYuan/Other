@@ -1,0 +1,66 @@
+﻿@model BW.MMS.Model.m_AshEntity
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>灰分仪编辑</title>
+    <meta name="viewport" content="width=device-width" />
+</head>
+<body>
+    <div class="easyui-layout" data-options="fit:true">
+        <form id="form" action="">
+        @Html.HiddenFor(model => model.ID)
+        <div data-options="region:'center',border:false" style="padding: 3px;">
+            <table class="table-form">
+                <tr>
+                    <th>
+                        安装位置
+                    </th>
+                    <td>
+                        @Html.TextBoxFor(model => model.InstallationPosition, new
+                        {
+                            @class = "easyui-validatebox",
+                            required = "true",
+                            validType = "length[1,20]"
+                        })
+                        <span style="color: Red">*</span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div data-options="region:'south',border:false" class="dialog-button">
+            <a class="easyui-linkbutton" data-options="iconCls:'icon-ok'" onclick="submit()">保存</a>
+            <a class="easyui-linkbutton" data-options="iconCls:'icon-cancel'" onclick="$('#AshEdit').dialog('close')">
+                取消</a>
+        </div>
+        <script type="text/javascript">
+            function submit() {
+                if ($("#form").form('validate')) {
+                    var data = $("#form").serialize();
+                    $.ajax({
+                        url: '@Url.Action("Edit")',
+                        data: data,
+                        type: "POST",
+                        async: false,
+                        datatype: "json",
+                        success: function (data) {
+                            if (data.success) {
+                                $.messager.alert("提示", data.message, "info", function () {
+                                    $('#AshEdit').dialog('close');
+                                });
+                            }
+                            else {
+                                $.messager.alert("提示", data.message, "error");
+                            }
+                        },
+                        error: function (a, b, c) {
+                            $.messager.alert("提示", a.responseText, "error");
+                        }
+                    });
+                }
+            }
+        </script>
+        </form>
+    </div>
+</body>
+</html>

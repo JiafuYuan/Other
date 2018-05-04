@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{config.webtitle}</title>
+    <meta content="{config.webkeyword}" name="keywords" />
+    <meta content="{config.webdescription}" name="description" />
+    <link href="<%templateskin%>/css/style.css" rel="stylesheet" type="text/css" />
+    <!--组件依赖js begin-->
+    <script type="text/javascript" src="<%templateskin%>/js/zepto.js"></script>
+    <script type="text/javascript" src="<%templateskin%>/js/touch.js"></script>
+    <!--新版zepto合并版中不包括touch.js-->
+    <script type="text/javascript" src="<%templateskin%>/js/zepto.extend.js"></script>
+    <script type="text/javascript" src="<%templateskin%>/js/zepto.ui.js"></script>
+    <script type="text/javascript" src="<%templateskin%>/js/zepto.iscroll.js"></script>
+    <!--iScroll-->
+    <script type="text/javascript" src="<%templateskin%>/js/zepto.highlight.js"></script>
+    <script type="text/javascript" src="<%templateskin%>/js/zepto.fix.js"></script>
+    <!--search begin-->
+    <script type="text/javascript" src="<%templateskin%>/js/quickdelete.js"></script>
+    <!--快速删除组件，配合suggestion使用-->
+    <script type="text/javascript" src="<%templateskin%>/js/suggestion.js"></script>
+    <!--banner begin-->
+    <script type="text/javascript" src="<%templateskin%>/js/slider.js"></script>
+    <!--组件依赖js end-->
+    <!--下拉 begin-->
+    <script type="text/javascript" src="<%templateskin%>/js/dropmenu.js"></script>
+    <script type="text/javascript" src="<%templateskin%>/js/button.js"></script>
+    <!--下拉 end-->
+    <!--组件依赖js begin-->
+    <script type="text/javascript" src="<%templateskin%>/js/tabs.js"></script>
+    <script type="text/javascript" src="<%templateskin%>/js/tabs.swipe.js"></script>
+    <script type="text/javascript" src="<%templateskin%>/js/tabs.ajax.js"></script>
+    <!--组件依赖js end-->
+    <script type="text/javascript" src="<%templateskin%>/js/gotop.js"></script>
+    <script type="text/javascript" src="<%templateskin%>/js/add2desktop.js"></script>
+</head>
+<body>
+    <%template src="_header.html"%>
+    <!--导航结束-->
+    <!--大图开始-->
+    <div id="slider">
+        <%set DataTable articalDtzXykd=get_article_list("news", 0, 8, "status=0 and is_slide=1")%>
+        <%foreach(DataRow drzXykd in articalDtzXykd.Rows)%>
+        <div>
+            <a href="<%linkurl("news_show",{drzXykd[id]})%>">
+                <img lazyload="{drzXykd[img_url]}"></a>
+            <p>
+                {drzXykd[title]}</p>
+        </div>
+        <%/foreach%>
+    </div>
+    <script>
+        //创建slider组件
+        $('#slider').slider({ loop: true });
+    </script>
+    <!--大图结束-->
+    <!--主体开始-->
+    <div class="mainbody">
+        <!--公司简介-->
+        <section class="main1">
+    	<div class="main1_1 clearfix">
+    		<h4 class="float_l"><span class="a icon"></span><span>关于我们</span></h4>
+            
+			
+        </div>
+        <article class="bgg">
+        	<img src="<%templateskin%>/images/g.jpg"><%write get_article_content("about","zhaiyao") %>
+            <a href="<%linkurl("content","about")%>">查看更多></a>
+        </article>
+    </section>
+        <!--公司简介结束-->
+        <div class="clear">
+        </div>
+        <!--特色科室-->
+        <section class="main2">
+    	<div class="main1_1 clearfix">
+    		<h4 class="float_l"><span class="a icon"></span><span>产品中心</span></h4>
+            <a class="float_r" href="<%linkurl("goods_list","0")%>"><img src="<%templateskin%>/images/more.jpg"></a>
+        </div>
+        <div class="main2_2 clearfix">
+        	
+            <%set DataTable articalDtNbkfR=get_article_list("goods", 0,6, "status=0 and is_red=1")%>
+<%foreach(DataRow drNbkfR in articalDtNbkfR.Rows)%>
+    <li><a href="<%linkurl("goods_show",{drNbkfR[id]})%>">
+            <dl>
+                <dt><a href="<%linkurl("goods_show",{drNbkfR[id]})%>"><img src="{drNbkfR[img_url]}"/></a></dt>
+            </dl>
+            <%/foreach%>
+        </div>
+    </section>
+        <!--特色科室结束-->
+        <!--tab-->
+        <section class="sectiona">
+    <div id="container">
+        <div id="tabs1">
+            <ul>
+                <li><a href="#conten1">集团新闻</a></li>
+                <li><a href="../../data/tabs/proxy.php?file=sample.html&debug=1">行业新闻</a></li>
+            </ul>
+            <div id="conten1">
+            	<ul>
+                   <%set DataTable articalDtYMpNG=get_article_list("news",43, 5, "status=0 and is_red=1")%>
+<%foreach(DataRow drYMpNG in articalDtYMpNG.Rows)%>
+                    <li><span class="b icon"></span><a href="<%linkurl("news_show",{drYMpNG[id]})%>">{drYMpNG[title]}</a></li>
+                    <%/foreach%>
+                </ul>
+            </div>
+        </div>
+    </section>
+        <script>
+            window.scrollTo(0, 1); //收起地址栏
+            $('#tabs1').tabs({
+                ajax: {
+                    type: 'POST',
+                    contentType: 'application/x-www-form-urlencoded'
+                },
+                beforeLoad: function (e, xhr, settings) {
+                    var ui = this;
+                    settings.data = $.param({
+                        index: ui.data('active')
+                    });
+                }
+            });
+        </script>
+        <!--tab结束-->
+        <!--专家团队-->
+        <section class="main3">
+    	<div class="main1_1 clearfix">
+    		<h4 class="float_l"><span class="a icon"></span><span>荣誉资质</span></h4>
+            <a class="float_r" href="<%linkurl("ryzz_list","0")%>"><img src="<%templateskin%>/images/more.jpg"></a>
+        </div>
+        <div class="main3_2">
+        	
+
+<%set DataTable articalDtBQmiw=get_article_list("ryzz", 0, 8, "status=0")%>
+<%foreach(DataRow drBQmiw in articalDtBQmiw.Rows)%>
+<div class="yhn op clearfix">
+            	<div class="yhn_1 float_l"><img src="{drBQmiw[img_url]}"></div>
+                <div class="yhn_2 float_l">
+                	<h5>{drBQmiw[title]}</h5>
+                    <p><span class="blue">{drBQmiw[zhaiyao]}</p>
+   
+                </div>
+            </div>
+           <%/foreach%>
+        </div>
+    </section>
+        <!--专家团队结束-->
+    </div>
+    <!--导航开始-->
+    <%template src="_foot.html"%>
+    <!--ui:/style:陈媛媛/code:？-->
+</body>
+</html>

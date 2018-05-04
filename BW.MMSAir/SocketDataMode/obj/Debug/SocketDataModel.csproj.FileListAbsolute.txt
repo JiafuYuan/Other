@@ -1,0 +1,5 @@
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\SocketDataMode\bin\Debug\BW.SocketDataModel.SensorModel.dll
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\SocketDataMode\bin\Debug\BW.SocketDataModel.SensorModel.pdb
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\SocketDataMode\obj\Debug\ResolveAssemblyReference.cache
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\SocketDataMode\obj\Debug\BW.SocketDataModel.SensorModel.dll
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\SocketDataMode\obj\Debug\BW.SocketDataModel.SensorModel.pdb

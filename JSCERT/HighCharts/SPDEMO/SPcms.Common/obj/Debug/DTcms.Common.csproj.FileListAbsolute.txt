@@ -1,0 +1,15 @@
+E:\svn\dtcms30\DTcms.Common\bin\Debug\DTcms.Common.dll
+E:\svn\dtcms30\DTcms.Common\bin\Debug\DTcms.Common.pdb
+E:\svn\dtcms30\DTcms.Common\obj\Debug\ResolveAssemblyReference.cache
+E:\svn\dtcms30\DTcms.Common\obj\Debug\DTcms.Common.dll
+E:\svn\dtcms30\DTcms.Common\obj\Debug\DTcms.Common.pdb
+E:\web\DTcms_30_sql_src\商业版\DTcms.Common\bin\Debug\DTcms.Common.dll
+E:\web\DTcms_30_sql_src\商业版\DTcms.Common\bin\Debug\DTcms.Common.pdb
+E:\web\DTcms_30_sql_src\商业版\DTcms.Common\obj\Debug\ResolveAssemblyReference.cache
+E:\web\DTcms_30_sql_src\商业版\DTcms.Common\obj\Debug\DTcms.Common.dll
+E:\web\DTcms_30_sql_src\商业版\DTcms.Common\obj\Debug\DTcms.Common.pdb
+D:\Work\Project\平台版本\v1.1\DTcms_30_sql_src\DTcms.Common\bin\Debug\DTcms.Common.dll
+D:\Work\Project\平台版本\v1.1\DTcms_30_sql_src\DTcms.Common\bin\Debug\DTcms.Common.pdb
+D:\Work\Project\平台版本\v1.1\DTcms_30_sql_src\DTcms.Common\obj\Debug\ResolveAssemblyReference.cache
+D:\Work\Project\平台版本\v1.1\DTcms_30_sql_src\DTcms.Common\obj\Debug\DTcms.Common.dll
+D:\Work\Project\平台版本\v1.1\DTcms_30_sql_src\DTcms.Common\obj\Debug\DTcms.Common.pdb

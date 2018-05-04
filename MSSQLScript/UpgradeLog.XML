@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="MSSQLScript">
+</Property><Property Name="解决方案文件" Value="F:\Users\Administrator\Desktop\MSSQLScript\MSSQLScript.sln">
+</Property><Property Name="用户选项文件" Value="F:\Users\Administrator\Desktop\MSSQLScript\MSSQLScript.suo">
+</Property><Property Name="Date" Value="2014年7月3日">
+</Property><Property Name="Time" Value="13:21">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="MSSQLScript.sln" Description="文件已成功备份为 F:\Users\Administrator\Desktop\MSSQLScript\Backup\MSSQLScript.sln">
+</Event><Event ErrorLevel="0" Project="" Source="MSSQLScript.suo" Description="文件已成功备份为 F:\Users\Administrator\Desktop\MSSQLScript\Backup\MSSQLScript.suo">
+</Event><Event ErrorLevel="0" Project="MSSQLScript" Source="MSSQLScript.csproj" Description="项目文件已成功备份为 F:\Users\Administrator\Desktop\MSSQLScript\Backup\MSSQLScript.csproj">
+</Event><Event ErrorLevel="0" Project="MSSQLScript" Source="MainForm.cs" Description="文件已成功备份为 F:\Users\Administrator\Desktop\MSSQLScript\Backup\MainForm.cs">
+</Event><Event ErrorLevel="0" Project="MSSQLScript" Source="MainForm.Designer.cs" Description="文件已成功备份为 F:\Users\Administrator\Desktop\MSSQLScript\Backup\MainForm.Designer.cs">
+</Event><Event ErrorLevel="0" Project="MSSQLScript" Source="Program.cs" Description="文件已成功备份为 F:\Users\Administrator\Desktop\MSSQLScript\Backup\Program.cs">
+</Event><Event ErrorLevel="0" Project="MSSQLScript" Source="Properties\AssemblyInfo.cs" Description="文件已成功备份为 F:\Users\Administrator\Desktop\MSSQLScript\Backup\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="MSSQLScript" Source="Properties\Resources.Designer.cs" Description="文件已成功备份为 F:\Users\Administrator\Desktop\MSSQLScript\Backup\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="MSSQLScript" Source="Properties\Settings.Designer.cs" Description="文件已成功备份为 F:\Users\Administrator\Desktop\MSSQLScript\Backup\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="MSSQLScript" Source="Properties\Settings.settings" Description="文件已成功备份为 F:\Users\Administrator\Desktop\MSSQLScript\Backup\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="MSSQLScript" Source="MainForm.resx" Description="文件已成功备份为 F:\Users\Administrator\Desktop\MSSQLScript\Backup\MainForm.resx">
+</Event><Event ErrorLevel="0" Project="MSSQLScript" Source="Properties\Resources.resx" Description="文件已成功备份为 F:\Users\Administrator\Desktop\MSSQLScript\Backup\Properties\Resources.resx">
+</Event><Event ErrorLevel="0" Project="MSSQLScript" Source="Resources\tables.sql" Description="文件已成功备份为 F:\Users\Administrator\Desktop\MSSQLScript\Backup\Resources\tables.sql">
+</Event><Event ErrorLevel="0" Project="MSSQLScript" Source="Resources\types.sql" Description="文件已成功备份为 F:\Users\Administrator\Desktop\MSSQLScript\Backup\Resources\types.sql">
+</Event><Event ErrorLevel="1" Project="MSSQLScript" Source="MSSQLScript.csproj" Description="您的项目以 .NET Framework 2.0 或 3.0 为目标。如果您的项目使用的程序集需要更新的 .NET Framework，则项目生成将失败。通过单击项目菜单上的“属性”，然后在“.NET Framework”下拉框中选择一个新版本，可以更改 .NET Framework 的版本。(在 Visual Basic 中，可在单击“高级编辑器选项...”按钮时显示的“编译”选项卡上找到此下拉框。)">
+</Event><Event ErrorLevel="0" Project="MSSQLScript" Source="MSSQLScript.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="MSSQLScript" Source="MSSQLScript.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="MSSQLScript.sln" Description="成功转换解决方案">
+</Event><Event ErrorLevel="3" Project="" Source="MSSQLScript.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="MSSQLScript" Source="MSSQLScript.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event></UpgradeLog>

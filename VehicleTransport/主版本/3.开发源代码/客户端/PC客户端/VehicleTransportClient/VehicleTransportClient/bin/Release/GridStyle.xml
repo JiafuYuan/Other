@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Config>
+  <DataGridViews>
+    <DataGridView tablename="FormRyBaseStationManage">
+      <ColumnStyle name="Column3" displayname="编号" width="130" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="dataGridViewTextBoxColumn1" displayname="名称" width="130" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column6" displayname="主站HID" width="129" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column1" displayname="子站HID" width="130" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column2" displayname="HID" width="5" visible="True" alignment="0" show="True" />
+    </DataGridView>
+    <DataGridView tablename="FormAddressManage">
+      <ColumnStyle name="Column3" displayname="基站名称" width="84" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="ParentHID" displayname="主站HID" width="84" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="childHID" displayname="子站HID" width="84" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="HID" displayname="HID" width="84" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column1" displayname="所属区域" width="83" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column2" displayname="位置" width="84" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column4" displayname="方向基站" width="84" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column6" displayname="备注" width="84" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column5" displayname="基站编号" width="75" visible="True" alignment="0" show="True" />
+    </DataGridView>
+    <DataGridView tablename="FormAddAddress">
+      <ColumnStyle name="colCheck" displayname="选择" width="59" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column3" displayname="基站名称" width="74" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="dataGridViewTextBoxColumn1" displayname="主站HID" width="74" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="dataGridViewTextBoxColumn2" displayname="子站HID" width="73" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="dataGridViewTextBoxColumn3" displayname="HID" width="74" visible="True" alignment="0" show="True" />
+    </DataGridView>
+    <DataGridView tablename="FormAlarmSetManage">
+      <ColumnStyle name="dataGridViewTextBoxColumn1" displayname="配置项" width="224" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column1" displayname="值" width="223" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column6" displayname="备注" width="224" visible="True" alignment="0" show="True" />
+    </DataGridView>
+    <DataGridView tablename="FormCardManage">
+      <ColumnStyle name="dataGridViewTextBoxColumn1" displayname="车辆编号" width="134" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column3" displayname="车辆名称" width="134" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column1" displayname="定位卡HID" width="135" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column2" displayname="标识卡HID" width="134" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column6" displayname="备注" width="134" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column4" displayname="车辆类型" width="100" visible="True" alignment="0" show="True" />
+    </DataGridView>
+    <DataGridView tablename="FormPDAManage">
+      <ColumnStyle name="Column2" displayname="编号" width="168" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="dataGridViewTextBoxColumn1" displayname="Mac地址" width="168" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column1" displayname="所属部门" width="167" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column6" displayname="备注" width="168" visible="True" alignment="0" show="True" />
+    </DataGridView>
+    <DataGridView tablename="FormVehicleMonth">
+      <ColumnStyle name="Column4" displayname="车辆编号" width="231" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column6" displayname="车辆名称" width="136" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column5" displayname="使用时间" width="152" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column1" displayname="使用次数" width="152" visible="True" alignment="0" show="True" />
+    </DataGridView>
+    <DataGridView tablename="FormVehicleManage">
+      <ColumnStyle name="Column5" displayname="车辆编号" width="75" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="dataGridViewTextBoxColumn1" displayname="车辆名称" width="74" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column3" displayname="车辆类型" width="75" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column2" displayname="所属部门" width="74" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column4" displayname="车辆状态" width="75" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column7" displayname="核定载重" width="74" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column10" displayname="维护周期" width="75" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column8" displayname="所在基站" width="74" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column6" displayname="备注" width="75" visible="True" alignment="0" show="True" />
+    </DataGridView>
+  </DataGridViews>
+</Config>

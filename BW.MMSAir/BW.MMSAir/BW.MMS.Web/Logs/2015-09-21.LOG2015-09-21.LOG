@@ -1,0 +1,872 @@
+-----------------------------------------------------------------------
+时间:2015-09-21 10:04:07,975
+级别:ERROR
+描述:Socket错误：由于目标计算机积极拒绝，无法连接。 127.0.0.1:11235
+-----------------------------------------------------------------------
+时间:2015-09-21 10:04:20,995
+级别:FATAL
+描述:从字符串转换日期和/或时间时，转换失败。
+System.Data.SqlClient.SqlException (0x80131904): 从字符串转换日期和/或时间时，转换失败。
+   在 BW.MMS.DBUtility.DbHelperSQLGH_LOG.RunProcedure(String storedProcName, IDataParameter[] parameters, String tableName, Int32 Times) 位置 C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.DBUtility\DbHelperSQLGH_LOG.cs:行号 963
+   在 BW.MMS.DAL.HistoryRecord.GetDayReport(String startDate, String endDate) 位置 C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.DAL\HistoryRecord.cs:行号 432
+   在 BW.MMS.BLL.HistoryRecord.GetDayReport(String startDate, String endDate) 位置 C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.BLL\HistoryRecord.cs:行号 161
+   在 BW.MMS.Web.Controllers.DayReportController.GetDayReportList() 位置 C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\Controllers\DayReportController.cs:行号 47
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+-----------------------------------------------------------------------
+时间:2015-09-21 10:05:01,465
+级别:ERROR
+描述:Socket错误：由于目标计算机积极拒绝，无法连接。 127.0.0.1:11235
+-----------------------------------------------------------------------
+时间:2015-09-21 10:05:39,067
+级别:FATAL
+描述:从字符串转换日期和/或时间时，转换失败。
+System.Data.SqlClient.SqlException (0x80131904): 从字符串转换日期和/或时间时，转换失败。
+   在 BW.MMS.DBUtility.DbHelperSQLGH_LOG.RunProcedure(String storedProcName, IDataParameter[] parameters, String tableName, Int32 Times) 位置 C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.DBUtility\DbHelperSQLGH_LOG.cs:行号 963
+   在 BW.MMS.DAL.HistoryRecord.GetDayReport(String startDate, String endDate) 位置 C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.DAL\HistoryRecord.cs:行号 432
+   在 BW.MMS.BLL.HistoryRecord.GetDayReport(String startDate, String endDate) 位置 C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.BLL\HistoryRecord.cs:行号 161
+   在 BW.MMS.Web.Controllers.DayReportController.GetDayReportList() 位置 C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\Controllers\DayReportController.cs:行号 44
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+-----------------------------------------------------------------------
+时间:2015-09-21 10:07:26,074
+级别:ERROR
+描述:Socket错误：由于目标计算机积极拒绝，无法连接。 127.0.0.1:11235
+-----------------------------------------------------------------------
+时间:2015-09-21 10:11:47,385
+级别:FATAL
+描述:在应使用条件的上下文(在 'BETWEEN2015' 附近)中指定了非布尔类型的表达式。
+System.Data.SqlClient.SqlException (0x80131904): 在应使用条件的上下文(在 'BETWEEN2015' 附近)中指定了非布尔类型的表达式。
+   在 BW.MMS.DBUtility.DbHelperSQLGH_LOG.RunProcedure(String storedProcName, IDataParameter[] parameters, String tableName, Int32 Times) 位置 C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.DBUtility\DbHelperSQLGH_LOG.cs:行号 963
+   在 BW.MMS.DAL.HistoryRecord.GetDayReport(String startDate, String endDate) 位置 C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.DAL\HistoryRecord.cs:行号 432
+   在 BW.MMS.BLL.HistoryRecord.GetDayReport(String startDate, String endDate) 位置 C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.BLL\HistoryRecord.cs:行号 161
+   在 BW.MMS.Web.Controllers.DayReportController.GetDayReportList() 位置 C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\Controllers\DayReportController.cs:行号 44
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+-----------------------------------------------------------------------
+时间:2015-09-21 10:26:59,039
+级别:ERROR
+描述:Socket错误：由于目标计算机积极拒绝，无法连接。 127.0.0.1:11235
+-----------------------------------------------------------------------
+时间:2015-09-21 10:31:04,273
+级别:ERROR
+描述:Socket错误：由于目标计算机积极拒绝，无法连接。 127.0.0.1:11235
+-----------------------------------------------------------------------
+时间:2015-09-21 10:31:45,571
+级别:ERROR
+描述:Socket错误：由于目标计算机积极拒绝，无法连接。 127.0.0.1:11235
+-----------------------------------------------------------------------
+时间:2015-09-21 10:49:25,265
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 10:49:26,282
+级别:ERROR
+描述:Socket错误：由于目标计算机积极拒绝，无法连接。 127.0.0.1:11235
+-----------------------------------------------------------------------
+时间:2015-09-21 10:50:25,279
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 10:51:25,290
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 10:52:25,304
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 10:53:25,317
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 10:54:25,330
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 10:55:25,344
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 10:56:25,359
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 10:57:25,373
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 10:58:25,385
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 10:59:25,398
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 11:00:25,412
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 11:01:25,428
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 11:02:25,440
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 11:03:25,454
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 11:04:25,466
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 11:05:25,481
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 11:06:06,972
+级别:ERROR
+描述:Socket错误：由于目标计算机积极拒绝，无法连接。 127.0.0.1:11235
+-----------------------------------------------------------------------
+时间:2015-09-21 11:06:25,494
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 11:07:25,507
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 11:08:25,521
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 11:09:25,535
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 11:10:25,548
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 11:11:25,561
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 11:12:25,576
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 11:13:25,589
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 11:14:25,602
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 11:15:25,616
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 11:16:25,631
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 11:17:25,644
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 11:18:25,656
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 11:19:25,670
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 11:20:25,684
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 11:21:25,697
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 11:22:25,712
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 11:22:48,331
+级别:ERROR
+描述:Socket错误：由于目标计算机积极拒绝，无法连接。 127.0.0.1:11235
+-----------------------------------------------------------------------
+时间:2015-09-21 11:23:25,726
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 11:24:25,738
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 11:25:25,752
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 11:26:25,765
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 11:27:25,779
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 11:28:25,793
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 11:32:19,110
+级别:ERROR
+描述:Socket错误：由于目标计算机积极拒绝，无法连接。 127.0.0.1:11235
+-----------------------------------------------------------------------
+时间:2015-09-21 11:40:41,364
+级别:ERROR
+描述:Socket错误：由于目标计算机积极拒绝，无法连接。 127.0.0.1:11235
+-----------------------------------------------------------------------
+时间:2015-09-21 12:34:06,385
+级别:FATAL
+描述:输入字符串的格式不正确。不能在 RecordDay 列中存储 <2015年09月1日>。所需类型是 Int32。
+System.ArgumentException: 输入字符串的格式不正确。不能在 RecordDay 列中存储 <2015年09月1日>。所需类型是 Int32。 ---> System.FormatException: 输入字符串的格式不正确。
+   在 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   在 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   在 System.Data.Common.Int32Storage.Set(Int32 record, Object value)
+   在 System.Data.DataColumn.set_Item(Int32 record, Object value)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Data.DataColumn.set_Item(Int32 record, Object value)
+   在 System.Data.DataRow.set_Item(DataColumn column, Object value)
+   在 System.Data.DataRow.set_Item(String columnName, Object value)
+   在 BW.MMS.Web.Controllers.MonthReportController.GetGridList() 位置 C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Web\Controllers\MonthReportController.cs:行号 90
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+-----------------------------------------------------------------------
+时间:2015-09-21 15:08:26,218
+级别:ERROR
+描述:Socket错误：由于目标计算机积极拒绝，无法连接。 127.0.0.1:11235
+-----------------------------------------------------------------------
+时间:2015-09-21 15:25:06,916
+级别:ERROR
+描述:Socket错误：由于目标计算机积极拒绝，无法连接。 127.0.0.1:11235
+-----------------------------------------------------------------------
+时间:2015-09-21 15:26:05,906
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 15:27:05,920
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 15:28:05,933
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 15:29:05,947
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 15:30:05,960
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 15:31:03,378
+级别:FATAL
+描述:输入字符串的格式不正确。不能在 RecordDay 列中存储 <2015年09月01日>。所需类型是 Int32。
+System.ArgumentException: 输入字符串的格式不正确。不能在 RecordDay 列中存储 <2015年09月01日>。所需类型是 Int32。 ---> System.FormatException: 输入字符串的格式不正确。
+   在 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   在 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   在 System.Data.Common.Int32Storage.Set(Int32 record, Object value)
+   在 System.Data.DataColumn.set_Item(Int32 record, Object value)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Data.DataColumn.set_Item(Int32 record, Object value)
+   在 System.Data.DataRow.set_Item(DataColumn column, Object value)
+   在 System.Data.DataRow.set_Item(String columnName, Object value)
+   在 BW.MMS.Web.Controllers.MonthReportController.GetGridList() 位置 H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Web\Controllers\MonthReportController.cs:行号 90
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+-----------------------------------------------------------------------
+时间:2015-09-21 15:31:04,958
+级别:FATAL
+描述:输入字符串的格式不正确。不能在 RecordDay 列中存储 <2015年09月01日>。所需类型是 Int32。
+System.ArgumentException: 输入字符串的格式不正确。不能在 RecordDay 列中存储 <2015年09月01日>。所需类型是 Int32。 ---> System.FormatException: 输入字符串的格式不正确。
+   在 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   在 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   在 System.Data.Common.Int32Storage.Set(Int32 record, Object value)
+   在 System.Data.DataColumn.set_Item(Int32 record, Object value)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Data.DataColumn.set_Item(Int32 record, Object value)
+   在 System.Data.DataRow.set_Item(DataColumn column, Object value)
+   在 System.Data.DataRow.set_Item(String columnName, Object value)
+   在 BW.MMS.Web.Controllers.MonthReportController.GetGridList() 位置 H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Web\Controllers\MonthReportController.cs:行号 90
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+-----------------------------------------------------------------------
+时间:2015-09-21 15:31:05,975
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 15:31:30,348
+级别:ERROR
+描述:Socket错误：由于目标计算机积极拒绝，无法连接。 127.0.0.1:11235
+-----------------------------------------------------------------------
+时间:2015-09-21 15:32:08,182
+级别:FATAL
+描述:输入字符串的格式不正确。不能在 RecordDay 列中存储 <2015年09月01日>。所需类型是 Int32。
+System.ArgumentException: 输入字符串的格式不正确。不能在 RecordDay 列中存储 <2015年09月01日>。所需类型是 Int32。 ---> System.FormatException: 输入字符串的格式不正确。
+   在 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   在 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   在 System.Data.Common.Int32Storage.Set(Int32 record, Object value)
+   在 System.Data.DataColumn.set_Item(Int32 record, Object value)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Data.DataColumn.set_Item(Int32 record, Object value)
+   在 System.Data.DataRow.set_Item(DataColumn column, Object value)
+   在 System.Data.DataRow.set_Item(String columnName, Object value)
+   在 BW.MMS.Web.Controllers.MonthReportController.GetGridList() 位置 H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Web\Controllers\MonthReportController.cs:行号 90
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+-----------------------------------------------------------------------
+时间:2015-09-21 15:39:44,288
+级别:ERROR
+描述:Socket错误：由于目标计算机积极拒绝，无法连接。 127.0.0.1:11235
+-----------------------------------------------------------------------
+时间:2015-09-21 15:45:38,639
+级别:FATAL
+描述:从字符串转换日期和/或时间时，转换失败。
+System.Data.SqlClient.SqlException (0x80131904): 从字符串转换日期和/或时间时，转换失败。
+   在 BW.MMS.DBUtility.DbHelperSQLGH_LOG.RunProcedure(String storedProcName, IDataParameter[] parameters, String tableName, Int32 Times) 位置 H:\SVNData\BW.MMS\BW.MMS\BW.MMS.DBUtility\DbHelperSQLGH_LOG.cs:行号 963
+   在 BW.MMS.DAL.HistoryRecord.GetYearReport(String startDate, String endDate) 位置 H:\SVNData\BW.MMS\BW.MMS\BW.MMS.DAL\HistoryRecord.cs:行号 452
+   在 BW.MMS.BLL.HistoryRecord.GetYearReport(String startDate, String endDate) 位置 H:\SVNData\BW.MMS\BW.MMS\BW.MMS.BLL\HistoryRecord.cs:行号 175
+   在 BW.MMS.Web.Controllers.YearReportController.GetGridList() 位置 H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Web\Controllers\YearReportController.cs:行号 60
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+-----------------------------------------------------------------------
+时间:2015-09-21 15:46:04,226
+级别:FATAL
+描述:从字符串转换日期和/或时间时，转换失败。
+System.Data.SqlClient.SqlException (0x80131904): 从字符串转换日期和/或时间时，转换失败。
+   在 BW.MMS.DBUtility.DbHelperSQLGH_LOG.RunProcedure(String storedProcName, IDataParameter[] parameters, String tableName, Int32 Times) 位置 H:\SVNData\BW.MMS\BW.MMS\BW.MMS.DBUtility\DbHelperSQLGH_LOG.cs:行号 963
+   在 BW.MMS.DAL.HistoryRecord.GetYearReport(String startDate, String endDate) 位置 H:\SVNData\BW.MMS\BW.MMS\BW.MMS.DAL\HistoryRecord.cs:行号 452
+   在 BW.MMS.BLL.HistoryRecord.GetYearReport(String startDate, String endDate) 位置 H:\SVNData\BW.MMS\BW.MMS\BW.MMS.BLL\HistoryRecord.cs:行号 175
+   在 BW.MMS.Web.Controllers.YearReportController.GetGridList() 位置 H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Web\Controllers\YearReportController.cs:行号 60
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+-----------------------------------------------------------------------
+时间:2015-09-21 15:47:08,492
+级别:ERROR
+描述:Socket错误：由于目标计算机积极拒绝，无法连接。 127.0.0.1:11235
+-----------------------------------------------------------------------
+时间:2015-09-21 15:47:17,330
+级别:FATAL
+描述:从字符串转换日期和/或时间时，转换失败。
+System.Data.SqlClient.SqlException (0x80131904): 从字符串转换日期和/或时间时，转换失败。
+   在 BW.MMS.DBUtility.DbHelperSQLGH_LOG.RunProcedure(String storedProcName, IDataParameter[] parameters, String tableName, Int32 Times) 位置 H:\SVNData\BW.MMS\BW.MMS\BW.MMS.DBUtility\DbHelperSQLGH_LOG.cs:行号 963
+   在 BW.MMS.DAL.HistoryRecord.GetYearReport(String startDate, String endDate) 位置 H:\SVNData\BW.MMS\BW.MMS\BW.MMS.DAL\HistoryRecord.cs:行号 452
+   在 BW.MMS.BLL.HistoryRecord.GetYearReport(String startDate, String endDate) 位置 H:\SVNData\BW.MMS\BW.MMS\BW.MMS.BLL\HistoryRecord.cs:行号 175
+   在 BW.MMS.Web.Controllers.YearReportController.GetGridList() 位置 H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Web\Controllers\YearReportController.cs:行号 60
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+-----------------------------------------------------------------------
+时间:2015-09-21 15:47:35,229
+级别:FATAL
+描述:从字符串转换日期和/或时间时，转换失败。
+System.Data.SqlClient.SqlException (0x80131904): 从字符串转换日期和/或时间时，转换失败。
+   在 BW.MMS.DBUtility.DbHelperSQLGH_LOG.RunProcedure(String storedProcName, IDataParameter[] parameters, String tableName, Int32 Times) 位置 H:\SVNData\BW.MMS\BW.MMS\BW.MMS.DBUtility\DbHelperSQLGH_LOG.cs:行号 963
+   在 BW.MMS.DAL.HistoryRecord.GetYearReport(String startDate, String endDate) 位置 H:\SVNData\BW.MMS\BW.MMS\BW.MMS.DAL\HistoryRecord.cs:行号 452
+   在 BW.MMS.BLL.HistoryRecord.GetYearReport(String startDate, String endDate) 位置 H:\SVNData\BW.MMS\BW.MMS\BW.MMS.BLL\HistoryRecord.cs:行号 175
+   在 BW.MMS.Web.Controllers.YearReportController.GetGridList() 位置 H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Web\Controllers\YearReportController.cs:行号 60
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+-----------------------------------------------------------------------
+时间:2015-09-21 15:50:37,782
+级别:ERROR
+描述:Socket错误：由于目标计算机积极拒绝，无法连接。 127.0.0.1:11235
+-----------------------------------------------------------------------
+时间:2015-09-21 16:08:16,727
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 16:08:17,728
+级别:ERROR
+描述:Socket错误：由于目标计算机积极拒绝，无法连接。 127.0.0.1:11235
+-----------------------------------------------------------------------
+时间:2015-09-21 16:09:16,740
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 16:10:16,753
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 16:11:16,765
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 16:12:16,779
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 16:13:16,793
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 16:14:16,808
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 16:15:16,821
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 16:16:16,834
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 16:17:16,848
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 16:18:16,861
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 16:19:16,875
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 16:20:16,888
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 16:21:16,903
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 16:22:16,916
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 16:23:16,929
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 16:24:16,943
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 16:24:57,993
+级别:ERROR
+描述:Socket错误：由于目标计算机积极拒绝，无法连接。 127.0.0.1:11235
+-----------------------------------------------------------------------
+时间:2015-09-21 16:25:16,956
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 16:26:16,971
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 16:27:16,983
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 16:28:16,997
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 16:29:17,010
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 16:30:17,024
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 16:31:17,038
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 16:32:17,052
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 16:33:17,065
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 16:34:17,078
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 16:35:17,093
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 16:36:17,106
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 16:37:17,119
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 16:38:17,133
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 16:39:17,147
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 16:40:17,160
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 16:41:17,173
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 16:41:38,291
+级别:ERROR
+描述:Socket错误：由于目标计算机积极拒绝，无法连接。 127.0.0.1:11235
+-----------------------------------------------------------------------
+时间:2015-09-21 16:42:17,188
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 16:43:17,200
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 16:44:17,215
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 16:45:17,228
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 16:46:17,243
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 16:47:17,256
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 16:48:17,268
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 16:49:17,283
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 16:50:17,296
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 16:51:17,309
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 16:52:17,323
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 16:53:17,337
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 16:54:17,350
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 16:55:17,364
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 16:56:17,378
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 16:57:17,390
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 16:58:17,404
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 16:58:18,527
+级别:ERROR
+描述:Socket错误：由于目标计算机积极拒绝，无法连接。 127.0.0.1:11235
+-----------------------------------------------------------------------
+时间:2015-09-21 16:59:17,418
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 17:00:17,433
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 17:01:17,446
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 17:02:17,459
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 17:03:17,472
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 17:04:17,485
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 17:05:17,499
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 17:06:17,514
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 17:07:17,528
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 17:08:17,541
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 17:09:17,555
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 17:10:17,568
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 17:11:17,581
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 17:17:42,138
+级别:ERROR
+描述:Socket错误：由于目标计算机积极拒绝，无法连接。 127.0.0.1:11235
+-----------------------------------------------------------------------
+时间:2015-09-21 17:20:47,341
+级别:ERROR
+描述:Socket错误：由于目标计算机积极拒绝，无法连接。 127.0.0.1:11235
+-----------------------------------------------------------------------
+时间:2015-09-21 17:26:33,096
+级别:ERROR
+描述:Socket错误：由于目标计算机积极拒绝，无法连接。 127.0.0.1:11235
+-----------------------------------------------------------------------
+时间:2015-09-21 17:44:13,708
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 17:44:14,708
+级别:ERROR
+描述:Socket错误：由于目标计算机积极拒绝，无法连接。 127.0.0.1:11235
+-----------------------------------------------------------------------
+时间:2015-09-21 17:45:13,722
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 17:46:13,736
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 17:47:13,749
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 17:48:13,763
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 17:49:13,777
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 17:50:13,790
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 17:51:13,804
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 17:52:13,818
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 17:53:13,831
+级别:WARN
+描述:重新连接Socket服务
+-----------------------------------------------------------------------
+时间:2015-09-21 17:56:21,287
+级别:ERROR
+描述:Socket错误：由于目标计算机积极拒绝，无法连接。 127.0.0.1:11235

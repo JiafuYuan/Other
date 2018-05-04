@@ -1,0 +1,34 @@
+<script type="text/javascript" src="{config.webpath}scripts/jquery/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="{config.webpath}scripts/lhgdialog/lhgdialog.js?skin=idialog"></script>
+<script type="text/javascript" src="<%templateskin%>/js/login_validate.js"></script>
+<link rel="stylesheet" type="text/css" href="/templates/sys/会员登录/css/css.css">
+<form id="loginform" name="loginform" url="{config.webpath}tools/submit_ajax.ashx?action=user_login">
+<div class="bgbox">
+    <h2>
+        会员登录</h2>
+    <ul class="message">
+        <li class="clearfix">
+            <label>
+                用户名：</label><div>
+                    <input id="txtUserName" name="txtUserName" class="input_m" /></div>
+        </li>
+        <li class="clearfix">
+            <label>
+                密码：</label><div>
+                    <input type="password"  id="txtPassword" name="txtPassword" class="input_m" /></div>
+        </li>
+    </ul>
+    <div class="text_c">
+        <input id="btnSubmit" name="btnSubmit" type="submit" class="login_but" value="" /></div>
+    <dl id="msgtips">
+        <dt></dt>
+        <dd>
+        </dd>
+    </dl>
+    <input id="turl" name="turl" type="hidden" value="{turl}" />
+    <div class="clearfix ma_t">
+        <small class="float_l">提示：还不是我们的会员？点击这里<a href="<%linkurl("register")%>" class="red">免费注册</a>
+        </small>
+    </div>
+</div>
+</form>

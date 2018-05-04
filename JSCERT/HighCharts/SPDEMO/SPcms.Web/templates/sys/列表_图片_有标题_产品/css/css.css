@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+/*商品样式
+------------------------------------------------------------------------------------*/
+.pro_list{width:auto;overflow:hidden;}
+	.pro_list ul{clear:both;width:auto;}
+	.pro_list li{float:left;margin:20px 18px 0 0;width:154px;height:200px; overflow:hidden;}
+		.pro_list li .pic{ display:block; margin:0 auto; position:relative;width:152px; height:152px; border:1px solid #e1e1e1; }
+			.pro_list li .pic:hover{border-color:#CCC #CCC #BBB;}
+			.pro_list li .pic img{width:152px;height:152px;overflow:hidden;}
+			.pro_list li .info .name{ color:#666; display:block; margin:4px auto 4px 10px; width:132px; text-overflow:ellipsis; white-space:nowrap;overflow:hidden; font-family:Arial, Helvetica, sans-serif; }
+			.pro_list li .info .price{ margin:0 auto 4px 15px; }
+			.pro_list li .info .price span{ color:#888888; }
+			.pro_list li .info .price strong{ color:#ED1C24; font-family:Arial, Helvetica, sans-serif; }

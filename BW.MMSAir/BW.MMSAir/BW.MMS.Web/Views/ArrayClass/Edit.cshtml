@@ -1,0 +1,82 @@
+﻿@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script type="text/javascript">
+    jQuery.extend(jQuery.fn.datagrid.defaults.editors, {
+        combotree: {
+            init: function (container, options) {
+                var editor = jQuery('<input type="text">').appendTo(container);
+                editor.combotree(options);
+                return editor;
+            },
+            destroy: function (target) {
+                jQuery(target).combotree('destroy');
+            },
+            getValue: function (target) {
+                var temp = jQuery(target).combotree('getValues');
+                return temp.join(',');
+            },
+            setValue: function (target, value) {
+                if (value == null)
+                    return;
+                var temp = value.split(',');
+                jQuery(target).combotree('setValues', temp);
+            },
+            resize: function (target, width) {
+                jQuery(target).combotree('resize', width);
+            }
+        }
+    });
+    var editIndex = undefined;
+    function endEditing() {
+        if (editIndex == undefined) { return true }
+        if ($('#EditArrayClass').datagrid('validateRow', editIndex)) {
+            var ed = $('#EditArrayClass').datagrid('getEditor', { index: editIndex, field: 'DeptID' });
+            var text = $(ed.target).combotree('getText');
+            $('#EditArrayClass').datagrid('getRows')[editIndex]['DeptID'] = $(ed.target).combotree('getValues').toString();
+            $('#EditArrayClass').datagrid('getRows')[editIndex]['DeptName'] = text;
+            $('#EditArrayClass').datagrid('endEdit', editIndex);
+            mergeCellsByField('EditArrayClass', 'classTypeName');
+            editIndex = undefined;
+            return true;
+        } else {
+            return false;
+        }
+    }
+    function onClickRow(index) {
+        if (editIndex != index) {
+            if (endEditing()) {
+                $('#EditArrayClass').datagrid('selectRow', index).datagrid('beginEdit', index);
+                editIndex = index;
+            } else {
+                $('#EditArrayClass').datagrid('selectRow', editIndex);
+            }
+        }
+    }
+    function onBeforeLoad(param) {
+        param.startDate = $("#startDate").datebox('getValue');
+        param.endDate = $("#startDate").datebox('getValue');
+    }
+    function formatDept(value, row, index) {
+        return row.DeptName;
+    }
+    function onLoadSuccess(data) {
+        mergeCellsByField('EditArrayClass', 'classTypeName');
+    }
+</script>
+<div id="toolbar" style="padding: 8px;">
+    日期：
+    @Html.TextBox("startDate", ViewData["dt_Date"], new { @class = "easyui-datebox", disabled = true })
+</div>
+@Html.DataGrid("EditArrayClass", Url.Action("GetArrayClassEdit"), ViewData["GridColumn"] as IEnumerable<object>, new
+{
+    fit = true,
+    striped = true,
+    singleSelect = true,
+    idField = "ClassID",
+    toolbar = "#toolbar",
+    onBeforeLoad = new { function = "onBeforeLoad" },
+    onClickRow = new { function = "onClickRow" },
+    onLoadSuccess = new { function = "onLoadSuccess" }
+}, new { style = "overflow: hidden;" })

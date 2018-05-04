@@ -1,0 +1,5 @@
+E:\svn\dtcms30\DTcms.Web\bin\DTcms.Web.Plugin.BaseBack.dll
+E:\svn\dtcms30\DTcms.Web\bin\DTcms.Web.Plugin.BaseBack.pdb
+E:\svn\dtcms30\DTcms.Web\plugins\BaseBack\obj\Debug\ResolveAssemblyReference.cache
+E:\svn\dtcms30\DTcms.Web\plugins\BaseBack\obj\Debug\DTcms.Web.Plugin.BaseBack.dll
+E:\svn\dtcms30\DTcms.Web\plugins\BaseBack\obj\Debug\DTcms.Web.Plugin.BaseBack.pdb

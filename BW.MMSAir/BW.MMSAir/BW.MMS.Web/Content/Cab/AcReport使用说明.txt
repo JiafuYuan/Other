@@ -1,0 +1,18 @@
+1. 引用 AcReport.js
+2. 添加 ActiveX object 对象
+	<object id="AcDesigner" classid="clsid:C84DF69C-0227-4846-919B-6B31168FE68A" codebase="AcReport.cab#version=2,8,9,0">
+	</object>
+3. 添加 ExistsReport 方法判断模版是否存在
+	例：BaseController加入Action方法
+	   [HttpPost]
+       public JsonResult ExistsReport()
+       {
+           string path = Request["path"];
+           return Json(System.IO.File.Exists(Server.MapPath(path)));
+       }
+4. 调用方法，datagrid--datagrid的id;url--AcReport模版路径;variant--变量，可缺省。格式：[{name:'变量名',value:变量值}]
+	//报表设计
+	ShowDesigner(datagrid, url, variant);
+	//打印预览
+	PrintView(datagrid, url, variant);
+	例：ShowDesigner('datagrid', '~/Reports/datagrid.apt', [{ name: 'Date', value: $('#txtDate').val()}]);

@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+/*
+------------------------------------------------------------------------------------*/
+*{margin:0;padding:0;}
+
+/*  搜索  */
+.search{ width:180px; height:20px; background:url(../img/w.gif) no-repeat; margin-top:6px;}
+.search input{display:inline-block;}
+.text_box{ width:150px; height:20px; line-height:20px; float:left; border:none; background:none; padding-left:2px; color:#abb4b3;}
+.s_but{width:28px;height:20px; cursor:pointer; float:right; border:none; background:none; font-size:14px; color:#fff; font-family:"微软雅黑";}

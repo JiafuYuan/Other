@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <%set string category_title=get_category_title(category_id,"产品中心")%>
+    <title>{category_title} - {config.webname}</title>
+    <meta content="{config.webkeyword}" name="keywords" />
+    <meta content="{config.webdescription}" name="description" />
+    
+    <link href="<%templateskin%>/css/style.css" rel="stylesheet" type="text/css" />
+    <!--组件依赖js begin-->
+    <script type="text/javascript" src="<%templateskin%>/js/zepto.js"></script>
+    <script type="text/javascript" src="<%templateskin%>/js/touch.js"></script>
+    <!--新版zepto合并版中不包括touch.js-->
+    <script type="text/javascript" src="<%templateskin%>/js/zepto.extend.js"></script>
+    <script type="text/javascript" src="<%templateskin%>/js/zepto.ui.js"></script>
+    <script type="text/javascript" src="<%templateskin%>/js/zepto.iscroll.js"></script>
+    <!--iScroll-->
+    <script type="text/javascript" src="<%templateskin%>/js/zepto.highlight.js"></script>
+    <script type="text/javascript" src="<%templateskin%>/js/zepto.fix.js"></script>
+    <!--search begin-->
+    <script type="text/javascript" src="<%templateskin%>/js/quickdelete.js"></script>
+    <!--快速删除组件，配合suggestion使用-->
+    <script type="text/javascript" src="<%templateskin%>/js/suggestion.js"></script>
+    <!--banner begin-->
+    <script type="text/javascript" src="<%templateskin%>/js/slider.js"></script>
+    <!--组件依赖js end-->
+    <!--下拉 begin-->
+    <script type="text/javascript" src="<%templateskin%>/js/dropmenu.js"></script>
+    <script type="text/javascript" src="<%templateskin%>/js/button.js"></script>
+    <!--下拉 end-->
+    <!--加载更多 begin-->
+    <script type="text/javascript" src="<%templateskin%>/js/refresh.js"></script>
+    <!--返回顶部 begin-->
+    <script type="text/javascript" src="<%templateskin%>/js/gotop.js"></script>
+    <script type="text/javascript" src="<%templateskin%>/js/add2desktop.js"></script>
+</head>
+<body>
+<!--抬头开始-->
+   <%template src="_header.html"%>
+<!--导航结束-->
+<!--主体开始-->
+<div class="mainbody">
+    <!--专家团队-->
+    <section class="main3">
+    	<div class="main1_1 clearfix">
+    		<h4 class="float_l"><span class="a icon"></span><span>产品中心</span></h4>
+            <div class="section float_r">
+                <div id="container">
+                    <div class="btns"><a id="btn3" class="bat">菜单</a></div>
+                    <div id="dropmenu3">
+                        <ul>
+                                                 <li><a href="<%linkurl("content","about")%>" class="current">关于我们</a></li>
+      <li><a href="<%linkurl("goods_list","0")%>">产品介绍</a></li>
+      <li><a href="<%linkurl("news_list","33")%>">行业新闻</a></li>
+      <li><a href="<%linkurl("news_list","43")%>">集团新闻</a></li>
+      <li><a href="<%linkurl("ryzz_list","0")%>">荣誉资质</a></li>
+      <li><a href="<%linkurl("content","rczp")%>">人才招聘</a></li>
+      <li><a href="<%linkurl("content","contact")%>">联系我们</a></li>
+      <li class="last"><a href="<%linkurl("feedback")%>">给我留言</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+			<script>
+                $('#btn3').button();
+                $('#dropmenu3').dropmenu({
+                    align:'right'
+                }).dropmenu('bindButton', $('#btn3')).on('itemClick', function (e, item) {
+                            alert(item.text);
+                        });
+                $('body>.section').on('click', function(){//make blank area clickabel
+                });
+                //创建组件
+                $('#dropmenu').gotop();	
+            </script>
+        </div>
+        <div class="main3_2 ui-refresh lazyload">
+
+          <%set DataTable news_list = get_article_list("goods", category_id, page, "status=0", out totalcount, out pagelist, "goods_list", category_id, "__id__")%>
+                <%foreach(DataRow dr in news_list.Rows)%>
+        	<div class="yhn op clearfix">
+            	<div class="yhn_1 float_l"><a href="<%linkurl("goods_show",{dr[id]})%>"><img class="ui-imglazyload" data-url='{dr[img_url]}'></a></div>
+                <div class="yhn_2 float_l">
+                	<h5>{dr[title]}</h5>
+                </div>
+            </div>
+            <%/foreach%>
+            <input value="1" id="page" type="hidden" />
+            <div class="ui-refresh-down more"></div>
+        </div>
+         <script type="text/javascript">
+            (function () {
+                /*组件初始化js begin*/
+                $('.ui-refresh').refresh({
+                    ready: function (dir, type) {
+                        var me = this;
+                        
+                     var tempstr="<div class='yhn op clearfix'><div class='yhn_1 float_l'><a href='temp_url'><img class='ui-imglazyload' data-url='temp_imgurl'></a></div>";/*输出模板如果为空也可以*/
+                     $("#page").val(parseInt($("#page").val()) + 1);
+                  
+                        $.getJSON('/tools/moblie_ajax.ashx?action=get_artice_list', { pd: "goods", cateid: <%=category_id%>, page:$("#page").val(),temp:tempstr }, function (data) {
+                            var $list = $('.data-list'),
+								html = (function (data) {      //数据渲染
+								    var liArr = [];
+								    $.each(data, function () {
+								        liArr.push(this.html);
+								    });
+								    return liArr.join('');
+								})(data);
+
+                            $list[dir == 'up' ? 'prepend' : 'append'](html);
+                            me.afterDataLoading();    //数据加载完成后改变状态
+                        });
+                    }
+                });
+                /*组件初始化js end*/
+            })();
+	</script>
+    </section>
+    <!--专家团队结束-->
+</div>
+<!--导航开始-->
+    <%template src="_foot.html"%>
+<!--ui:/style:陈媛媛/code:？-->
+</body>
+</html>

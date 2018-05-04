@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/common_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" >
+
+        <include layout="@layout/title" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true" >
+
+        <EditText
+            android:id="@+id/waybill"
+            android:layout_width="220dip"
+            android:layout_height="55dip"
+            android:layout_centerInParent="true"
+            android:background="@drawable/gaga"
+            android:gravity="center"
+            android:hint="手动填写运单号或者查询" />
+
+        <Button
+            android:layout_width="70.4dip"
+            android:layout_height="55dip"
+            android:layout_marginRight="7dip"
+            android:background="@drawable/serch_bar"
+            android:onClick="querry"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="140dip"
+        android:layout_height="55dip"
+        android:layout_below="@id/up"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="7dip"
+        android:layout_marginTop="40dip"
+        android:background="@drawable/login_selector"
+        android:onClick="next"
+        android:text="下 一 步"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+</RelativeLayout>

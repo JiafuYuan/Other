@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="270dip"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="90dip"
+        android:layout_height="39dip"
+        android:gravity="center|left"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="180dip"
+        android:layout_height="39dip"
+        android:layout_toRightOf="@id/tv_name"
+        android:background="@drawable/gaga1"
+        android:gravity="center|left"
+        android:paddingLeft="10dip"
+        android:textColor="@android:color/black"
+        android:paddingRight="25dip"
+        android:hint="--请选择--"
+        android:textSize="20sp" />
+
+    <ImageButton
+        android:id="@+id/ib_arrow"
+        android:layout_width="34dip"
+        android:layout_height="39dip"
+        android:layout_alignBottom="@id/tv_content"
+        android:layout_alignRight="@id/tv_content"
+        android:layout_alignTop="@id/tv_content"
+        android:layout_marginRight="0dip"
+        android:background="@drawable/down_arrow1"
+        android:clickable="true"
+        android:focusable="true" />
+
+</RelativeLayout>

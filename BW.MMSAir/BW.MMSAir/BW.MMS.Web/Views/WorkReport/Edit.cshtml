@@ -1,0 +1,121 @@
+﻿@model BW.MMS.Model.m_WorkReport
+@{
+    ViewBag.Title = "编辑";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script type="text/javascript">
+    $.extend($.fn.datagrid.methods, {
+        editCell: function (jq, param) {
+            return jq.each(function () {
+                var opts = $(this).datagrid('options');
+                var fields = $(this).datagrid('getColumnFields', true).concat($(this).datagrid('getColumnFields'));
+                for (var i = 0; i < fields.length; i++) {
+                    var col = $(this).datagrid('getColumnOption', fields[i]);
+                    col.editor1 = col.editor;
+                    if (fields[i] != param.field) {
+                        col.editor = null;
+                    }
+                }
+                $(this).datagrid('beginEdit', param.index);
+                for (var j = 0; j < fields.length; j++) {
+                    var col = $(this).datagrid('getColumnOption', fields[j]);
+                    col.editor = col.editor1;
+                }
+            });
+        }
+    });
+    var editIndex = undefined;
+    function endEditing() {
+        if (editIndex == undefined) { return true }
+        if ($('#SensorNodes').datagrid('validateRow', editIndex)) {
+            $('#SensorNodes').datagrid('endEdit', editIndex);
+            editIndex = undefined;
+            return true;
+        } else {
+            return false;
+        }
+    }
+    //    function onClickRow(rowIndex) {
+    //        if (endEditing()) {
+    //            $('#SensorNodes').datagrid('selectRow', rowIndex).datagrid('beginEdit', rowIndex);
+    //            editIndex = rowIndex;
+    //        }
+    //    }
+
+   // $("#cc").combobox('setValue', '默认值');
+</script>
+<form  id="form">
+@Html.HiddenFor(m => m.ID)
+@Html.HiddenFor(m => m.UserID)
+<table class="table-form">
+
+    <tr>
+        <th>
+            当前工作汇报
+        </th>
+        <td>
+            @Html.TextAreaFor(model => model.vc_Content, 5, 50, new
+            {
+                @class = "easyui-validatebox",
+           required = true,
+                validType = "length[1,500]"
+            })
+            <span style="color: Red">*</span>
+        </td>
+    </tr>
+     <tr>
+        <th>
+            工作完成情况
+        </th>
+        <td>
+            @Html.TextAreaFor(model => model.vc_PracticalCompletion, 2, 50, new
+            {
+                @class = "easyui-validatebox",
+           required = true,
+                validType = "length[1,500]"
+            })
+            <span style="color: Red">*</span>
+        </td>
+    </tr>
+     <tr>
+        <th>
+            下次工作汇报
+        </th>
+        <td>
+            @Html.TextAreaFor(model => model.vc_NextContent, 5, 50, new
+            {
+                @class = "easyui-validatebox",
+           required = true,
+                validType = "length[1,500]"
+            })
+            <span style="color: Red">*</span>
+        </td>
+    </tr>
+    <tr>
+        <th>
+            领导批复
+        </th>
+        <td>
+            @Html.TextAreaFor(model => model.vc_Reply,5,50, new
+            {
+                @class = "easyui-validatebox",
+      
+                validType = "length[0,500]"
+            })
+        
+        </td>
+    </tr>
+    <tr>
+        <th>
+            报告类型
+        </th>
+        <td>
+            @Html.ComboBoxFor(model => model.WorkReportType, Url.Action("GetWorkReportType"), "ID", "workreporttypename", new { editable = false, multiple = false, required = true })
+          <span style="color: Red">*</span>
+        </td>
+     
+    </tr>
+   
+   
+</table>
+</form>

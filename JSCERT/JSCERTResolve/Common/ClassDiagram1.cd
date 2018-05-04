@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Common.ButtonEx" Collapsed="true">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAECAVAAABAAEACAAACBACAIAAgAAIiAAA=</HashCode>
+      <FileName>ButtonEx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.frmBase" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQpAIVIAACgYL0GCIBCJAAACBpQLAAETAAIgNQQlIIo=</HashCode>
+      <FileName>frmBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.Logger" Collapsed="true">
+    <Position X="4.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Logger.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.frmBaseMessageForm" Collapsed="true">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACACAAACAEEgQAAADIQAgCgAAQAAhgIQAAAYCgAAg=</HashCode>
+      <FileName>MessageBox\frmBaseMessageForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.Win32" Collapsed="true">
+    <Position X="6.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>DGhAqGhgRjkkSlAP4OOOCMDMIkBF94MyQEQiKhPyJzA=</HashCode>
+      <FileName>Win32.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.XmlManage&lt;T&gt;" Collapsed="true">
+    <Position X="8.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAQAAACAAAAAAAAAAA=</HashCode>
+      <FileName>XmlManage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.MessageBoxEx.MessageBoxEx" Collapsed="true">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAEAAAAAAAIAABAAAA=</HashCode>
+      <FileName>MessageBox\MessageBoxEx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.Properties.Resources" Collapsed="true">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAgQAAAAAAABEAAAAQIEAIAAAYAAAAQAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.SOCKET.SerialiObj" Collapsed="true">
+    <Position X="3" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SerialiObj.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.Tools.SocketData" Collapsed="true">
+    <Position X="4.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Tools\SocketData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="Common.ButtonStyle" Collapsed="true">
+    <Position X="3" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAACQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ButtonEx.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Common.Enum.EnumActionType" Collapsed="true">
+    <Position X="4.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAIAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Enum\EnumActionType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Common.Enum.EnumAlarmType" Collapsed="true">
+    <Position X="6.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAhACABAEAAAAAAAEAAAAAAgAgAAAQ=</HashCode>
+      <FileName>Enum\EnumAlarmType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Common.Enum.EnumApplyState" Collapsed="true">
+    <Position X="8.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAACAAAAAAAACAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>Enum\EnumApplyState.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Common.Enum.EnumApplyType" Collapsed="true">
+    <Position X="3" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAARAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Enum\EnumApplyType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Common.Enum.EnumCommandType" Collapsed="true">
+    <Position X="4.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>UwAASBgAAAAIwEIAAMAFEIggEBgAAGQABAAQASFMAgQ=</HashCode>
+      <FileName>Enum\EnumCommandType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Common.Enum.EnumDWStationStateType" Collapsed="true">
+    <Position X="6.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAEAAIAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Enum\EnumDWStationStateType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Common.Enum.EnumEquipmentType" Collapsed="true">
+    <Position X="8.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQBBAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Enum\EnumEquipmentType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Common.Enum.EnumFlowPathType" Collapsed="true">
+    <Position X="3" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAgAiAABAAAAAAAAAAAAAAAAAAAgAACAAAAAAAAAA=</HashCode>
+      <FileName>Enum\EnumFlowPath.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Common.Enum.EnumMessageType" Collapsed="true">
+    <Position X="4.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>Enum\EnumMessageType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Common.Enum.EnumPDAState" Collapsed="true">
+    <Position X="6.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAEAAIAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Enum\EnumPDAState.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Common.Enum.EnumPlanState" Collapsed="true">
+    <Position X="8.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AYAAAAAAAAEAgAKAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Enum\EnumPlanState.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Common.Enum.EnumUserState" Collapsed="true">
+    <Position X="3" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAEAAIAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Enum\EnumUserState.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Common.Enum.EnumUserType" Collapsed="true">
+    <Position X="4.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Enum\EnumUserType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Common.Enum.EnumVehicleState" Collapsed="true">
+    <Position X="6.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAAAAAAAAAAIAAgAAAAAACAAAAA=</HashCode>
+      <FileName>Enum\EnumVehicleState.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Common.Enum.EnumWifiStationStateType" Collapsed="true">
+    <Position X="8.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAEAAIAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Enum\EnumWifiStationStateType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="微软雅黑" Size="9" />
+</ClassDiagram>

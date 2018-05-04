@@ -1,0 +1,34 @@
+2014-09-19 11:25:45：连接成功
+2014-09-19 11:28:11：连接成功
+2014-09-19 11:33:08：连接成功
+2014-09-19 11:53:55：连接成功
+2014-09-19 11:54:34：insert into m_Vehicle(vc_Code,vc_Name,VehicleTypeID,DepartmentID,i_LastLocalizerStationID,i_State,i_LocalizerStationID,dt_InLocalizerStationDateTime,i_MaintainInterval,dt_CreateDateTime,dt_LastMaintainDateTIme,vc_Memo,i_Flag) values ('657657','878768',5,2,0,0,0,'2014/9/19 11:54:33',10,'2014/9/19 11:54:30','2014/9/19 11:54:31','',0);select @@IDENTITY
+语句已终止。
+不能将值 NULL 插入列 'i_SafeLoad'，表 'BW_VehicleTransportManage.dbo.m_Vehicle'；列不允许有 Null 值。INSERT 失败。   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+   在 Bestway.Windows.Tools.ADODB.OleDbHelper.ExecuteSql(String strSql, OleDbParameter[] parameters, Int32 timeout)
+2014-09-19 11:54:47：insert into m_Vehicle(vc_Code,vc_Name,VehicleTypeID,DepartmentID,i_LastLocalizerStationID,i_State,i_LocalizerStationID,dt_InLocalizerStationDateTime,i_MaintainInterval,dt_CreateDateTime,dt_LastMaintainDateTIme,vc_Memo,i_Flag) values ('657657','878768',5,2,0,0,0,'2014/9/19 11:54:43',10,'2014/9/19 11:54:43','2014/9/19 11:54:43','',0);select @@IDENTITY
+语句已终止。
+不能将值 NULL 插入列 'i_SafeLoad'，表 'BW_VehicleTransportManage.dbo.m_Vehicle'；列不允许有 Null 值。INSERT 失败。   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+   在 Bestway.Windows.Tools.ADODB.OleDbHelper.ExecuteSql(String strSql, OleDbParameter[] parameters, Int32 timeout)
+2014-09-19 11:55:08：insert into m_Vehicle(vc_Code,vc_Name,VehicleTypeID,DepartmentID,i_LastLocalizerStationID,i_State,i_LocalizerStationID,dt_InLocalizerStationDateTime,i_MaintainInterval,dt_CreateDateTime,dt_LastMaintainDateTIme,vc_Memo,i_Flag) values ('657657','878768',5,2,0,0,0,'2014/9/19 11:55:02',0,'2014/9/19 11:55:02','2014/9/19 11:55:02','',0);select @@IDENTITY
+语句已终止。
+不能将值 NULL 插入列 'i_SafeLoad'，表 'BW_VehicleTransportManage.dbo.m_Vehicle'；列不允许有 Null 值。INSERT 失败。   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+   在 Bestway.Windows.Tools.ADODB.OleDbHelper.ExecuteSql(String strSql, OleDbParameter[] parameters, Int32 timeout)
+2014-09-19 11:55:26：insert into m_Vehicle(vc_Code,vc_Name,VehicleTypeID,DepartmentID,i_LastLocalizerStationID,i_State,i_SafeLoad,i_LocalizerStationID,dt_InLocalizerStationDateTime,i_MaintainInterval,dt_CreateDateTime,dt_LastMaintainDateTIme,vc_Memo,i_Flag) values ('657657','878768',5,2,0,0,0,0,'2014/9/19 11:55:22',0,'2014/9/19 11:55:21','2014/9/19 11:55:21','',0);select @@IDENTITY
+语句已终止。
+不能将值 NULL 插入列 'dt_ScrapDateTime'，表 'BW_VehicleTransportManage.dbo.m_Vehicle'；列不允许有 Null 值。INSERT 失败。   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+   在 Bestway.Windows.Tools.ADODB.OleDbHelper.ExecuteSql(String strSql, OleDbParameter[] parameters, Int32 timeout)
+2014-09-19 13:01:35：心跳返回false
+2014-09-19 13:02:10：连接成功
+2014-09-19 13:02:34：insert into m_Vehicle(vc_Code,vc_Name,VehicleTypeID,DepartmentID,i_LastLocalizerStationID,i_State,i_LocalizerStationID,dt_InLocalizerStationDateTime,i_MaintainInterval,dt_CreateDateTime,dt_LastMaintainDateTIme,vc_Memo,i_Flag) values ('56465','6765',2,2,0,0,0,'2014/9/19 13:02:32',10,'2014/9/19 13:02:32','2014/9/19 13:02:32','',0);select @@IDENTITY
+语句已终止。
+不能将值 NULL 插入列 'i_SafeLoad'，表 'BW_VehicleTransportManage.dbo.m_Vehicle'；列不允许有 Null 值。INSERT 失败。   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+   在 Bestway.Windows.Tools.ADODB.OleDbHelper.ExecuteSql(String strSql, OleDbParameter[] parameters, Int32 timeout)
+2014-09-19 13:04:38：心跳返回false
+2014-09-19 13:05:11：连接成功
+2014-09-19 13:09:19：连接成功

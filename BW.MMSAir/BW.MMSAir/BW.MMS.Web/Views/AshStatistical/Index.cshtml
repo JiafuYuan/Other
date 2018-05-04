@@ -1,0 +1,90 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="@Url.Content("~/Content/My97DatePicker/WdatePicker.js")" type="text/javascript"></script>
+<script type="text/javascript">
+    $(function () {
+        $(window).resize(function () {
+            $('#gridAshReport').datagrid('resize');
+        });
+    });
+
+    function onBeforeLoad(param) {
+        $('#gridAshReport').datagrid('clearSelections');
+        //        if ($('#dt_BeginDate').val().length == 0) {
+        //            $('#dt_BeginDate').val(formatDate(new Date(), 'yyyy-MM-dd 00:00:00'));
+        //        }
+        //        if ($('#dt_EndDate').val().length == 0) {
+        //            $('#dt_EndDate').val(formatDate(new Date(), 'yyyy-MM-dd HH:mm:ss'));
+        //        }
+        param.dt_BeginDate = $('#dt_BeginDate').val();
+        param.dt_EndDate = $('#dt_EndDate').val();
+    }
+    function chartLineShow() {
+        var dt_BeginDate = $('#dt_BeginDate').val();
+        var dt_EndDate = $('#dt_EndDate').val();
+        TopWindow.$.dialogwindow({
+            iconCls: 'icon-customers',
+            id: "chartData",
+            title: '曲线图',
+            width: 1100,
+            height: 600,
+            iframe: true,
+            url: '@Url.Action("ChartLineIndex")?dt_BeginDate=' + dt_BeginDate + '&&dt_EndDate=' + dt_EndDate
+        });
+    }
+    function ShowReport(action) {
+        var params = {};
+        params['dt_Begin'] = $('#dt_BeginDate').val();
+        params['dt_EndDate'] = $('#dt_EndDate').val();
+        $.post('@Url.Action("GetReportData")', params).success(function (data) {
+            LoadAcReport({
+                action: action,
+                aptPath: '@Url.Content("~/Reports/AshStatistical.apt")',
+                dataname: 'AshStatistical',
+                data: data,
+                variant: [{ name: 'txtDate', value: $('#dt_BeginDate').val() + '到' + $('#dt_EndDate').val()}]
+            });
+        }).error(function (XMLHttpRequest, textStatus, errorThrown) {
+            TopWindow.$.messager.alert("提示", a.responseText, "error");
+        });
+    }
+</script>
+<div id="toolbar" style="padding: 8px;">
+    日期：
+    @Html.DatePicker("dt_BeginDate", new
+   {
+       dateFmt = "'yyyy-MM-dd HH:00:00'"
+   }, new { @class = "Wdate", value = (new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, 0, 0, 0, 0)).ToString("yyyy-MM-dd HH:00:00") })
+    到
+    @Html.DatePicker("dt_EndDate", new
+   {
+       dateFmt = "'yyyy-MM-dd HH:00:00'"
+   }, new { @class = "Wdate", value = DateTime.Now.ToString("yyyy-MM-dd HH:00:00") })
+    @*日期：
+    @Html.TextBox("dt_BeginDate", (new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, 0, 0, 0, 0)).ToString("yyyy-MM-dd HH:00:00"), new { @class = "easyui-datetimebox", editable = false })
+    到
+    @Html.TextBox("dt_EndDate", DateTime.Now.ToString("yyyy-MM-dd HH:00:00"), new { @class = "easyui-datetimebox", editable = false })
+    *@@Html.LinkButton("查询", "icon-search", new { onclick = "$('#gridAshReport').datagrid('load')" })
+    @*@Html.LinkButton("曲线图", "icon-chartline", new { onclick = "chartLineShow()" })*@
+    @if (Convert.ToBoolean(ViewData["Designer"]))
+    {
+        @Html.LinkButton("报表设计", "icon-report", new { onclick = "ShowReport('ShowDesigner')" })
+    }
+    @Html.LinkButton("报表打印预览", "icon-report", new { onclick = "ShowReport('Preview')" })
+</div>
+@Html.DataGrid("gridAshReport", @Url.Action("GetGridList"), ViewData["GridColumn"] as IEnumerable<object>, new
+    {
+        fit = true,
+        rownumbers = true,
+        singleSelect = true,
+        striped = true,
+        idField = "ID",
+        sortName = "ID",
+        sortOrder = "asc",
+        toolbar = "#toolbar",
+        pagination = true,
+        pageSize = 30,
+        onBeforeLoad = new { function = "onBeforeLoad" }
+    }, new { style = "overflow: hidden;" })

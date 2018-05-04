@@ -1,0 +1,29 @@
+<header class="header clearfix">
+	<div class="header1 float_l"><a title="{config.webtitle}" href="<%linkurl("index")%>"><img src="<%templateskin%>/images/q.jpg" alt="{config.webtitle}" border="0"/></a></div>
+    <div class="header2 float_r"><a href="tel:02568158000"><img src="<%templateskin%>/images/qq.jpg" border="0"/></a></div>
+</header>
+<!--抬头结束-->
+<!--搜索-->
+<div>
+    <script type="text/javascript" src="<%templateskin%>/scripts/base.js"></script>
+    <div class="search">
+        <div class="search-input">
+            <input type="text" name="keywords" id="keywords" onkeydown="if(event.keyCode==13){SiteSearch('<%linkurl("search")%>', '#keywords');return false};"></div>
+        <div class="search-button">
+            <input type="submit" value="搜索" onclick="SiteSearch('<%linkurl("search")%>', '#keywords');"></div>
+    </div>
+</div>
+<!--搜索结束-->
+<!--导航开始-->
+<nav class="nava clearfix">
+    <ul>
+        <li><a href="<%linkurl("content","about")%>" class="current">关于我们</a></li>
+      <li><a href="<%linkurl("goods_list","0")%>">产品介绍</a></li>
+      <li><a href="<%linkurl("news_list","33")%>">行业新闻</a></li>
+      <li><a href="<%linkurl("news_list","43")%>">集团新闻</a></li>
+      <li><a href="<%linkurl("ryzz_list","0")%>">荣誉资质</a></li>
+      <li><a href="<%linkurl("content","rczp")%>">人才招聘</a></li>
+      <li><a href="<%linkurl("content","contact")%>">联系我们</a></li>
+      <li class="last"><a href="<%linkurl("feedback")%>">给我留言</a></li>
+    </ul>
+</nav>

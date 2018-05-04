@@ -1,0 +1,16 @@
+
+<link rel="stylesheet" type="text/css" href="/templates/sys/焦点图_下标按钮/css/myCss.css">
+
+<div id="fcbx">
+    <ul id="fcimg">
+      <%set DataTable articalDtAsbFm=get_article_list("news", 0, 5, "status=0 and is_slide=1")%>
+<%foreach(DataRow drAsbFm in articalDtAsbFm.Rows)%>
+ <li><a href="<%linkurl("news_show",{drAsbFm[id]})%>"><img src="{drAsbFm[img_url]}" alt="banner"></a></li>
+<%/foreach%>
+
+
+       
+    </ul>
+</div>
+
+<script src="/templates/sys/焦点图_下标按钮/js/myJs.js"></script>

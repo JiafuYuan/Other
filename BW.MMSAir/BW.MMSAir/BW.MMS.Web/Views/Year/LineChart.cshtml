@@ -1,0 +1,201 @@
+﻿@{
+    ViewBag.Title = "LineChart";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script type="text/javascript">
+    var dic = getSeries();
+    $(function () {
+        $('#portal').portal({
+            width: 1060,
+            height: 460
+        });
+        chartContainer();
+    });
+    function chartContainer() {
+        var wind = [];
+        var power = [];
+        var water = [];
+        var production = [];
+        wind.push(dic[0]);
+        power.push(dic[2]);
+        water.push(dic[1]);
+        production.push(dic[3]);
+
+        $('#chartWind').highcharts({
+            chart: {
+                type: 'spline'
+            },
+            credits: {
+                enabled: false
+            },
+            title: {
+                //text: '@ViewData["monthBegin"]到' + '@ViewData["monthEnd"]</br>@ViewData["monthDeptName"] 月报表'
+                text: ''
+            },
+            xAxis: {
+                categories: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月']
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: '累计'
+                }
+            },
+            legend: {
+                enabled: false
+            },
+            tooltip: {
+                valueSuffix: 'm³'
+            },
+            plotOptions: {
+                column: {
+                    pointPadding: 0.2,
+                    borderWidth: 0
+                }
+            },
+            series: wind
+        });
+        $('#chartPower').highcharts({
+            chart: {
+                type: 'spline'
+            },
+            credits: {
+                enabled: false
+            },
+            title: {
+                //text: '@ViewData["monthBegin"]到' + '@ViewData["monthEnd"]</br>@ViewData["monthDeptName"] 月报表'
+                text: ''
+            },
+            xAxis: {
+                categories: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月']
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: '累计'
+                }
+            },
+            legend: {
+                enabled: false
+            },
+            tooltip: {
+                valueSuffix: 'kW‧h'
+            },
+            plotOptions: {
+                column: {
+                    pointPadding: 0.2,
+                    borderWidth: 0
+                }
+            },
+            series: power
+        });
+        $('#chartWater').highcharts({
+            chart: {
+                type: 'spline'
+            },
+            credits: {
+                enabled: false
+            },
+            title: {
+                //text: '@ViewData["monthBegin"]到' + '@ViewData["monthEnd"]</br>@ViewData["monthDeptName"] 月报表'
+                text: ''
+            },
+            xAxis: {
+                categories: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月']
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: '累计'
+                }
+            },
+            legend: {
+                enabled: false
+            },
+            tooltip: {
+                valueSuffix: 'm³'
+            },
+            plotOptions: {
+                column: {
+                    pointPadding: 0.2,
+                    borderWidth: 0
+                }
+            },
+            series: water
+        });
+        $('#chartProduction').highcharts({
+            chart: {
+                type: 'spline'
+            },
+            credits: {
+                enabled: false
+            },
+            title: {
+                //text: '@ViewData["monthBegin"]到' + '@ViewData["monthEnd"]</br>@ViewData["monthDeptName"] 月报表'
+                text: ''
+            },
+            xAxis: {
+                categories: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月']
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: '累计'
+                }
+            },
+            legend: {
+                enabled: false
+            },
+            tooltip: {
+                valueSuffix: 'T'
+            },
+            plotOptions: {
+                column: {
+                    pointPadding: 0.2,
+                    borderWidth: 0
+                }
+            },
+            series: production
+        });
+    }
+
+    function getSeries() {
+        var paramSeries;
+        $.ajax({
+            url: '@Url.Action("getSeries")',
+            type: "POST",
+            async: false,
+            datatype: "json",
+            data: { year: '@ViewData["year"]' },
+            success: function (data) {
+                paramSeries = data;
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                $.messager.alert("提示", XMLHttpRequest.responseText, "error");
+            }
+        });
+        return paramSeries;
+    }
+</script>
+<div id="portal">
+    <div style="width: 50%;">
+        <div title="风量" data-options="iconCls:'icon-chartline'">
+            <div id="chartWind" style="width: 100%; height: 100%;">
+            </div>
+        </div>
+        <div title="电量" data-options="iconCls:'icon-chartline'">
+            <div id="chartPower" style="width: 100%; height: 100%;">
+            </div>
+        </div>
+    </div>
+    <div style="width: 50%;">
+        <div title="水量" data-options="iconCls:'icon-chartline'">
+            <div id="chartWater" style="width: 100%; height: 100%;">
+            </div>
+        </div>
+        <div title="产量" data-options="iconCls:'icon-chartline'">
+            <div id="chartProduction" style="width: 100%; height: 100%;">
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,134 @@
+﻿@{
+    ViewBag.Title = "Column";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script type="text/javascript">
+    $(function () {
+        $('#ColumnConfig').datagrid({
+            fit: true,
+            striped: true,
+            idField: 'field',
+            sortName: 'field',
+            sortOrder: 'desc',
+            toolbar: '#toolbar',
+            url: '@Url.Action("GetColumn")/' + '@ViewData["GridID"]' + "?ParentID=" + '@ViewData["ParentID"]',
+            columns: [[
+                { field: 'cbx', checkbox: true },
+                { title: '列标题', field: 'title', width: 120, align: 'center', formatter: function (value, row) {
+                    if (value == null) {
+                        row.title = row.field;
+                        return row.title;
+                    }
+                    return value;
+                }, editor: { type: 'validatebox', options: { required: true} }
+                },
+                { title: '字段名', field: 'field', width: 120, align: 'center' },
+                { title: '宽度', field: 'width', width: 60, align: 'center', formatter: function (value, row) {
+                    if (value == null) {
+                        row.width = 100;
+                        return row.width;
+                    }
+                    return value;
+                }, editor: {
+                    type: 'numberbox',
+                    options: {
+                        required: true
+                    }
+                }
+                },
+                { title: '位置', field: 'align', width: 60, align: 'center', formatter: function (value, row) {
+                    if (value == 'center') {
+                        return '居中';
+                    }
+                    if (value == 'right') {
+                        return '居右';
+                    }
+                    if (value == 'left') {
+                        return '居左';
+                    }
+                    row.align = 'center';
+                    return '居中';
+                }, editor: { type: 'combobox',
+                    options: {
+                        valueField: 'value',
+                        textField: 'text',
+                        panelHeight: 80,
+                        data: [{
+                            text: '居中',
+                            value: 'center'
+                        }, {
+                            text: '居右',
+                            value: 'right'
+                        }, {
+                            text: '居左',
+                            value: 'left'
+                        }]
+                    }
+                }
+                },
+                { title: '显示次序', field: 'showposition', width: 60, align: 'center', formatter: function (value, row, index) {
+                    if (row.isshow == 1) {
+                        $('#ColumnConfig').datagrid('selectRow', index)
+                    }
+                    if (row.showposition == null) {
+                        row.showposition = index + 1;
+                    }
+                    return row.showposition;
+                }, editor: { type: 'numberbox', options: { required: true} }
+                },
+                { title: '是否隐藏列', field: 'hidden', width: 70, align: 'center', formatter: function (value, row) {
+                    if (value == null) {
+                        row.hidden = false;
+                        return '否';
+                    }
+                    return value.toString() == 'true' ? '是' : '否';
+                }, editor: { type: 'checkbox', options: { on: true, off: false} }
+                },
+                { title: '是否支持排序', field: 'sortable', width: 80, align: 'center', formatter: function (value, row) {
+                    if (value == null) {
+                        row.sortable = false;
+                        return '否';
+                    }
+                    return value.toString() == 'true' ? '是' : '否';
+                }, editor: { type: 'checkbox', options: { on: true, off: false} }
+                }
+            ]],
+            onClickRow: function (index) {
+                if (editIndex != index) {
+                    if (endEditing()) {
+                        $('#ColumnConfig').datagrid('selectRow', index).datagrid('beginEdit', index);
+                        editIndex = index;
+                    } else {
+                        $('#ColumnConfig').datagrid('selectRow', editIndex);
+                    }
+                }
+            }
+        });
+        $(window).resize(function () {
+            $('#ColumnConfig').datagrid('resize');
+        });
+    });
+
+    var editIndex = undefined;
+    function endEditing() {
+        if (editIndex == undefined) { return true }
+        if ($('#ColumnConfig').datagrid('validateRow', editIndex)) {
+            $('#ColumnConfig').datagrid('endEdit', editIndex);
+            $(".action-button").linkbutton({ text: '合并列', plain: true, iconCls: 'icon-graphic' });
+            editIndex = undefined;
+            return true;
+        } else {
+            return false;
+        }
+    }
+    function reject() {
+        $('#ColumnConfig').datagrid('rejectChanges');
+        editIndex = undefined;
+    }
+</script>
+<div id="toolbar">
+    @Html.LinkButton("提交", "icon-disk", true, new { onclick = "endEditing()" })
+    @Html.LinkButton("撤消", "icon-undo", true, new { onclick = "reject()" })
+</div>
+<table id="ColumnConfig">
+</table>

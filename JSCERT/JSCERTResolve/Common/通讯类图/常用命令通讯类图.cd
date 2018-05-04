@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Comment CommentText="登录">
+    <Position X="0.75" Y="2.25" Height="0.615" Width="1.762" />
+  </Comment>
+  <Comment CommentText="取流程节点">
+    <Position X="0.573" Y="5.375" Height="0.615" Width="1.762" />
+  </Comment>
+  <Comment CommentText="心跳15秒一次">
+    <Position X="0.667" Y="7.854" Height="0.615" Width="1.762" />
+  </Comment>
+  <Comment CommentText="取服务器时间">
+    <Position X="0.753" Y="9.593" Height="0.615" Width="1.762" />
+  </Comment>
+  <Comment CommentText="取手机APK程序的版本号">
+    <Position X="0.84" Y="11.4" Height="0.615" Width="1.762" />
+  </Comment>
+  <Comment CommentText="取手机APK程序的文件">
+    <Position X="0.859" Y="12.928" Height="0.615" Width="1.762" />
+  </Comment>
+  <Comment CommentText="告警通知（没有参数）SendAlarm">
+    <Position X="0.994" Y="14.616" Height="0.615" Width="1.762" />
+  </Comment>
+  <Comment CommentText="数据状态变化通知（没有参数）SendRefresh">
+    <Position X="0.932" Y="15.886" Height="0.615" Width="1.762" />
+  </Comment>
+  <Comment CommentText="服务器向PDA发送信息">
+    <Position X="1" Y="17.75" Height="0.615" Width="1.762" />
+  </Comment>
+  <Comment CommentText="取数据库连接信息">
+    <Position X="0.75" Y="0.75" Height="0.615" Width="1.762" />
+  </Comment>
+  <Comment CommentText="向服务器发送地图更新消息">
+    <Position X="0.927" Y="21.49" Height="0.615" Width="1.762" />
+  </Comment>
+  <Comment CommentText="PDA修改用户密码">
+    <Position X="0.917" Y="23.896" Height="0.615" Width="1.762" />
+  </Comment>
+  <Comment CommentText="登出">
+    <Position X="0.813" Y="4.396" Height="0.615" Width="1.762" />
+  </Comment>
+  <Class Name="Common.Model.InCommandModel.InLoginModel">
+    <Position X="3" Y="2" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAABAAAAAACAAAAQAAAAAAAEA=</HashCode>
+      <FileName>Model\NormalCommand\InCommandModel\InLoginModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.Model.OutCommandModel.OutLoginModel">
+    <Position X="5.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\NormalCommand\OutCommandModel\OutLoginModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.Model.OutCommandModel.OutFlowPathModel">
+    <Position X="5" Y="5.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AQAAgAiAABAAAAAAAAAAAAAAAAAAAgAACAAAAAAAAAA=</HashCode>
+      <FileName>Model\NormalCommand\OutCommandModel\OutFlowPathModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.Model.InCommandModel.InHeartBeatModel">
+    <Position X="3" Y="7.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEQAAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\NormalCommand\InCommandModel\InHeartBeatModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.Model.OutCommandModel.OutGetTimeModel">
+    <Position X="5" Y="9.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\NormalCommand\OutCommandModel\OutGetTimeModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.Model.OutCommandModel.OutApkVersionModel">
+    <Position X="5" Y="11.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\NormalCommand\OutCommandModel\OutApkVersionModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.Model.OutCommandModel.OutApkFileModel">
+    <Position X="5.25" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\NormalCommand\OutCommandModel\OutApkFileModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DB_VehicleTransportManage.Model.m_Message">
+    <Position X="4.75" Y="17.75" Width="2.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Common.Model.NormalCommand.OutCommandModel.OutGetDBInfoModel">
+    <Position X="5.5" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAAAAAAAABAACAAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>Model\NormalCommand\OutCommandModel\OutGetDBInfoModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.Model.NormalCommand.InCommandModel.InGisChanagedModel">
+    <Position X="3.25" Y="21.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\NormalCommand\InCommandModel\InGisChanagedModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.Model.NormalCommand.InCommandModel.InChangePasswordModel">
+    <Position X="3.25" Y="23.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Model\NormalCommand\InCommandModel\InChangePassowrdModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.Model.NormalCommand.InCommandModel.InLoginOutModel">
+    <Position X="3" Y="4.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\NormalCommand\InCommandModel\InLoginOutModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+/*焦点*/
+.focus_list{padding-bottom:10px;width:auto;overflow:hidden;}
+	.focus_list ul{margin-top:5px;width:auto;}
+		.focus_list li{float:left;padding:0 10px 10px 0;text-align:center; }
+		.focus_list li a{padding:0;border:none;background:none;color:#888;}.focus_list li a:hover{border:0;}
+		.focus_list li a img{margin:0 auto;padding:1px;border:1px solid #ccc;width:64px;height:64px;}
+		.focus_list li a span{display:block;line-height:24px;width:68px;text-overflow:ellipsis;white-space:nowrap;overflow:hidden; }

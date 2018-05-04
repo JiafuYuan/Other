@@ -1,0 +1,16 @@
+H:\SVNData\快速信息化系统开发框架\trunk\code\LeaRun.Framework V4.1\LeaRun.Cache\bin\Debug\LeaRun.Cache.dll
+H:\SVNData\快速信息化系统开发框架\trunk\code\LeaRun.Framework V4.1\LeaRun.Cache\bin\Debug\LeaRun.Cache.pdb
+H:\SVNData\快速信息化系统开发框架\trunk\code\LeaRun.Framework V4.1\LeaRun.Cache\obj\Debug\LeaRun.Cache.csprojResolveAssemblyReference.cache
+H:\SVNData\快速信息化系统开发框架\trunk\code\LeaRun.Framework V4.1\LeaRun.Cache\obj\Debug\LeaRun.Cache.dll
+H:\SVNData\快速信息化系统开发框架\trunk\code\LeaRun.Framework V4.1\LeaRun.Cache\obj\Debug\LeaRun.Cache.pdb
+E:\SVNData\快速信息化系统开发框架\trunk\code\LeaRun.Framework V4.1\LeaRun.Cache\bin\Debug\LeaRun.Cache.dll
+E:\SVNData\快速信息化系统开发框架\trunk\code\LeaRun.Framework V4.1\LeaRun.Cache\bin\Debug\LeaRun.Cache.pdb
+E:\SVNData\快速信息化系统开发框架\trunk\code\LeaRun.Framework V4.1\LeaRun.Cache\obj\Debug\LeaRun.Cache.csprojResolveAssemblyReference.cache
+E:\SVNData\快速信息化系统开发框架\trunk\code\LeaRun.Framework V4.1\LeaRun.Cache\obj\Debug\LeaRun.Cache.dll
+E:\SVNData\快速信息化系统开发框架\trunk\code\LeaRun.Framework V4.1\LeaRun.Cache\obj\Debug\LeaRun.Cache.pdb
+E:\LeaRun\快速信息化系统开发框架\trunk\code\LeaRun.Framework V4.1\LeaRun.Cache\bin\Debug\LeaRun.Cache.dll
+E:\LeaRun\快速信息化系统开发框架\trunk\code\LeaRun.Framework V4.1\LeaRun.Cache\bin\Debug\LeaRun.Cache.pdb
+E:\LeaRun\快速信息化系统开发框架\trunk\code\LeaRun.Framework V4.1\LeaRun.Cache\obj\Debug\LeaRun.Cache.csprojResolveAssemblyReference.cache
+E:\LeaRun\快速信息化系统开发框架\trunk\code\LeaRun.Framework V4.1\LeaRun.Cache\obj\Debug\LeaRun.Cache.csproj.CoreCompileInputs.cache
+E:\LeaRun\快速信息化系统开发框架\trunk\code\LeaRun.Framework V4.1\LeaRun.Cache\obj\Debug\LeaRun.Cache.dll
+E:\LeaRun\快速信息化系统开发框架\trunk\code\LeaRun.Framework V4.1\LeaRun.Cache\obj\Debug\LeaRun.Cache.pdb

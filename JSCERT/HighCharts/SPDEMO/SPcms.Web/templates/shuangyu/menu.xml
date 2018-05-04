@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<menu>
+  <main>
+    <fid id="1">
+      <fnod>0</fnod>
+      <fname>新闻资讯</fname>
+      <flink>/news/0.html</flink>
+      <findex>100</findex>
+      <flayer>1</flayer>
+      <fclass>
+      </fclass>
+    </fid>
+    <fid id="2">
+      <fnod>0</fnod>
+      <fname>产品中心</fname>
+      <flink>/goods/0.html</flink>
+      <findex>100</findex>
+      <flayer>1</flayer>
+      <fclass>
+      </fclass>
+    </fid>
+    <fid id="12">
+      <fnod>0</fnod>
+      <fname>荣誉资质</fname>
+      <flink>/ryzz/0.html</flink>
+      <findex>100</findex>
+      <flayer>1</flayer>
+      <fclass>
+      </fclass>
+    </fid>
+    <fid id="_73706">
+      <fnod>0</fnod>
+      <fname>企业简介</fname>
+      <flink>/content/about.html</flink>
+      <findex>55</findex>
+      <flayer>1</flayer>
+    </fid>
+    <fid id="_02273">
+      <fnod>0</fnod>
+      <fname>人才招聘</fname>
+      <flink>/content/rczp.html</flink>
+      <findex>100</findex>
+      <flayer>1</flayer>
+    </fid>
+    <fid id="_69932">
+      <fnod>0</fnod>
+      <fname>给我留言</fname>
+      <flink>/feedback.html</flink>
+      <findex>100</findex>
+      <flayer>1</flayer>
+    </fid>
+    <fid id="_12549">
+      <fnod>0</fnod>
+      <fname>联系我们</fname>
+      <flink>/content/contact.html</flink>
+      <findex>100</findex>
+      <flayer>1</flayer>
+    </fid>
+  </main>
+  <English>
+    <fid id="7">
+      <fnod>0</fnod>
+      <fname>NEWS</fname>
+      <flink>/ENews/0.html</flink>
+      <findex>100</findex>
+      <flayer>1</flayer>
+      <fclass>
+      </fclass>
+    </fid>
+    <fid id="15">
+      <fnod>0</fnod>
+      <fname>PRODUCT</fname>
+      <flink>/Egoods/0.html</flink>
+      <findex>100</findex>
+      <flayer>1</flayer>
+      <fclass>
+      </fclass>
+    </fid>
+    <fid id="20">
+      <fnod>0</fnod>
+      <fname>HONOR</fname>
+      <flink>/Eryzz/0.html</flink>
+      <findex>100</findex>
+      <flayer>1</flayer>
+      <fclass>
+      </fclass>
+    </fid>
+    <fid id="_25479">
+      <fnod>0</fnod>
+      <fname>CONTACT US</fname>
+      <flink>/econtent/Econtact.html</flink>
+      <findex>150</findex>
+      <flayer>1</flayer>
+    </fid>
+    <fid id="_40870">
+      <fnod>0</fnod>
+      <fname>GUESTBOOK</fname>
+      <flink>/efeedback.html</flink>
+      <findex>100</findex>
+      <flayer>1</flayer>
+    </fid>
+    <fid id="_89448">
+      <fnod>0</fnod>
+      <fname>COMPANY</fname>
+      <flink>/econtent/eabout.html</flink>
+      <findex>85</findex>
+      <flayer>1</flayer>
+    </fid>
+    <fid id="_41120">
+      <fnod>0</fnod>
+      <fname>CAREERS</fname>
+      <flink>/econtent/Erczp.html</flink>
+      <findex>140</findex>
+      <flayer>1</flayer>
+    </fid>
+  </English>
+</menu>

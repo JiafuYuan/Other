@@ -1,0 +1,51 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="@Url.Content("~/Content/My97DatePicker/WdatePicker.js")" type="text/javascript"></script>
+<script type="text/javascript">
+    $(function () {
+        $(window).resize(function () {
+            $('#gridYearReport').datagrid('resize');
+        });
+    });
+
+    function onBeforeLoad(param) {
+        $('#gridYearReport').datagrid('clearSelections');
+        if ($('#txtYear').val().length == 0) {
+            $('#txtYear').val(new Date().getFullYear().toString() + '年');
+        }
+        param.paramYear = $('#txtYear').val();
+       }
+    function onLoadSuccess(data) {
+        mergeCellsByField("gridYearReport", "parentName,vc_name");
+    }
+  
+
+
+   
+</script>
+<div id="toolbar" style="padding: 8px;">
+    年份： 
+       @Html.DatePicker("txtYear", new
+   {
+       dateFmt = "'yyyy年'"
+   }, new { @class = "Wdate", value = (new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, 0, 0, 0, 0)).ToString("yyyy年") })
+    @* @Html.TextBox("beginDate", (new DateTime(DateTime.Now.Year, DateTime.Now.Month, 1)).ToString("yyyy"), new { @class = "easyui-datebox", editable = false })*@
+    @Html.LinkButton("查询", "icon-search", new { onclick = "$('#gridYearReport').datagrid('load')" })
+</div>
+@Html.DataGrid("gridYearReport", @Url.Action("GetGridList"), ViewData["GridColumn"] as IEnumerable<object>, new
+{
+    fit = true,
+    rownumbers = true,
+    singleSelect = true,
+    striped = true,
+    idField = "ID",
+    sortName = "ID",
+    sortOrder = "asc",
+    toolbar = "#toolbar",
+    pagination = false,
+    pageSize = 20,
+    onLoadSuccess = new { function = "onLoadSuccess" },
+    onBeforeLoad = new { function = "onBeforeLoad" }
+}, new { style = "overflow: hidden;" })

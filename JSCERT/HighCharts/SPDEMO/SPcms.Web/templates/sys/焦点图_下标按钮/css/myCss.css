@@ -1,0 +1,9 @@
+@charset "utf-8";
+/** 首页焦点图 **/ 
+#fcbx{margin:0 auto;}
+#fcbx,#fcimg,#fcimg img{width:100%;height:388px;overflow:hidden;}
+#fcbx div,#fcnum{top:-23px;height:23px;margin-bottom:-23px;position:relative;}
+#fcbx div{filter:alpha(opacity=25);-moz-opacity:0.25;opacity:0.25;background-color:#000;}
+#fcnum{float:right;margin-right:10px;}
+#fcnum li{float:left;background:#FFF;margin-left:5px;height:7px;width:7px;cursor:pointer;margin-top:8px;line-height:0;font-size:0;}
+#fcnum li.crn{background-color:#F15D17;}

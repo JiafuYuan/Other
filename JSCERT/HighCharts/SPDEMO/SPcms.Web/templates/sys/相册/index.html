@@ -1,0 +1,32 @@
+
+<link type="text/css" href="/templates/sys/相册/css/jxxc1.css" rel="stylesheet" />
+
+<script type="text/javascript" src="/templates/sys/相册/js/lrtk.js"></script>
+</head>
+<body>
+<div class="container">
+	<ul class="content">
+    	<span><%set DataTable articalDtFAiXC=get_article_list("news", 0, 1, "status=0 and is_slide=1")%>
+<%foreach(DataRow drFAiXC in articalDtFAiXC.Rows)%>
+<img src="{drFAiXC[img_url]}" width="32" height="32" />
+<%/foreach%>
+
+</span>
+        <div class="left"></div>
+        <div class="right"></div>
+<%set DataTable articalDteaRif=get_article_list("news", 0, 8, "status=0 and is_slide=1")%>
+<%foreach(DataRow dreaRif in articalDteaRif.Rows)%>
+	<li style="background:url({dreaRif[img_url]}); width:856px; height:482px;"></li>
+<%/foreach%>
+
+
+    
+      
+    </ul>
+    <div class="bottom">
+    	共 <span id="imgdata">x</span> 张 / 第 <span id="xz">x</span> 张
+    </div>
+</div>
+
+</body>
+</html>

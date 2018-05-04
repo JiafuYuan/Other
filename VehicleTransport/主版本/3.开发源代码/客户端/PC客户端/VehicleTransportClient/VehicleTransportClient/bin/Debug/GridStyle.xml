@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Config>
+  <DataGridViews>
+    <DataGridView tablename="FormMaintainTimeOutAlarm">
+      <ColumnStyle name="dataGridViewTextBoxColumn1" displayname="车辆编号" width="196" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="vc_Name" displayname="车辆名称" width="197" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column8" displayname="维护周期(天)" width="219" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column9" displayname="最后检修时间" width="219" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column4" displayname="告警开始时间" width="334" visible="True" alignment="0" show="True" />
+    </DataGridView>
+    <DataGridView tablename="FormScrapTimeOutAlarm">
+      <ColumnStyle name="dataGridViewTextBoxColumn58" displayname="车辆编号" width="242" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="dataGridViewTextBoxColumn59" displayname="车辆名称" width="242" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column5" displayname="计划报废时间" width="270" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="dataGridViewTextBoxColumn60" displayname="告警开始时间" width="411" visible="True" alignment="0" show="True" />
+    </DataGridView>
+    <DataGridView tablename="FormBackTimeOutAlarm">
+      <ColumnStyle name="dataGridViewTextBoxColumn67" displayname="计划编号" width="200" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="dataGridViewTextBoxColumn68" displayname="申请部门" width="201" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="dataGridViewTextBoxColumn69" displayname="目的地" width="200" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column7" displayname="计划还车部门" width="223" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="dataGridViewTextBoxColumn81" displayname="告警开始时间" width="341" visible="True" alignment="0" show="True" />
+    </DataGridView>
+    <DataGridView tablename="FormGiveTimeOutAlarm">
+      <ColumnStyle name="dataGridViewTextBoxColumn2" displayname="计划编号" width="200" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column6" displayname="申请部门" width="224" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="dataGridViewTextBoxColumn3" displayname="目的地" width="200" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="dataGridViewTextBoxColumn7" displayname="计划供车部门" width="200" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="dataGridViewTextBoxColumn8" displayname="告警开始时间" width="341" visible="True" alignment="0" show="True" />
+    </DataGridView>
+    <DataGridView tablename="FormLoadTimeOutAlarm">
+      <ColumnStyle name="dataGridViewTextBoxColumn10" displayname="计划编号" width="200" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="dataGridViewTextBoxColumn11" displayname="申请部门" width="201" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="dataGridViewTextBoxColumn12" displayname="目的地" width="200" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column3" displayname="计划装车部门" width="223" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="dataGridViewTextBoxColumn13" displayname="告警开始时间" width="341" visible="True" alignment="0" show="True" />
+    </DataGridView>
+    <DataGridView tablename="FormNoChanageStateAlarm">
+      <ColumnStyle name="dataGridViewTextBoxColumn76" displayname="计划编号" width="248" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="dataGridViewTextBoxColumn77" displayname="申请部门" width="248" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="dataGridViewTextBoxColumn78" displayname="目的地" width="248" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="dataGridViewTextBoxColumn84" displayname="告警开始时间" width="421" visible="True" alignment="0" show="True" />
+    </DataGridView>
+    <DataGridView tablename="FormNoUseAlarm">
+      <ColumnStyle name="dataGridViewTextBoxColumn71" displayname="车辆编号" width="315" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="dataGridViewTextBoxColumn72" displayname="车辆名称" width="315" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="dataGridViewTextBoxColumn82" displayname="告警开始时间" width="535" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column1" displayname="当前基站" width="210" visible="True" alignment="0" show="True" />
+    </DataGridView>
+    <DataGridView tablename="FormRunDerictionAlarm">
+      <ColumnStyle name="dataGridViewTextBoxColumn73" displayname="计划编号" width="248" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="dataGridViewTextBoxColumn74" displayname="车辆编号" width="248" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="dataGridViewTextBoxColumn75" displayname="车辆名称" width="248" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="dataGridViewTextBoxColumn83" displayname="告警开始时间" width="421" visible="True" alignment="0" show="True" />
+    </DataGridView>
+    <DataGridView tablename="FormTransportTimeOutAlarm">
+      <ColumnStyle name="dataGridViewTextBoxColumn61" displayname="计划编号" width="200" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="dataGridViewTextBoxColumn62" displayname="申请部门" width="201" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="dataGridViewTextBoxColumn63" displayname="目的地" width="200" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column2" displayname="计划到达时间" width="223" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="dataGridViewTextBoxColumn79" displayname="告警开始时间" width="341" visible="True" alignment="0" show="True" />
+    </DataGridView>
+    <DataGridView tablename="FormUnLoadTimeOutAlarm">
+      <ColumnStyle name="dataGridViewTextBoxColumn64" displayname="计划编号" width="248" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="dataGridViewTextBoxColumn65" displayname="申请部门" width="248" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="dataGridViewTextBoxColumn66" displayname="目的地" width="248" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="dataGridViewTextBoxColumn80" displayname="告警开始时间" width="421" visible="True" alignment="0" show="True" />
+    </DataGridView>
+    <DataGridView tablename="FormHistoryGiveTimeOutAlarm">
+      <ColumnStyle name="dataGridViewTextBoxColumn2" displayname="计划编号" width="120" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column6" displayname="申请部门" width="120" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="dataGridViewTextBoxColumn3" displayname="目的地" width="200" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="dataGridViewTextBoxColumn7" displayname="计划供车部门" width="120" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="dataGridViewTextBoxColumn8" displayname="告警开始时间" width="300" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column2" displayname="告警结束时间" width="0" visible="True" alignment="0" show="True" />
+    </DataGridView>
+    <DataGridView tablename="FormHistoryLoadTimeOutAlarm">
+      <ColumnStyle name="dataGridViewTextBoxColumn2" displayname="计划编号" width="160" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column6" displayname="申请部门" width="160" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="dataGridViewTextBoxColumn3" displayname="目的地" width="160" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="dataGridViewTextBoxColumn7" displayname="计划装车部门" width="160" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="dataGridViewTextBoxColumn8" displayname="告警开始时间" width="300" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column2" displayname="告警结束时间" width="0" visible="True" alignment="0" show="True" />
+    </DataGridView>
+    <DataGridView tablename="FormHistoryTransportTimeOutAlarm">
+      <ColumnStyle name="dataGridViewTextBoxColumn2" displayname="计划编号" width="120" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column6" displayname="申请部门" width="120" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="dataGridViewTextBoxColumn3" displayname="目的地" width="200" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column1" displayname="计划到达时间" width="260" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="dataGridViewTextBoxColumn8" displayname="告警开始时间" width="260" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column2" displayname="告警结束时间" width="0" visible="True" alignment="0" show="True" />
+    </DataGridView>
+    <DataGridView tablename="FormHistoryUnLoadTimeOutAlarm">
+      <ColumnStyle name="dataGridViewTextBoxColumn2" displayname="计划编号" width="200" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column6" displayname="申请部门" width="200" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="dataGridViewTextBoxColumn3" displayname="目的地" width="200" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="dataGridViewTextBoxColumn8" displayname="告警开始时间" width="300" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column2" displayname="告警结束时间" width="0" visible="True" alignment="0" show="True" />
+    </DataGridView>
+    <DataGridView tablename="FormHistoryBackTimeOutAlarm">
+      <ColumnStyle name="dataGridViewTextBoxColumn2" displayname="计划编号" width="120" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column6" displayname="申请部门" width="120" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="dataGridViewTextBoxColumn3" displayname="目的地" width="160" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="dataGridViewTextBoxColumn7" displayname="计划还车部门" width="160" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="dataGridViewTextBoxColumn8" displayname="告警开始时间" width="300" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column2" displayname="告警结束时间" width="0" visible="True" alignment="0" show="True" />
+    </DataGridView>
+    <DataGridView tablename="FormHistoryNoUseAlarm">
+      <ColumnStyle name="dataGridViewTextBoxColumn2" displayname="车辆编号" width="300" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column6" displayname="车辆名称" width="300" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="dataGridViewTextBoxColumn8" displayname="告警开始时间" width="300" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column2" displayname="告警结束时间" width="0" visible="True" alignment="0" show="True" />
+    </DataGridView>
+    <DataGridView tablename="FormHistoryRunDerictionAlarm">
+      <ColumnStyle name="dataGridViewTextBoxColumn2" displayname="计划编号" width="200" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column6" displayname="车辆编号" width="200" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="dataGridViewTextBoxColumn3" displayname="车辆名称" width="200" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="dataGridViewTextBoxColumn8" displayname="告警开始时间" width="300" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column2" displayname="告警结束时间" width="0" visible="True" alignment="0" show="True" />
+    </DataGridView>
+    <DataGridView tablename="FormHistoryNoChanageStateAlarm">
+      <ColumnStyle name="dataGridViewTextBoxColumn2" displayname="计划编号" width="200" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column6" displayname="申请部门" width="200" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="dataGridViewTextBoxColumn3" displayname="目的地" width="200" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="dataGridViewTextBoxColumn8" displayname="告警开始时间" width="300" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column2" displayname="告警结束时间" width="0" visible="True" alignment="0" show="True" />
+    </DataGridView>
+    <DataGridView tablename="FormDeptManage">
+      <ColumnStyle name="dataGridViewTextBoxColumn1" displayname="部门名称" width="300" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column3" displayname="上级部门" width="300" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column6" displayname="备注" width="0" visible="True" alignment="0" show="True" />
+    </DataGridView>
+    <DataGridView tablename="FormPersonManage">
+      <ColumnStyle name="Column7" displayname="编号" width="100" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="dataGridViewTextBoxColumn1" displayname="姓名" width="100" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column3" displayname="性别" width="100" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column1" displayname="部门" width="120" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column2" displayname="职务" width="140" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column4" displayname="工种" width="120" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column5" displayname="电话" width="160" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column6" displayname="备注" width="0" visible="True" alignment="0" show="True" />
+    </DataGridView>
+    <DataGridView tablename="FormAreaManage">
+      <ColumnStyle name="Column1" displayname="区域编号" width="100" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="dataGridViewTextBoxColumn1" displayname="区域名称" width="300" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column3" displayname="上级区域" width="300" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column6" displayname="备注" width="0" visible="True" alignment="0" show="True" />
+    </DataGridView>
+    <DataGridView tablename="FormAddressManage">
+      <ColumnStyle name="Column5" displayname="基站编号" width="100" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column3" displayname="基站名称" width="120" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="ParentHID" displayname="主站HID" width="100" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="childHID" displayname="子站HID" width="100" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="HID" displayname="HID" width="100" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column1" displayname="所属区域" width="120" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column2" displayname="位置" width="140" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column4" displayname="反向基站" width="140" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column7" displayname="方向基站" width="140" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column6" displayname="备注" width="0" visible="True" alignment="0" show="True" />
+    </DataGridView>
+    <DataGridView tablename="FormPDAManage">
+      <ColumnStyle name="Column2" displayname="编号" width="200" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="dataGridViewTextBoxColumn1" displayname="Mac地址" width="200" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column1" displayname="所属部门" width="200" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column6" displayname="备注" width="0" visible="True" alignment="0" show="True" />
+    </DataGridView>
+    <DataGridView tablename="FormCardManage">
+      <ColumnStyle name="cardCode" displayname="车辆编号" width="112" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="cardName" displayname="车辆名称" width="160" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="cardType" displayname="车辆类型" width="160" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="dwHid" displayname="定位卡HID" width="180" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="bsHid" displayname="标识卡HID" width="180" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="memo" displayname="备注" width="0" visible="True" alignment="0" show="True" />
+    </DataGridView>
+    <DataGridView tablename="FormMaterielTypeManage">
+      <ColumnStyle name="dataGridViewTextBoxColumn1" displayname="物料编号" width="200" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column3" displayname="物料名称" width="200" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column1" displayname="所属类型" width="200" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column2" displayname="单位" width="200" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column4" displayname="规格" width="200" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column6" displayname="备注" width="0" visible="True" alignment="0" show="True" />
+    </DataGridView>
+    <DataGridView tablename="FormVehicleTypeManage">
+      <ColumnStyle name="dataGridViewTextBoxColumn1" displayname="名称" width="400" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column6" displayname="备注" width="0" visible="True" alignment="0" show="True" />
+    </DataGridView>
+    <DataGridView tablename="FormVehicleManage">
+      <ColumnStyle name="Column5" displayname="车辆编号" width="100" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="dataGridViewTextBoxColumn1" displayname="车辆名称" width="100" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column3" displayname="车辆类型" width="100" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column2" displayname="所属部门" width="100" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column4" displayname="车辆状态" width="100" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column7" displayname="核定载重" width="100" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column10" displayname="维护周期" width="100" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column1" displayname="最后检修时间" width="160" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column8" displayname="报废日期" width="160" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column6" displayname="备注" width="0" visible="True" alignment="0" show="True" />
+    </DataGridView>
+    <DataGridView tablename="FormVehicleMainTainManage">
+      <ColumnStyle name="Column7" displayname="车辆编号" width="100" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="dataGridViewTextBoxColumn1" displayname="车辆名称" width="100" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column11" displayname="开始维护时间" width="200" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="OverTime" displayname="结束维护时间" width="200" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column2" displayname="记录人" width="100" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column3" displayname="维护人" width="100" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column4" displayname="维护内容" width="200" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column6" displayname="备注" width="0" visible="True" alignment="0" show="True" />
+    </DataGridView>
+    <DataGridView tablename="FormVehicleScrapManage">
+      <ColumnStyle name="Column7" displayname="车辆编号" width="200" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="dataGridViewTextBoxColumn1" displayname="车辆名称" width="200" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column11" displayname="报废时间" width="260" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column9" displayname="报废人" width="200" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column6" displayname="备注" width="0" visible="True" alignment="0" show="True" />
+    </DataGridView>
+    <DataGridView tablename="FormHistoryMaintainTimeOutAlarm">
+      <ColumnStyle name="dataGridViewTextBoxColumn2" displayname="车辆编号" width="260" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column6" displayname="车辆名称" width="260" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="dataGridViewTextBoxColumn8" displayname="告警开始时间" width="300" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column2" displayname="告警结束时间" width="0" visible="True" alignment="0" show="True" />
+    </DataGridView>
+    <DataGridView tablename="FormHistoryScrapTimeOutAlarm">
+      <ColumnStyle name="dataGridViewTextBoxColumn2" displayname="车辆编号" width="260" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column6" displayname="车辆名称" width="260" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="dataGridViewTextBoxColumn8" displayname="告警开始时间" width="300" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column2" displayname="告警结束时间" width="0" visible="True" alignment="0" show="True" />
+    </DataGridView>
+    <DataGridView tablename="FormUserManage">
+      <ColumnStyle name="Column7" displayname="用户名" width="100" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column2" displayname="人员标识卡" width="100" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="dataGridViewTextBoxColumn1" displayname="姓名" width="120" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column11" displayname="所属部门" width="160" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column9" displayname="角色" width="120" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column1" displayname="创建时间" width="200" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column6" displayname="备注" width="0" visible="True" alignment="0" show="True" />
+    </DataGridView>
+    <DataGridView tablename="FormAddAddress">
+      <ColumnStyle name="colCheck" displayname="" width="100" visible="True" alignment="32" show="True" />
+      <ColumnStyle name="Column3" displayname="基站名称" width="101" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="PHID" displayname="主站HID" width="100" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="CHID" displayname="子站HID" width="101" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="oneHID" displayname="HID" width="100" visible="True" alignment="0" show="True" />
+    </DataGridView>
+    <DataGridView tablename="FormDeptVehicleReport" />
+    <DataGridView tablename="FormDeptMaterielTypeReport">
+      <ColumnStyle name="Column3" displayname="申请部门" width="142" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column4" displayname="物料编号" width="231" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column6" displayname="物料名称" width="136" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column1" displayname="使用数量" width="152" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column2" displayname="单位" width="152" visible="True" alignment="0" show="True" />
+    </DataGridView>
+    <DataGridView tablename="FormVehicleMonth">
+      <ColumnStyle name="Column4" displayname="车辆编号" width="299" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column6" displayname="车辆名称" width="176" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column1" displayname="使用次数" width="196" visible="True" alignment="0" show="True" />
+    </DataGridView>
+    <DataGridView tablename="FormMaterielTypeMonth">
+      <ColumnStyle name="Column4" displayname="物料编号" width="231" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column6" displayname="物料名称" width="136" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column1" displayname="数量" width="152" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column2" displayname="单位" width="152" visible="True" alignment="0" show="True" />
+    </DataGridView>
+    <DataGridView tablename="FormVehicleNoUseMonth">
+      <ColumnStyle name="Column4" displayname="车辆编号" width="299" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column6" displayname="车辆名称" width="176" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column1" displayname="闲置次数" width="196" visible="True" alignment="0" show="True" />
+    </DataGridView>
+    <DataGridView tablename="FormSendMessage">
+      <ColumnStyle name="dataGridViewTextBoxColumn1" displayname="消息类型" width="100" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column3" displayname="发送人" width="80" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column1" displayname="接收人" width="80" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column2" displayname="消息内容" width="400" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column4" displayname="发送时间" width="200" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column6" displayname="接收时间" width="200" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column5" displayname="备注" width="0" visible="True" alignment="0" show="True" />
+    </DataGridView>
+    <DataGridView tablename="FormSystemLog">
+      <ColumnStyle name="dataGridViewTextBoxColumn1" displayname="用户名称" width="100" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column3" displayname="操作类型" width="100" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column1" displayname="标题" width="200" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column2" displayname="描述" width="300" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column4" displayname="时间" width="200" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column6" displayname="备注" width="0" visible="True" alignment="0" show="True" />
+    </DataGridView>
+    <DataGridView tablename="FormWifiBs">
+      <ColumnStyle name="dataGridViewTextBoxColumn1" displayname="名称" width="200" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column3" displayname="IP地址" width="200" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column6" displayname="Mac地址" width="200" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="定位基站名称" displayname="定位基站名称" width="200" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="备注" displayname="备注" width="0" visible="True" alignment="0" show="True" />
+    </DataGridView>
+    <DataGridView tablename="FormRuleManage">
+      <ColumnStyle name="Column5" displayname="角色名" width="148" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column6" displayname="备注" width="147" visible="True" alignment="0" show="True" />
+    </DataGridView>
+    <DataGridView tablename="FormPlanQuery">
+      <ColumnStyle name="Column1" displayname="序号" width="60" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="dataGridViewTextBoxColumn1" displayname="运单号" width="80" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column3" displayname="申请人" width="80" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column6" displayname="申请部门" width="80" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column2" displayname="申请内容" width="120" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column4" displayname="目的地" width="120" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column5" displayname="计划到达时间" width="160" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column11" displayname="计划装车地点" width="120" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column12" displayname="计划装车部门" width="120" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="Column15" displayname="状态" width="60" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="ColPlanDetail" displayname="详情" width="60" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="ColPlanTrans" displayname="运输路线" width="60" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="ColLoaddt" displayname="计划装车时间" width="47" visible="True" alignment="0" show="True" />
+    </DataGridView>
+    <DataGridView tablename="FormCheckReport">
+      <ColumnStyle name="运单号" displayname="运单号" width="94" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="审核时间" displayname="审核时间" width="180" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="申请部门" displayname="申请部门" width="120" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="申请人" displayname="申请人" width="120" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="申请内容" displayname="申请内容" width="120" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="目的地" displayname="目的地" width="120" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="计划到货时间" displayname="计划到货时间" width="120" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="计划供车部门" displayname="计划供车部门" width="120" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="计划供车地点" displayname="计划供车地点" width="120" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="计划供车时间" displayname="计划供车时间" width="120" visible="True" alignment="0" show="True" />
+    </DataGridView>
+    <DataGridView tablename="FormCheckReportNoGive">
+      <ColumnStyle name="运单号" displayname="运单号" width="94" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="审核时间" displayname="审核时间" width="180" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="申请部门" displayname="申请部门" width="120" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="申请人" displayname="申请人" width="120" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="申请内容" displayname="申请内容" width="0" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="目的地" displayname="目的地" width="150" visible="True" alignment="0" show="True" />
+      <ColumnStyle name="计划到货时间" displayname="计划到货时间" width="150" visible="True" alignment="0" show="True" />
+    </DataGridView>
+  </DataGridViews>
+</Config>

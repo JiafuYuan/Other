@@ -1,0 +1,421 @@
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\bin\Debug\VehicleTransportClient.exe
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\bin\Debug\VehicleTransportClient.pdb
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\bin\Debug\AcNetUtils.dll
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\bin\Debug\BW_CommunicationFrame.dll
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\bin\Debug\BW_GridStyle.dll
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\bin\Debug\BW_InputPromptDialog.dll
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\bin\Debug\BW_OleDbHelper.dll
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\bin\Debug\BW_ProgressBarDialog.dll
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\bin\Debug\BW_Socket.dll
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\bin\Debug\BW_XMLHelper.dll
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\bin\Debug\Common.dll
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\bin\Debug\DB_VehicleTransportManage.dll
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\bin\Debug\DevComponents.DotNetBar2.dll
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\bin\Debug\DevExpress.Data.v11.2.dll
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\bin\Debug\DevExpress.Utils.v11.2.dll
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\bin\Debug\DevExpress.XtraBars.v11.2.dll
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\bin\Debug\DevExpress.XtraEditors.v11.2.dll
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\bin\Debug\DevExpress.XtraGrid.v11.2.dll
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\bin\Debug\DevExpress.XtraLayout.v11.2.dll
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\bin\Debug\DevExpress.XtraNavBar.v11.2.dll
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\bin\Debug\Interop.AcReport.dll
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\bin\Debug\Common.pdb
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\bin\Debug\DB_VehicleTransportManage.pdb
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\bin\Debug\Interop.TGMAPXLib.dll
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\bin\Debug\AxInterop.TGMAPXLib.dll
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.csprojResolveAssemblyReference.cache
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\Interop.AcReport.dll
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\Interop.TGBirdseyeLib.dll
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\Interop.TGMAPXLib.dll
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\AxInterop.TGMAPXLib.dll
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.csproj.ResolveComReference.cache
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.Com.InputDialog.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormMain.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormMainOld.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormMyApply.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormMyApplyDetail.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormPlanDetailQuery.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormPlanQuery.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormHistoryGiveTimeOutAlarm.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormHistoryLoadTimeOutAlarm.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormHistoryTransportTimeOutAlarm.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormHistoryUnLoadTimeOutAlarm.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormHistoryBackTimeOutAlarm.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormHistoryNoChanageStateAlarm.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormHistoryNoUseAlarm.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormHistoryRunDerictionAlarm.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormHistoryMaintainTimeOutAlarm.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormHistoryScrapTimeOutAlarm.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormAddress.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormAddressManage.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormArea.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormAreaManage.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FormBackCar.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FormHandover.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FormHandoverEdit.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FormLoadCar.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FormSupplyCar.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FormUnCheckReason.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FormUnload.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FrmGISArea.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FrmGISCar.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FrmGISDetail.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FrmGISPda.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FrmMyMsg.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FrmQryMsg.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FrmQueryGIS.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FrmQueryPlanCar.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormDeptVehicleReport.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormDeptMaterielTypeReport.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormVehicleStatisticsReport.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormCheckReport.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.SystemManage.FormLockSystem.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormRule.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormRyBaseStation.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormDept.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormDeptManage.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormPersonManage.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.Properties.Resources.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.Tools.DataGridViewEx.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormPerson.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormRyBaseStationManage.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormUser.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormUserManage.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormWifiBaseStation.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormCard.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormCardManage.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormPDA.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormPDAManage.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormMaterielType.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormMaterielTypeManage.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormPasswordEdit.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormWifiBaseStationEdit.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormAlarmSet.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormCurrentAlarm.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormSystemLog.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormVehicleType.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormVehicleTypeManage.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormVehicle.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormVehicleManage.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormVehicleScrapManage.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormVehicleScrap.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormVehicleMainTain.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormVehicleMainTainManage.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.Report.FormPlanQuery.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormVehicleMainTainStop.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormSendMessage.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormAddAddress.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormAddCard.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormHistoryAlarm.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormVehicleMonth.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FormApplyMgrManage.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormApplyMgr.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FormBackCarEdit.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FormBackCarMgr.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FormLoadCarMgr.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FormQueryDetail.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FormReviewCarEdit.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FormReviewMaterEdit.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FormReviewMgr.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FormSupplyCarEditCar.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FormSupplyCarMgr.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormApplyMgrCar.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FormTransferCarMgr.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormUnloadEdit.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FormUnloadCarMgr.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormLoadCarMateriel.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormLoadCarDetail.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormRuleManage.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.frmDatabaseConfig.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FrmGIS.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FrmLogin.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormVehicleNoUseMonth.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormMaterielTypeMonth.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.frmServerConfig.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FrmChangeLogin.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.csproj.GenerateResource.Cache
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.exe
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.pdb
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\Interop.AcReport.dll
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\Interop.TGBirdseyeLib.dll
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\Interop.TGMAPXLib.dll
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\AxInterop.TGMAPXLib.dll
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.csproj.ResolveComReference.cache
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.exe
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.pdb
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\bin\Debug\VehicleTransportClient.exe
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\bin\Debug\VehicleTransportClient.pdb
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\bin\Debug\AcNetUtils.dll
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\bin\Debug\BW_CommunicationFrame.dll
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\bin\Debug\BW_GridStyle.dll
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\bin\Debug\BW_InputPromptDialog.dll
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\bin\Debug\BW_OleDbHelper.dll
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\bin\Debug\BW_ProgressBarDialog.dll
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\bin\Debug\BW_Socket.dll
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\bin\Debug\BW_XMLHelper.dll
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\bin\Debug\Common.dll
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\bin\Debug\DB_VehicleTransportManage.dll
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\bin\Debug\DevComponents.DotNetBar2.dll
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\bin\Debug\DevExpress.Data.v11.2.dll
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\bin\Debug\DevExpress.Utils.v11.2.dll
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\bin\Debug\DevExpress.XtraBars.v11.2.dll
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\bin\Debug\DevExpress.XtraEditors.v11.2.dll
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\bin\Debug\DevExpress.XtraGrid.v11.2.dll
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\bin\Debug\DevExpress.XtraLayout.v11.2.dll
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\bin\Debug\DevExpress.XtraNavBar.v11.2.dll
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\bin\Debug\Interop.AcReport.dll
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\bin\Debug\Common.pdb
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\bin\Debug\DB_VehicleTransportManage.pdb
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\bin\Debug\Interop.TGMAPXLib.dll
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\bin\Debug\AxInterop.TGMAPXLib.dll
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.csprojResolveAssemblyReference.cache
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.Com.InputDialog.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormMain.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormMainOld.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormMyApply.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormMyApplyDetail.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormPlanDetailQuery.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormPlanQuery.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormHistoryGiveTimeOutAlarm.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormHistoryLoadTimeOutAlarm.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormHistoryTransportTimeOutAlarm.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormHistoryUnLoadTimeOutAlarm.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormHistoryBackTimeOutAlarm.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormHistoryNoChanageStateAlarm.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormHistoryNoUseAlarm.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormHistoryRunDerictionAlarm.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormHistoryMaintainTimeOutAlarm.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormHistoryScrapTimeOutAlarm.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormAddress.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormAddressManage.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormArea.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormAreaManage.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FormBackCar.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FormHandover.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FormHandoverEdit.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FormLoadCar.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FormSupplyCar.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FormUnCheckReason.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FormUnload.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FrmGISArea.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FrmGISCar.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FrmGISDetail.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FrmGISPda.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FrmMyMsg.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FrmQryMsg.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FrmQueryGIS.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FrmQueryPlanCar.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormDeptVehicleReport.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormDeptMaterielTypeReport.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormVehicleStatisticsReport.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormCheckReport.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.SystemManage.FormLockSystem.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormRule.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormRyBaseStation.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormDept.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormDeptManage.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormPersonManage.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.Properties.Resources.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.Tools.DataGridViewEx.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormPerson.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormRyBaseStationManage.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormUser.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormUserManage.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormWifiBaseStation.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormCard.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormCardManage.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormPDA.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormPDAManage.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormMaterielType.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormMaterielTypeManage.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormPasswordEdit.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormWifiBaseStationEdit.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormAlarmSet.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormCurrentAlarm.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormSystemLog.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormVehicleType.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormVehicleTypeManage.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormVehicle.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormVehicleManage.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormVehicleScrapManage.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormVehicleScrap.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormVehicleMainTain.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormVehicleMainTainManage.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.Report.FormPlanQuery.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormVehicleMainTainStop.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormSendMessage.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormAddAddress.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormAddCard.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormHistoryAlarm.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormVehicleMonth.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FormApplyMgrManage.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormApplyMgr.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FormBackCarEdit.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FormBackCarMgr.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FormLoadCarMgr.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FormQueryDetail.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FormReviewCarEdit.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FormReviewMaterEdit.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FormReviewMgr.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FormSupplyCarEditCar.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FormSupplyCarMgr.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormApplyMgrCar.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FormTransferCarMgr.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormUnloadEdit.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FormUnloadCarMgr.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormLoadCarMateriel.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormLoadCarDetail.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormRuleManage.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.frmDatabaseConfig.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FrmGIS.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FrmLogin.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormVehicleNoUseMonth.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormMaterielTypeMonth.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.frmServerConfig.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FrmChangeLogin.resources
+E:\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.csproj.GenerateResource.Cache
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\Interop.TGBirdseyeLib.dll
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\Interop.TGMAPXLib.dll
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\AxInterop.TGMAPXLib.dll
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.csproj.ResolveComReference.cache
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.exe
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.pdb
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\bin\Debug\VehicleTransportClient.exe
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\bin\Debug\VehicleTransportClient.pdb
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\bin\Debug\AcNetUtils.dll
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\bin\Debug\BW_CommunicationFrame.dll
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\bin\Debug\BW_GridStyle.dll
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\bin\Debug\BW_InputPromptDialog.dll
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\bin\Debug\BW_OleDbHelper.dll
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\bin\Debug\BW_ProgressBarDialog.dll
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\bin\Debug\BW_Socket.dll
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\bin\Debug\BW_XMLHelper.dll
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\bin\Debug\Common.dll
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\bin\Debug\DB_VehicleTransportManage.dll
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\bin\Debug\DevComponents.DotNetBar2.dll
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\bin\Debug\DevExpress.Data.v11.2.dll
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\bin\Debug\DevExpress.Utils.v11.2.dll
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\bin\Debug\DevExpress.XtraBars.v11.2.dll
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\bin\Debug\DevExpress.XtraEditors.v11.2.dll
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\bin\Debug\DevExpress.XtraGrid.v11.2.dll
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\bin\Debug\DevExpress.XtraLayout.v11.2.dll
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\bin\Debug\DevExpress.XtraNavBar.v11.2.dll
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\bin\Debug\Interop.AcReport.dll
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\bin\Debug\Common.pdb
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\bin\Debug\DB_VehicleTransportManage.pdb
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\bin\Debug\Interop.TGMAPXLib.dll
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\bin\Debug\AxInterop.TGMAPXLib.dll
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\Interop.AcReport.dll
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.Com.InputDialog.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormMain.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormMainOld.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormMyApply.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormMyApplyDetail.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormPlanDetailQuery.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormPlanQuery.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormHistoryGiveTimeOutAlarm.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormHistoryLoadTimeOutAlarm.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormHistoryTransportTimeOutAlarm.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormHistoryUnLoadTimeOutAlarm.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormHistoryBackTimeOutAlarm.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormHistoryNoChanageStateAlarm.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormHistoryNoUseAlarm.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormHistoryRunDerictionAlarm.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormHistoryMaintainTimeOutAlarm.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormHistoryScrapTimeOutAlarm.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormAddress.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormAddressManage.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormArea.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormAreaManage.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FormBackCar.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FormHandover.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FormHandoverEdit.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FormLoadCar.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FormSupplyCar.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FormUnCheckReason.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FormUnload.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FrmGISArea.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FrmGISCar.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FrmGISDetail.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FrmGISPda.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FrmMyMsg.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FrmQryMsg.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FrmQueryGIS.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FrmQueryPlanCar.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormDeptVehicleReport.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormDeptMaterielTypeReport.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormVehicleStatisticsReport.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormCheckReport.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.SystemManage.FormLockSystem.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormRule.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormRyBaseStation.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormDept.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormDeptManage.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormPersonManage.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.Properties.Resources.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.Tools.DataGridViewEx.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormPerson.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormRyBaseStationManage.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormUser.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormUserManage.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormWifiBaseStation.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormCard.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormCardManage.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormPDA.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormPDAManage.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormMaterielType.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormMaterielTypeManage.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormPasswordEdit.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormWifiBaseStationEdit.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormAlarmSet.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormCurrentAlarm.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormSystemLog.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormVehicleType.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormVehicleTypeManage.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormVehicle.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormVehicleManage.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormVehicleScrapManage.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormVehicleScrap.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormVehicleMainTain.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormVehicleMainTainManage.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.Report.FormPlanQuery.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormVehicleMainTainStop.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormSendMessage.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormAddAddress.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormAddCard.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormHistoryAlarm.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormVehicleMonth.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FormApplyMgrManage.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormApplyMgr.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FormBackCarEdit.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FormBackCarMgr.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FormLoadCarMgr.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FormQueryDetail.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FormReviewCarEdit.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FormReviewMaterEdit.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FormReviewMgr.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FormSupplyCarEditCar.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FormSupplyCarMgr.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormApplyMgrCar.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FormTransferCarMgr.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormUnloadEdit.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FormUnloadCarMgr.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormLoadCarMateriel.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormLoadCarDetail.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormRuleManage.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.frmDatabaseConfig.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FrmGIS.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FrmLogin.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormVehicleNoUseMonth.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.FormMaterielTypeMonth.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.frmServerConfig.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.UI.FrmChangeLogin.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\GenerateResource.write.1.tlog
+F:\WorkFolder\机车定位\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.csproj.ResolveComReference.cache
+F:\WorkFolder\机车定位\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.exe
+F:\WorkFolder\机车定位\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.pdb
+E:\SvnData\VehicleTransport\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.csproj.ResolveComReference.cache
+E:\SvnData\VehicleTransport\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.exe
+E:\SvnData\VehicleTransport\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\obj\x86\Debug\VehicleTransportClient.pdb

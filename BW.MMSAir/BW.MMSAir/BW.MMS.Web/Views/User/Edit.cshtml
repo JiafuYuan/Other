@@ -1,0 +1,116 @@
+﻿@model BW.MMS.Model.sys_UserEntity
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>用户编辑</title>
+    <meta name="viewport" content="width=device-width" />
+</head>
+<body>
+    <div class="easyui-layout" data-options="fit:true">
+        <form id="form" action="">
+        @Html.HiddenFor(model => model.ID)
+        <div data-options="region:'center',border:false" style="padding: 3px;">
+            <table class="table-form">
+                <tr>
+                    <th>
+                        用户名
+                    </th>
+                    <td>
+                        @Html.TextBoxFor(model => model.vc_UserName, new
+                        {
+                            @class = "easyui-validatebox",
+                            required = "true",
+                            validType = "length[1,20]"
+                        })
+                        <span style="color: Red">*</span>
+                    </td>
+                    <th>
+                        姓名
+                    </th>
+                    <td>
+                        @Html.TextBoxFor(model => model.vc_RealName, new
+                       {
+                           @class = "easyui-validatebox",
+                           validType = "length[1,20]"
+                       })
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        密码
+                    </th>
+                    <td>
+                        @Html.TextBoxFor(model => model.vc_Password, new
+                       {
+                           @class = "easyui-validatebox",
+                           type = "password",
+                           style = "width:148px",
+                           required = "true",
+                           validType = "length[1,32]"
+                       })
+                        <span style="color: Red">*</span>
+                    </td>
+                    <th>
+                        状态
+                    </th>
+                    <td>
+                        @Html.ComboBoxFor(model => model.i_Flag, new List<ComboBoxItem> { 
+                           new ComboBoxItem { text = "正常", value = "0" }, 
+                           new ComboBoxItem { text = "停用", value = "2" } 
+                       }, new
+                       {
+                           required = true,
+                           editable = false,
+                           value = 0,
+                           panelHeight = 100
+                       })
+                        <span style="color: Red">*</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        备注
+                    </th>
+                    <td colspan="3">
+                        @Html.TextAreaFor(model => model.vc_Description, 5, 45, null)
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div data-options="region:'south',border:false" class="dialog-button">
+            <a class="easyui-linkbutton" data-options="iconCls:'icon-ok'" onclick="submit1()">保存</a>
+            <a class="easyui-linkbutton" data-options="iconCls:'icon-cancel'" onclick="$('#UserEdit').dialog('close')">
+                取消</a>
+        </div>
+        <script type="text/javascript">
+            function submit1() {
+                if ($("#form").form('validate')) {
+                    var data = $("#form").serialize();
+                    $.ajax({
+                        url: '@Url.Action("Edit")',
+                        data: data,
+                        type: "POST",
+                        async: false,
+                        datatype: "json",
+                        success: function (data) {
+                            if (data.success) {
+                                $.messager.alert("提示", data.message, "info", function () {
+                                    $('#UserEdit').dialog('close');
+                                });
+                            }
+                            else {
+                                $.messager.alert("提示", data.message, "error");
+                            }
+                        },
+                        error: function (a, b, c) {
+                            $.messager.alert("提示", a.responseText, "error");
+                        }
+                    });
+                }
+            }
+        </script>
+        </form>
+    </div>
+</body>
+</html>

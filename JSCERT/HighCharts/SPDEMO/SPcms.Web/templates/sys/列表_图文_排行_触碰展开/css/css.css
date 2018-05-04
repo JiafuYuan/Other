@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS Document */
+
+.isidebar{width:auto;}
+	.isidebar .list{ padding-top:4px; overflow:hidden; position:relative; }
+		.isidebar .list ol li{ padding:10px 0 0 0; height:26px; position:relative; color:#5b5b5b; border-bottom:1px solid #eeeeee; vertical-align:top; }
+			.isidebar .list ol li a{ color:#5b5b5b; } .islide-box .list ol li a:hover{ color:#0089cd; }
+			.isidebar .list ol li .num{ position:absolute; left:0px; top:8px; display:inline-block; vertical-align:-3px; *vertical-align:middle; width:16px; height:16px; margin-right:10px; background:#1389d7; font-style:normal; font-size:10px; color:#fff; font-family:Verdana, Geneva, sans-serif; text-align:center; overflow:hidden;}
+			.isidebar .list ol li .ibtn{ display:block; width:80px; height:22px; border:1px solid #FF641A; line-height:22px; color:#ffffff; text-align:center; overflow:hidden; background:#FB7635; }
+		.isidebar .list ol li .ibtn:hover{ color:#ffffff; text-decoration:none; }
+		.isidebar .list ol li .photo{ float:left; width:77px; display:none; }
+		.isidebar .list ol li .photo img{ display:block; width:65px; height:65px; border:1px solid #979797; }
+		.isidebar .list ol li .props{ *zoom:1; float:left;  }
+			.isidebar .list ol li .props .name{ margin:0 0 0 25px; width:140px; text-overflow:ellipsis; white-space:nowrap; overflow:hidden; line-height:1em; width:auto;}
+			.isidebar .list ol li .props .price{ position:absolute; top:10px; right:1px; white-space:nowrap; color:#bb1a00; font:12px arial;  }
+			.isidebar .list ol li .props .button{ display:none; }
+	.isidebar .list ol li.active{height:auto;padding-bottom:10px;padding-top:10px;*zoom:1;overflow:hidden;}
+		.isidebar .list ol li.active .num{top:10px;background-color:#d60007;}
+		.isidebar .list ol li.active .photo,
+		.isidebar .list ol li.active .button{display:block;}
+		.isidebar .list ol li.active .name{margin:-2px 0 0 0;width:auto;white-space:normal;line-height:18px; text-overflow:ellipsis; white-space:nowrap;overflow:hidden;}
+		.isidebar .list ol li.active .price{position:static; color:#bb1a00; font:bold 14px arial; padding-top:3px; height:24px; }
+/*图片分享*/

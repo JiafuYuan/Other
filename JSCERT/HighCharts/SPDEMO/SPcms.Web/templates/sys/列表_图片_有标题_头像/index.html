@@ -1,0 +1,28 @@
+<!doctype html>
+<meta charset="utf-8">
+
+<link rel="stylesheet" type="text/css" href="/templates/sys/列表_图片_有标题_头像/css/global.css"/>
+<script type="text/javascript" src="/templates/sys/列表_图片_有标题_头像/js/jquery-1.10.2.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="/templates/sys/列表_图片_有标题_头像/css/css.css"/>
+
+
+      <div class="focus_list">
+        <ul>
+<%set DataTable articalDttKsAS=get_article_list("goods", 0, 8, "status=0")%>
+<%foreach(DataRow drtKsAS in articalDttKsAS.Rows)%>
+
+
+
+
+
+          <li>
+            <a title="{drtKsAS[title]}" href="<%linkurl("goods_show",{drtKsAS[id]})%>">
+              <img src="{drtKsAS[img_url]}" width="100" height="100" alt="{drtKsAS[title]}" />
+              <span>{drtKsAS[title]}</span>
+            </a>
+          </li>
+                 <%/foreach%>
+        </ul>
+        <div class="clear"></div>
+      </div>

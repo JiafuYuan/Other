@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{1C4D1434-7B30-4A2E-9B0A-60DF0626EFF2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSCERT", "JSCERT\JSCERT.csproj", "{46A563FF-BE1A-4E7C-87FB-D13236A2C217}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BW_OleDbHelper", "OleDBHelper\BW_OleDbHelper.csproj", "{6529FCD8-6F1C-4CD8-8E56-A18879B0C64B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1C4D1434-7B30-4A2E-9B0A-60DF0626EFF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C4D1434-7B30-4A2E-9B0A-60DF0626EFF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C4D1434-7B30-4A2E-9B0A-60DF0626EFF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C4D1434-7B30-4A2E-9B0A-60DF0626EFF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46A563FF-BE1A-4E7C-87FB-D13236A2C217}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46A563FF-BE1A-4E7C-87FB-D13236A2C217}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46A563FF-BE1A-4E7C-87FB-D13236A2C217}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46A563FF-BE1A-4E7C-87FB-D13236A2C217}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6529FCD8-6F1C-4CD8-8E56-A18879B0C64B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6529FCD8-6F1C-4CD8-8E56-A18879B0C64B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6529FCD8-6F1C-4CD8-8E56-A18879B0C64B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6529FCD8-6F1C-4CD8-8E56-A18879B0C64B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

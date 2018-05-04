@@ -1,0 +1,79 @@
+﻿@{
+    ViewBag.Title = "Add";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script type="text/javascript">
+    jQuery.extend(jQuery.fn.datagrid.defaults.editors, {
+        combotree: {
+            init: function (container, options) {
+                var editor = jQuery('<input type="text">').appendTo(container);
+                editor.combotree(options);
+                return editor;
+            },
+            destroy: function (target) {
+                jQuery(target).combotree('destroy');
+            },
+            getValue: function (target) {
+                var temp = jQuery(target).combotree('getValues');
+                return temp.join(',');
+            },
+            setValue: function (target, value) {
+                if (value == null)
+                    return;
+                var temp = value.split(',');
+                jQuery(target).combotree('setValues', temp);
+            },
+            resize: function (target, width) {
+                jQuery(target).combotree('resize', width);
+            }
+        }
+    });
+    var editIndex = undefined;
+    function endEditing() {
+        if (editIndex == undefined) { return true }
+        if ($('#BatchSetArrayClass').datagrid('validateRow', editIndex)) {
+            var ed = $('#BatchSetArrayClass').datagrid('getEditor', { index: editIndex, field: 'DeptID' });
+            var text = $(ed.target).combotree('getText');
+            $('#BatchSetArrayClass').datagrid('getRows')[editIndex]['DeptID'] = $(ed.target).combotree('getValues').toString();
+            $('#BatchSetArrayClass').datagrid('getRows')[editIndex]['DeptName'] = text;
+            $('#BatchSetArrayClass').datagrid('endEdit', editIndex);
+            mergeCellsByField('BatchSetArrayClass', 'classTypeName');
+            editIndex = undefined;
+            return true;
+        } else {
+            return false;
+        }
+    }
+    function onClickRow(index) {
+        if (editIndex != index) {
+            if (endEditing()) {
+                $('#BatchSetArrayClass').datagrid('selectRow', index).datagrid('beginEdit', index);
+                editIndex = index;
+            } else {
+                $('#BatchSetArrayClass').datagrid('selectRow', editIndex);
+            }
+        }
+    }
+    function formatDept(value, row, index) {
+        return row.DeptName;
+    }
+    function onLoadSuccess(data) {
+        mergeCellsByField('BatchSetArrayClass', 'classTypeName');
+    }
+</script>
+<div id="toolbar" style="padding: 8px;">
+    日期：
+    @Html.TextBox("startDate", DateTime.Now.ToString("yyyy-MM-dd"), new { @class = "easyui-datebox" })
+    到
+    @Html.TextBox("endDate", (new DateTime(DateTime.Now.Year, DateTime.Now.Month, 1)).AddMonths(1).AddDays(-1).ToString("yyyy-MM-dd"), new { @class = "easyui-datebox" })
+</div>
+@Html.DataGrid("BatchSetArrayClass", Url.Action("GetArrayClass"), ViewData["GridColumn"] as IEnumerable<object>, new
+{
+    fit = true,
+    striped = true,
+    singleSelect = true,
+    idField = "ID",
+    toolbar = "#toolbar",
+    onClickRow = new { function = "onClickRow" },
+    onLoadSuccess = new { function = "onLoadSuccess" }
+}, new { style = "overflow: hidden;" })

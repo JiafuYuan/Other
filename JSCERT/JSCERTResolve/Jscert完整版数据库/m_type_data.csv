@@ -1,0 +1,9 @@
+﻿ID,vc_Name,vc_Href,channel_id,category_id,i_Flag
+10,漏洞公告,http://www.cert.org.cn/publish/main/9/index.html,30,64,0
+11,恶意代码,http://www.cert.org.cn/publish/main/10/index.html,30,65,0
+12,其他威胁,http://www.cert.org.cn/publish/main/11/index.html,30,66,0
+13,国内要闻,http://www.cert.org.cn/publish/main/49/index.html,1,62,0
+14,国际要闻,http://www.cert.org.cn/publish/main/98/index.html,1,63,0
+15,安全科普,http://www.cert.org.cn/publish/main/24/index.html,32,71,0
+16,培训研讨,http://www.cert.org.cn/publish/main/26/index.html,32,73,0
+17,政策法规,http://www.cert.org.cn/publish/main/27/index.html,32,74,0

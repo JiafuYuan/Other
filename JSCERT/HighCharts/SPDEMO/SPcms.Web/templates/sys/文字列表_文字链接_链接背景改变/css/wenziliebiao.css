@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+/*商品样式
+------------------------------------------------------------------------------------*/
+.wenzi_lb { margin:0 auto; width:580px;}
+.wenzi_lb li { height:35px; line-height:35px; padding-left:10px;}
+.wenzi_lb li a{width:580px;display:block; border-top:1px solid #fff; color:#000000 !important; padding-left:10px; background-color:#f0f0f0 !important;}
+.wenzi_lb li a:hover{background-color:#dcdcdc !important; color:#000000 !important}
+.wenzi_lb span{ position:absolute; width:60px; color:#B7B7B7; float:right; left:510px; } 

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bestway="http://schemas.android.com/apk/res/com.bestway.kj915"
+    android:layout_width="match_parent"
+    android:layout_height="200dip"
+    android:background="@android:color/white"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <com.bestway.kj915.custom.MyDropdownBox
+                android:id="@+id/catagory"
+                bestway:name="类型"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip" >
+            </com.bestway.kj915.custom.MyDropdownBox>
+
+            <LinearLayout
+                android:layout_width="270dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="数量："
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/number"
+                    android:layout_width="99dip"
+                    android:layout_height="35dip"
+                    android:background="@drawable/gaga"
+                    android:hint="数量"
+                    android:inputType="number"
+                    android:paddingLeft="10dip"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="81dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical" >
+
+                    <com.bestway.kj915.custom.MyDropdownBox
+                        android:id="@+id/unit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+                    </com.bestway.kj915.custom.MyDropdownBox>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="270dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="5dip"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:weightSum="9" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="35dip"
+                    android:layout_weight="3"
+                    android:text="用途："
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/purpose"
+                    android:layout_width="0dp"
+                    android:layout_height="65dip"
+                    android:layout_weight="6"
+                    android:background="@drawable/gaga"
+                    android:hint="请填写用途"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_delete"
+            android:layout_width="60dip"
+            android:layout_height="60dip"
+            android:background="@drawable/delete" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>给我留言-{config.webtitle}</title>
+<meta content="{config.webkeyword}" name="keywords" />
+<meta content="{config.webdescription}" name="description" />
+
+<link href="<%templateskin%>/css/style.css" rel="stylesheet" type="text/css" />
+<link href="<%templateskin%>/css/commen.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="<%templateskin%>/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="<%templateskin%>/js/jquery.superslide.2.1.1.js"></script>
+<script type="text/javascript" src="<%templateskin%>/js/Html5.js"></script>
+</head>
+<body>
+<!--抬头开始-->
+<%template src="_header.html"%>
+        <div class="nmain clearfix">
+        	<div class="naside float_l"><h5>产品目录</h5></div>
+            <div class="nmainbox float_r"><small>当前位置：<a href="#">首页</a> - 在线留言</small></div>
+        </div>
+    </div>
+    <!--大图结束-->
+    <div class="clear"></div>
+    <div id="nmainbody" class="clearfix">
+    	<!--产品分类-->
+    <%template src="_left.html"%>
+        <div class="mainbox float_r">
+        	
+                <div class="clear"></div>
+                 <%template src="../sys/留言/index.html"%>
+             
+               
+            
+   
+    </div>
+</section>
+<!--主体结束-->
+<!--产品展示-->
+
+<div class="clear"></div>
+<!--底部-->
+<%template src="_foot.html"%>
+<!--底部结束-->
+<!--ui:jxq/style:cyy/code:xcx-->
+</body>
+</html>

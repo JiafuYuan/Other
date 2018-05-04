@@ -1,0 +1,32 @@
+<link href="/templates/sys/列表_图文_排行_触碰展开/css/css.css" type=text/css rel=stylesheet>
+<script type="text/javascript" src="/templates/sys/列表_图文_排行_触碰展开/js/base.js"></script>
+
+    <!--Hot Goods-->
+    <div class="isidebar">
+      <div class="list">
+        <ol> 
+<%set DataTable loopdtxdZFf=get_article_list("goods", 0, 10, "status=0 and is_hot=1", "click desc,id desc")%>
+<%loop drlxdZFf loopdtxdZFf%>
+
+
+
+          <li class="<%if(drlxdZFf__loop__id==1)%>active<%/if%>" onmouseover="ToggleProps(this, 'active');">
+          
+            <i class="num"><%write drlxdZFf__loop__id%></i>
+            <div class="photo">
+              <a title="title" href="<%linkurl("goods_show",{drlxdZFf[id]})%>"><img src="{drlxdZFf[img_url]}" alt="{drlxdZFf[title]}"></a>
+            </div>
+            <div class="props">
+              <p class="name"><a title="{drlxdZFf[title]}" href="<%linkurl("news_show",{drlxdZFf[id]})%>">{drlxdZFf[title]}</a></p>
+              <p class="price">¥{drlxdZFf[sell_price]}</p>
+              <p class="button"><a class="ibtn" href="<%linkurl("goods_show",{drlxdZFf[id]})%>">立即购买</a></p>
+            </div>
+          </li>
+
+  <%/loop%>
+
+                    
+          </ol>
+      </div>
+    </div>
+    <!--Hot Goods-->

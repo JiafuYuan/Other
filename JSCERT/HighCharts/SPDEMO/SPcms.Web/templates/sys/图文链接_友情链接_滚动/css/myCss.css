@@ -1,0 +1,7 @@
+﻿@charset "utf-8";
+/* 单层滚动 */
+#demo{ width:100%; height:80px; overflow:hidden;}
+#indemo{ float:left; width:800%;}#demo1{ float:left;}#demo2{ float:left;}
+#demo li{ float:left; width:122px; margin:5px 10px 0 10px; _display:inline;}
+#demo li img{ width:120px; height:44px; border:1px solid #ccc;}
+#demo li p{ display:block; width:122px; height:30px; line-height:30px; font-size:12px; text-align:center; overflow:hidden;}

@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5F03551A-D8DB-40D5-9854-B8B0812CBEF9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BW.MMS.DAL</RootNamespace>
+    <AssemblyName>BW.MMS.DAL</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Alarm_CurrentDAL.cs" />
+    <Compile Include="Alarm_HistoryDAL.cs" />
+    <Compile Include="DataDictionaryDAL.cs" />
+    <Compile Include="Data_Hisotry_Water_YYYY_MMDAL.cs" />
+    <Compile Include="Data_History_Power_YYYY_MMDAL.cs" />
+    <Compile Include="Data_History_Production_YYYY_MMDAL.cs" />
+    <Compile Include="Data_History_Wind_YYYY_MMDAL.cs" />
+    <Compile Include="Data_RatedLoadDAL.cs" />
+    <Compile Include="Data_RealTime_PowerDAL.cs" />
+    <Compile Include="Data_RealTime_ProductionDAL.cs" />
+    <Compile Include="Data_RealTime_WaterDAL.cs" />
+    <Compile Include="Data_RealTime_WindDAL.cs" />
+    <Compile Include="GridColumnConfigDAL.cs" />
+    <Compile Include="GridConfigDAL.cs" />
+    <Compile Include="HistoryRecord.cs" />
+    <Compile Include="m_AlarmTypeDAL.cs" />
+    <Compile Include="m_AreaDAL.cs" />
+    <Compile Include="m_ArrayClassDAL.cs" />
+    <Compile Include="m_AshDAL.cs" />
+    <Compile Include="m_ClassDAL.cs" />
+    <Compile Include="m_ClassTypeDAL.cs" />
+    <Compile Include="m_DeptDAL.cs" />
+    <Compile Include="m_EnergyInfoDAL.cs" />
+    <Compile Include="m_EnergyPlanDAL.cs" />
+    <Compile Include="m_EnergyTypeDAL.cs" />
+    <Compile Include="m_PLCDAL.cs" />
+    <Compile Include="m_ProductionPlanDAL.cs" />
+    <Compile Include="m_RatedLoadDAL.cs" />
+    <Compile Include="m_SensorDAL.cs" />
+    <Compile Include="m_SensorNodesDAL.cs" />
+    <Compile Include="m_SensorRelationshipDAL.cs" />
+    <Compile Include="m_SensorTypeDAL.cs" />
+    <Compile Include="m_WorkReport.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="p_Month_StatisticalDAL.cs" />
+    <Compile Include="p_Year_StatisticalDAL.cs" />
+    <Compile Include="Regions.cs" />
+    <Compile Include="ReportDAL.cs" />
+    <Compile Include="rpt_Real_Used_Month_ReportDAL.cs" />
+    <Compile Include="sys_ActionDAL.cs" />
+    <Compile Include="sys_AuthorityDAL.cs" />
+    <Compile Include="sys_ErrorLogDAL.cs" />
+    <Compile Include="sys_GridColumnConfigDAL.cs" />
+    <Compile Include="sys_GridConfigDAL.cs" />
+    <Compile Include="sys_ModuleDAL.cs" />
+    <Compile Include="sys_UserDAL.cs" />
+    <Compile Include="S_ControllerInfo.cs" />
+    <Compile Include="S_Point.cs" />
+    <Compile Include="v_ArrayClassDAL.cs" />
+    <Compile Include="v_HistoryRecord.cs" />
+    <Compile Include="v_SensorDAL.cs" />
+    <Compile Include="p_actualEnergyDAL.cs" />
+    <Compile Include="v_WorkReport.cs" />
+    <Compile Include="WorkReportType.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BW.MMS.DBUtility\BW.MMS.DBUtility.csproj">
+      <Project>{E29BCB18-8C6A-41DC-B5A6-C865D4DE15AA}</Project>
+      <Name>BW.MMS.DBUtility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BW.MMS.Model\BW.MMS.Model.csproj">
+      <Project>{A0306175-ACD2-448B-93D4-9DBC61DEDE3D}</Project>
+      <Name>BW.MMS.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

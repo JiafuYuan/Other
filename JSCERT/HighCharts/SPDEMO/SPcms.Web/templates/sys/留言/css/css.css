@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+/*在线留言
+------------------------------------------------------------------------------------*/
+*{margin:0;padding:0;}
+ol,ul{list-style:none;}
+
+/*----message----*/
+.liuyan_box{padding:20px 20px 70px 50px; text-decoration:none; font:14px "微软雅黑";}
+.liuyan_box li label {float:left;width:86px;text-align:right;line-height:20px; font-weight:normal;margin-top:10px; color:#333;}
+.liuyan_box li div {float:left;width:260px; margin:10px 0px; line-height:25px;}
+.liuyan_box li div textarea{border:1px solid #007c5b;width:440px;font-size:12px;color:#555;padding:5px; min-height:100px;_height:expression(document.body.clientWidth > 100 ? "100px" : "auto"); }
+.yanzheng{border:1px solid #9e8e8e;display:inline-block;width:70px;height:20px;vertical-align:top; margin-left:10px;padding-left:2px;}
+.up_but{cursor:pointer;}
+.first {margin-left:0;clear:left;}
+.qqqq,.width2{ border:1px solid #ccc !important;}

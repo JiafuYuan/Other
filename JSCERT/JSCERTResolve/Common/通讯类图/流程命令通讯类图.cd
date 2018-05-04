@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Comment CommentText="申请">
+    <Position X="0.729" Y="1.417" Height="0.615" Width="1.762" />
+  </Comment>
+  <Comment CommentText="供车">
+    <Position X="0.687" Y="3.854" Height="0.615" Width="1.762" />
+  </Comment>
+  <Comment CommentText="装车">
+    <Position X="0.75" Y="6.75" Height="0.615" Width="1.762" />
+  </Comment>
+  <Comment CommentText="交接车">
+    <Position X="0.719" Y="9.708" Height="0.615" Width="1.762" />
+  </Comment>
+  <Comment CommentText="卸车">
+    <Position X="0.708" Y="12.188" Height="0.615" Width="1.762" />
+  </Comment>
+  <Comment CommentText="还车">
+    <Position X="0.75" Y="15.25" Height="0.615" Width="1.762" />
+  </Comment>
+  <Class Name="Common.Model.FlowPath.InFlowPath.InApplyModel">
+    <Position X="3.5" Y="1.25" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>Model\FlowPath\InFlowPath\InApplyModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.Model.FlowPath.InFlowPath.InGiveModel">
+    <Position X="2.75" Y="3.75" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\FlowPath\InFlowPath\InGiveModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.Model.FlowPath.InFlowPath.InLoadModel">
+    <Position X="3.5" Y="6.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\FlowPath\InFlowPath\InLoadModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.Model.FlowPath.InFlowPath.InHandoverModel">
+    <Position X="2.75" Y="9.75" Width="4.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACCAAAA=</HashCode>
+      <FileName>Model\FlowPath\InFlowPath\InHandoverModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.Model.FlowPath.InFlowPath.InUnLoadModel">
+    <Position X="2.75" Y="12.25" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\FlowPath\InFlowPath\InUnLoadModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.Model.FlowPath.InFlowPath.InBackModel">
+    <Position X="3" Y="15.25" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Model\FlowPath\InFlowPath\InBackModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DB_VehicleTransportManage.Model.m_Apply">
+    <Position X="7.75" Y="0.75" Width="2.75" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="DB_VehicleTransportManage.Model.m_Plan_ApplyMaterie">
+    <Position X="10.75" Y="0.75" Width="2.25" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="DB_VehicleTransportManage.Model.m_Plan_ApplyVehicle">
+    <Position X="13.25" Y="0.75" Width="2.25" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="DB_VehicleTransportManage.Model.m_Plan_GiveVehicle">
+    <Position X="7" Y="3.75" Width="3" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="DB_VehicleTransportManage.Model.m_Plan_Load">
+    <Position X="6.75" Y="6.5" Width="3" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="DB_VehicleTransportManage.Model.m_Plan_Handover">
+    <Position X="7.75" Y="9.5" Width="3" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="DB_VehicleTransportManage.Model.m_Plan_HandoverMaterie">
+    <Position X="11" Y="9.75" Width="3.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="DB_VehicleTransportManage.Model.m_Plan_UnLoad">
+    <Position X="7" Y="12.25" Width="2.75" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="DB_VehicleTransportManage.Model.m_Plan_BackVehicle">
+    <Position X="7" Y="15.25" Width="3" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Common.Model.InBaseModel">
+    <Position X="0.75" Y="4.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAgAAAAAAAAAgAAAAABAQAAAAAACAAAAA=</HashCode>
+      <FileName>Model\InBaseModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DB_VehicleTransportManage.Model.m_Plan_UnLoadMaterie">
+    <Position X="10.25" Y="12.25" Width="2.25" />
+    <TypeIdentifier />
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

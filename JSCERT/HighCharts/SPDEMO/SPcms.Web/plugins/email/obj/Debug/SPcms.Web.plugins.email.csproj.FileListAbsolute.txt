@@ -1,0 +1,15 @@
+\\192.168.8.8\SP_webPlat\SPcms.Web\plugins\email\obj\Debug\ResolveAssemblyReference.cache
+\\192.168.8.8\SP_webPlat\SPcms.Web\bin\SPcms.Web.plugins.email.dll
+\\192.168.8.8\SP_webPlat\SPcms.Web\bin\SPcms.Web.plugins.email.pdb
+\\192.168.8.8\SP_webPlat\SPcms.Web\plugins\email\obj\Debug\SPcms.Web.plugins.email.dll
+\\192.168.8.8\SP_webPlat\SPcms.Web\plugins\email\obj\Debug\SPcms.Web.plugins.email.pdb
+E:\SPDEMO\SPcms.Web\bin\SPcms.Web.plugins.email.dll
+E:\SPDEMO\SPcms.Web\bin\SPcms.Web.plugins.email.pdb
+E:\SPDEMO\SPcms.Web\plugins\email\obj\Debug\SPcms.Web.plugins.email.csprojResolveAssemblyReference.cache
+E:\SPDEMO\SPcms.Web\plugins\email\obj\Debug\SPcms.Web.plugins.email.dll
+E:\SPDEMO\SPcms.Web\plugins\email\obj\Debug\SPcms.Web.plugins.email.pdb
+C:\Users\JiafuYuan\Desktop\SPDEMO\SPcms.Web\bin\SPcms.Web.plugins.email.dll
+C:\Users\JiafuYuan\Desktop\SPDEMO\SPcms.Web\bin\SPcms.Web.plugins.email.pdb
+C:\Users\JiafuYuan\Desktop\SPDEMO\SPcms.Web\plugins\email\obj\Debug\SPcms.Web.plugins.email.csprojResolveAssemblyReference.cache
+C:\Users\JiafuYuan\Desktop\SPDEMO\SPcms.Web\plugins\email\obj\Debug\SPcms.Web.plugins.email.dll
+C:\Users\JiafuYuan\Desktop\SPDEMO\SPcms.Web\plugins\email\obj\Debug\SPcms.Web.plugins.email.pdb

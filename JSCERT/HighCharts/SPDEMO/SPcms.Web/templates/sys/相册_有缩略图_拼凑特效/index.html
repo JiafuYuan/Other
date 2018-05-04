@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="/templates/sys/相册_有缩略图_拼凑特效/css/4.css" type="text/css" media="screen"/>
+<script type="text/javascript" src="/templates/sys/相册_有缩略图_拼凑特效/js/4.1.js"></script>
+<script type="text/javascript" src="/templates/sys/相册_有缩略图_拼凑特效/js/4.2.js"></script>
+<script type="text/javascript" src="/templates/sys/相册_有缩略图_拼凑特效/js/4.3.js"></script>
+
+
+
+		
+		<div id="im_wrapper" class="im_wrapper">
+			<%set DataTable articalDttwbfB=get_article_list("news", 0, 16, "status=0")%>
+<%foreach(DataRow drtwbfB in articalDttwbfB.Rows)%>
+	<div style="background-position:-625px -250px;"><img src="{drtwbfB[img_url]}" alt="" /></div>
+<%/foreach%>
+
+
+		
+
+		</div>
+		<div id="im_loading" class="im_loading"></div>
+		<div id="im_next" class="im_next"></div>
+		<div id="im_prev" class="im_prev"></div>
+        

@@ -1,0 +1,22 @@
+﻿.table-form
+{
+    width: 100%;
+    background-color: #C0C0C0;
+    border-collapse: separate;
+    border-spacing: 1px;
+}
+.table-form th
+{
+    padding: 5px;
+    background-color: #F1F6FF;
+}
+.table-form td
+{
+    padding: 5px;
+    background-color: #FAFCFF;
+}
+.search
+{
+    padding: 5px 0px 5px 10px;
+    margin: 0px -2px 0px -2px;
+}

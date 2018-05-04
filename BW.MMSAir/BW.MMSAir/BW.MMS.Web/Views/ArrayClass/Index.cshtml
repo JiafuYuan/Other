@@ -1,0 +1,169 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="@Url.Content("~/Content/My97DatePicker/WdatePicker.js")" type="text/javascript"></script>
+<script type="text/javascript">
+    $(function () {
+        $(window).resize(function () {
+            $('#gridArrayClass').datagrid('resize');
+        });
+    });
+    function onBeforeLoad(param) {
+        $('#gridArrayClass').datagrid('clearSelections');
+        if ($("#startDate").datebox('getValue') > $("#endDate").datebox('getValue')) {
+            TopWindow.$.messager.alert('提示:', '开始日期不能大于结束日期！', 'warning');
+            return;
+        }
+        param.startDate = $("#startDate").datebox('getValue');
+        param.endDate = $("#endDate").datebox('getValue');
+    }
+    //修改
+    function Edit() {
+        var rows = $('#gridArrayClass').datagrid('getSelections');
+        if (rows.length == 0) {
+            TopWindow.$.messager.alert('提示:', '请选数据！', 'warning');
+            return;
+        }
+        if (rows.length > 1) {
+            TopWindow.$.messager.alert('提示:', '只能选择一条数据！', 'warning');
+            return;
+        }
+        if (rows[0].dt_Date < formatDate(new Date(), 'yyyy-MM-dd')) {
+            TopWindow.$.messager.alert('提示:', '无法修改今天之前的排班！', 'warning');
+            return;
+        }
+        TopWindow.$.dialogwindow({
+            iconCls: 'icon-customers',
+            id: "ArrayClassEdit",
+            title: '修改排班',
+            width: 460,
+            height: 300,
+            url: '@Url.Action("Edit")' + '?dt_Date=' + rows[0].dt_Date,
+            onClose: function () {
+                $('#gridArrayClass').datagrid('load');
+            },
+            buttons: [{
+                text: '保存',
+                iconCls: 'icon-ok',
+                handler: function () {
+                    if (TopWindow.endEditing()) {
+                        TopWindow.$('#EditArrayClass').datagrid('acceptChanges');
+                        var startDate = TopWindow.$("#startDate").datebox('getValue');
+                        var rows = TopWindow.$("#EditArrayClass").datagrid('getRows');
+                        var gridData = [];
+                        for (var i = 0; i < rows.length; i++) {
+                            if (rows[i].DeptID != null && rows[i].DeptID.length > 0) {
+                                gridData.push(rows[i]);
+                            }
+                        }
+                        if (gridData.length > 0) {
+                            $.ajax({
+                                url: '@Url.Action("SaveArrayClass")',
+                                data: { startDate: startDate, endDate: startDate, grid: JSON.stringify(gridData) },
+                                type: "POST",
+                                async: false,
+                                datatype: "json",
+                                success: function (data) {
+                                    if (data.success) {
+                                        TopWindow.$.messager.alert("提示", data.message, "info", function () {
+                                            TopWindow.$('#ArrayClassEdit').dialog('close');
+                                        });
+                                    }
+                                    else {
+                                        TopWindow.$.messager.alert("提示", data.message, "error");
+                                    }
+                                },
+                                error: function (a, b, c) {
+                                    TopWindow.$.messager.alert("提示", a.responseText, "error");
+                                }
+                            });
+                        }
+                    }
+                }
+            }]
+        });
+    }
+    //批量设置
+    function BatchSet() {
+        TopWindow.$.dialogwindow({
+            iconCls: 'icon-customers',
+            id: "BatchSet",
+            title: '排班批量设置',
+            width: 460,
+            height: 300,
+            url: '@Url.Action("Add")',
+            onClose: function () {
+                $('#gridArrayClass').datagrid('load');
+            },
+            buttons: [{
+                text: '保存',
+                iconCls: 'icon-ok',
+                handler: function () {
+                    if (TopWindow.endEditing()) {
+                        TopWindow.$('#BatchSetArrayClass').datagrid('acceptChanges');
+                        var startDate = TopWindow.$("#startDate").datebox('getValue');
+                        var endDate = TopWindow.$("#endDate").datebox('getValue');
+                        if (startDate < formatDate(new Date(), 'yyyy-MM-dd')) {
+                            TopWindow.$.messager.alert('提示:', '无法设置今天之前的排班！', 'warning');
+                            return;
+                        }
+                        if (startDate > endDate) {
+                            TopWindow.$.messager.alert('提示:', '开始日期不能大于结束日期！', 'warning');
+                            return;
+                        }
+                        var rows = TopWindow.$("#BatchSetArrayClass").datagrid('getRows');
+                        var gridData = [];
+                        for (var i = 0; i < rows.length; i++) {
+                            if (rows[i].DeptID != null && rows[i].DeptID.length > 0) {
+                                gridData.push(rows[i]);
+                            }
+                        }
+                        if (gridData.length > 0) {
+                            $.ajax({
+                                url: '@Url.Action("SaveArrayClass")',
+                                data: { startDate: startDate, endDate: endDate, grid: JSON.stringify(gridData) },
+                                type: "POST",
+                                async: false,
+                                datatype: "json",
+                                success: function (data) {
+                                    if (data.success) {
+                                        TopWindow.$.messager.alert("提示", data.message, "info", function () {
+                                            TopWindow.$('#BatchSet').dialog('close');
+                                        });
+                                    }
+                                    else {
+                                        TopWindow.$.messager.alert("提示", data.message, "error");
+                                    }
+                                },
+                                error: function (a, b, c) {
+                                    TopWindow.$.messager.alert("提示", a.responseText, "error");
+                                }
+                            });
+                        }
+                    }
+                }
+            }]
+        });
+    }
+</script>
+<div id="toolbar">
+    <div class="datagrid-toolbar panel-header search">
+        日期：
+        @Html.TextBox("startDate", DateTime.Now.ToString("yyyy-MM-dd"), new { @class = "easyui-datebox", editable = false })
+        到
+        @Html.TextBox("endDate", (new DateTime(DateTime.Now.Year, DateTime.Now.Month, 1)).AddMonths(1).AddDays(-1).ToString("yyyy-MM-dd"), new { @class = "easyui-datebox", editable = false })
+        @Html.LinkButton("查询", "icon-search", new { onclick = "$('#gridArrayClass').datagrid('load')" })
+    </div>
+    @Html.LinkButton("批量设置", "icon-pencil", true, new { onclick = "BatchSet()" })
+    @Html.LinkButton("修改", "icon-edit", true, new { onclick = "Edit()" })
+    @Html.LinkButton("刷新", "icon-reload", true, new { onclick = "$('#gridArrayClass').datagrid('load')" })
+</div>
+@Html.DataGrid("gridArrayClass", @Url.Action("GetArrayList"), ViewData["GridColumn"] as IEnumerable<object>, new
+{
+    fit = true,
+    striped = true,
+    singleSelect = true,
+    toolbar = "#toolbar",
+    onBeforeLoad = new { function = "onBeforeLoad" }
+}, new { style = "overflow: hidden;" })

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+  <ServerPort>9999</ServerPort>
+  <DBServer>.</DBServer>
+  <DBName>BW_VehicleTransportManage</DBName>
+  <DBUserName>sa</DBUserName>
+  <DBPassword>kj222</DBPassword>
+  <ApkVersion>1.0.0</ApkVersion>
+  <ApkFilePath>C:\test.apk</ApkFilePath>
+  <ServerIP>192.168.8.138</ServerIP>
+  <IsSaveLog>True</IsSaveLog>
+  <IsHideBreakheat>False</IsHideBreakheat>
+  <IsHideError>False</IsHideError>
+  <IsHideSend>False</IsHideSend>
+  <LogCount>100</LogCount>
+  <CanRunSecondServer>false</CanRunSecondServer>
+</Configuration>

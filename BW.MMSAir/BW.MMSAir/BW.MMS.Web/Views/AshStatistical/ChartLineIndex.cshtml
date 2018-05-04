@@ -1,0 +1,82 @@
+﻿@{
+    ViewBag.Title = "ChartLineIndex";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script type="text/javascript">
+    var arr = getxAxis();
+    var dic = getSeries();
+    $(function () {
+        chartContainer();
+    });
+    function chartContainer() {
+        $('#container').highcharts({
+            chart: {
+                type: 'spline'
+            },
+            credits: {
+                enabled: false
+            },
+            title: {
+                text: '@ViewData["dt_BeginDate"] 到 @ViewData["dt_EndDate"] </br>统计报表'
+            },
+            xAxis: {
+                labels: {
+                    rotation: -60
+                },
+                categories: arr
+            },
+            yAxis: {
+                title: {
+                    text: '累计'
+                }
+            },
+
+            plotOptions: {
+                column: {
+                    pointPadding: 0.2,
+                    borderWidth: 0
+                }
+            },
+            series: dic
+        });
+    }
+
+
+    function getxAxis() {
+        var paramcol = [];
+        $.ajax({
+            url: '@Url.Action("getxAxis")',
+            type: "POST",
+            async: false,
+            datatype: "json",
+            data: { dtStart: '@ViewData["dt_BeginDate"]', dtEnd: '@ViewData["dt_EndDate"]' },
+            success: function (data) {
+                paramcol = data;
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                $.messager.alert("提示", XMLHttpRequest.responseText, "error");
+            }
+        });
+        return paramcol;
+    }
+    function getSeries() {
+        var paramSeries;
+        $.ajax({
+            url: '@Url.Action("getSeries")',
+            type: "POST",
+            async: false,
+            datatype: "json",
+            data: { dtStart1: '@ViewData["dt_BeginDate"]', dtEnd1: '@ViewData["dt_EndDate"]' },
+            success: function (data) {
+                paramSeries = data;
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                $.messager.alert("提示", XMLHttpRequest.responseText, "error");
+            }
+        });
+        return paramSeries;
+    }
+</script>
+<div id="container" style="width: 100%; height: 600px; overflow:auto;">
+</div>

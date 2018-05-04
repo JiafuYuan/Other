@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+/*
+------------------------------------------------------------------------------------*/
+*{margin:0;padding:0;}
+a{text-decoration:none;outline:none; color:#333;}
+ol, ul {list-style: none;}
+
+/*浮动和清除浮动*/
+.clear{clear:both;}
+.float_l{float:left;}
+.float_r{float:right;}
+/*显示隐藏*/
+.clearfix:after {content: "."; display: block;  height: 0; clear: both;  visibility: hidden;}
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+
+/*公司新闻*/
+.mainbox_2a { font-size:12px;}
+.mainbox_2a ul { margin:0px 0px 15px 10px;}
+.mainbox_2a li { height:40px; width:695px; border-bottom:1px dashed #999;}
+.mainbox_2a li a { color:#333; display:block; height:40px; line-height:40px; padding-left:3px;}
+.mainbox_2a li a:hover { text-decoration:none; color:#007c5b;}
+.mainbox_2a li span { line-height:40px; color:#7c7c7c;}
+

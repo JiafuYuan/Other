@@ -1,0 +1,81 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="@Url.Content("~/Content/My97DatePicker/WdatePicker.js")" type="text/javascript"></script>
+<script type="text/javascript">
+    $(function () {
+        $(window).resize(function () {
+            $('#gridAshHourReport').datagrid('resize');
+        });
+    });
+
+    function onBeforeLoad(param) {
+        $('#gridAshHourReport').datagrid('clearSelections');
+//        if ($('#txtDate').val().length > 0) {
+            param.dtDate = $('#txtDate').datebox('getValue');
+//        }
+//        else {
+//            $('#txtDate').val(new Date().getFullYear().toString() + '年' + (new Date().getMonth()+1).toString() + '月' + new Date().getDate().toString() + '日');
+//        }
+    }
+    function chartLineShow() {
+        var dtDate;
+        dtDate = $('#txtDate').datebox('getValue');
+        TopWindow.$.dialogwindow({
+            iconCls: 'icon-customers',
+            id: "chartData",
+            title: '曲线图',
+            width: 1100,
+            height: 600,
+            iframe: true,
+            url: '@Url.Action("ChartLineIndex")?dtdate=' + dtDate
+        });
+    }
+    function ShowReport(action) {
+        var params = {}; 
+        params['dt_date'] = $('#txtDate').datebox('getValue');
+        $.post('@Url.Action("GetReportData")', params).success(function (data) {
+            LoadAcReport({
+                action: action,
+                aptPath: '@Url.Content("~/Reports/AshHour.apt")',
+                dataname: 'AshHour',
+                data: data,
+                variant: [{ name: 'txtDate', value: $('#txtDate').datebox('getValue')}]
+            });
+        }).error(function (XMLHttpRequest, textStatus, errorThrown) {
+            TopWindow.$.messager.alert("提示", a.responseText, "error");
+        });
+    }
+</script>
+<div id="toolbar" style="padding: 8px;">
+    @*<input type="text" id="d243" onfocus="WdatePicker({skin:'whyGreen',dateFmt:'yyyy年'})" class="Wdate"/>*@
+    @*@Html.DatePicker("txtDate", new
+   {
+       dateFmt = "'yyyy年MM月dd日'"
+   }, new { @class = "Wdate" })*@
+   日期：
+    @Html.TextBox("txtDate", DateTime.Now.ToString("yyyy-MM-dd"), new { @class = "easyui-datebox", editable = false })
+    @Html.LinkButton("查询", "icon-search", new { onclick = "$('#gridAshHourReport').datagrid('load')" })
+     @Html.LinkButton("曲线图", "icon-chartline", new { onclick = "chartLineShow()" })
+      @if (Convert.ToBoolean(ViewData["Designer"]))
+      {
+      @Html.LinkButton("报表设计", "icon-report", new { onclick = "ShowReport('ShowDesigner')" })
+      }
+    @Html.LinkButton("报表打印预览", "icon-report", new { onclick = "ShowReport('Preview')" })
+</div>
+</div>
+@Html.DataGrid("gridAshHourReport", @Url.Action("GetGridList"), ViewData["GridColumn"] as IEnumerable<object>, new
+    {
+        fit = true,
+        rownumbers = true,
+        singleSelect = true,
+        striped = true,
+        idField = "ID",
+        sortName = "ID",
+        sortOrder = "asc",
+        toolbar = "#toolbar",
+        pagination = false,
+        pageSize = 20,
+        onBeforeLoad = new { function = "onBeforeLoad" }
+    }, new { style = "overflow: hidden;" })

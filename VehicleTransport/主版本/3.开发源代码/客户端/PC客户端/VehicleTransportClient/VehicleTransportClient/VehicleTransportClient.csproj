@@ -1,0 +1,1274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C33061D8-5EAB-4CE6-A2DA-2489E35B13DD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VehicleTransportClient</RootNamespace>
+    <AssemblyName>VehicleTransportClient</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>kehuduan2.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AcNetUtils">
+      <HintPath>..\..\..\..\Lib\AcNetUtils.dll</HintPath>
+    </Reference>
+    <Reference Include="BW_CommunicationFrame">
+      <HintPath>..\..\..\..\Lib\BW_CommunicationFrame.dll</HintPath>
+    </Reference>
+    <Reference Include="BW_GridStyle, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Lib\BW_GridStyle.dll</HintPath>
+    </Reference>
+    <Reference Include="BW_InputPromptDialog">
+      <HintPath>..\..\..\..\Lib\BW_InputPromptDialog.dll</HintPath>
+    </Reference>
+    <Reference Include="BW_OleDbHelper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Lib\BW_OleDbHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="BW_ProgressBarDialog, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Lib\BW_ProgressBarDialog.dll</HintPath>
+    </Reference>
+    <Reference Include="BW_Socket">
+      <HintPath>..\..\..\..\Lib\BW_Socket.dll</HintPath>
+    </Reference>
+    <Reference Include="BW_XMLHelper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Lib\BW_XMLHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar.Design, Version=11.8.0.9, Culture=neutral, PublicKeyToken=90f470f34c89ccaf, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Lib\DotNetBar\DevComponents.DotNetBar.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2, Version=11.8.0.9, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Lib\DotNetBar\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v11.2">
+      <HintPath>..\..\..\..\Lib\DotNetBar\DevExpress.Data.v11.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v11.2">
+      <HintPath>..\..\..\..\Lib\DotNetBar\DevExpress.Utils.v11.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v11.2">
+      <HintPath>..\..\..\..\Lib\DotNetBar\DevExpress.XtraBars.v11.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v11.2">
+      <HintPath>..\..\..\..\Lib\DotNetBar\DevExpress.XtraEditors.v11.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v11.2">
+      <HintPath>..\..\..\..\Lib\DotNetBar\DevExpress.XtraGrid.v11.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v11.2">
+      <HintPath>..\..\..\..\Lib\DotNetBar\DevExpress.XtraLayout.v11.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v11.2">
+      <HintPath>..\..\..\..\Lib\DotNetBar\DevExpress.XtraNavBar.v11.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v11.2.Design">
+      <HintPath>..\..\..\..\Lib\DotNetBar\DevExpress.XtraNavBar.v11.2.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Com\AcNetUtilsManage.cs" />
+    <Compile Include="Com\Config.cs" />
+    <Compile Include="Com\ConfigModel.cs" />
+    <Compile Include="Com\DataGridViewMultiColumn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Com\DataGridViewMultiColumn.Designer.cs">
+      <DependentUpon>DataGridViewMultiColumn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Com\FunctionModel.cs" />
+    <Compile Include="Com\GISManage.cs" />
+    <Compile Include="Com\InputDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Com\InputDialog.Designer.cs">
+      <DependentUpon>InputDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Com\OperateTypeEnum.cs" />
+    <Compile Include="Com\OperationLog.cs" />
+    <Compile Include="Com\WriteLog.cs" />
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMainOld.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMainOld.Designer.cs">
+      <DependentUpon>FormMainOld.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMyApply.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMyApply.Designer.cs">
+      <DependentUpon>FormMyApply.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMyApplyDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMyApplyDetail.Designer.cs">
+      <DependentUpon>FormMyApplyDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPlanDetailQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPlanDetailQuery.Designer.cs">
+      <DependentUpon>FormPlanDetailQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPlanQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPlanQuery.Designer.cs">
+      <DependentUpon>FormPlanQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\CommandResult.cs" />
+    <Compile Include="UI\AlarmManage\FormHistoryGiveTimeOutAlarm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AlarmManage\FormHistoryGiveTimeOutAlarm.designer.cs">
+      <DependentUpon>FormHistoryGiveTimeOutAlarm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AlarmManage\FormHistoryLoadTimeOutAlarm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AlarmManage\FormHistoryLoadTimeOutAlarm.designer.cs">
+      <DependentUpon>FormHistoryLoadTimeOutAlarm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AlarmManage\FormHistoryTransportTimeOutAlarm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AlarmManage\FormHistoryTransportTimeOutAlarm.designer.cs">
+      <DependentUpon>FormHistoryTransportTimeOutAlarm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AlarmManage\FormHistoryUnLoadTimeOutAlarm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AlarmManage\FormHistoryUnLoadTimeOutAlarm.designer.cs">
+      <DependentUpon>FormHistoryUnLoadTimeOutAlarm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AlarmManage\FormHistoryBackTimeOutAlarm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AlarmManage\FormHistoryBackTimeOutAlarm.designer.cs">
+      <DependentUpon>FormHistoryBackTimeOutAlarm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AlarmManage\FormHistoryNoChanageStateAlarm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AlarmManage\FormHistoryNoChanageStateAlarm.designer.cs">
+      <DependentUpon>FormHistoryNoChanageStateAlarm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AlarmManage\FormHistoryNoUseAlarm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AlarmManage\FormHistoryNoUseAlarm.designer.cs">
+      <DependentUpon>FormHistoryNoUseAlarm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AlarmManage\FormHistoryRunDerictionAlarm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AlarmManage\FormHistoryRunDerictionAlarm.designer.cs">
+      <DependentUpon>FormHistoryRunDerictionAlarm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AlarmManage\FormHistoryMaintainTimeOutAlarm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AlarmManage\FormHistoryMaintainTimeOutAlarm.designer.cs">
+      <DependentUpon>FormHistoryMaintainTimeOutAlarm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AlarmManage\FormHistoryScrapTimeOutAlarm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AlarmManage\FormHistoryScrapTimeOutAlarm.designer.cs">
+      <DependentUpon>FormHistoryScrapTimeOutAlarm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\BaseInfoManage\FormAddress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\BaseInfoManage\FormAddress.designer.cs">
+      <DependentUpon>FormAddress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\BaseInfoManage\FormAddressManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\BaseInfoManage\FormAddressManage.designer.cs">
+      <DependentUpon>FormAddressManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\BaseInfoManage\FormArea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\BaseInfoManage\FormArea.designer.cs">
+      <DependentUpon>FormArea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\BaseInfoManage\FormAreaManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\BaseInfoManage\FormAreaManage.designer.cs">
+      <DependentUpon>FormAreaManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Flow\FormBackCar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Flow\FormBackCar.Designer.cs">
+      <DependentUpon>FormBackCar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Flow\FormHandover.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Flow\FormHandover.Designer.cs">
+      <DependentUpon>FormHandover.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Flow\FormHandoverEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Flow\FormHandoverEdit.Designer.cs">
+      <DependentUpon>FormHandoverEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Flow\FormLoadCar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Flow\FormLoadCar.Designer.cs">
+      <DependentUpon>FormLoadCar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Flow\FormSupplyCar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Flow\FormSupplyCar.Designer.cs">
+      <DependentUpon>FormSupplyCar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Flow\FormUnCheckReason.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Flow\FormUnCheckReason.Designer.cs">
+      <DependentUpon>FormUnCheckReason.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Flow\FormUnload.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Flow\FormUnload.Designer.cs">
+      <DependentUpon>FormUnload.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FrmGISArea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FrmGISArea.Designer.cs">
+      <DependentUpon>FrmGISArea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FrmGISCar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FrmGISCar.Designer.cs">
+      <DependentUpon>FrmGISCar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FrmGISDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FrmGISDetail.Designer.cs">
+      <DependentUpon>FrmGISDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FrmGISPda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FrmGISPda.Designer.cs">
+      <DependentUpon>FrmGISPda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FrmMyMsg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FrmMyMsg.Designer.cs">
+      <DependentUpon>FrmMyMsg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FrmQryMsg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FrmQryMsg.Designer.cs">
+      <DependentUpon>FrmQryMsg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FrmQueryGIS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FrmQueryGIS.Designer.cs">
+      <DependentUpon>FrmQueryGIS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FrmQueryPlanCar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FrmQueryPlanCar.Designer.cs">
+      <DependentUpon>FrmQueryPlanCar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReportManage\FormDeptVehicleReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReportManage\FormDeptVehicleReport.designer.cs">
+      <DependentUpon>FormDeptVehicleReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReportManage\FormDeptMaterielTypeReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReportManage\FormDeptMaterielTypeReport.designer.cs">
+      <DependentUpon>FormDeptMaterielTypeReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReportManage\FormVehicleStatisticsReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReportManage\FormVehicleStatisticsReport.designer.cs">
+      <DependentUpon>FormVehicleStatisticsReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReportManage\FormCheckReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReportManage\FormCheckReport.designer.cs">
+      <DependentUpon>FormCheckReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SystemManage\FormLockSystem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SystemManage\FormLockSystem.Designer.cs">
+      <DependentUpon>FormLockSystem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SystemManage\FormRule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SystemManage\FormRule.Designer.cs">
+      <DependentUpon>FormRule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\BaseInfoManage\FormRyBaseStation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\BaseInfoManage\FormRyBaseStation.Designer.cs">
+      <DependentUpon>FormRyBaseStation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\BaseInfoManage\FormDept.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\BaseInfoManage\FormDept.designer.cs">
+      <DependentUpon>FormDept.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\BaseInfoManage\FormDeptManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\BaseInfoManage\FormDeptManage.designer.cs">
+      <DependentUpon>FormDeptManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\BaseInfoManage\FormPersonManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\BaseInfoManage\FormPersonManage.designer.cs">
+      <DependentUpon>FormPersonManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Pub.cs" />
+    <Compile Include="SocketManage.cs" />
+    <Compile Include="Tools\DataGridViewEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\BaseInfoManage\FormPerson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\BaseInfoManage\FormPerson.designer.cs">
+      <DependentUpon>FormPerson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\BaseInfoManage\FormRyBaseStationManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\BaseInfoManage\FormRyBaseStationManage.Designer.cs">
+      <DependentUpon>FormRyBaseStationManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SystemManage\FormUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SystemManage\FormUser.designer.cs">
+      <DependentUpon>FormUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SystemManage\FormUserManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SystemManage\FormUserManage.designer.cs">
+      <DependentUpon>FormUserManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\BaseInfoManage\FormWifiBaseStation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\BaseInfoManage\FormWifiBaseStation.Designer.cs">
+      <DependentUpon>FormWifiBaseStation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VehicleManage\FormCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\VehicleManage\FormCard.designer.cs">
+      <DependentUpon>FormCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VehicleManage\FormCardManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\VehicleManage\FormCardManage.designer.cs">
+      <DependentUpon>FormCardManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\BaseInfoManage\FormPDA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\BaseInfoManage\FormPDA.designer.cs">
+      <DependentUpon>FormPDA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\BaseInfoManage\FormPDAManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\BaseInfoManage\FormPDAManage.designer.cs">
+      <DependentUpon>FormPDAManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\BaseInfoManage\FormMaterielType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\BaseInfoManage\FormMaterielType.designer.cs">
+      <DependentUpon>FormMaterielType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\BaseInfoManage\FormMaterielTypeManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\BaseInfoManage\FormMaterielTypeManage.designer.cs">
+      <DependentUpon>FormMaterielTypeManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SystemManage\FormPasswordEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SystemManage\FormPasswordEdit.designer.cs">
+      <DependentUpon>FormPasswordEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\BaseInfoManage\FormWifiBaseStationEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\BaseInfoManage\FormWifiBaseStationEdit.Designer.cs">
+      <DependentUpon>FormWifiBaseStationEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SystemManage\FormAlarmSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SystemManage\FormAlarmSet.designer.cs">
+      <DependentUpon>FormAlarmSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AlarmManage\FormCurrentAlarm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AlarmManage\FormCurrentAlarm.designer.cs">
+      <DependentUpon>FormCurrentAlarm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SystemManage\FormSystemLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SystemManage\FormSystemLog.designer.cs">
+      <DependentUpon>FormSystemLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VehicleManage\FormVehicleType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\VehicleManage\FormVehicleType.designer.cs">
+      <DependentUpon>FormVehicleType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VehicleManage\FormVehicleTypeManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\VehicleManage\FormVehicleTypeManage.designer.cs">
+      <DependentUpon>FormVehicleTypeManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VehicleManage\FormVehicle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\VehicleManage\FormVehicle.designer.cs">
+      <DependentUpon>FormVehicle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VehicleManage\FormVehicleManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\VehicleManage\FormVehicleManage.designer.cs">
+      <DependentUpon>FormVehicleManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VehicleManage\FormVehicleScrapManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\VehicleManage\FormVehicleScrapManage.designer.cs">
+      <DependentUpon>FormVehicleScrapManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VehicleManage\FormVehicleScrap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\VehicleManage\FormVehicleScrap.designer.cs">
+      <DependentUpon>FormVehicleScrap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VehicleManage\FormVehicleMainTain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\VehicleManage\FormVehicleMainTain.designer.cs">
+      <DependentUpon>FormVehicleMainTain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VehicleManage\FormVehicleMainTainManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\VehicleManage\FormVehicleMainTainManage.designer.cs">
+      <DependentUpon>FormVehicleMainTainManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReportManage\FormPlanQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReportManage\FormPlanQuery.Designer.cs">
+      <DependentUpon>FormPlanQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VehicleManage\FormVehicleMainTainStop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\VehicleManage\FormVehicleMainTainStop.designer.cs">
+      <DependentUpon>FormVehicleMainTainStop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReportManage\FormSendMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReportManage\FormSendMessage.designer.cs">
+      <DependentUpon>FormSendMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\BaseInfoManage\FormAddAddress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\BaseInfoManage\FormAddAddress.Designer.cs">
+      <DependentUpon>FormAddAddress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\BaseInfoManage\FormAddCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\BaseInfoManage\FormAddCard.designer.cs">
+      <DependentUpon>FormAddCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AlarmManage\FormHistoryAlarm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AlarmManage\FormHistoryAlarm.designer.cs">
+      <DependentUpon>FormHistoryAlarm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReportManage\FormVehicleMonth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReportManage\FormVehicleMonth.designer.cs">
+      <DependentUpon>FormVehicleMonth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Flow\FormApplyMgrManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Flow\FormApplyMgrManage.Designer.cs">
+      <DependentUpon>FormApplyMgrManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Flow\FormApplyMgr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Flow\FormApplyMgr.designer.cs">
+      <DependentUpon>FormApplyMgr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Flow\FormBackCarEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Flow\FormBackCarEdit.Designer.cs">
+      <DependentUpon>FormBackCarEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Flow\FormBackCarMgr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Flow\FormBackCarMgr.Designer.cs">
+      <DependentUpon>FormBackCarMgr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Flow\FormQueryDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Flow\FormQueryDetail.Designer.cs">
+      <DependentUpon>FormQueryDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Flow\FormReviewCarEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Flow\FormReviewCarEdit.Designer.cs">
+      <DependentUpon>FormReviewCarEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Flow\FormReviewMaterEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Flow\FormReviewMaterEdit.Designer.cs">
+      <DependentUpon>FormReviewMaterEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Flow\FormReviewMgr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Flow\FormReviewMgr.Designer.cs">
+      <DependentUpon>FormReviewMgr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Flow\FormSupplyCarEditCar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Flow\FormSupplyCarEditCar.Designer.cs">
+      <DependentUpon>FormSupplyCarEditCar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Flow\FormSupplyCarMgr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Flow\FormSupplyCarMgr.Designer.cs">
+      <DependentUpon>FormSupplyCarMgr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Flow\FormApplyMgrCar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Flow\FormApplyMgrCar.designer.cs">
+      <DependentUpon>FormApplyMgrCar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Flow\FormTransferCarMgr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Flow\FormTransferCarMgr.Designer.cs">
+      <DependentUpon>FormTransferCarMgr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Flow\FormUnloadEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Flow\FormUnloadEdit.designer.cs">
+      <DependentUpon>FormUnloadEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Flow\FormUnloadCarMgr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Flow\FormUnloadCarMgr.Designer.cs">
+      <DependentUpon>FormUnloadCarMgr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Flow\FormLoadCarMateriel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Flow\FormLoadCarMateriel.designer.cs">
+      <DependentUpon>FormLoadCarMateriel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Flow\FormLoadCarDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Flow\FormLoadCarDetail.designer.cs">
+      <DependentUpon>FormLoadCarDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SystemManage\FormRuleManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SystemManage\FormRuleManage.Designer.cs">
+      <DependentUpon>FormRuleManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Flow\FormLoadCarMgr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Flow\FormLoadCarMgr.Designer.cs">
+      <DependentUpon>FormLoadCarMgr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmDatabaseConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmDatabaseConfig.designer.cs">
+      <DependentUpon>frmDatabaseConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FrmGIS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FrmGIS.Designer.cs">
+      <DependentUpon>FrmGIS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReportManage\FormVehicleNoUseMonth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReportManage\FormVehicleNoUseMonth.designer.cs">
+      <DependentUpon>FormVehicleNoUseMonth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReportManage\FormMaterielTypeMonth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReportManage\FormMaterielTypeMonth.designer.cs">
+      <DependentUpon>FormMaterielTypeMonth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmServerConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmServerConfig.designer.cs">
+      <DependentUpon>frmServerConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FrmChangeLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FrmChangeLogin.Designer.cs">
+      <DependentUpon>FrmChangeLogin.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Com\InputDialog.resx">
+      <DependentUpon>InputDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMainOld.resx">
+      <DependentUpon>FormMainOld.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMyApply.resx">
+      <DependentUpon>FormMyApply.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMyApplyDetail.resx">
+      <DependentUpon>FormMyApplyDetail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPlanDetailQuery.resx">
+      <DependentUpon>FormPlanDetailQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPlanQuery.resx">
+      <DependentUpon>FormPlanQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\AlarmManage\FormHistoryGiveTimeOutAlarm.resx">
+      <DependentUpon>FormHistoryGiveTimeOutAlarm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\AlarmManage\FormHistoryLoadTimeOutAlarm.resx">
+      <DependentUpon>FormHistoryLoadTimeOutAlarm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\AlarmManage\FormHistoryTransportTimeOutAlarm.resx">
+      <DependentUpon>FormHistoryTransportTimeOutAlarm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\AlarmManage\FormHistoryUnLoadTimeOutAlarm.resx">
+      <DependentUpon>FormHistoryUnLoadTimeOutAlarm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\AlarmManage\FormHistoryBackTimeOutAlarm.resx">
+      <DependentUpon>FormHistoryBackTimeOutAlarm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\AlarmManage\FormHistoryNoChanageStateAlarm.resx">
+      <DependentUpon>FormHistoryNoChanageStateAlarm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\AlarmManage\FormHistoryNoUseAlarm.resx">
+      <DependentUpon>FormHistoryNoUseAlarm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\AlarmManage\FormHistoryRunDerictionAlarm.resx">
+      <DependentUpon>FormHistoryRunDerictionAlarm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\AlarmManage\FormHistoryMaintainTimeOutAlarm.resx">
+      <DependentUpon>FormHistoryMaintainTimeOutAlarm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\AlarmManage\FormHistoryScrapTimeOutAlarm.resx">
+      <DependentUpon>FormHistoryScrapTimeOutAlarm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\BaseInfoManage\FormAddress.resx">
+      <DependentUpon>FormAddress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\BaseInfoManage\FormAddressManage.resx">
+      <DependentUpon>FormAddressManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\BaseInfoManage\FormArea.resx">
+      <DependentUpon>FormArea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\BaseInfoManage\FormAreaManage.resx">
+      <DependentUpon>FormAreaManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Flow\FormBackCar.resx">
+      <DependentUpon>FormBackCar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Flow\FormHandover.resx">
+      <DependentUpon>FormHandover.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Flow\FormHandoverEdit.resx">
+      <DependentUpon>FormHandoverEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Flow\FormLoadCar.resx">
+      <DependentUpon>FormLoadCar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Flow\FormSupplyCar.resx">
+      <DependentUpon>FormSupplyCar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Flow\FormUnCheckReason.resx">
+      <DependentUpon>FormUnCheckReason.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Flow\FormUnload.resx">
+      <DependentUpon>FormUnload.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FrmGISArea.resx">
+      <DependentUpon>FrmGISArea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FrmGISCar.resx">
+      <DependentUpon>FrmGISCar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FrmGISDetail.resx">
+      <DependentUpon>FrmGISDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FrmGISPda.resx">
+      <DependentUpon>FrmGISPda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FrmMyMsg.resx">
+      <DependentUpon>FrmMyMsg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FrmQryMsg.resx">
+      <DependentUpon>FrmQryMsg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FrmQueryGIS.resx">
+      <DependentUpon>FrmQueryGIS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FrmQueryPlanCar.resx">
+      <DependentUpon>FrmQueryPlanCar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReportManage\FormDeptVehicleReport.resx">
+      <DependentUpon>FormDeptVehicleReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReportManage\FormDeptMaterielTypeReport.resx">
+      <DependentUpon>FormDeptMaterielTypeReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReportManage\FormVehicleStatisticsReport.resx">
+      <DependentUpon>FormVehicleStatisticsReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReportManage\FormCheckReport.resx">
+      <DependentUpon>FormCheckReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SystemManage\FormLockSystem.resx">
+      <DependentUpon>FormLockSystem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SystemManage\FormRule.resx">
+      <DependentUpon>FormRule.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\BaseInfoManage\FormRyBaseStation.resx">
+      <DependentUpon>FormRyBaseStation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\BaseInfoManage\FormDept.resx">
+      <DependentUpon>FormDept.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\BaseInfoManage\FormDeptManage.resx">
+      <DependentUpon>FormDeptManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\BaseInfoManage\FormPersonManage.resx">
+      <DependentUpon>FormPersonManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Tools\DataGridViewEx.resx">
+      <DependentUpon>DataGridViewEx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\BaseInfoManage\FormPerson.resx">
+      <DependentUpon>FormPerson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\BaseInfoManage\FormRyBaseStationManage.resx">
+      <DependentUpon>FormRyBaseStationManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SystemManage\FormUser.resx">
+      <DependentUpon>FormUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SystemManage\FormUserManage.resx">
+      <DependentUpon>FormUserManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\BaseInfoManage\FormWifiBaseStation.resx">
+      <DependentUpon>FormWifiBaseStation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VehicleManage\FormCard.resx">
+      <DependentUpon>FormCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VehicleManage\FormCardManage.resx">
+      <DependentUpon>FormCardManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\BaseInfoManage\FormPDA.resx">
+      <DependentUpon>FormPDA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\BaseInfoManage\FormPDAManage.resx">
+      <DependentUpon>FormPDAManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\BaseInfoManage\FormMaterielType.resx">
+      <DependentUpon>FormMaterielType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\BaseInfoManage\FormMaterielTypeManage.resx">
+      <DependentUpon>FormMaterielTypeManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SystemManage\FormPasswordEdit.resx">
+      <DependentUpon>FormPasswordEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\BaseInfoManage\FormWifiBaseStationEdit.resx">
+      <DependentUpon>FormWifiBaseStationEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SystemManage\FormAlarmSet.resx">
+      <DependentUpon>FormAlarmSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\AlarmManage\FormCurrentAlarm.resx">
+      <DependentUpon>FormCurrentAlarm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SystemManage\FormSystemLog.resx">
+      <DependentUpon>FormSystemLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VehicleManage\FormVehicleType.resx">
+      <DependentUpon>FormVehicleType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VehicleManage\FormVehicleTypeManage.resx">
+      <DependentUpon>FormVehicleTypeManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VehicleManage\FormVehicle.resx">
+      <DependentUpon>FormVehicle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VehicleManage\FormVehicleManage.resx">
+      <DependentUpon>FormVehicleManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VehicleManage\FormVehicleScrapManage.resx">
+      <DependentUpon>FormVehicleScrapManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VehicleManage\FormVehicleScrap.resx">
+      <DependentUpon>FormVehicleScrap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VehicleManage\FormVehicleMainTain.resx">
+      <DependentUpon>FormVehicleMainTain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VehicleManage\FormVehicleMainTainManage.resx">
+      <DependentUpon>FormVehicleMainTainManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReportManage\FormPlanQuery.resx">
+      <DependentUpon>FormPlanQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VehicleManage\FormVehicleMainTainStop.resx">
+      <DependentUpon>FormVehicleMainTainStop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReportManage\FormSendMessage.resx">
+      <DependentUpon>FormSendMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\BaseInfoManage\FormAddAddress.resx">
+      <DependentUpon>FormAddAddress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\BaseInfoManage\FormAddCard.resx">
+      <DependentUpon>FormAddCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\AlarmManage\FormHistoryAlarm.resx">
+      <DependentUpon>FormHistoryAlarm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReportManage\FormVehicleMonth.resx">
+      <DependentUpon>FormVehicleMonth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Flow\FormApplyMgrManage.resx">
+      <DependentUpon>FormApplyMgrManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Flow\FormApplyMgr.resx">
+      <DependentUpon>FormApplyMgr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Flow\FormBackCarEdit.resx">
+      <DependentUpon>FormBackCarEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Flow\FormBackCarMgr.resx">
+      <DependentUpon>FormBackCarMgr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Flow\FormLoadCarMgr.resx">
+      <DependentUpon>FormLoadCarMgr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Flow\FormQueryDetail.resx">
+      <DependentUpon>FormQueryDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Flow\FormReviewCarEdit.resx">
+      <DependentUpon>FormReviewCarEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Flow\FormReviewMaterEdit.resx">
+      <DependentUpon>FormReviewMaterEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Flow\FormReviewMgr.resx">
+      <DependentUpon>FormReviewMgr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Flow\FormSupplyCarEditCar.resx">
+      <DependentUpon>FormSupplyCarEditCar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Flow\FormSupplyCarMgr.resx">
+      <DependentUpon>FormSupplyCarMgr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Flow\FormApplyMgrCar.resx">
+      <DependentUpon>FormApplyMgrCar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Flow\FormTransferCarMgr.resx">
+      <DependentUpon>FormTransferCarMgr.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Flow\FormUnloadEdit.resx">
+      <DependentUpon>FormUnloadEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Flow\FormUnloadCarMgr.resx">
+      <DependentUpon>FormUnloadCarMgr.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Flow\FormLoadCarMateriel.resx">
+      <DependentUpon>FormLoadCarMateriel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Flow\FormLoadCarDetail.resx">
+      <DependentUpon>FormLoadCarDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SystemManage\FormRuleManage.resx">
+      <DependentUpon>FormRuleManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmDatabaseConfig.resx">
+      <DependentUpon>frmDatabaseConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FrmGIS.resx">
+      <DependentUpon>FrmGIS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReportManage\FormVehicleNoUseMonth.resx">
+      <DependentUpon>FormVehicleNoUseMonth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReportManage\FormMaterielTypeMonth.resx">
+      <DependentUpon>FormMaterielTypeMonth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmServerConfig.resx">
+      <DependentUpon>frmServerConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FrmChangeLogin.resx">
+      <DependentUpon>FrmChangeLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Common\Common.csproj">
+      <Project>{1C4D1434-7B30-4A2E-9B0A-60DF0626EFF2}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\DB_VehicleTransportManage\DB_VehicleTransportManage.csproj">
+      <Project>{3672D0D1-73A1-42AB-96C3-7C7B0E7263E7}</Project>
+      <Name>DB_VehicleTransportManage</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\登录\登录.png" />
+    <None Include="Resources\登录\登录_03.png" />
+    <None Include="Resources\登录\登录_05.png" />
+    <Content Include="kehuduan2.ico" />
+    <Content Include="Resources\登录%281%29.png" />
+    <Content Include="Resources\登录\JICHUGUANLI.png" />
+    <Content Include="Resources\登录\rizhi.png" />
+    <Content Include="Resources\登录\wuliaoguanli2.png" />
+    <Content Include="Resources\登录\切换用户.png" />
+    <Content Include="Resources\登录\切换用户2.png" />
+    <Content Include="Resources\登录\锁定.png" />
+    <Content Include="xttbdt.ico" />
+    <None Include="Img\delete.png" />
+    <None Include="Img\Modify.png" />
+    <None Include="Img\land_0323.png" />
+    <None Include="Report\CardReport.apt" />
+    <None Include="Report\DeptMaterielTypeMonth.apt" />
+    <None Include="Report\MaterielTypeMonth.apt" />
+    <None Include="Report\VehicleMonth.apt" />
+    <None Include="Report\VehicleNoUseMonth.apt" />
+    <None Include="Resources\1.png" />
+    <None Include="Img\物料运输管理.png" />
+    <None Include="Img\其他图标.png" />
+    <None Include="Img\yonghu.png" />
+    <None Include="Img\基础信息管理.png" />
+    <None Include="Img\告警查询.png" />
+    <None Include="Img\统计分析.png" />
+    <None Include="Img\系统设置.png" />
+    <None Include="Img\申请.png" />
+    <None Include="Img\申请2.png" />
+    <None Include="Img\审核.png" />
+    <None Include="Img\审核2.png" />
+    <None Include="Img\地图.png" />
+    <None Include="Img\地图2.png" />
+    <None Include="Img\锁定系统.png" />
+    <None Include="Img\锁定系统2.png" />
+    <None Include="Img\状态查询2.png" />
+    <None Include="Img\退出系统2.png" />
+    <None Include="Img\01_you.png" />
+    <None Include="Img\退出系统.png" />
+    <None Include="Img\状态查询.png" />
+    <None Include="Img\01_ZUO.png" />
+    <None Include="Img\01_ZHONG.png" />
+    <None Include="Img\xttb.png" />
+    <None Include="Img\02_you.png" />
+    <None Include="Img\02_ZHONG.png" />
+    <None Include="Img\02_ZUO.png" />
+    <None Include="Img\close.png" />
+    <None Include="Img\max.png" />
+    <None Include="Img\min.png" />
+    <None Include="Img\03_you.png" />
+    <None Include="Img\03_zhong.png" />
+    <None Include="Img\03_zuo.png" />
+    <None Include="Img\xia_zuo.png" />
+    <None Include="Img\xia_you.png" />
+    <None Include="Img\xia_zhong.png" />
+    <None Include="Img\04_you.png" />
+    <None Include="Img\04_zuo.png" />
+    <None Include="Img\xia_gaojing.png" />
+    <None Include="Img\06_zhong.png" />
+    <None Include="Img\日报表.png" />
+    <Content Include="Resources\11.ico" />
+    <None Include="Resources\3.png" />
+    <None Include="Resources\2.png" />
+    <None Include="Resources\21.png" />
+    <Content Include="Resources\BigIconSet.png" />
+    <Content Include="Resources\Entire.png" />
+    <Content Include="Resources\GridStyle.ico" />
+    <None Include="Resources\GridStyle1.ico" />
+    <Content Include="Resources\icon.png" />
+    <Content Include="Resources\ipcan管理.png" />
+    <Content Include="Resources\led管理.png" />
+    <Content Include="Resources\LeftBottom.jpg" />
+    <Content Include="Resources\leftMain.jpg" />
+    <Content Include="Resources\LeftTop.jpg" />
+    <Content Include="Resources\MainBottom.jpg" />
+    <Content Include="Resources\MainTop.jpg" />
+    <Content Include="Resources\move.png" />
+    <Content Include="Resources\pan.png" />
+    <None Include="Resources\QQ截图20140811131051.png" />
+    <Content Include="Resources\Refresh.png" />
+    <None Include="Resources\save.png" />
+    <Content Include="Resources\SelectPoint.png" />
+    <Content Include="Resources\SelectPoint1.png" />
+    <Content Include="Resources\topBack.jpg" />
+    <Content Include="Resources\wifi基站管理.png" />
+    <Content Include="Resources\zoomIn.png" />
+    <Content Include="Resources\zoomOut.png" />
+    <None Include="Resources\zoomOut1.png" />
+    <Content Include="Resources\全屏显示.png" />
+    <Content Include="Resources\历史告警1.png" />
+    <Content Include="Resources\历史轨迹.png" />
+    <Content Include="Resources\喇叭.png" />
+    <Content Include="Resources\基础配置1.png" />
+    <Content Include="Resources\实时监测.png" />
+    <None Include="Resources\审核_PC11_05.jpg" />
+    <None Include="Resources\审核_PC11_03.jpg" />
+    <None Include="Resources\审核_PC11_07.jpg" />
+    <None Include="Resources\审核_PC11_031.jpg" />
+    <None Include="Resources\审核_PC_03.jpg" />
+    <None Include="Resources\审核_PC_05.jpg" />
+    <None Include="Resources\审核_PC_07.jpg" />
+    <None Include="Resources\导出地图11.png" />
+    <Content Include="Resources\当前告警.png" />
+    <Content Include="Resources\日报表.png" />
+    <Content Include="Resources\月报表.png" />
+    <Content Include="Resources\标示卡.png" />
+    <Content Include="Resources\添加.png" />
+    <Content Include="Resources\车在基站管理.png" />
+    <Content Include="Resources\车在基站管理1.png" />
+    <Content Include="Resources\车场管理1.png" />
+    <Content Include="Resources\车场管理11.png" />
+    <Content Include="Resources\车辆管理1.png" />
+    <Content Include="Resources\轨道管理.png" />
+    <Content Include="Resources\退出全屏.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AcReport">
+      <Guid>{6D29DD74-860E-48A1-B552-8D5A7DD855EA}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="ADODB">
+      <Guid>{00000205-0000-0010-8000-00AA006D2EA4}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxTGMAPXLib">
+      <Guid>{2704699B-9858-4640-8F41-69297C60A6A9}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="TGBirdseyeLib">
+      <Guid>{48AAD5DE-2BDA-4523-AC7E-2E46AC078D21}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="TGMAPXLib">
+      <Guid>{2704699B-9858-4640-8F41-69297C60A6A9}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/fenbu_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="75dip"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="35dip"
+            android:layout_height="35dip"
+            android:layout_marginTop="10dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/dingwei" />
+
+        <LinearLayout
+            android:layout_width="113dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/gridview_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="区域:掘进工作面"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_vertical"
+                android:layout_marginTop="10dip" >
+                
+                <TextView
+                android:id="@+id/gridview_number_kong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_vertical"
+                android:gravity="center_horizontal"
+                android:textColor="#7CADD0"
+                android:text="空车2辆" />
+
+            <TextView
+                android:layout_marginLeft="5dip"
+                android:id="@+id/gridview_number_zhong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_vertical"
+                android:gravity="center_horizontal"
+                android:textColor="#860F0F"
+                android:text="重车1辆" />
+            </LinearLayout>
+
+            
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:scaleType="fitCenter"
+            android:src="@drawable/fenbu_jiantou" />
+
+        <View
+            android:layout_width="3dip"
+            android:layout_height="fill_parent"
+            android:background="@drawable/car_line" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:background="@drawable/car_line" />
+
+</LinearLayout>

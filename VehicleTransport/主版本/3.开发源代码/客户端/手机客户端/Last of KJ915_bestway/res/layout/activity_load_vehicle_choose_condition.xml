@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bestway="http://schemas.android.com/apk/res/com.bestway.kj915"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/common_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <include layout="@layout/title" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/waybill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dip"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="运单号: "
+            android:textColor="@android:color/black"
+            android:textSize="23sp" />
+
+        <TextView
+             android:id="@+id/waybill_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BL0026"
+            android:textColor="@android:color/black"
+            android:textSize="28sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="270dip"
+        android:layout_height="35dip"
+        android:layout_marginBottom="5dip"
+        android:layout_marginTop="15dip"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="35dip"
+            android:layout_weight="2.6"
+            android:text="装车时间:"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/showdate"
+            android:layout_width="0dp"
+            android:layout_height="35dip"
+            android:layout_weight="3.4"
+            android:background="@drawable/gaga"
+            android:gravity="center"
+            android:hint=" 年  月"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/showtime"
+            android:layout_width="0dp"
+            android:layout_height="35dip"
+            android:layout_weight="2"
+            android:background="@drawable/gaga"
+            android:gravity="center"
+            android:hint="00::00"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="55dip"
+        android:layout_marginTop="70dip"
+        android:background="@drawable/login_selector"
+        android:enabled="true"
+        android:gravity="center"
+        android:onClick="toContinue"
+        android:text="下 一 步"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+</LinearLayout>

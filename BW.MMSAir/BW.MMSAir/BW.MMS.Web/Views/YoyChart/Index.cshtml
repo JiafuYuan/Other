@@ -1,0 +1,141 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="@Url.Content("~/Content/My97DatePicker/WdatePicker.js")" type="text/javascript"></script>
+<script type="text/javascript">
+  
+    $(function () {
+        chartContainer();
+    });
+    var txtMonths = '';
+    var sensorType = '';
+    function getParam() {
+          if ($('#txtYear').val().length == 0) {
+              $('#txtYear').val(new Date().getFullYear().toString() + '年');
+        }
+          txtMonths = $('#txtYear').val();
+       if ($('#SensorType').combobox("getText") == "") {
+           $.ajax({
+               url: '@Url.Action("GetSensorType", "AirManage")',
+               type: "POST",
+               async: false,
+               datatype: "json",
+               data: {},
+               success: function (data) {
+                   if (data.length > 0) {
+                       for (var i = 0; i < data.length; i++) {
+                           if (data[i].PointDescription == "PM2.5") {
+                               $('#SensorType').combobox("setValue", "PM2.5");
+                               break;
+                           } else {
+                               $('#SensorType').combobox("setValue", data[0].PointDescription);
+                           }
+                       }
+                   }
+               }
+           });
+       }
+       sensorType = $('#SensorType').combobox("getText");
+    }
+    function chartContainer() {
+        var s=getParam();
+        var arr = getxAxis();
+        var dic = getSeries();
+        $('#container').highcharts({
+            chart: {
+                type: 'column'
+            },
+            credits: {
+                enabled: false
+            },
+            title: {
+                text: ''
+            },
+            xAxis: {
+                labels: {
+                    rotation: -80
+                },
+                categories: arr
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: '累计'
+                }
+            },
+            tooltip: {
+                headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                    '<td style="padding:0"><b>{point.y:.1f}</td></tr>',
+                footerFormat: '</table>',
+                shared: true,
+                useHTML: true
+            },
+            plotOptions: {
+                column: {
+                    pointPadding: 0.2,
+                    borderWidth: 0
+                }
+            },
+            series: dic
+        });
+    }
+
+
+    function getxAxis() {
+        var paramcol = [];
+        $.ajax({
+            url: '@Url.Action("getxAxis")',
+            type: "POST",
+            async: false,
+            datatype: "json",
+            data: { beginDate: txtMonths, sensorType: sensorType },
+            success: function (data) {
+                paramcol = data;
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                $.messager.alert("提示", XMLHttpRequest.responseText, "error");
+            }
+        });
+        return paramcol;
+    }
+    function getSeries() {
+        var paramSeries;
+        $.ajax({
+            url: '@Url.Action("getSeries")',
+            type: "POST",
+            async: false,
+            datatype: "json",
+            data: { beginDate: txtMonths, sensorType: sensorType },
+            success: function (data) {
+                paramSeries = data;
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                $.messager.alert("提示", XMLHttpRequest.responseText, "error");
+            }
+        });
+        return paramSeries;
+    }
+
+</script>
+<div id="toolbar" style="padding: 8px;">
+    <table>
+        <tr>
+            <td>
+                <input id="txtYear" type="text" class="Wdate" onfocus="WdatePicker({dateFmt:'yyyy年'})" />
+            </td>
+            <td>传感器类型：</td>
+       <td> @Html.ComboBox("SensorType", new { url = Url.Action("GetSensorType","AirManage"), valueField = "PointAddress", textField = "PointDescription", editable = true, multiple = false }, new { style = "width:100px" })
+          </td>
+            <td>@Html.LinkButton("查询", "icon-search", new { onclick = "chartContainer()" })
+            </td>
+           @* <td>@Html.LinkButton("柱状图", "icon-chartbar", new { onclick = "chartColShow()" })
+            </td>*@
+           
+         
+        </tr>
+    </table>
+</div>
+<div id="container" style="width: 100%; height: 100%; overflow:auto;">
+</div>

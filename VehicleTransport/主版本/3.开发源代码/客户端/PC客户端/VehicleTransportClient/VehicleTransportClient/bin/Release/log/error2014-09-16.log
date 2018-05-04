@@ -1,0 +1,79 @@
+2014-09-16 10:11:11：连接成功
+2014-09-16 10:12:12：连接成功
+2014-09-16 10:12:20： ID,vc_Name,LocalizerStationID,LocalizerStationName,AreaID,i_IsUpMine,i_IsDirectionStation,DirectionLocalizerStationID,vc_Memo,i_Flag,i_HID  FROM v_Address  where i_flag=0
+',' 附近有语法错误。   在 System.Data.OleDb.OleDbDataReader.ProcessResults(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbDataReader.NextResult()
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OleDb.OleDbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   在 Bestway.Windows.Tools.ADODB.OleDbHelper.GetDataSet(String strSql, CommandType commandType, OleDbParameter[] parameters, Int32 timeout)
+2014-09-16 10:13:06：连接成功
+2014-09-16 10:13:15： ID,vc_Name,LocalizerStationID,LocalizerStationName,AreaID,i_IsUpMine,i_IsDirectionStation,DirectionLocalizerStationID,vc_Memo,i_Flag,i_HID  FROM v_Address  where i_flag=0
+',' 附近有语法错误。   在 System.Data.OleDb.OleDbDataReader.ProcessResults(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbDataReader.NextResult()
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OleDb.OleDbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   在 Bestway.Windows.Tools.ADODB.OleDbHelper.GetDataSet(String strSql, CommandType commandType, OleDbParameter[] parameters, Int32 timeout)
+2014-09-16 10:13:58：连接成功
+2014-09-16 10:16:47：连接成功
+2014-09-16 10:24:27：连接成功
+2014-09-16 10:32:00：连接成功
+2014-09-16 10:35:52：连接成功
+2014-09-16 10:45:35：连接成功
+2014-09-16 10:45:49：Application_ThreadException：System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Bestway.Windows.Tools.StyleManager.DeleteMissColumn(DataGridStyle dataGridStyle, DataGridView gridView)
+   在 Bestway.Windows.Tools.StyleManager.SetGridStyle(String tableName, DataGridView gridView)
+   在 VehicleTransportClient.FormAddAddress.FormRuleManage_Load(Object sender, EventArgs e) 位置 D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\UI\BaseInfoManage\FormAddAddress.cs:行号 34
+   在 System.Windows.Forms.Form.OnLoad(EventArgs e)
+   在 System.Windows.Forms.Form.OnCreateControl()
+   在 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   在 System.Windows.Forms.Control.CreateControl()
+   在 System.Windows.Forms.Control.WmShowWindow(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   在 System.Windows.Forms.Form.WmShowWindow(Message& m)
+   在 System.Windows.Forms.Form.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+方法名称:DeleteMissColumn
+2014-09-16 11:02:22：连接成功
+2014-09-16 11:05:53：连接成功
+2014-09-16 11:51:45：连接成功
+2014-09-16 15:09:29：连接成功
+2014-09-16 15:11:08：连接成功
+2014-09-16 15:16:11：连接成功
+2014-09-16 15:17:50：心跳返回false
+2014-09-16 15:20:46：连接成功
+2014-09-16 15:36:21：连接成功
+2014-09-16 15:37:00：update m_Address set ID=14,vc_Name='11',LocalizerStationName='',LocalizerStationID=16,AreaID=2,i_IsUpMine=0,i_IsDirectionStation=0,DirectionLocalizerStationID=0,vc_Memo='',i_Flag=0 where 
+'where' 附近有语法错误。   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+   在 Bestway.Windows.Tools.ADODB.OleDbHelper.ExecuteSql(String strSql, OleDbParameter[] parameters, Int32 timeout)
+2014-09-16 15:37:56：连接成功
+2014-09-16 15:39:52：连接成功
+2014-09-16 15:40:35：心跳返回false
+2014-09-16 15:43:14：连接成功
+2014-09-16 15:55:34：连接成功
+2014-09-16 15:56:33：update m_Address set ID=14,vc_Name='110',LocalizerStationName='',LocalizerStationID=16,AreaID=2,i_IsUpMine=1,i_IsDirectionStation=0,DirectionLocalizerStationID=0,vc_Memo='',i_Flag=0 where 
+'where' 附近有语法错误。   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+   在 Bestway.Windows.Tools.ADODB.OleDbHelper.ExecuteSql(String strSql, OleDbParameter[] parameters, Int32 timeout)
+2014-09-16 15:59:32：连接成功
+2014-09-16 15:59:45：update m_Address set ID=14,vc_Name='11',LocalizerStationID=16,AreaID=0,i_IsUpMine=0,i_IsDirectionStation=0,DirectionLocalizerStationID=0,vc_Memo='',i_Flag=0 where 
+'where' 附近有语法错误。   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+   在 Bestway.Windows.Tools.ADODB.OleDbHelper.ExecuteSql(String strSql, OleDbParameter[] parameters, Int32 timeout)
+2014-09-16 15:59:55：update m_Address set ID=14,vc_Name='11',LocalizerStationID=16,AreaID=2,i_IsUpMine=0,i_IsDirectionStation=0,DirectionLocalizerStationID=0,vc_Memo='',i_Flag=0 where 
+'where' 附近有语法错误。   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+   在 Bestway.Windows.Tools.ADODB.OleDbHelper.ExecuteSql(String strSql, OleDbParameter[] parameters, Int32 timeout)
+2014-09-16 16:03:00：连接成功
+2014-09-16 16:20:16：连接成功

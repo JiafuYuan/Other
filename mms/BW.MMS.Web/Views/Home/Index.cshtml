@@ -1,0 +1,85 @@
+﻿@model BW.MMS.Model.m_CDR
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script type="text/javascript">
+
+    $(function () {
+        $(window).resize(function () {
+            $('#gridCdrList').datagrid('resize');
+        });
+    });
+
+    function onBeforeLoad(param) {
+        $('#gridCdrList').datagrid('clearSelections');
+        param.CallingName = $('#txtCallingName').val();
+        param.CalledName = $('#txtCalledName').val();
+        param.StartTime = $('#txtStartTime').datebox('getValue');
+        param.OverTime = $('#txtOverTime').datebox('getValue');
+    }
+
+    function playWav(o, pamamid) {
+
+        
+        if (o.value == "停止") {
+            $("input[name=vc_RecPath]").val("播放");
+            o.value = "播放";
+        } else {
+            $("input[name=vc_RecPath]").val("播放");
+            o.value = "停止";
+        }
+        var paramurl = '@Url.Action("PlayWav")' + "?playWav=" + pamamid;
+        top.$.dialogwindow({
+            iconCls: 'icon-customers',
+            id: "playWavAuto",
+            title: '播放声音',
+            width: 300,
+            height: 150,
+            url: paramurl,
+            isIframe: false,
+            onBeforeClose: function () {
+                top.$("#sound").attr("src", "");
+            },
+            onClose: function () {
+                o.value = "播放";
+            }
+        });
+
+    }
+
+    function RecPath(value, rowData, rowIndex) {
+        if (value) {
+            return '<input name="vc_RecPath" type="button" value="播放" width="50" onclick=playWav(this,"' + value + '") style="border:0px;"/>';
+        }
+    }
+
+</script>
+<div id="toolbar" style="padding: 8px;">
+   
+        主叫号码:
+        @Html.TextBox("txtCallingName", "", new { style = "width:100px", onkeydown = "if(event.keyCode==13) $('#gridCdrList').datagrid('load');" })
+        被叫号码:
+        @Html.TextBox("txtCalledName", "", new { style = "width:100px", onkeydown = "if(event.keyCode==13) $('#gridCdrList').datagrid('load');" })
+        开始时间：
+        @Html.TextBox("txtStartTime", DateTime.Now.ToString("yyyy-MM-dd"), new { @class = "easyui-datebox", editable = false })
+        结束时间：
+        @Html.TextBox("txtOverTime", DateTime.Now.ToString("yyyy-MM-dd"), new { @class = "easyui-datebox", editable = false })
+        @Html.LinkButton("查询", "icon-search", new { onclick = "$('#gridCdrList').datagrid('load')" })
+  
+</div>
+@Html.DataGrid("gridCdrList", @Url.Action("GetCdrList"), ViewData["GridColumn"] as IEnumerable<object>, new
+{
+    fit = true,
+    rownumbers = true,
+    striped = true,
+    border = false,
+    idField = "ID",
+    sortName = "ID",
+    sortOrder = "asc",
+    toolbar = "#toolbar",
+    pagination = true,
+    pageSize = 5,
+    singleSelect = true,
+    onBeforeLoad = new { function = "onBeforeLoad" }
+}, new { style = "overflow: hidden;" })

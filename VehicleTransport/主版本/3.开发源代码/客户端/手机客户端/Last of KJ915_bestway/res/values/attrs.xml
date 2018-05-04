@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="MyDropdownBox">
+        <attr name="name" format="string" />
+        <attr name="width" format="string" />
+    </declare-styleable>
+    <declare-styleable name="BigDropdownBox">
+        <attr name="bigName" format="string" />
+        <attr name="bigWidth" format="string" />
+    </declare-styleable>
+
+</resources>

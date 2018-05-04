@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/add_device_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.e3.bleapi.demo.MainActivity" >
+
+    <TextView
+        android:id="@+id/add_device_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:background="@color/blue_light1"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="@string/strAddDeviceNext"
+        android:textColor="@android:color/white"
+        android:textSize="22sp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/add_device_next" >
+
+        <ListView
+            android:id="@+id/scan_device_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@color/blue_light1"
+            android:dividerHeight="1dp" 
+            android:visibility="gone">
+        </ListView>
+        <RelativeLayout 
+            android:id="@+id/check_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal|fill"
+            android:padding="20dp"
+            android:visibility="gone">
+            
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+                <ImageView 
+	                android:id="@+id/check_bulb"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:src="@drawable/bulb_off"/>
+
+                <Switch
+                    android:id="@+id/checkOnOff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textOff="Off"
+                    android:textOn="On" />
+            </LinearLayout>
+            <TextView 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:padding="5dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/strCheckInfo"/>
+            
+        </RelativeLayout>
+        <LinearLayout 
+            android:id="@+id/pickup_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/strPickupInfo"/>
+            
+            <RadioGroup 
+		        android:id="@+id/pickupGroupLayout"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical"
+		        android:paddingStart="20dp">
+		        <RadioButton 
+		            android:id="@+id/pickupGroupAll"
+		            android:layout_weight="1"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:text="GroupAll"
+		            android:paddingTop="10dp"
+		        	android:paddingBottom="10dp"/>
+		        <RadioButton 
+		            android:id="@+id/pickupGroupOne"
+		            android:layout_weight="1"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:text="GroupOne"
+		            android:paddingTop="10dp"
+		        	android:paddingBottom="10dp"/>
+		        <RadioButton 
+		            android:id="@+id/pickupGroupTwo"
+		            android:layout_weight="1"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:text="GroupTwo"
+		            android:paddingTop="10dp"
+		        	android:paddingBottom="10dp"/>
+		    </RadioGroup>
+        </LinearLayout>
+        
+    </FrameLayout>
+
+</RelativeLayout>

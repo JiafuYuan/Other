@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1C4D1434-7B30-4A2E-9B0A-60DF0626EFF2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Common</RootNamespace>
+    <AssemblyName>Common</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ButtonEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Enum\EnumDWStationStateType.cs" />
+    <Compile Include="Enum\EnumAlarmType.cs" />
+    <Compile Include="Enum\EnumApplyState.cs" />
+    <Compile Include="Enum\EnumCommandType.cs" />
+    <Compile Include="Enum\EnumEquipmentType.cs" />
+    <Compile Include="Enum\EnumFlowPath.cs" />
+    <Compile Include="Enum\EnumMessageType.cs" />
+    <Compile Include="Enum\EnumPDAState.cs" />
+    <Compile Include="Enum\EnumPlanState.cs" />
+    <Compile Include="Enum\EnumUserState.cs" />
+    <Compile Include="Enum\EnumUserType.cs" />
+    <Compile Include="Enum\EnumVehicleState.cs" />
+    <Compile Include="Enum\EnumWifiStationStateType.cs" />
+    <Compile Include="Enum\EnumActionType.cs" />
+    <Compile Include="frmBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBase.designer.cs">
+      <DependentUpon>frmBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\IAlarm.cs" />
+    <Compile Include="Interface\ICommand.cs" />
+    <Compile Include="Logger.cs" />
+    <Compile Include="MessageBox\frmBaseMessageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageBox\frmBaseMessageForm.designer.cs">
+      <DependentUpon>frmBaseMessageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageBox\MessageBoxEx.cs" />
+    <Compile Include="Enum\EnumApplyType.cs" />
+    <Compile Include="Model\CommandObjectModel.cs" />
+    <Compile Include="Model\DataCommand\BaseDataCommandModel.cs" />
+    <Compile Include="Model\DataCommand\InDataCommand\InGetAddressModel.cs" />
+    <Compile Include="Model\DataCommand\InDataCommand\InGetDepartmentModel.cs" />
+    <Compile Include="Model\DataCommand\InDataCommand\InGetMaterielTypeModel.cs" />
+    <Compile Include="Model\DataCommand\InDataCommand\InGetPersonModel.cs" />
+    <Compile Include="Model\DataCommand\InDataCommand\InGetPlanDetailModel.cs" />
+    <Compile Include="Model\DataCommand\InDataCommand\InGetVehicleModel.cs" />
+    <Compile Include="Model\DataCommand\InDataCommand\InGetVehicleTypeModel.cs" />
+    <Compile Include="Model\DataCommand\InDataCommand\InReturnMessageModel.cs" />
+    <Compile Include="Model\DataCommand\InDataCommand\InGetCardModel.cs" />
+    <Compile Include="Model\DataCommand\InDataCommand\InGetUserModel.cs" />
+    <Compile Include="Model\DataCommand\InDataCommand\InGetMyPlanDetailModel.cs" />
+    <Compile Include="Model\DataCommand\InDataCommand\InGetVehicleIsCanDoModel.cs" />
+    <Compile Include="Model\DataCommand\OutDataCommand\OutGetAddressModel.cs" />
+    <Compile Include="Model\DataCommand\OutDataCommand\OutGetMaterielTypeModel.cs" />
+    <Compile Include="Model\DataCommand\OutDataCommand\OutGetMessageModel.cs" />
+    <Compile Include="Model\DataCommand\OutDataCommand\OutGetDepartmentModel.cs" />
+    <Compile Include="Model\DataCommand\OutDataCommand\OutGetPersonModel.cs" />
+    <Compile Include="Model\DataCommand\OutDataCommand\OutGetPlanDetailModel.cs" />
+    <Compile Include="Model\DataCommand\OutDataCommand\OutGetVehicleDistributedModel.cs" />
+    <Compile Include="Model\DataCommand\OutDataCommand\OutGetVehicleIsCanDoModel.cs" />
+    <Compile Include="Model\DataCommand\OutDataCommand\OutGetVehicleModel.cs" />
+    <Compile Include="Model\DataCommand\OutDataCommand\OutGetVehicleTypeModel.cs" />
+    <Compile Include="Model\DataCommand\OutDataCommand\OutGetCardModel.cs" />
+    <Compile Include="Model\DataCommand\OutDataCommand\OutGetUserModel.cs" />
+    <Compile Include="Model\DataCommand\OutDataCommand\OutGetMyPlanDetailModel.cs" />
+    <Compile Include="Model\FlowPath\InFlowPath\InApplyModel.cs" />
+    <Compile Include="Model\DataCommand\InDataCommand\InGetMessageModel.cs" />
+    <Compile Include="Model\FlowPath\InFlowPath\InBackModel.cs" />
+    <Compile Include="Model\FlowPath\InFlowPath\InCheckModel.cs" />
+    <Compile Include="Model\FlowPath\InFlowPath\InGiveModel.cs" />
+    <Compile Include="Model\FlowPath\InFlowPath\InHandoverModel.cs" />
+    <Compile Include="Model\FlowPath\InFlowPath\InLoadModel.cs" />
+    <Compile Include="Model\FlowPath\InFlowPath\InUnLoadModel.cs" />
+    <Compile Include="Model\InBaseModel.cs" />
+    <Compile Include="Model\NormalCommand\InCommandModel\InChangePassowrdModel.cs" />
+    <Compile Include="Model\NormalCommand\InCommandModel\InGisChanagedModel.cs" />
+    <Compile Include="Model\NormalCommand\InCommandModel\InHeartBeatModel.cs" />
+    <Compile Include="Model\NormalCommand\InCommandModel\InLoginModel.cs" />
+    <Compile Include="Model\NormalCommand\InCommandModel\InLoginOutModel.cs" />
+    <Compile Include="Model\NormalCommand\OutCommandModel\OutApkFileModel.cs" />
+    <Compile Include="Model\NormalCommand\OutCommandModel\OutApkVersionModel.cs" />
+    <Compile Include="Model\NormalCommand\OutCommandModel\OutFlowPathModel.cs" />
+    <Compile Include="Model\NormalCommand\OutCommandModel\OutGetDBInfoModel.cs" />
+    <Compile Include="Model\NormalCommand\OutCommandModel\OutGetTimeModel.cs" />
+    <Compile Include="Model\NormalCommand\OutCommandModel\OutLoginModel.cs" />
+    <Compile Include="Model\NormalCommand\OutCommandModel\OutSendGisPointStateChangedModel.cs" />
+    <Compile Include="Model\NormalCommand\OutCommandModel\OutSendVehiclePostionChangedModel.cs" />
+    <Compile Include="Model\NormalCommand\OutCommandModel\OutSendPDAPostionChangedModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SerialiObj.cs" />
+    <Compile Include="Tools\SocketData.cs" />
+    <Compile Include="Win32.cs" />
+    <Compile Include="XmlManage.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmBase.resx">
+      <DependentUpon>frmBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageBox\frmBaseMessageForm.resx">
+      <DependentUpon>frmBaseMessageForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="通讯类图\Socket通讯类图.cd" />
+    <None Include="Resources\button_mousedown.png" />
+    <None Include="通讯类图\返回消息类图.cd" />
+    <None Include="通讯类图\取数据命令通讯类图.cd" />
+    <None Include="通讯类图\流程命令通讯类图.cd" />
+    <None Include="通讯类图\常用命令通讯类图.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_mousemove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\max.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\min.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MouseOnDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NormalDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\style.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DB_VehicleTransportManage\DB_VehicleTransportManage.csproj">
+      <Project>{3672D0D1-73A1-42AB-96C3-7C7B0E7263E7}</Project>
+      <Name>DB_VehicleTransportManage</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Model\FlowPath\OutFlowPath\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

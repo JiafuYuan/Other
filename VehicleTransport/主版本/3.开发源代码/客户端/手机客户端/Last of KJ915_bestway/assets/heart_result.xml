@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="gb2312"?>
+<OutGetPlanDetailModel>
+
+    <Listm_Plan>
+
+        <m_Plan>
+
+            <ID>
+171
+            </ID>
+
+            <dt_ArriveDestinationDateTime>
+2014-10-14T13:24:03
+            </dt_ArriveDestinationDateTime>
+
+            <ArriveDestinationAddressID>
+3
+            </ArriveDestinationAddressID>
+
+            <i_State>
+1
+            </i_State>
+
+            <ApplyID>
+185
+            </ApplyID>
+
+            <i_IsTemPlan>
+0
+            </i_IsTemPlan>
+
+            <vc_PlanCode>
+20141014002
+            </vc_PlanCode>
+
+            <CheckPersonID>
+4
+            </CheckPersonID>
+
+            <dt_CheckDateTime>
+2014-10-14T13:25:13
+            </dt_CheckDateTime>
+
+            <PlanGiveCarDepartmentID>
+0
+            </PlanGiveCarDepartmentID>
+
+            <vc_PDAUserIDs>
+12,14,24,27
+            </vc_PDAUserIDs>
+
+            <dt_PlanGiveCarDateTime>
+1900-01-01T00:00:00
+            </dt_PlanGiveCarDateTime>
+
+            <PlanGiveCarAddressID>
+0
+            </PlanGiveCarAddressID>
+
+            <PlanUnLoadDepartmentID>
+0
+            </PlanUnLoadDepartmentID>
+
+            <PlanBackDepartmentID>
+0
+            </PlanBackDepartmentID>
+
+            <dt_PlanBackDateTime>
+1900-01-01T00:00:00
+            </dt_PlanBackDateTime>
+
+            <PlanBackAddressID>
+0
+            </PlanBackAddressID>
+
+            <PlanLoadDepartmentID>
+0
+            </PlanLoadDepartmentID>
+
+            <PlanLoadAddressID>
+0
+            </PlanLoadAddressID>
+
+            <dt_PlanLoadDateTime>
+1900-01-01T00:00:00
+            </dt_PlanLoadDateTime>
+
+            <RealGiveCarDepartmentID>
+0
+            </RealGiveCarDepartmentID>
+
+            <dt_RealGiveCarDateTime>
+2014-10-17T08:55:20
+            </dt_RealGiveCarDateTime>
+
+            <RealGiveCarAddressID>
+9
+            </RealGiveCarAddressID>
+
+            <RealLoadDepartmentID>
+2
+            </RealLoadDepartmentID>
+
+            <dt_RealLoadDateTime>
+1900-01-01T00:00:00
+            </dt_RealLoadDateTime>
+
+            <RealLoadAddressID>
+0
+            </RealLoadAddressID>
+
+            <dt_RealArriveDestinationDateTime>
+1900-01-01T00:00:00
+            </dt_RealArriveDestinationDateTime>
+
+            <RealGiveCarPersonID>
+0
+            </RealGiveCarPersonID>
+
+            <RealLoadPersonID>
+0
+            </RealLoadPersonID>
+        </m_Plan>
+    </Listm_Plan>
+
+    <Listm_Apply>
+
+        <m_Apply>
+
+            <ID>
+185
+            </ID>
+
+            <ApplyPersonID>
+4
+            </ApplyPersonID>
+
+            <dt_ApplyDateTime>
+2014-10-14T13:24:31
+            </dt_ApplyDateTime>
+
+            <vc_PlanUse />
+
+            <i_State>
+2
+            </i_State>
+
+            <dt_ArriveDestinationDateTime>
+2014-10-14T13:24:03
+            </dt_ArriveDestinationDateTime>
+
+            <ArriveDestinationAddressID>
+3
+            </ArriveDestinationAddressID>
+
+            <i_IsUseMaterieApply>
+1
+            </i_IsUseMaterieApply>
+
+            <ApplyDepartmentID>
+1
+            </ApplyDepartmentID>
+        </m_Apply>
+    </Listm_Apply>
+
+    <Listm_Plan_ApplyMaterie>
+
+        <m_Plan_ApplyMaterie>
+
+            <ID>
+181
+            </ID>
+
+            <ApplyID>
+185
+            </ApplyID>
+
+            <MaterieTypeID>
+1
+            </MaterieTypeID>
+
+            <n_Count>
+11.00
+            </n_Count>
+
+            <n_CheckCount>
+11.00
+            </n_CheckCount>
+
+            <vc_Memo />
+
+            <i_Flag>
+0
+            </i_Flag>
+        </m_Plan_ApplyMaterie>
+
+        <m_Plan_ApplyMaterie>
+
+            <ID>
+182
+            </ID>
+
+            <ApplyID>
+185
+            </ApplyID>
+
+            <MaterieTypeID>
+2
+            </MaterieTypeID>
+
+            <n_Count>
+13.00
+            </n_Count>
+
+            <n_CheckCount>
+0.00
+            </n_CheckCount>
+
+            <vc_Memo />
+
+            <i_Flag>
+0
+            </i_Flag>
+        </m_Plan_ApplyMaterie>
+    </Listm_Plan_ApplyMaterie>
+
+    <Listm_Plan_ApplyVehicle />
+
+</OutGetPlanDetailModel>

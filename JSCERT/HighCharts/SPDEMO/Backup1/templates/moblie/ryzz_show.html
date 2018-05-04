@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<%set string category_title=get_category_title(model.category_id,"新闻中心")%>
+<title>{model.title} - {category_title} - {config.webname}</title>
+<meta content="{model.seo_keywords}" name="keywords" />
+<meta content="{model.seo_description}" name="description" />
+<link href="<%templateskin%>/css/style.css" rel="stylesheet" type="text/css" />
+<!--组件依赖js begin-->
+<script type="text/javascript" src="<%templateskin%>/js/zepto.js"></script>
+<script type="text/javascript" src="<%templateskin%>/js/touch.js"></script>      <!--新版zepto合并版中不包括touch.js-->
+<script type="text/javascript" src="<%templateskin%>/js/zepto.extend.js"></script>
+<script type="text/javascript" src="<%templateskin%>/js/zepto.ui.js"></script>
+<script type="text/javascript" src="<%templateskin%>/js/zepto.iscroll.js"></script>   <!--iScroll-->
+<script type="text/javascript" src="<%templateskin%>/js/zepto.highlight.js"></script>
+<script type="text/javascript" src="<%templateskin%>/js/zepto.fix.js"></script>
+<!--search begin-->
+<script type="text/javascript" src="<%templateskin%>/js/quickdelete.js"></script>     <!--快速删除组件，配合suggestion使用-->
+<script type="text/javascript" src="<%templateskin%>/js/suggestion.js"></script>
+<!--banner begin-->
+<script type="text/javascript" src="<%templateskin%>/js/slider.js"></script>
+<!--组件依赖js end--> 
+<!--下拉 begin-->
+<script type="text/javascript" src="<%templateskin%>/js/dropmenu.js"></script>
+<script type="text/javascript" src="<%templateskin%>/js/button.js"></script>
+<!--下拉 end--> 
+<!--加载更多 begin-->
+<script type="text/javascript" src="<%templateskin%>/js/refresh.js"></script>
+<!--返回顶部 begin-->
+<script type="text/javascript" src="<%templateskin%>/js/gotop.js"></script>
+<script type="text/javascript" src="<%templateskin%>/js/add2desktop.js"></script>
+</head>
+<body>
+    <%template src="_header.html"%>
+<!--导航结束-->
+<!--主体开始-->
+<div class="mainbody">
+    <!--公司简介-->
+    <section class="main1">
+    	<div class="main1_1 clearfix">
+    		<h4 class="float_l"><span class="a icon"></span><span>详细信息</span></h4>
+            <div class="section float_r">
+                <div id="container">
+                    <div class="btns"><a id="btn3" class="bat">菜单</a></div>
+                    <div id="dropmenu3">
+                        <ul>
+                        <li><a href="<%linkurl("content","about")%>" class="current">关于我们</a></li>
+      <li><a href="<%linkurl("goods_list","0")%>">产品介绍</a></li>
+      <li><a href="<%linkurl("news_list","33")%>">行业新闻</a></li>
+      <li><a href="<%linkurl("news_list","43")%>">集团新闻</a></li>
+      <li><a href="<%linkurl("ryzz_list","0")%>">荣誉资质</a></li>
+      <li><a href="<%linkurl("content","rczp")%>">人才招聘</a></li>
+      <li><a href="<%linkurl("content","contact")%>">联系我们</a></li>
+      <li class="last"><a href="<%linkurl("feedback")%>">给我留言</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+			<script>
+                $('#btn3').button();
+                $('#dropmenu3').dropmenu({
+                    align:'right'
+                }).dropmenu('bindButton', $('#btn3')).on('itemClick', function (e, item) {
+                            alert(item.text);
+                        });
+                $('body>.section').on('click', function(){//make blank area clickabel
+                });
+                //创建组件
+                $('#dropmenu').gotop();	
+            </script>
+        </div>
+        <div class="proxiangxi">
+        	<h4>{model.title}</h4>
+            <div class="article"><span>发表时间：{model.add_time}</span><span>阅读次数：<script type="text/javascript" src="{config.webpath}tools/submit_ajax.ashx?action=view_article_click&id={model.id}&click=1"></script></span></div>
+            <div align="center"> <%if {model.img_url}!=""%>
+                <a href="#"><img src="{model.img_url}" /></a>
+                <%/if%></div>
+            <article class="nr">{model.content}</article>
+       
+          <div>下一篇文章：<%write get_prevandnext_article("news_show",1,"无下一条",0)%></div>
+        </div>
+    </section>
+    <!--公司简介结束-->
+    <div class="clear"></div>
+   
+    
+</div>
+<!--导航开始-->
+    <%template src="_foot.html"%>
+<!--ui:/style:陈媛媛/code:？-->
+</body>
+</html>

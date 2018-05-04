@@ -1,0 +1,15 @@
+<link rel="stylesheet" type="text/css" href="/templates/sys/列表_图文_有标题_简介_左右/css/global.css"/>
+<link rel="stylesheet" type="text/css" href="/templates/sys/列表_图文_有标题_简介_左右/css/css.css">
+
+<div class="newsToplist">
+<%set DataTable articalDtksRMC=get_article_list("goods", 0, 8, "status=0 ")%>
+<%foreach(DataRow drksRMC in articalDtksRMC.Rows)%>
+
+  <dl>
+    <dt><a title="{drksRMC[title]}" href="<%linkurl("goods_show",{drksRMC[id]})%>"><img width="110" height="110" src="{drksRMC[img_url]}" alt="{drksRMC[title]}" /></a></dt>
+    <dd><strong><a title="{drksRMC[title]}"  href="<%linkurl("goods_show",{drksRMC[id]})%>"><%cutstring({drksRMC[title]},2)%></a></strong>
+      <p>{drksRMC[zhaiyao]}</p>
+    </dd>
+  </dl>
+<%/foreach%>
+</div>

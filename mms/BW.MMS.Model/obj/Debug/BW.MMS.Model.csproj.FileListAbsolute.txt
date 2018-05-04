@@ -1,0 +1,15 @@
+C:\Users\CHENQIAN\Desktop\mms\BW.MMS.Model\bin\Debug\BW.MMS.Model.dll
+C:\Users\CHENQIAN\Desktop\mms\BW.MMS.Model\bin\Debug\BW.MMS.Model.pdb
+C:\Users\CHENQIAN\Desktop\mms\BW.MMS.Model\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\CHENQIAN\Desktop\mms\BW.MMS.Model\obj\Debug\BW.MMS.Model.dll
+C:\Users\CHENQIAN\Desktop\mms\BW.MMS.Model\obj\Debug\BW.MMS.Model.pdb
+F:\Users\Administrator\Desktop\mms\BW.MMS.Model\bin\Debug\BW.MMS.Model.dll
+F:\Users\Administrator\Desktop\mms\BW.MMS.Model\bin\Debug\BW.MMS.Model.pdb
+F:\Users\Administrator\Desktop\mms\BW.MMS.Model\obj\Debug\ResolveAssemblyReference.cache
+F:\Users\Administrator\Desktop\mms\BW.MMS.Model\obj\Debug\BW.MMS.Model.dll
+F:\Users\Administrator\Desktop\mms\BW.MMS.Model\obj\Debug\BW.MMS.Model.pdb
+F:\Users\Administrator\Dropbox\mms\BW.MMS.Model\bin\Debug\BW.MMS.Model.dll
+F:\Users\Administrator\Dropbox\mms\BW.MMS.Model\bin\Debug\BW.MMS.Model.pdb
+F:\Users\Administrator\Dropbox\mms\BW.MMS.Model\obj\Debug\ResolveAssemblyReference.cache
+F:\Users\Administrator\Dropbox\mms\BW.MMS.Model\obj\Debug\BW.MMS.Model.dll
+F:\Users\Administrator\Dropbox\mms\BW.MMS.Model\obj\Debug\BW.MMS.Model.pdb

@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<TGXML version="1.0">
+<FloatLayer Bounds="0,90,120,0" Alpha="255" FixPosMode="0" FixPos="8">
+<BackColor>
+1
+</BackColor>
+<FixPoint>
+10,10
+</FixPoint>
+<MapPoint>
+-5.23018425214046e+003,1.49317764788398e+003
+</MapPoint>
+<RefScale>
+-1.00000000000000e+000
+</RefScale>
+<FloatBlocks Count="1">
+<FloatBlock Type="2" Bounds="0,90,120,0">
+<FloatTable>
+<Table RowHeight="30" DrawTitle="0" DrawCellLine="1">
+<RecordSet SrcType="1" SrcConnert="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=[MAPPATH]图例.mdb" SrcTable="表1" SrcFields="名称1,样式1" SQLFilter="">
+<TabFields Count="2">
+<TabField FieldType="1" Width="70">
+<Title>
+
+</Title>
+<Content>
+[%名称1%]
+</Content>
+</TabField>
+<TabField FieldType="6" Width="50">
+<Title>
+
+</Title>
+<Content>
+[%样式1%]
+</Content>
+</TabField>
+</TabFields >
+</RecordSet>
+<Records>
+</Records>
+</Table>
+<TableStyle>
+<FillStyle>
+0,101,-8866571,0,1,1
+</FillStyle>
+<BoundLineStyle>
+0,0,1.000000,-16777216,0,1
+</BoundLineStyle>
+<LineStyle>
+0,0,1.000000,-16777216,0,1
+</LineStyle>
+<TextStyle>
+宋体,3.200000,0,0,-16777216,0,0
+</TextStyle>
+</TableStyle>
+</FloatTable>
+</FloatBlock>
+</FloatBlocks >
+</FloatLayer>
+</TGXML>

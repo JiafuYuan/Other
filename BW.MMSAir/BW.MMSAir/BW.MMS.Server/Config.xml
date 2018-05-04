@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<content>
+	<itemList>
+		<LocalIP name="LocalIP">172.21.2.208</LocalIP>
+		<LocalPort name="LocalPort">12345</LocalPort>
+		<DB name="DB">Data Source=172.21.2.53;Initial Catalog=BW_MMS;Persist Security Info=True;User ID=sa;Password=sa</DB>
+	</itemList>
+</content>

@@ -1,0 +1,15 @@
+<link rel="stylesheet" type="text/css" href="/templates/sys/图文链接_友情链接_滚动/css/myCss.css">
+
+<div id="demo">
+    <div id="indemo">
+        <div id="demo1">
+           <%set DataTable linkList2=get_plugin_method("SPcms.Web.Plugin.Link", "link", "get_link_list", 0, "is_lock=0 and is_image=1 and is_red=1")%>
+        <%foreach(DataRow drlink in linkList2.Rows)%>
+            <li><a href="{drlink[site_url]}" target='_blank'><img src="{drlink[img_url]}" alt="{drlink[title]}"></a><p><a target='_blank' href="{drlink[site_url]}">{drlink[title]}</a></p></li>   
+  <%/foreach%>      
+        </div>
+        <div id="demo2"></div>
+    </div>
+</div>
+
+<script src="/templates/sys/图文链接_友情链接_滚动/js/myJs.js"></script>

@@ -1,0 +1,12 @@
+<link rel="stylesheet" type="text/css" href="/templates/sys/文字列表_文字链接_链接背景改变/css/wenziliebiao.css">
+
+ <div class="wenzi_lb">
+        	<ul >
+                             <%set DataTable news_list23 = get_article_list("news", category_id, page, "status=0", out totalcount, out pagelist, "news_list", category_id, "__id__")%>
+        <%foreach(DataRow dr1 in news_list23.Rows)%> 
+                  <li>
+                         <span>21</span> <a  title="{dr1[title]}" href="<%linkurl("news_show",{dr1[id]})%>">{dr1[title]}</a>	
+				  </li>                  
+				     <%/foreach%>                
+			</ul>
+ </div>

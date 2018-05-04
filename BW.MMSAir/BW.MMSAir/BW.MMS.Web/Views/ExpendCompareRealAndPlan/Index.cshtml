@@ -1,0 +1,71 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="@Url.Content("~/Content/My97DatePicker/WdatePicker.js")" type="text/javascript"></script>
+<script type="text/javascript">
+    $(function () {
+        $(window).resize(function () {
+            $('#CompareRealAndPlan').datagrid('resize');
+        });
+    });
+
+    function onBeforeLoad(param) {
+        param.dtdate = $('#txtDate').val();
+    }
+    function onLoadSuccess(data) {
+        mergeCellsByField('CompareRealAndPlan', 'Dept,SubDept');
+    }
+    function chartShow() {
+        TopWindow.$.dialogwindow({
+            iconCls: 'icon-customers',
+            id: "chartData",
+            title: '曲线图',
+            width: 1100,
+            height: 500,
+            iframe: true,
+            url: '@Url.Action("CompareRealAndPlanChartShow")?dt_Date=' + $('#txtDate').val()
+        });
+    }
+
+    function ShowReport(action) {
+        var params = {};
+        params['dtdate'] = $('#txtDate').val();
+
+        $.post('@Url.Action("GetReportData")', params).success(function (data) {
+            LoadAcReport({
+                action: action,
+                aptPath: '@Url.Content("~/Reports/ExpendCompareRealAndPlan.apt")',
+                dataname: 'ExpendCompareRealAndPlan',
+                data: data,
+                variant: [{ name: 'dtdate', value: $('#txtDate').val()}]
+            });
+        }).error(function (XMLHttpRequest, textStatus, errorThrown) {
+            TopWindow.$.messager.alert("提示", a.responseText, "error");
+        });
+    }
+</script>
+<div id="toolbar" style="padding: 8px;">
+    日期：
+    @Html.DatePicker("txtDate", new
+    {
+        dateFmt = "'yyyy年MM月'"
+    }, new { @class = "Wdate", value = @DateTime.Now.ToString("yyyy年MM月") })
+    @Html.LinkButton("查询", "icon-search", new { onclick = "$('#CompareRealAndPlan').datagrid('reload')" })
+    @Html.LinkButton("曲线图", "icon-chartline", new { onclick = "chartShow()" })
+    @if (Convert.ToBoolean(ViewData["Designer"]))
+        {@Html.LinkButton("报表设计", "icon-report", new { onclick = "ShowReport('ShowDesigner')" })}
+    @Html.LinkButton("报表打印预览", "icon-report", new { onclick = "ShowReport('Preview')" })
+</div>
+@Html.DataGrid("CompareRealAndPlan", @Url.Action("GetCompareRealAndPlan"), ViewData["GridColumn"] as IEnumerable<object>, new
+{
+    fit = true,
+    rownumbers = true,
+    singleSelect = true,
+    striped = true,
+    toolbar = "#toolbar",
+    fitColumns = false,
+    idField = "Dept",
+    onBeforeLoad = new { function = "onBeforeLoad" },
+    onLoadSuccess = new { function = "onLoadSuccess" }
+}, new { style = "overflow: hidden;" })

@@ -1,0 +1,64 @@
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\BW.MMS\BW.MMS.Log\bin\Debug\Log4Net.config
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\BW.MMS\BW.MMS.Log\bin\Debug\BW.MMS.Log.dll
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\BW.MMS\BW.MMS.Log\bin\Debug\BW.MMS.Log.pdb
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\BW.MMS\BW.MMS.Log\bin\Debug\log4net.dll
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\BW.MMS\BW.MMS.Log\bin\Debug\log4net.xml
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\BW.MMS\BW.MMS.Log\obj\Debug\ResolveAssemblyReference.cache
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\BW.MMS\BW.MMS.Log\obj\Debug\BW.MMS.Log.dll
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\BW.MMS\BW.MMS.Log\obj\Debug\BW.MMS.Log.pdb
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Log\bin\Debug\Log4Net.config
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Log\bin\Debug\BW.MMS.Log.dll
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Log\bin\Debug\BW.MMS.Log.pdb
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Log\bin\Debug\log4net.dll
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Log\bin\Debug\log4net.xml
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Log\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Log\obj\Debug\BW.MMS.Log.dll
+C:\Users\Administrator\Desktop\主版本\源代码\BW.MMS\BW.MMS.Log\obj\Debug\BW.MMS.Log.pdb
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Log\bin\Debug\Log4Net.config
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Log\bin\Debug\BW.MMS.Log.dll
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Log\bin\Debug\BW.MMS.Log.pdb
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Log\bin\Debug\log4net.dll
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Log\bin\Debug\log4net.xml
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Log\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Log\obj\Debug\BW.MMS.Log.dll
+C:\Users\Administrator\Desktop\MVC实例\源代码\BW.MMS\BW.MMS.Log\obj\Debug\BW.MMS.Log.pdb
+E:\MVC实例\源代码\BW.MMS\BW.MMS.Log\bin\Debug\Log4Net.config
+E:\MVC实例\源代码\BW.MMS\BW.MMS.Log\bin\Debug\BW.MMS.Log.dll
+E:\MVC实例\源代码\BW.MMS\BW.MMS.Log\bin\Debug\BW.MMS.Log.pdb
+E:\MVC实例\源代码\BW.MMS\BW.MMS.Log\bin\Debug\log4net.dll
+E:\MVC实例\源代码\BW.MMS\BW.MMS.Log\bin\Debug\log4net.xml
+E:\MVC实例\源代码\BW.MMS\BW.MMS.Log\obj\Debug\BW.MMS.Log.dll
+E:\MVC实例\源代码\BW.MMS\BW.MMS.Log\obj\Debug\BW.MMS.Log.pdb
+E:\MVC实例\源代码\BW.MMS\BW.MMS.Log\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Log\bin\Debug\Log4Net.config
+C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Log\bin\Debug\BW.MMS.Log.dll
+C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Log\bin\Debug\BW.MMS.Log.pdb
+C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Log\bin\Debug\log4net.dll
+C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Log\bin\Debug\log4net.xml
+C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Log\obj\Debug\BW.MMS.Log.dll
+C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Log\obj\Debug\BW.MMS.Log.pdb
+C:\Users\Administrator\Desktop\源代码\BW.MMS\BW.MMS.Log\obj\Debug\ResolveAssemblyReference.cache
+H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Log\bin\Debug\Log4Net.config
+H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Log\bin\Debug\BW.MMS.Log.dll
+H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Log\bin\Debug\BW.MMS.Log.pdb
+H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Log\bin\Debug\log4net.dll
+H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Log\bin\Debug\log4net.xml
+H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Log\obj\Debug\BW.MMS.Log.dll
+H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Log\obj\Debug\BW.MMS.Log.pdb
+H:\SVNData\BW.MMS\BW.MMS\BW.MMS.Log\obj\Debug\BW.MMS.Log.csprojResolveAssemblyReference.cache
+H:\SVNData\BW.MMSAir\BW.MMSAir\BW.MMS.Log\bin\Debug\Log4Net.config
+H:\SVNData\BW.MMSAir\BW.MMSAir\BW.MMS.Log\bin\Debug\BW.MMS.Log.dll
+H:\SVNData\BW.MMSAir\BW.MMSAir\BW.MMS.Log\bin\Debug\BW.MMS.Log.pdb
+H:\SVNData\BW.MMSAir\BW.MMSAir\BW.MMS.Log\bin\Debug\log4net.dll
+H:\SVNData\BW.MMSAir\BW.MMSAir\BW.MMS.Log\bin\Debug\log4net.xml
+H:\SVNData\BW.MMSAir\BW.MMSAir\BW.MMS.Log\obj\Debug\BW.MMS.Log.csprojResolveAssemblyReference.cache
+H:\SVNData\BW.MMSAir\BW.MMSAir\BW.MMS.Log\obj\Debug\BW.MMS.Log.dll
+H:\SVNData\BW.MMSAir\BW.MMSAir\BW.MMS.Log\obj\Debug\BW.MMS.Log.pdb
+E:\BW.MMSAir\BW.MMSAir\BW.MMS.Log\bin\Debug\Log4Net.config
+E:\BW.MMSAir\BW.MMSAir\BW.MMS.Log\bin\Debug\BW.MMS.Log.dll
+E:\BW.MMSAir\BW.MMSAir\BW.MMS.Log\bin\Debug\BW.MMS.Log.pdb
+E:\BW.MMSAir\BW.MMSAir\BW.MMS.Log\bin\Debug\log4net.dll
+E:\BW.MMSAir\BW.MMSAir\BW.MMS.Log\bin\Debug\log4net.xml
+E:\BW.MMSAir\BW.MMSAir\BW.MMS.Log\obj\Debug\BW.MMS.Log.csprojResolveAssemblyReference.cache
+E:\BW.MMSAir\BW.MMSAir\BW.MMS.Log\obj\Debug\BW.MMS.Log.dll
+E:\BW.MMSAir\BW.MMSAir\BW.MMS.Log\obj\Debug\BW.MMS.Log.pdb

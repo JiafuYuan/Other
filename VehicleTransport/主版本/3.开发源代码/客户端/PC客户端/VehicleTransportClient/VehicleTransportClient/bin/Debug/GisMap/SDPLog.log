@@ -1,0 +1,684 @@
+
+Wed Nov 26 11:01:17 2014
+  CDebugSDP_SQLView:Start to log the SDP run-time information
+
+Wed Nov 26 11:01:17 2014
+  BOOL CSDPDataSource_TGFile::OpenDataSource:DataSourceFile;SDPFileType_TG;D:\BestWay\¿óÓÃ³µÁ¾ÔËÊä¹ÜÀíÏµÍ³\¿óÓÃ³µÁ¾ÔËÊä¹ÜÀíÏµÍ³ V 1.0.0\GisMap
+
+Wed Nov 26 11:01:17 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(µØÍ¼Ãû)
+
+Wed Nov 26 11:01:18 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(µØÍ¼Ãû)
+
+Wed Nov 26 11:05:29 2014
+  CDebugSDP_SQLView:Start to log the SDP run-time information
+
+Wed Nov 26 11:05:29 2014
+  BOOL CSDPDataSource_TGFile::OpenDataSource:DataSourceFile;SDPFileType_TG;D:\BestWay\¿óÓÃ³µÁ¾ÔËÊä¹ÜÀíÏµÍ³\¿óÓÃ³µÁ¾ÔËÊä¹ÜÀíÏµÍ³ V 1.0.0\GisMap
+
+Wed Nov 26 11:05:29 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(µØÍ¼Ãû)
+
+Wed Nov 26 11:05:31 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(µØÍ¼Ãû)
+
+Wed Nov 26 11:18:30 2014
+  CDebugSDP_SQLView:Start to log the SDP run-time information
+
+Wed Nov 26 11:18:30 2014
+  BOOL CSDPDataSource_TGFile::OpenDataSource:DataSourceFile;SDPFileType_TG;C:\Users\Administrator\Desktop\GisMap
+
+Wed Nov 26 11:18:31 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(µØÍ¼Ãû)
+
+Wed Nov 26 11:18:46 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:46 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:46 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:46 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:46 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:46 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:46 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:46 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:46 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:46 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:46 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:46 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:46 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:46 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:46 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:46 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:46 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:46 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:46 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:46 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:46 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:46 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:46 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:46 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:46 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:46 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:46 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:46 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:46 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:46 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:46 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:46 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:46 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:46 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:46 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:46 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:46 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:46 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:46 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:46 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:46 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:46 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:46 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:46 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:46 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:46 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:46 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:46 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:46 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:46 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:55 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:55 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:55 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:55 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:55 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:55 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:55 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:55 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:55 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:55 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:55 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:55 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:55 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:55 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:55 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:55 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:55 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:55 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:55 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:55 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:55 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:55 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:55 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:55 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:55 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:55 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:55 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:55 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:55 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:55 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:55 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:55 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:55 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:55 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:55 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:55 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:55 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:55 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:55 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:55 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:55 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:55 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:55 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:55 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:55 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:55 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:55 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:55 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:55 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:55 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:56 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:56 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:56 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:56 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:56 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:56 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:56 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:56 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:56 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:56 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:56 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:56 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:56 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:56 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:56 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:56 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:56 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:56 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:56 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:56 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:56 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:56 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:56 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:56 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:56 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:56 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:56 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:56 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:56 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:56 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:56 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:56 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:56 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:56 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:56 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:56 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:56 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:56 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:56 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:56 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:56 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:56 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:56 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:56 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:56 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:56 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:56 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:56 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:56 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:18:56 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ê×¢²ã)
+
+Wed Nov 26 11:19:02 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(temp)
+
+Wed Nov 26 11:19:02 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(temp)
+
+Wed Nov 26 11:19:06 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(temp)
+
+Wed Nov 26 11:19:06 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(temp)
+
+Wed Nov 26 11:21:24 2014
+  CDebugSDP_SQLView:Start to log the SDP run-time information
+
+Wed Nov 26 11:21:24 2014
+  BOOL CSDPDataSource_TGFile::OpenDataSource:DataSourceFile;SDPFileType_TG;C:\Users\Administrator\Desktop\GisMap
+
+Wed Nov 26 11:21:24 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(µØÍ¼Ãû)
+
+Wed Nov 26 11:22:43 2014
+  void CTGDatasCtrl::FillDatas()):Attribute Buffer table's field info doesn't match the TGDatas's fields count
+
+Wed Nov 26 11:22:52 2014
+  void CTGDatasCtrl::FillDatas()):Attribute Buffer table's field info doesn't match the TGDatas's fields count
+
+Wed Nov 26 11:23:04 2014
+  void CTGDatasCtrl::FillDatas()):Attribute Buffer table's field info doesn't match the TGDatas's fields count
+
+Wed Nov 26 11:23:11 2014
+  void CTGDatasCtrl::FillDatas()):Attribute Buffer table's field info doesn't match the TGDatas's fields count
+
+Wed Nov 26 11:23:22 2014
+  void CTGDatasCtrl::FillDatas()):Attribute Buffer table's field info doesn't match the TGDatas's fields count
+
+Wed Nov 26 11:23:24 2014
+  void CTGDatasCtrl::FillDatas()):Attribute Buffer table's field info doesn't match the TGDatas's fields count
+
+Wed Nov 26 11:23:29 2014
+  CSDPDataSource_TGFile::UnloadDataSet:Logical warring(iCount=0)(Name=ÇøÓò²ã)
+
+Wed Nov 26 11:23:29 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(µØÍ¼Ãû)
+
+Wed Nov 26 11:23:31 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(µØÍ¼Ãû)
+
+Wed Nov 26 11:23:34 2014
+  CDebugSDP_SQLView:Start to log the SDP run-time information
+
+Wed Nov 26 11:23:34 2014
+  BOOL CSDPDataSource_TGFile::OpenDataSource:DataSourceFile;SDPFileType_TG;C:\Users\Administrator\Desktop\GisMap
+
+Wed Nov 26 11:23:35 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(µØÍ¼Ãû)
+
+Wed Nov 26 11:26:01 2014
+  CSDPDataSource_TGFile::UnloadDataSet:Logical warring(iCount=0)(Name=ÎÞÏß»ùÕ¾²ã)
+
+Wed Nov 26 11:26:31 2014
+  CSDPDataSource_TGFile::UnloadDataSet:Logical warring(iCount=0)(Name=»ùÕ¾²ã)
+
+Wed Nov 26 11:26:34 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(ÃÜ±Õ)
+
+Wed Nov 26 11:26:44 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(temp)
+
+Wed Nov 26 11:26:44 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(temp)
+
+Wed Nov 26 11:27:05 2014
+  CSDPDataSource_TGFile::UnloadDataSet:Logical warring(iCount=0)(Name=temp)
+
+Wed Nov 26 11:27:23 2014
+  CSDPDataSource_TGFile::UnloadDataSet:Logical warring(iCount=0)(Name=³µÁ¾²ã)
+
+Wed Nov 26 11:27:33 2014
+  bool CSDPAttributeTableBuffer::GetRowData(long iID,CSDPFieldValueVector& FieldValues)):Fail to get the datas from datasource(±ß¿ò²ã)
+
+Wed Nov 26 11:28:08 2014
+  CDebugSDP_SQLView:Start to log the SDP run-time information
+
+Wed Nov 26 11:28:08 2014
+  BOOL CSDPDataSource_TGFile::OpenDataSource:DataSourceFile;SDPFileType_TG;C:\Users\Administrator\Desktop\GisMap
+
+Wed Nov 26 11:42:40 2014
+  CDebugSDP_SQLView:Start to log the SDP run-time information
+
+Wed Nov 26 11:42:40 2014
+  BOOL CSDPDataSource_TGFile::OpenDataSource:DataSourceFile;SDPFileType_TG;C:\Users\Administrator\Desktop\GisMap
+
+Wed Nov 26 11:43:14 2014
+  CDebugSDP_SQLView:Start to log the SDP run-time information
+
+Wed Nov 26 11:43:14 2014
+  BOOL CSDPDataSource_TGFile::OpenDataSource:DataSourceFile;SDPFileType_TG;C:\Users\Administrator\Desktop\GisMap
+
+Wed Nov 26 11:43:38 2014
+  CDebugSDP_SQLView:Start to log the SDP run-time information
+
+Wed Nov 26 11:43:38 2014
+  BOOL CSDPDataSource_TGFile::OpenDataSource:DataSourceFile;SDPFileType_TG;C:\Users\Administrator\Desktop\GisMap
+
+Wed Nov 26 11:50:23 2014
+  CDebugSDP_SQLView:Start to log the SDP run-time information
+
+Wed Nov 26 11:50:23 2014
+  BOOL CSDPDataSource_TGFile::OpenDataSource:DataSourceFile;SDPFileType_TG;C:\Users\Administrator\Desktop\GisMap
+
+Wed Nov 26 11:51:19 2014
+  CDebugSDP_SQLView:Start to log the SDP run-time information
+
+Wed Nov 26 11:51:19 2014
+  BOOL CSDPDataSource_TGFile::OpenDataSource:DataSourceFile;SDPFileType_TG;C:\Users\Administrator\Desktop\GisMap
+
+Wed Nov 26 11:51:40 2014
+  CDebugSDP_SQLView:Start to log the SDP run-time information
+
+Wed Nov 26 11:51:40 2014
+  BOOL CSDPDataSource_TGFile::OpenDataSource:DataSourceFile;SDPFileType_TG;C:\Users\Administrator\Desktop\GisMap
+
+Wed Nov 26 12:25:38 2014
+  CDebugSDP_SQLView:Start to log the SDP run-time information
+
+Wed Nov 26 12:25:38 2014
+  BOOL CSDPDataSource_TGFile::OpenDataSource:DataSourceFile;SDPFileType_TG;C:\Users\Administrator\Desktop\GisMap
+
+Wed Nov 26 12:27:12 2014
+  CDebugSDP_SQLView:Start to log the SDP run-time information
+
+Wed Nov 26 12:27:12 2014
+  BOOL CSDPDataSource_TGFile::OpenDataSource:DataSourceFile;SDPFileType_TG;C:\Users\Administrator\Desktop\GisMap
+
+Wed Nov 26 12:34:06 2014
+  CDebugSDP_SQLView:Start to log the SDP run-time information
+
+Wed Nov 26 12:34:06 2014
+  BOOL CSDPDataSource_TGFile::OpenDataSource:DataSourceFile;SDPFileType_TG;C:\Users\Administrator\Desktop\GisMap
+
+Wed Nov 26 12:35:20 2014
+  CDebugSDP_SQLView:Start to log the SDP run-time information
+
+Wed Nov 26 12:35:20 2014
+  BOOL CSDPDataSource_TGFile::OpenDataSource:DataSourceFile;SDPFileType_TG;C:\Users\Administrator\Desktop\GisMap
+
+Wed Nov 26 12:37:58 2014
+  CDebugSDP_SQLView:Start to log the SDP run-time information
+
+Wed Nov 26 12:37:59 2014
+  BOOL CSDPDataSource_TGFile::OpenDataSource:DataSourceFile;SDPFileType_TG;C:\Users\Administrator\Desktop\GisMap
+
+Wed Nov 26 12:42:44 2014
+  CDebugSDP_SQLView:Start to log the SDP run-time information
+
+Wed Nov 26 12:42:44 2014
+  BOOL CSDPDataSource_TGFile::OpenDataSource:DataSourceFile;SDPFileType_TG;C:\Users\Administrator\Desktop\GisMap
+
+Wed Nov 26 12:54:45 2014
+  CDebugSDP_SQLView:Start to log the SDP run-time information
+
+Wed Nov 26 12:54:45 2014
+  BOOL CSDPDataSource_TGFile::OpenDataSource:DataSourceFile;SDPFileType_TG;C:\Users\Administrator\Desktop\GisMap
+
+Wed Nov 26 12:55:53 2014
+  CDebugSDP_SQLView:Start to log the SDP run-time information
+
+Wed Nov 26 12:55:53 2014
+  BOOL CSDPDataSource_TGFile::OpenDataSource:DataSourceFile;SDPFileType_TG;C:\Users\Administrator\Desktop\GisMap
+
+Wed Nov 26 12:56:59 2014
+  CDebugSDP_SQLView:Start to log the SDP run-time information
+
+Wed Nov 26 12:56:59 2014
+  BOOL CSDPDataSource_TGFile::OpenDataSource:DataSourceFile;SDPFileType_TG;C:\Users\Administrator\Desktop\GisMap
+
+Wed Nov 26 12:57:11 2014
+  CDebugSDP_SQLView:Start to log the SDP run-time information
+
+Wed Nov 26 12:57:11 2014
+  BOOL CSDPDataSource_TGFile::OpenDataSource:DataSourceFile;SDPFileType_TG;C:\Users\Administrator\Desktop\GisMap
+
+Wed Nov 26 12:57:35 2014
+  CDebugSDP_SQLView:Start to log the SDP run-time information
+
+Wed Nov 26 12:57:35 2014
+  BOOL CSDPDataSource_TGFile::OpenDataSource:DataSourceFile;SDPFileType_TG;C:\Users\Administrator\Desktop\GisMap
+
+Wed Nov 26 12:58:17 2014
+  CDebugSDP_SQLView:Start to log the SDP run-time information
+
+Wed Nov 26 12:58:17 2014
+  BOOL CSDPDataSource_TGFile::OpenDataSource:DataSourceFile;SDPFileType_TG;C:\Users\Administrator\Desktop\GisMap
+
+Wed Nov 26 13:09:58 2014
+  CDebugSDP_SQLView:Start to log the SDP run-time information
+
+Wed Nov 26 13:09:58 2014
+  BOOL CSDPDataSource_TGFile::OpenDataSource:DataSourceFile;SDPFileType_TG;C:\Users\Administrator\Desktop\GisMap

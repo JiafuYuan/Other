@@ -1,0 +1,83 @@
+﻿@{
+    ViewBag.Title = "ChartLineIndex";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script type="text/javascript">
+    var arr = getxAxis();
+    var dic = getSeries();
+    $(function () {
+        chartContainer();
+    });
+    function chartContainer() {
+        $('#container').highcharts({
+            chart: {
+                type: 'spline'
+            },
+            credits: {
+                enabled: false
+            },
+            title: {
+                text: '@ViewData["monthBegin"]到' + '@ViewData["monthEnd"]</br>@ViewData["monthDeptName"] 月报表'
+            },
+            xAxis: {
+                labels: {
+                    rotation: -80
+                },
+                categories: arr
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: '累计'
+                }
+            },
+            
+            plotOptions: {
+                column: {
+                    pointPadding: 0.2,
+                    borderWidth: 0
+                }
+            },
+            series: dic
+        });
+    }
+
+
+    function getxAxis() {
+        var paramcol = [];
+        $.ajax({
+            url: '@Url.Action("getxAxis")',
+            type: "POST",
+            async: false,
+            datatype: "json",
+            data: { month_dtBegin: '@ViewData["monthBegin"]', month_dtEnd: '@ViewData["monthEnd"]', month_Dept: '@ViewData["monthDept"]' },
+            success: function (data) {
+                paramcol = data;
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                $.messager.alert("提示", XMLHttpRequest.responseText, "error");
+            }
+        });
+        return paramcol;
+    }
+    function getSeries() {
+        var paramSeries;
+        $.ajax({
+            url: '@Url.Action("getSeries")',
+            type: "POST",
+            async: false,
+            datatype: "json",
+            data: { month_dtBegin1: '@ViewData["monthBegin"]', month_dtEnd1: '@ViewData["monthEnd"]', month_Dept1: '@ViewData["monthDept"]' },
+            success: function (data) {
+                paramSeries = data;
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                $.messager.alert("提示", XMLHttpRequest.responseText, "error");
+            }
+        });
+        return paramSeries;
+    }
+</script>
+<div id="container" style="width: 100%; height: 100%; overflow:auto;">
+</div>

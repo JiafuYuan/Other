@@ -1,0 +1,78 @@
+﻿@model BW.MMS.Model.m_DeptEntity
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script type="text/javascript">
+    function onLoadSuccess(node, data) {
+        var value = $('#ID').val();
+        var parentid = $('#ParentDeptID').combotree('getValue');
+        if (value != 0 && parentid == 0) {
+            var node = $('#ParentDeptID').combotree('tree').tree('find', 0);
+            var nodes = $('#ParentDeptID').combotree('tree').tree('getChildren', node.target);
+            for (var i = 0, length = nodes.length; i < length; i++) {
+                $('#ParentDeptID').combotree('tree').tree('remove', nodes[i].target);
+            }
+            $('#ParentDeptID').combotree('tree').tree('remove', node.target);
+        }
+    }
+</script>
+<form id="form">
+@Html.HiddenFor(model => model.ID)
+<table class="table-form">
+    <tr>
+        <th>
+            使用单位名称
+        </th>
+        <td>
+            @Html.TextBoxFor(model => model.vc_Name, new
+                    {
+                        @class = "easyui-validatebox",
+                        required = "true",
+                        validType = "length[0,20]"
+                    })
+            <span style="color: Red">*</span>
+        </td>
+        <th>
+            使用单位编号
+        </th>
+        <td>
+            @Html.TextBoxFor(model => model.vc_Code, new
+                    {
+                        @class = "easyui-validatebox",
+                        required = "true",
+                        validType = "length[1,10]"
+                    })
+            <span style="color: Red">*</span>
+        </td>
+    </tr>
+    <tr>
+        <th>
+            上级单位
+        </th>
+        <td>
+            @Html.ComboTreeFor(m => m.ParentDeptID, Url.Action("GetDeptItem") + "?recursion=false", new { required = true, onLoadSuccess = new { function = "onLoadSuccess" } })
+            <span style="color: Red">*</span>
+        </td>
+        <th>
+            排序
+        </th>
+        <td>
+            @Html.TextBoxFor(model => model.i_Sort, new
+                    {
+                        @class = "easyui-numberbox",
+                        required = "true"
+                    })
+            <span style="color: Red">*</span>
+        </td>
+    </tr>
+    <tr>
+        <th>
+            备注
+        </th>
+        <td colspan="3">
+            @Html.TextAreaFor(model => model.vc_Memo, 5, 48, new { @class = "easyui-validatebox", validType = "length[1,50]" })
+        </td>
+    </tr>
+</table>
+</form>

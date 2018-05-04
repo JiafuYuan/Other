@@ -1,0 +1,13 @@
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\Common\bin\Release\Common.dll
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\Common\bin\Release\Common.pdb
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\Common\bin\Release\DB_VehicleTransportManage.dll
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\Common\bin\Release\BW_OleDbHelper.dll
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\Common\bin\Release\DB_VehicleTransportManage.pdb
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\Common\obj\Release\ResolveAssemblyReference.cache
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\Common\obj\Release\Common.frmBase.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\Common\obj\Release\Common.frmBaseMessageForm.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\Common\obj\Release\Common.Properties.Resources.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\Common\obj\Release\GenerateResource.read.1.tlog
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\Common\obj\Release\GenerateResource.write.1.tlog
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\Common\obj\Release\Common.dll
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\Common\obj\Release\Common.pdb

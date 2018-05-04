@@ -1,0 +1,5 @@
+系统管理员 账户 System   密码 0000   这个账户密码是在 Web.config里面的。。
+  <!-- 系统默认登录账户，不能蒋账户修改  -->
+  <add key="CurrentUserName" value="System" />
+  <!-- 系统默认登录密码,密码是MD5 -->
+  <add key="CurrentPassword" value="4a7d1ed414474e4033ac29ccb8653d9b" />

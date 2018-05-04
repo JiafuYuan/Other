@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Comment CommentText="命令主体,用于与服务通讯的关键类,用于序列化为xml">
+    <Position X="0.5" Y="1.354" Height="0.615" Width="1.762" />
+  </Comment>
+  <Class Name="Common.Model.CommandObjectModel">
+    <Position X="3.25" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAQAAAAAAAAAAAAAAQAAAAAAAQAAIAgAAgAAAA=</HashCode>
+      <FileName>Model\CommandObjectModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="Common.Enum.EnumCommandType">
+    <Position X="5.75" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>QQAAQAgAAAAIQEIAAMAFEIggEBgAAGAAAAAQASFIAAA=</HashCode>
+      <FileName>Enum\EnumCommandType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

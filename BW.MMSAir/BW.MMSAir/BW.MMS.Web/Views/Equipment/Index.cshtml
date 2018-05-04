@@ -1,0 +1,49 @@
+﻿@model BW.MMS.Model.Regions
+    @{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script type="text/javascript">
+    $(function () {
+        $(window).resize(function () {
+            $('#gridHistoryList').datagrid('resize');
+        });
+    });
+
+    function onBeforeLoad(param) {
+        $('#gridHistoryList').datagrid('clearSelections');
+        param.AreaName = $('#AreaName').combotree("getText");
+        param.ControlName = $('#txtName').val();
+
+    }
+    function data_string(str) {
+        if (str) {
+            return '启用';
+        } else {
+            return '停用';
+        } 
+    }
+</script>
+<div id="toolbar">
+    <div class="datagrid-toolbar panel-header search">
+        设备名称：
+        @Html.TextBox("txtName", "")
+        区域：
+        @Html.ComboTree("AreaName", new { url = Url.Action("GetAreaItem"), editable = false, multiple = false }) 
+        @Html.LinkButton("查询", "icon-search", new { onclick = "$('#gridHistoryList').datagrid('load')" })
+    </div>
+    @Html.LinkButton("刷新", "icon-reload", true, new { onclick = "$('#gridHistoryList').datagrid('load')" })
+</div>
+@Html.DataGrid("gridHistoryList", @Url.Action("GetEquipmentList"), ViewData["GridColumn"] as IEnumerable<object>, new
+{
+    fit = true,
+    rownumbers = true,
+    striped = true,
+    idField = "ID",
+    sortName = "ID",
+    sortOrder = "asc",
+    toolbar = "#toolbar",
+    pagination = true,
+    pageSize = 20,
+    onBeforeLoad = new { function = "onBeforeLoad" }
+}, new { style = "overflow: hidden;" })

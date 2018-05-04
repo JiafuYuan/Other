@@ -1,0 +1,38 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script type="text/javascript">
+    //window.resizeTo(320,480);
+    $(function () {
+        $(window).resize(function () {
+            $('#gridSensorTypeList').datagrid('resize');
+        });
+    });
+
+    function onBeforeLoad(param) {
+        $('#gridSensorTypeList').datagrid('clearSelections');
+        param.name = $('#txtName').val();
+    }
+
+</script>
+@Html.DataGrid("gridSensorTypeList", @Url.Action("GetSensorTypeList"), ViewData["GridColumn"] as IEnumerable<object>, new
+{
+    title = "唐口煤矿计量系统",
+    fit = true,
+    rownumbers = true,
+    border = false,
+    striped = true,
+    idField = "ID",
+    sortName = "ID",
+    sortOrder = "asc",
+    pagination = false,
+    pageSize = 20,
+    onBeforeLoad = new { function = "onBeforeLoad" },
+    tools = new { function = "[{iconCls:'icon-reload',handler:function(){$('#gridSensorTypeList').datagrid('load');}}]" }
+}, new { style = "overflow: hidden;" })
+<div style="padding: 0px; text-align: center; vertical-align: bottom">
+    类型名称：
+    @Html.TextBox("txtName", "", new { onkeydown = "if(event.keyCode==13) $('#gridSensorTypeList').datagrid('load');" })
+    @Html.LinkButton("查询", "icon-search", new { onclick = "$('#gridSensorTypeList').datagrid('load')" })
+</div>

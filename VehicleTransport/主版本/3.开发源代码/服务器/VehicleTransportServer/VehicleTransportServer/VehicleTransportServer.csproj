@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FC2A0BCA-9CF6-4F3C-A1B8-5645CC150F26}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VehicleTransportServer</RootNamespace>
+    <AssemblyName>VehicleTransportServer</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>server.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BW_OleDbHelper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Lib\BW_OleDbHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="BW_ProgressBarDialog">
+      <HintPath>..\..\..\Lib\BW_ProgressBarDialog.dll</HintPath>
+    </Reference>
+    <Reference Include="BW_Socket, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Lib\BW_Socket.dll</HintPath>
+    </Reference>
+    <Reference Include="BW_XMLHelper">
+      <HintPath>..\..\..\Lib\BW_XMLHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar.Design">
+      <HintPath>..\..\..\Lib\DotNetBar\DevComponents.DotNetBar.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2">
+      <HintPath>..\..\..\..\..\..\..\MyWork\MyWork\MySoft\煤矿安全监测监控系统\主版本\开发源代码\客户端\CommControls\Lib\DotNetBar\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\Config.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BLL\LogMessageBLL.cs" />
+    <Compile Include="BLL\SetSystemTime.cs" />
+    <Compile Include="BLL\SystemLog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BLL\WriteLog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainServer.cs" />
+    <Compile Include="Manage\UserManage.cs" />
+    <Compile Include="Model\LogMessageModel.cs" />
+    <Compile Include="Model\UserModel.cs" />
+    <Compile Include="Thread\BackWork\AlarmThread.cs" />
+    <Compile Include="Thread\BackWork\Alarm\BackTimeOutAlarm.cs" />
+    <Compile Include="Thread\BackWork\Alarm\GiveTimeOutAlarm.cs" />
+    <Compile Include="Thread\BackWork\Alarm\LoadTimeOutAlarm.cs" />
+    <Compile Include="Thread\BackWork\Alarm\MaintainTimeOutAlarm.cs" />
+    <Compile Include="Thread\BackWork\Alarm\NoChanageStateAlarm.cs" />
+    <Compile Include="Thread\BackWork\Alarm\UnUseAlarm.cs" />
+    <Compile Include="Thread\BackWork\Alarm\RunDerictionAlarm.cs" />
+    <Compile Include="Thread\BackWork\Alarm\ScrapTimeOutAlarm.cs" />
+    <Compile Include="Thread\BackWork\Alarm\TransportTimeOutAlarm.cs" />
+    <Compile Include="Thread\BackWork\Alarm\UnLoadTimeOutAlarm.cs" />
+    <Compile Include="Thread\BackWork\AreaNofityThread.cs" />
+    <Compile Include="Thread\BackWork\CheckDBOnlineThread.cs" />
+    <Compile Include="Thread\BackWork\CheckEqipmentStateThread.cs" />
+    <Compile Include="Thread\Command\CommandFactory.cs" />
+    <Compile Include="Thread\Command\DataCommand\GetDepartmentCommand.cs" />
+    <Compile Include="Thread\Command\DataCommand\GetMaterielTypeCommand.cs" />
+    <Compile Include="Thread\Command\DataCommand\GetPersonCommand.cs" />
+    <Compile Include="Thread\Command\DataCommand\GetVehicleCommand.cs" />
+    <Compile Include="Thread\Command\DataCommand\GetAddressCommand.cs" />
+    <Compile Include="Thread\Command\DataCommand\GetPlanDetailCommand.cs" />
+    <Compile Include="Thread\Command\DataCommand\GetVehicleTypeCommand.cs" />
+    <Compile Include="Thread\Command\DataCommand\GetCardCommand.cs" />
+    <Compile Include="Thread\Command\DataCommand\GetVehicleDistributedCommand.cs" />
+    <Compile Include="Thread\Command\DataCommand\GetMyPlanDetailCommand.cs" />
+    <Compile Include="Thread\Command\DataCommand\GetVehicleIsCanDoCommand.cs" />
+    <Compile Include="Thread\Command\FlowPathCommand\CheckCommand.cs" />
+    <Compile Include="Thread\Command\NormalCommand\EndAlarmCommand.cs" />
+    <Compile Include="Thread\Command\NormalCommand\GetApkFileCommand.cs" />
+    <Compile Include="Thread\Command\NormalCommand\GetAPKVersionCommand.cs" />
+    <Compile Include="Thread\Command\DataCommand\GetMessageCommand.cs" />
+    <Compile Include="Thread\Command\NormalCommand\GetFlowPathCommand.cs" />
+    <Compile Include="Thread\Command\NormalCommand\GetTimeCommand.cs" />
+    <Compile Include="Thread\Command\NormalCommand\HeartBeatCommand.cs" />
+    <Compile Include="Thread\Command\NormalCommand\LoginCommand.cs" />
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ConfigModel.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Pub.cs" />
+    <Compile Include="Manage\SocketManage.cs" />
+    <Compile Include="Thread\BackWork\WifiBaseStationStateThread.cs" />
+    <Compile Include="Thread\Command\DataCommand\ReturnMessageCommand.cs" />
+    <Compile Include="Thread\Command\DataCommand\SendMessageCommand.cs" />
+    <Compile Include="Thread\Command\FlowPathCommand\ApplyCommand.cs" />
+    <Compile Include="Thread\Command\FlowPathCommand\BackCommand.cs" />
+    <Compile Include="Thread\Command\FlowPathCommand\GiveCommand.cs" />
+    <Compile Include="Thread\Command\FlowPathCommand\HandoverCommand.cs" />
+    <Compile Include="Thread\Command\FlowPathCommand\LoadCommand.cs" />
+    <Compile Include="Thread\Command\FlowPathCommand\UnLoadCommand.cs" />
+    <Compile Include="Thread\Command\NormalCommand\SendAlarmCommand.cs" />
+    <Compile Include="Thread\Command\NormalCommand\SendRefreshCommand.cs" />
+    <Compile Include="Thread\Command\NormalCommand\GisChanagedCommand.cs" />
+    <Compile Include="Thread\Command\NormalCommand\SendGisRefreshCommand.cs" />
+    <Compile Include="Thread\Command\NormalCommand\GetDBInfoCommand.cs" />
+    <Compile Include="Thread\Command\NormalCommand\SendGisPointStateChangedCommand.cs" />
+    <Compile Include="Thread\Command\NormalCommand\SendVehiclePostionChangedCommand.cs" />
+    <Compile Include="Thread\Command\NormalCommand\SendPDAPostionChangedCommand.cs" />
+    <Compile Include="Thread\Command\NormalCommand\ChangePasswordCommand.cs" />
+    <Compile Include="Thread\Command\NormalCommand\LoginOutCommand.cs" />
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\Common.csproj">
+      <Project>{1C4D1434-7B30-4A2E-9B0A-60DF0626EFF2}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\DB_VehicleTransportManage\DB_VehicleTransportManage.csproj">
+      <Project>{3672D0D1-73A1-42AB-96C3-7C7B0E7263E7}</Project>
+      <Name>DB_VehicleTransportManage</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="server.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

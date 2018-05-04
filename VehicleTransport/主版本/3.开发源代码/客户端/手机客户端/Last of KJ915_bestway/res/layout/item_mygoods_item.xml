@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dip"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:weightSum="13" >
+  
+    <TextView
+        android:layout_width="0dip"
+        android:layout_height="30dip"
+        android:layout_weight="4"
+        android:gravity="center"
+        android:text="NO:99998" />
+
+    <TextView
+        android:layout_width="0dip"
+        android:layout_height="30dip"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:text="花车" />
+
+    <TextView
+        android:layout_width="0dip"
+        android:layout_height="30dip"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="1顿" />
+
+    <TextView
+        android:layout_width="0dip"
+        android:layout_height="30dip"
+        android:layout_weight="4"
+        android:gravity="center"
+        android:text="街道一处" />
+
+    <TextView
+        android:layout_width="0dip"
+        android:layout_height="30dip"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:text="未卸货" />
+
+</LinearLayout>

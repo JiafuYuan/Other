@@ -1,0 +1,11 @@
+﻿@model System.Web.Mvc.HandleErrorInfo
+@{
+    ViewBag.Title = "页面错误";
+}
+<div style="width: 100%; height: 100%; display: table;">
+    <div style="text-align: center; vertical-align: middle; display: table-row;">
+        <div>
+            <img src="@Url.Content("~/Content/images/ErrorPage.jpg")" alt="页面错误" /><br />
+            <a href="@ViewBag.ReturnUrl">刷新</a></div>
+    </div>
+</div>

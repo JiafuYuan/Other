@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>权限设置</title>
+    <meta name="viewport" content="width=device-width" />
+</head>
+<body>
+    <div class="easyui-layout" data-options="fit:true">
+        <div data-options="region:'center',border:false" style="padding: 3px;">
+            <ul  id="Authority" class="easyui-tree" data-options="
+                animate:true,
+                lines:true,
+                checkbox:true,
+                url:'@Url.Action("GetAuthority", "Home")/' + '@ViewData["UserID"]',
+                onLoadSuccess:function (node, data) {
+                    $('#Authority').tree('expandAll');
+                }">
+            </ul>
+        </div>
+        <div data-options="region:'south',border:false" class="dialog-button">
+            <a id="checkall" class="easyui-linkbutton" data-options="iconCls:'icon-replace'" onclick="CheckAll()">
+                全选</a> <a class="easyui-linkbutton" data-options="iconCls:'icon-ok'" onclick="Authorized()">
+                    保存</a> <a class="easyui-linkbutton" data-options="iconCls:'icon-cancel'" onclick="$('#Authorized').dialog('close')">
+                        取消</a>
+        </div>
+        <script type="text/javascript">
+            function CheckAll() {
+                var opt = $('#checkall').linkbutton('options');
+                if (opt.text == '全选') {
+                    treeChecked(true);
+                    $('#checkall').linkbutton({
+                        text: '反选'
+                    });
+                }
+                else {
+                    treeChecked(false);
+                    $('#checkall').linkbutton({
+                        text: '全选'
+                    });
+                }
+            }
+
+            function treeChecked(checked) {
+                var roots = $('#Authority').tree('getRoots'); //返回tree的所有根节点数组  
+                if (checked) {
+                    for (var i = 0; i < roots.length; i++) {
+                        var node = $('#Authority').tree('find', roots[i].id); //查找节点  
+                        $('#Authority').tree('check', node.target); //将得到的节点选中  
+                    }
+                } else {
+                    for (var i = 0; i < roots.length; i++) {
+                        var node = $('#Authority').tree('find', roots[i].id);
+                        $('#Authority').tree('uncheck', node.target);
+                    }
+                }
+            }
+
+            function Authorized() {
+                //var roots = $('#Authority').tree('getRoots');
+                var roots = $('#Authority').tree('getChecked');
+                var data = [];
+                for (var i = 0, length = roots.length; i < length; i++) {
+                    var root = $('#Authority').tree('getParent', roots[i].target);
+                    if (root) {
+                        var contains = false;
+                        for (var j = 0; j < data.length; j++) {
+                            if (data[j] == root.id) {
+                                contains = true;
+                            }
+                        }
+                        if (!contains) {
+                            data.push(root.id);
+                        }
+                    }
+                    data.push(roots[i].id);
+                }
+                $.ajax({
+                    url: '@Url.Action("SaveAuthority")',
+                    data: { data: data.toString(), id: '@ViewData["UserID"]' },
+                    type: "POST",
+                    async: false,
+                    datatype: "json",
+                    success: function (data) {
+                        if (data.success) {
+                            $.messager.alert("提示", data.message, "info", function () {
+                                $('#Authorized').dialog('close');
+                            });
+                        }
+                        else {
+                            $.messager.alert("提示", data, "error");
+                        }
+                    },
+                    error: function (a, b, c) {
+                        $.messager.alert("提示", a.responseText, "error");
+                    }
+                });
+            }
+        </script>
+    </div>
+</body>
+</html>

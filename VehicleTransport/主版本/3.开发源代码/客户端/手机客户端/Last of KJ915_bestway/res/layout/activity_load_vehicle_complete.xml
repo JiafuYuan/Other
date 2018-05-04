@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bestway="http://schemas.android.com/apk/res/com.bestway.kj915"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/common_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <include layout="@layout/title" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="310dip"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dip" >
+    </ListView>
+
+    <Button
+        android:layout_width="270dip"
+        android:layout_height="55dip"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dip"
+        android:background="@drawable/login_selector"
+        android:enabled="true"
+        android:gravity="center"
+        android:onClick="restart"
+        android:text="继续装货"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <Button
+        android:layout_width="270dip"
+        android:layout_height="55dip"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="19dip"
+        android:background="@drawable/login_selector"
+        android:enabled="true"
+        android:gravity="center"
+        android:onClick="submit"
+        android:text="完成装货"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+</LinearLayout>

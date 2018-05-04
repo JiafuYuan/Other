@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bestway="http://schemas.android.com/apk/res/com.bestway.kj915"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/common_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <include layout="@layout/title" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dip" >
+
+        <ImageView
+            android:layout_width="0dip"
+            android:layout_height="35dip"
+            android:layout_weight="1"
+            android:src="@drawable/back_demo" />
+
+        <TextView
+            android:id="@+id/tv_number"
+            android:layout_width="0dip"
+            android:layout_height="40dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dip"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="NO：99992"
+            android:textSize="20dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dip"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <com.bestway.kj915.custom.MyDropdownBox
+            android:id="@+id/destination"
+            bestway:name="地点"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip" >
+        </com.bestway.kj915.custom.MyDropdownBox>
+
+        <com.bestway.kj915.custom.MyDropdownBox
+            android:id="@+id/catagory"
+            bestway:name="类型"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip" >
+        </com.bestway.kj915.custom.MyDropdownBox>
+
+        <LinearLayout
+            android:layout_width="270dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dip"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="数量："
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/count"
+                android:layout_width="99dip"
+                android:layout_height="35dip"
+                android:background="@drawable/gaga"
+                android:hint="数量"
+                android:inputType="number"
+                android:paddingLeft="10dip"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="81dip"
+                android:layout_height="35dip"
+                android:layout_gravity="center"
+                android:background="@drawable/gaga1"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="单位"
+                    android:textSize="20sp" >
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="55dip"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="170dip"
+        android:background="@drawable/login_selector"
+        android:enabled="true"
+        android:gravity="center"
+        android:onClick="submit"
+        android:text="确认"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+</LinearLayout>

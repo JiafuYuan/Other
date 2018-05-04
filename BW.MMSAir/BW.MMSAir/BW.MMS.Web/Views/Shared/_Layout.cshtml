@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>@ViewBag.Title</title>
+    <meta name="viewport" content="width=device-width" />
+    @*<meta http-equiv="X-UA-Compatible" content="IE=edge" />*@
+    <link href="@Url.Content("~/Content/icons/icon.css")" rel="stylesheet" type="text/css" />
+    <link id="easyuiTheme" href="@Url.Content("~/Content/Easyui/themes/default/easyui.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/css/table.css")" rel="stylesheet" type="text/css" />
+    <script src="@Url.Content("~/Scripts/jquery-1.9.1.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/json2.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.cookie.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/BW.Common.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Content/Easyui/jquery.easyui.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Content/EasyUI/locale/easyui-lang-zh_CN.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Content/Easyui/extend/mask.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Content/Highcharts/highcharts.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/datagrid.excel.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Content/Easyui/extend/portal/jquery.portal.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Content/Easyui/datagrid-scrollview.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/easyui.validate.exp.js")" type="text/javascript"></script>
+    <script type="text/javascript">
+        var TopWindow = window == top ? window : window.top;
+        if ($.cookie('easyui-skin')) {
+            setTheme('easyuiTheme', $.cookie('easyui-skin'));
+        }
+        $(document).bind("keydown", function (e) {
+            if (e.keyCode == 8) {
+                if ($("textarea").is(":focus") && $(e.target).attr("readOnly") != "readonly") {
+                    return true;
+                } else if ($("input").is(":focus") && $(e.target).attr("readOnly") != "readonly") {
+                    return true;
+                }
+                else {
+                    e.preventDefault();
+                    return false;
+                }
+            }
+        });
+
+        function LoadAcReport(options) {
+            var engine = new ActiveXObject("AcReport.AcRptEngine");
+            var RegCode = '3338495E46463540202341584C5894C7C7C24E351F08AB1FC7A44BFCFC7C6DC867594D85461F8BC9BC5F33BF38B47C14250ED3B7A64F698B7FD6DEDA479A71329980F2DF3085B46CF2F40FC34CCD0B99979568434117C78106ED170549997191AC111A4E';
+            var ErrCode, ErrMsg;
+            engine.SetRegisterInfo(RegCode, '南京北路自动化', 'c005', '南京市江宁开发区菲尼克斯路99号', 'hezison@126.com', '18913391800', '', ErrCode, ErrMsg);
+
+//            var engine = new ActiveXObject("AcReport.AcRptEngine");
+            $.post('@Url.Action("ExistsReport")', { path: options.aptPath }).success(function (exists) {
+                if (exists == true) {
+                    var aptPath = window.location.protocol + '//' + window.location.host + options.aptPath;
+                    engine.LoadFromURL(aptPath);
+                    if (options.action == 'ShowDesigner') {
+                        //debugger;
+                        //engine.OnReportSave();
+                        engine.ShowDesigner();
+                    }
+                    else {
+                        var strJSON = JSON.stringify(options.data);
+                        nRet = engine.AddOneDatasetFromJSON(options.dataname, strJSON);
+                        if (nRet != 0) {
+                            strErrMsg = engine.GetLastErrorMessage();
+                            alert(strErrMsg);
+                        }
+                        for (var i = 0; i < options.variant.length; i++) {
+                            engine.AddVariable(options.variant[i].name, options.variant[i].value);
+                        }
+                        engine.Preview();
+                    }
+                }
+                else {
+                    if (options.action == 'ShowDesigner') {
+                        var strJSON = JSON.stringify(options.data);
+                        nRet = engine.AddOneDatasetFromJSON(options.dataname, strJSON);
+                        if (nRet != 0) {
+                            strErrMsg = engine.GetLastErrorMessage();
+                            alert(strErrMsg);
+                        }
+                        for (var i = 0; i < options.variant.length; i++) {
+                            engine.AddVariable(options.variant[i].name, options.variant[i].value);
+                        }
+                        engine.ShowDesigner();
+                    }
+                    else {
+                        alert('报表模板不存在！');
+                    }
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+    @RenderBody()
+</body>
+</html>

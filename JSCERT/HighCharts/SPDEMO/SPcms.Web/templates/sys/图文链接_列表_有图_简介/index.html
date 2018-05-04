@@ -1,0 +1,17 @@
+<link rel="stylesheet" type="text/css" href="/templates/sys/图文链接_列表_有图_简介/css/image_text.css">
+<div class="image_text width-700">
+	<ul>
+      <%set DataTable news_list = get_article_list("news", category_id, page, "status=0", out totalcount, out pagelist, "news_list", category_id, "__id__")%>
+        <%foreach(DataRow drmbCCW in news_list.Rows)%> 
+        <li>
+        	<a href="<%linkurl("news_show",{drmbCCW[id]})%>" title="{drmbCCW[title]}">
+                <img src="{drmbCCW[img_url]}" width="220" height="165" />
+                <div>
+                  <h2>{drmbCCW[title]}</h2>
+                  <span>{drmbCCW[zhaiyao]}</span>
+                </div>
+            </a>
+      	</li>
+      <%/foreach%>
+    </ul>
+</div>

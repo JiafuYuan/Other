@@ -1,0 +1,12 @@
+	<div class="aside float_l">
+        	<ul>
+           <%set DataTable catedtAMGjG=get_category_child_list("egoods", 0)%>
+<%foreach(DataRow drAMGjG in catedtAMGjG.Rows)%>
+  <li><a href="<%linkurl("egoods_list",{drAMGjG[id]})%>">{drAMGjG[title]}</a></li>
+<%/foreach%>
+
+
+              
+            </ul>
+            <div class="aside2"><img src="<%templateskin%>/images/y.jpg"></div>
+        </div>

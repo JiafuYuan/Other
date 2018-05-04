@@ -1,0 +1,160 @@
+﻿@model BW.MMS.Model.m_ClassTypeEntity
+@{
+    ViewBag.Title = "TypeEdit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script type="text/javascript">
+    //新增班次
+    function Add() {
+        $.dialogwindow({
+            iconCls: 'icon-customers',
+            id: "ClassEdit",
+            title: '新增班次明细',
+            width: 550,
+            height: 300,
+            url: '@Url.Action("ClassEdit")',
+            buttons: [{
+                text: '保存',
+                iconCls: 'icon-ok',
+                handler: function () {
+                    if ($("#form-class").form('validate')) {
+                        var data = $("#form-class").serializeJson();
+                        data.classTypeID = '@Model.ID';
+                        data.ID = "0";
+                        $("#gridClass").datagrid("appendRow", data);
+                        $("#ClassEdit").dialog("close");
+                    }
+                }
+            }]
+        });
+    }
+    //修改班次
+    function Edit() {
+        var rows = $('#gridClass').datagrid('getSelections');
+        if (rows.length == 0) {
+            $.messager.alert('提示', "请选择数据！", 'warning');
+            return;
+        }
+        if (rows.length > 1) {
+            $.messager.alert('提示', "只能选择一条数据！", 'warning');
+            return;
+        }
+        $.dialogwindow({
+            iconCls: 'icon-customers',
+            id: "ClassEdit",
+            title: '修改班次',
+            width: 550,
+            height: 300,
+            url: '@Url.Action("ClassEdit")',
+            onComplete: function (da, j) {
+                var data = JSON.stringify(rows[0]);
+                $("#form-class").form('load', JSON.parse(data));
+            },
+            buttons: [{
+                text: '保存',
+                iconCls: 'icon-ok',
+                handler: function () {
+                    if ($("#form-class").form('validate')) {
+                        var data = $("#form-class").serializeJson();
+                        var rows = $("#gridClass").datagrid('getSelections');
+                        var index = $("#gridClass").datagrid("getRowIndex", rows[0]);
+                        $("#gridClass").datagrid("updateRow", { index: index, row: data });
+                        $("#ClassEdit").dialog("close");
+                    }
+                }
+            }]
+        });
+    }
+    //删除班次
+    function Delete() {
+        var rows = $('#gridClass').datagrid('getSelections');
+        if (rows.length == 0) {
+            $.messager.alert('提示', "请选择数据！", 'warning');
+            return;
+        }
+        var ids = [];
+        for (var i = 0, length = rows.length; i < length; i++) {
+            ids.push(rows[i].ID);
+        }
+        $.post('@Url.Action("GetArrayClasses", "ArrayClass")', { id: ids.toString() }).success(function (data, textStatus) {
+            if (data) {
+                $.messager.confirm('提示', "确定要删除数据吗?", function (action) {
+                    if (action) {
+                        for (var i = 0, length = rows.length; i < length; i++) {
+                            var index = $('#gridClass').datagrid("getRowIndex", rows[0].ID);
+                            $('#gridClass').datagrid("deleteRow", index);
+                        }
+                    }
+                });
+            }
+            else {
+                $.messager.alert("提示", "已经排班，无法删除！", "error");
+            }
+        }).error(function (XMLHttpRequest, textStatus, errorThrown) {
+            $.messager.alert("提示", XMLHttpRequest.responseText, "error");
+        });
+
+
+    }
+</script>
+<form id="form-classtype">
+@Html.HiddenFor(model => model.ID)
+<table class="table-form">
+    <tr>
+        <th>
+            类型名称
+        </th>
+        <td>
+            @Html.TextBoxFor(model => model.nvc_name, new
+            {
+                @class = "easyui-validatebox",
+                required = "true",
+                validType = "length[1,20]"
+            })
+            <span style="color: Red">*</span>
+        </td>
+        <th>
+            简称
+        </th>
+        <td>
+            @Html.TextBoxFor(model => model.nvc_shortname, new { @class = "easyui-validatebox", validType = "length[1,20]" })
+        </td>
+    </tr>
+    <tr>
+        <th>
+            表现形式
+        </th>
+        <td colspan="3">
+            @Html.TextBoxFor(model => model.nvc_descripe, new { @class = "easyui-validatebox", validType = "length[1,20]" })
+        </td>
+    </tr>
+    <tr>
+        <th>
+            备注
+        </th>
+        <td colspan="3">
+            @Html.TextAreaFor(model => model.nvc_remark, new { @style = "width:445px", rows = 3, @class = "easyui-validatebox", validType = "length[1,200]" })
+        </td>
+    </tr>
+    <tr>
+        <th>
+            班次明细
+        </th>
+        <td colspan="3">
+            <div id="toolbar">
+                @Html.LinkButton("新增", "icon-add", true, new { onclick = "Add()" })
+                @Html.LinkButton("修改", "icon-edit", true, new { onclick = "Edit()" })
+                @Html.LinkButton("删除", "icon-cancel", true, new { onclick = "Delete()" })
+            </div>
+            @Html.DataGrid("gridClass", @Url.Action("GetClassGridList") + "?ClassTypeId=" + Model.ID, ViewData["GridColumn"] as IEnumerable<object>, new
+            {
+                fit = false,
+                toolbar = "#toolbar",
+                idField = "ID",
+                sortName = "d_start",
+                sortOrder = "asc"
+            }, new { style = "height:180px; width:480px; overflow: hidden;" })
+        </td>
+    </tr>
+</table>
+</form>

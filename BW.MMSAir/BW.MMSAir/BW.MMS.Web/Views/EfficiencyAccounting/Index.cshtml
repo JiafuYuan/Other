@@ -1,0 +1,49 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="@Url.Content("~/Content/My97DatePicker/WdatePicker.js")" type="text/javascript"></script>
+<script type="text/javascript">
+    $(function () {
+        $(window).resize(function () {
+            $('#CompareRealAndPlan').datagrid('resize');
+        });
+    });
+
+    function onBeforeLoad(param) {
+        if (!$('#txtDate').val().length > 0) {
+            var nowDate = new Date();
+            var year = nowDate.getFullYear();
+            var month = nowDate.getMonth() + 1 < 10 ? "0" + (nowDate.getMonth() + 1)
+   : nowDate.getMonth() + 1;
+            var dateStr = year + "年" + month + "月";
+            $('#td_date').val(dateStr);
+        }
+        param.dtdate = $('#txtDate').val();
+    }
+    function onLoadSuccess(data) {
+        mergeCellsByField('CompareRealAndPlan', 'dt_Date,ClassTypeName');
+    }
+</script>
+<div id="toolbar" style="padding: 8px;">
+    <div class="datagrid-toolbar" style="padding: 8px;">
+        日期：
+        @Html.DatePicker("txtDate", new
+{
+    dateFmt = "'yyyy年MM月'"
+}, new { @class = "Wdate" })
+        @Html.LinkButton("查询", "icon-search", new { onclick = "$('#CompareRealAndPlan').datagrid('reload')" })
+    </div>
+</div>
+@Html.DataGrid("CompareRealAndPlan", @Url.Action("GetCompareRealAndPlan"), ViewData["GridColumn"] as IEnumerable<object>, new
+{
+    fit = false,
+    rownumbers = true,
+    striped = true,
+    border = false,
+    toolbar = "#toolbar",
+    fitColumns = false,
+    idField = "Dept",
+    onBeforeLoad = new { function = "onBeforeLoad" },
+    onLoadSuccess = new { function = "onLoadSuccess" }
+}, new { style = "overflow: hidden;" })

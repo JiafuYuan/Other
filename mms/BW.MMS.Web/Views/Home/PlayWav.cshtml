@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "PlayWav";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<bgsound id="sound" src='~/Resouce/@ViewData["playWav"]' runat="server" loop="1" />
+<div style="vertical-align: middle; text-align: center; width: 100%; margin-top: 30px;">
+    @Html.LinkButton("重播", "icon-back", new { onclick = "reload();" })&nbsp;&nbsp;
+    @Html.LinkButton("停止", "icon-delete", new { onclick = "stop();" })
+</div>
+<script type="text/javascript">
+
+    function reload() {
+        var paramwav = '/Resouce/@ViewData["playWav"]';
+        $("#sound").attr("src", paramwav);
+    }
+
+    function stop() {
+        $("#sound").attr("src", "");
+    }
+
+</script>

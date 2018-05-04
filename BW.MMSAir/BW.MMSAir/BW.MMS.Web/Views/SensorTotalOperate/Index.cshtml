@@ -1,0 +1,140 @@
+﻿@{
+    ViewBag.Title = "传感器累计量统计";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script type="text/javascript">
+    $(function () {
+
+        var getcols = function () {
+            var cols = [];
+            var col = [];
+            for (var i = 0; i < 24; i++) {
+                var ctx = {
+                    field: "CumulativeTraffic_" + i.toString(),
+                    title: (i > 9 ? i.toString() : "0" + i.toString()) + ":00",
+                    align: "center",
+                    width: 50,
+                    sortable: false
+                };
+                col.push(ctx);
+            }
+            cols.push(col);
+            return cols;
+        };
+        function onLoadSuccess(data) {
+            mergeCellsByField("DailyReport", "TypeName");
+        }
+
+        var onBeforeLoad = function (param) {
+            param.sensorType = $('#sensorType').combobox('getValue');
+            param.time = $('#dt_Date').datebox('getValue');
+            if (!param.time) {
+                $.messager.alert("日期不可为空！", "warning");
+                return false;
+            }
+            return true;
+        };
+        $("#DailyReport").datagrid({
+            fit: true,
+            rownumbers: true,
+            striped: true,
+            toolbar: "#toolbar",
+            singleSelect: true,
+            idField: "SensorID",
+            frozenColumns: [[
+                           { field: 'TypeName', title: '传感器类型', align: "center", width: 100, sortable: false },
+                           { field: 'vc_Address', title: '传感器名称', align: "center", width: 100, sortable: false }
+                       ]],
+            columns: getcols(),
+            url: '@Url.Action("Search")',
+            onBeforeLoad: onBeforeLoad,
+            onLoadSuccess: onLoadSuccess
+        });
+        $(window).resize(function () {
+            $('#DailyReport').datagrid('resize');
+        });
+    });
+
+    function mergeCellsByField(tableID, colList) {
+        var ColArray = colList.split(",");
+        var tTable = $('#' + tableID);
+        var TableRowCnts = tTable.datagrid("getRows").length;
+        var tmpA;
+        var tmpB;
+        var PerTxt = "";
+        var CurTxt = "";
+        var alertStr = "";
+        //for (j=0;j<=ColArray.length-1 ;j++ )  
+        for (j = ColArray.length - 1; j >= 0; j--) {
+            //当循环至某新的列时，变量复位。  
+            PerTxt = "";
+            tmpA = 1;
+            tmpB = 0;
+
+            //从第一行（表头为第0行）开始循环，循环至行尾(溢出一位)  
+            for (i = 0; i <= TableRowCnts; i++) {
+                if (i == TableRowCnts) {
+                    CurTxt = "";
+                }
+                else {
+                    CurTxt = tTable.datagrid("getRows")[i][ColArray[j]];
+                }
+                if (PerTxt == CurTxt) {
+                    tmpA += 1;
+                }
+                else {
+                    tmpB += tmpA;
+                    tTable.datagrid('mergeCells', {
+                        index: i - tmpA,
+                        field: ColArray[j],
+                        rowspan: tmpA,
+                        colspan: null
+                    });
+                    tmpA = 1;
+                }
+                PerTxt = CurTxt;
+            }
+        }
+    }
+    
+    function AcReport(action) {
+        var params = {};
+        params.sensorType = $('#sensorType').combobox('getValue');
+        params.time = $('#dt_Date').datebox('getValue');
+        if (!params.time) {
+            $.messager.alert("日期不可为空！", "warning");
+            return;
+        }
+        $.post('@Url.Action("GetReport")', params).success(function (data) {
+            LoadAcReport({
+                action: action,
+                aptPath: '@Url.Content("~/Reports/SensorTotalOperate.apt")',
+                dataname: 'SensorTotalOperate',
+                data: data,
+                variant: [{
+                    name: 'time',
+                    value: params.time
+                }, {
+                    name: 'sensorType',
+                    value: $('#sensorType').combobox('getText')
+                }]
+            });
+        }).error(function (a, textStatus, errorThrown) {
+            $.messager.alert("提示", a.responseText, "error");
+        });
+    }
+</script>
+<div id="toolbar" style="padding: 8px;">
+    日期：
+    @Html.TextBox("dt_Date", DateTime.Now.ToString("yyyy-MM-dd"), new { @class = "easyui-datebox", value = DateTime.Now.ToString("yyyy-MM-dd"), editable = false })
+    传感器类型：
+    @Html.ComboBox("sensorType", ViewData["sensorType"] as List<ComboBoxItem>, new object())
+    @Html.LinkButton("查询", "icon-search", new { onclick = "$('#DailyReport').datagrid('reload')" })
+    @if (Convert.ToBoolean(ViewData["Designer"]))
+    {  
+        @Html.LinkButton("报表设计", "icon-report", new { onclick = "AcReport('ShowDesigner')" })
+    }
+    @Html.LinkButton("打印预览", "icon-report", new { onclick = "AcReport('Preview')" })
+</div>
+<table id="DailyReport">
+</table>

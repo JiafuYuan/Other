@@ -1,0 +1,35 @@
+<nav class="navaa clearfix">
+    <ul>
+          <li><a href="<%linkurl("content","about")%>" class="current">关于我们</a></li>
+      <li><a href="<%linkurl("goods_list","0")%>">产品介绍</a></li>
+      <li><a href="<%linkurl("news_list","33")%>">行业新闻</a></li>
+      <li><a href="<%linkurl("news_list","43")%>">集团新闻</a></li>
+      <li><a href="<%linkurl("ryzz_list","0")%>">荣誉资质</a></li>
+      <li><a href="<%linkurl("content","rczp")%>">人才招聘</a></li>
+      <li><a href="<%linkurl("content","contact")%>">联系我们</a></li>
+      <li class="last"><a href="<%linkurl("feedback")%>">给我留言</a></li>
+    </ul>
+</nav>
+<!--导航结束-->
+</div>
+<div class="clear"></div>
+<!--主体结束-->
+<footer class="footer text_c">	<%write get_article_content("bqsy","content") %></footer>
+<!--底部悬浮-->
+<div id="BottomNav">
+	<ul class="clearfix">
+        <li><a href="tel:02568158000"><span class="aa icon"></span><span>电话</span></a></li>
+        <li><a href="<%linkurl("feedback")%>"><span class="bb icon"></span><span>留言</span></a></li>
+        <li><a href="http://m.mapbar.com/#c=%25E5%258D%2597%25E4%25BA%25AC%25E5%25B8%2582&k=%25E4%25B8%259D%25E7%25BB%25B8%25E5%25A4%25A7%25E5%258E%25A6&wf=ls&pn=1&rn=10"><span class="cc icon"></span><span>地图</span></a></li>
+        <li><a href="share.html"><span class="dd icon"></span><span>分享</span></a></li>
+        <li class="last"><a href="index.html"><span class="ee icon"></span><span>搜索</span></a></li>
+    </ul>
+</div>
+<!--返回顶部-->
+<div id="gotop"></div>
+<script>
+    //创建组件
+    $('#gotop').gotop();
+</script>
+<script type="text/javascript" src="<%templateskin%>/js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="<%templateskin%>/js/Html5.js"></script>

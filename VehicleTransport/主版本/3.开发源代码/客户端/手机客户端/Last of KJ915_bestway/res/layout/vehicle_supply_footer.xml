@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <View style="@style/list_item_seperator_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dip"
+        android:orientation="horizontal"
+        android:weightSum="5" >
+
+        <ImageButton
+            android:id="@+id/creat"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/backgroud_selector"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:scaleType="centerInside"
+            android:singleLine="true"
+            android:src="@drawable/creat"
+            android:width="0dip" />
+
+        <View style="@style/list_item_cell_seperator_layout" />
+
+        <TextView
+            android:id="@+id/goods_tv_ch"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="4"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="更简单？ 空白区域滑动手指吧！"
+            android:textColor="#CD0000"
+            android:typeface="serif"
+            android:width="0dip" />
+    </LinearLayout>
+
+    <View style="@style/list_item_seperator_layout" />
+
+</LinearLayout>

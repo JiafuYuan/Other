@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>南京首屏科技有限公司</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<!--组件依赖js begin-->
+<script type="text/javascript" src="js/zepto.js"></script>
+<script type="text/javascript" src="js/touch.js"></script>      <!--新版zepto合并版中不包括touch.js-->
+<script type="text/javascript" src="js/zepto.extend.js"></script>
+<script type="text/javascript" src="js/zepto.ui.js"></script>
+<script type="text/javascript" src="js/zepto.iscroll.js"></script>   <!--iScroll-->
+<script type="text/javascript" src="js/zepto.highlight.js"></script>
+<script type="text/javascript" src="js/zepto.fix.js"></script>
+<!--search begin-->
+<script type="text/javascript" src="js/quickdelete.js"></script>     <!--快速删除组件，配合suggestion使用-->
+<script type="text/javascript" src="js/suggestion.js"></script>
+<!--banner begin-->
+<script type="text/javascript" src="js/slider.js"></script>
+<!--组件依赖js end--> 
+<!--下拉 begin-->
+<script type="text/javascript" src="js/dropmenu.js"></script>
+<script type="text/javascript" src="js/button.js"></script>
+<!--下拉 end--> 
+<!--加载更多 begin-->
+<script type="text/javascript" src="js/refresh.js"></script>
+<!--返回顶部 begin-->
+<script type="text/javascript" src="js/gotop.js"></script>
+<script type="text/javascript" src="js/add2desktop.js"></script>
+</head>
+<body>
+<!--抬头开始-->
+<header class="header clearfix">
+	<div class="header1 float_l"><a title="南京首屏科技有限公司" href="index.html"><img src="images/q.jpg" alt="南京首屏科技有限公司" border="0"/></a></div>
+    <div class="header2 float_r"><a href="tel:02568158000"><img src="images/qq.jpg" border="0"/></a></div>
+</header>
+<!--抬头结束-->
+<!--搜索-->
+<div>
+	<form action="http://www.baidu.com/s" method="get">
+        <div class="search">
+            <div class="search-input"><input type="text" id="input" name="wd"></div>
+            <div class="search-button"><input type="submit" value="搜索"></div>
+        </div>
+    </form>
+    <script type="text/javascript">
+        (function () {
+            /*组件初始化js begin*/
+            $('#input').suggestion({
+                source: "../../data/suggestion.php"
+            }).quickdelete();
+            /*组件初始化js end*/
+        })();
+    </script>
+</div>
+<!--搜索结束-->
+<!--导航开始-->
+<nav class="nava clearfix">
+    <ul>
+      <li><a href="index.html" class="current">医院概况</a></li>
+      <li><a href="product.html">专家团队</a></li>
+      <li><a href="news.html">科室介绍</a></li>
+      <li><a href="news.html">疾病专题</a></li>
+      <li><a href="news.html">特色疗法</a></li>
+      <li><a href="page.html">先进设备</a></li>
+      <li><a href="news.html">医院动态</a></li>
+      <li class="last"><a href="message.html">预约挂号</a></li>
+    </ul>
+</nav>
+<!--导航结束-->
+<!--主体开始-->
+<div class="mainbody">
+    <!--公司简介-->
+    <section class="main1">
+    	<div class="main1_1 clearfix">
+    		<h4 class="float_l"><span class="a icon"></span><span>分享平台</span></h4>
+            <div class="section float_r">
+                <div id="container">
+                    <div class="btns"><a id="btn3" class="bat">菜单</a></div>
+                    <div id="dropmenu3">
+                        <ul>
+                        	<li><a href="index.html">返回首页</a></li>
+                            <li><a href="page.html">医院概况</a></li>
+                            <li><a href="page.html">专家团队</a></li>
+                            <li><a href="product.html">科室介绍</a></li>
+                            <li><a href="news.html">疾病专题</a></li>
+                            <li><a href="news.html">特色疗法</a></li>
+                            <li><a href="product.html">先进设备</a></li>
+                            <li><a href="news.html">医院动态</a></li>
+                            <li><a href="message.html">预约挂号</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+			<script>
+                $('#btn3').button();
+                $('#dropmenu3').dropmenu({
+                    align:'right'
+                }).dropmenu('bindButton', $('#btn3')).on('itemClick', function (e, item) {
+                            alert(item.text);
+                        });
+                $('body>.section').on('click', function(){//make blank area clickabel
+                });
+                //创建组件
+                $('#dropmenu').gotop();	
+            </script>
+        </div>
+        <article class="bgg">
+            <div class="padding leading" style="height:180px;">
+            <p>选择您分享的平台</p>
+            <!-- Baidu Button BEGIN -->
+            <div id="bdshare" class="bdshare_t bds_tools_32 get-codes-bdshare">
+            <a class="bds_tsina"></a>
+            <a class="bds_qzone"></a>
+            <a class="bds_tqq"></a>
+            <a class="bds_renren"></a>
+            <a class="bds_t163"></a>
+            <a class="bds_kaixin001"></a>
+            <a class="bds_tqf"></a>
+            <a class="bds_douban"></a>
+            <a class="bds_tieba"></a>
+            <a class="bds_sqq"></a>
+            <a class="bds_tsohu"></a>
+            <a class="bds_bdhome"></a>
+            <a class="bds_taobao"></a>
+            <a class="bds_hi"></a>
+            <a class="bds_meilishuo"></a>
+            <a class="bds_huaban"></a>
+            <a class="bds_tfh"></a>
+            <a class="bds_ty"></a>
+            <a class="bds_youdao"></a>
+            <a class="bds_mshare"></a>
+            <span class="bds_more"></span>
+            <a class="shareCount"></a>
+            </div>
+            <script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=0" ></script>
+            <script type="text/javascript" id="bdshell_js"></script>
+            <script type="text/javascript">
+            document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+            </script>
+            <!-- Baidu Button END -->    
+        </article>
+    </section>
+    <!--公司简介结束-->
+    <div class="clear"></div>
+</div>
+<div class="clear"></div>
+<!--主体结束-->
+<footer class="footer text_c">版权所有：南京首屏科技 健康热线：025-12345678<br> 就诊时间：早8：00—17：00 节假日不休</footer>
+<!--底部悬浮-->
+<div id="BottomNav">
+	<ul class="clearfix">
+        <li><a href="tel:02568158000"><span class="aa icon"></span><span>电话</span></a></li>
+        <li><a href="message.html"><span class="bb icon"></span><span>留言</span></a></li>
+        <li><a href="http://m.mapbar.com/#c=%25E5%258D%2597%25E4%25BA%25AC%25E5%25B8%2582&k=%25E4%25B8%259D%25E7%25BB%25B8%25E5%25A4%25A7%25E5%258E%25A6&wf=ls&pn=1&rn=10"><span class="cc icon"></span><span>地图</span></a></li>
+        <li><a href="share.html"><span class="dd icon"></span><span>分享</span></a></li>
+        <li class="last"><a href="index.html"><span class="ee icon"></span><span>搜索</span></a></li>
+    </ul>
+</div>
+<!--返回顶部-->
+<div id="gotop"></div>
+<script>
+    //创建组件
+    $('#gotop').gotop();
+</script>
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/Html5.js"></script>
+<!--ui:/style:陈媛媛/code:？-->
+</body>
+</html>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Configure>
+  <System>
+    <DB>
+      <HostID>.</HostID>
+      <DatabaseName>BW_MMS</DatabaseName>
+      <UserName>sa</UserName>
+      <Password>kj222</Password>
+    </DB>
+    <Developer>南京北路自动化</Developer>
+    <WebSite>www.njbestway.com</WebSite>
+    <SaveLog>7</SaveLog>
+    <Register>
+      <SN>
+      </SN>
+    </Register>
+    <Socket>
+      <IP>172.21.254.139</IP>
+      <Port>11235</Port>
+    </Socket>
+    <OPC>
+      <IP>172.21.254.139</IP>
+      <UserName>Administrator</UserName>
+      <Password>123456</Password>
+      <Type>OPC.SimaticNET</Type>
+      <OpcPowerType>GD.OPCServer.3</OpcPowerType>
+      <PowerBaseRateFilePath>D:\计量系统\电力接入软件\Data\NodeConfig.txt</PowerBaseRateFilePath>
+    </OPC>
+    <SaveDatabaseRate>60</SaveDatabaseRate>
+    <AshContent>
+      <AshContentLastWriteTime>2014-07-24 14:37:03</AshContentLastWriteTime>
+      <AshContentSaveDataBaseRate>60</AshContentSaveDataBaseRate>
+      <AshContentServerIP>172.21.2.229</AshContentServerIP>
+      <AshContentServerName>test</AshContentServerName>
+      <AshContentPwd>test</AshContentPwd>
+    </AshContent>
+  </System>
+</Configure>

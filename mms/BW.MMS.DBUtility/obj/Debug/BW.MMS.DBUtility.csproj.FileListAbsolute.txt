@@ -1,0 +1,15 @@
+C:\Users\CHENQIAN\Desktop\mms\BW.MMS.DBUtility\bin\Debug\BW.MMS.DBUtility.dll
+C:\Users\CHENQIAN\Desktop\mms\BW.MMS.DBUtility\bin\Debug\BW.MMS.DBUtility.pdb
+C:\Users\CHENQIAN\Desktop\mms\BW.MMS.DBUtility\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\CHENQIAN\Desktop\mms\BW.MMS.DBUtility\obj\Debug\BW.MMS.DBUtility.dll
+C:\Users\CHENQIAN\Desktop\mms\BW.MMS.DBUtility\obj\Debug\BW.MMS.DBUtility.pdb
+F:\Users\Administrator\Desktop\mms\BW.MMS.DBUtility\bin\Debug\BW.MMS.DBUtility.dll
+F:\Users\Administrator\Desktop\mms\BW.MMS.DBUtility\bin\Debug\BW.MMS.DBUtility.pdb
+F:\Users\Administrator\Desktop\mms\BW.MMS.DBUtility\obj\Debug\ResolveAssemblyReference.cache
+F:\Users\Administrator\Desktop\mms\BW.MMS.DBUtility\obj\Debug\BW.MMS.DBUtility.dll
+F:\Users\Administrator\Desktop\mms\BW.MMS.DBUtility\obj\Debug\BW.MMS.DBUtility.pdb
+F:\Users\Administrator\Dropbox\mms\BW.MMS.DBUtility\bin\Debug\BW.MMS.DBUtility.dll
+F:\Users\Administrator\Dropbox\mms\BW.MMS.DBUtility\bin\Debug\BW.MMS.DBUtility.pdb
+F:\Users\Administrator\Dropbox\mms\BW.MMS.DBUtility\obj\Debug\ResolveAssemblyReference.cache
+F:\Users\Administrator\Dropbox\mms\BW.MMS.DBUtility\obj\Debug\BW.MMS.DBUtility.dll
+F:\Users\Administrator\Dropbox\mms\BW.MMS.DBUtility\obj\Debug\BW.MMS.DBUtility.pdb

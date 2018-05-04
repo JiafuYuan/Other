@@ -1,0 +1,88 @@
+﻿@{
+    ViewBag.Title = "CompareRealAndPlanChartShow";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script type="text/javascript">
+    var arr = getxAxis();
+    var dic = getSeries();
+    $(function () {
+        chartContainer();
+    });
+    function chartContainer() {
+        $('#container').highcharts({
+            chart: {
+                type: 'spline'
+            },
+            credits: {
+                enabled: false
+            },
+            title: {
+                text: '@ViewData["dt_Date"]</br>实际能耗与预算能耗对比'
+            },
+            xAxis: {
+                categories: arr
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: ''
+                },
+                plotLines: [{
+                    value: 0,
+                    width: 1,
+                    color: '#808080'
+                }]
+            },
+            tooltip: {
+                valueSuffix: ''
+            },
+            legend: {
+                layout: 'vertical',
+                align: 'right',
+                verticalAlign: 'middle',
+                borderWidth: 0
+            },
+            series: dic
+        });
+    }
+
+
+    function getxAxis() {
+        var paramcol = [];
+        $.ajax({
+            url: '@Url.Action("getxAxis")',
+            type: "POST",
+            async: false,
+            datatype: "json",
+            data: { dt_Date1: '@ViewData["dt_Date"]' },
+            success: function (data) {
+                paramcol = data;
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                $.messager.alert("提示", XMLHttpRequest.responseText, "error");
+            }
+        });
+        return paramcol;
+    }
+    function getSeries() {
+        var paramSeries;
+        $.ajax({
+            url: '@Url.Action("getSeries")',
+            type: "POST",
+            async: false,
+            datatype: "json",
+            data: { dt_Date2: '@ViewData["dt_Date"]' },
+            success: function (data) {
+                paramSeries = data;
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                $.messager.alert("提示", XMLHttpRequest.responseText, "error");
+            }
+        });
+        return paramSeries;
+    }
+</script>
+
+<div id="container">
+</div>

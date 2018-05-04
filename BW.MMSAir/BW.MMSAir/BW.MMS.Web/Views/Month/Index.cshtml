@@ -1,0 +1,110 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="@Url.Content("~/Content/My97DatePicker/WdatePicker.js")" type="text/javascript"></script>
+<script type="text/javascript">
+    $(function () {
+        $(window).resize(function () {
+            $('#gridMonthReport').datagrid('resize');
+        });
+    });
+
+    function onBeforeLoad(param) {
+
+        $('#gridMonthReport').datagrid('clearSelections');
+        //        if ($('#beginMonth').val().trim().length == 0) {
+        //            $('#beginMonth').val(new Date().toLocaleDateString().substr(0, 10));
+        //        }
+        //        if ($('#endMonth').val().trim().length == 0) {
+        //            $('#endMonth').val(new Date().toLocaleDateString().substr(0, 10));
+        //        }
+        param.paramSearchDept = $('#ddlDeptID').combotree("getValue");
+        param.beginmonth = $('#beginMonth').datebox('getValue');
+        param.endmonth = $('#endMonth').datebox('getValue');
+
+    }
+    function onLoadSuccess(data) {
+        mergeCellsByField("gridMonthReport", "parentName,vc_name");
+
+    }
+    function chartColShow() {
+        var monthDate;
+        monthDate = $('#beginMonth').datebox('getValue') + ',' + $('#endMonth').datebox('getValue') + ',' + $('#ddlDeptID').combotree("getValue") + ',' + $('#ddlDeptID').combotree("getText");
+        TopWindow.$.dialogwindow({
+            iconCls: 'icon-customers',
+            id: "chartData",
+            title: '柱状图',
+            width: 1100,
+            height: 500,
+            iframe: true,
+            url: '@Url.Action("ChartColIndex")?month_date=' + monthDate
+        });
+    }
+    function chartLineShow() {
+        var monthDate;
+        monthDate = $('#beginMonth').datebox('getValue') + ',' + $('#endMonth').datebox('getValue') + ',' + $('#ddlDeptID').combotree("getValue") + ',' + $('#ddlDeptID').combotree("getText");
+        TopWindow.$.dialogwindow({
+            iconCls: 'icon-customers',
+            id: "chartData",
+            title: '曲线图',
+            width: 1100,
+            height: 500,
+            iframe: true,
+            url: '@Url.Action("ChartLineIndex")?month_date1=' + monthDate
+        });
+    }
+
+    //报表预览打印
+    function ShowReport(action) {
+        var params = {};
+        params['paramSearchDept'] = $('#ddlDeptID').combotree("getValue");
+        params['beginmonth'] = $('#beginMonth').datebox('getValue');
+        params['endmonth'] = $('#endMonth').datebox('getValue');
+        $.post('@Url.Action("GetReportData")', params).success(function (data) {
+            LoadAcReport({
+                action: action,
+                aptPath: '@Url.Content("~/Reports/MonthReport.apt")',
+                dataname: 'MonthReport',
+                data: data,
+                variant: [{ name: 'ddlDeptID', value: formatDate($('#beginMonth').datebox('getValue'), 'yyyy年MM月dd日') + '到' + formatDate($('#endMonth').datebox('getValue'), 'yyyy年MM月dd日') + '  月报表'}]
+            });
+        }).error(function (XMLHttpRequest, textStatus, errorThrown) {
+            TopWindow.$.messager.alert("提示", a.responseText, "error");
+        });
+    }
+
+
+   
+</script>
+<div id="toolbar" style="padding: 8px;">
+    开始日期：
+    @Html.TextBox("beginMonth", (new DateTime(DateTime.Now.Year, DateTime.Now.Month, 1)).ToString("yyyy-MM-dd"), new { @class = "easyui-datebox", editable = false })
+    截止日期：
+    @Html.TextBox("endMonth", (new DateTime(DateTime.Now.Year, DateTime.Now.Month, 1)).AddMonths(1).AddDays(-1).ToString("yyyy-MM-dd"), new { @class = "easyui-datebox", editable = false })
+    使用单位:
+    @Html.ComboTree("ddlDeptID", new { url = Url.Action("GetDeptItem", "Dept"), editable = false, multiple = false })
+    @Html.LinkButton("查询", "icon-search", new { onclick = "$('#gridMonthReport').datagrid('load')" })
+    @Html.LinkButton("柱状图", "icon-chartbar", new { onclick = "chartColShow()" })
+    @Html.LinkButton("曲线图", "icon-chartline", new { onclick = "chartLineShow()" })
+    @if (Convert.ToBoolean(ViewData["Designer"]))
+    {
+        @Html.LinkButton("报表设计", "icon-report", new { onclick = "ShowReport('ShowDesigner')" })
+    }
+    @Html.LinkButton("报表打印预览", "icon-report", new { onclick = "ShowReport('Preview')" })
+</div>
+@Html.DataGrid("gridMonthReport", @Url.Action("GetGridList"), ViewData["GridColumn"] as IEnumerable<object>, new
+{
+    fit = true,
+    rownumbers = true,
+    singleSelect = true,
+    striped = true,
+    idField = "ID",
+    sortName = "ID",
+    sortOrder = "asc",
+    toolbar = "#toolbar",
+    pagination = false,
+    pageSize = 20,
+    onLoadSuccess = new { function = "onLoadSuccess" },
+    onBeforeLoad = new { function = "onBeforeLoad" }
+}, new { style = "overflow: hidden;" })

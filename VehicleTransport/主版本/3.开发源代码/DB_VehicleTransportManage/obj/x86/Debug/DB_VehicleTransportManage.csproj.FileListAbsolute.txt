@@ -1,0 +1,17 @@
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\DB_VehicleTransportManage\bin\Debug\DB_VehicleTransportManage.dll
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\DB_VehicleTransportManage\bin\Debug\DB_VehicleTransportManage.pdb
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\DB_VehicleTransportManage\bin\Debug\BW_OleDbHelper.dll
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\DB_VehicleTransportManage\obj\x86\Debug\DB_VehicleTransportManage.csprojResolveAssemblyReference.cache
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\DB_VehicleTransportManage\obj\x86\Debug\DB_VehicleTransportManage.Properties.Resources.resources
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\DB_VehicleTransportManage\obj\x86\Debug\DB_VehicleTransportManage.csproj.GenerateResource.Cache
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\DB_VehicleTransportManage\obj\x86\Debug\DB_VehicleTransportManage.dll
+D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\DB_VehicleTransportManage\obj\x86\Debug\DB_VehicleTransportManage.pdb
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\DB_VehicleTransportManage\bin\Debug\DB_VehicleTransportManage.dll
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\DB_VehicleTransportManage\bin\Debug\DB_VehicleTransportManage.pdb
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\DB_VehicleTransportManage\bin\Debug\BW_OleDbHelper.dll
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\DB_VehicleTransportManage\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\DB_VehicleTransportManage\obj\x86\Debug\DB_VehicleTransportManage.Properties.Resources.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\DB_VehicleTransportManage\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\DB_VehicleTransportManage\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\DB_VehicleTransportManage\obj\x86\Debug\DB_VehicleTransportManage.dll
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\DB_VehicleTransportManage\obj\x86\Debug\DB_VehicleTransportManage.pdb

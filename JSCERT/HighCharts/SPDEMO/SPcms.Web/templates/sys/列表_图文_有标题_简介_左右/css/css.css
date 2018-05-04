@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+/*新闻资讯样式
+------------------------------------------------------------------------------------*/
+.newsToplist { width:auto;}
+	.newsToplist:after{clear:both;content:".";display:block;height:0;visibility:hidden;}
+	.newsToplist a{color:#666; font-weight:bold;}
+	.newsToplist a:hover{color:#0089CD;}
+	.newsToplist {margin:0;width: auto;}
+	.newsToplist dl{margin:20px 0;  height:70px; overflow:hidden; display:block; clear:both;}
+	.newsToplist dl dt{margin:0 10px 5px 0;height:70px; float:left;}
+	.newsToplist dl dt img{width:70px;height:70px;}
+	.newsToplist dl dd p{color:#999;line-height:18px;}
+	.newsToplist dl dd{font-size:12px;}
+	.newsToplist dl dd span{float:right;color:#999;}

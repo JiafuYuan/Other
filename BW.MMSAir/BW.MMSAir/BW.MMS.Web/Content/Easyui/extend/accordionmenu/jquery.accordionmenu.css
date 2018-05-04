@@ -1,0 +1,18 @@
+﻿/**
+* accordionmenu - jQuery EasyUI
+* -----------------------------
+* Copyright (c) 2013 Chan.
+* chenqian@outlook.com.cn
+* -----------------------------
+* Date: 2013-11-11
+* Revision: 1.0
+*/
+.accordionmenu{list-style-type:none;margin:0px; padding:10px;}
+.accordionmenu li{ padding:0px;}
+.accordionmenu li a{line-height:24px;}
+.accordionmenu li div{margin:2px 0px;padding-left:15px;padding-top:2px; border:1px dashed #ffffff;}
+.accordionmenu li div.hover{border:1px dashed #99BBE8; background:#E0ECFF;cursor:pointer;}
+.accordionmenu li div.hover a{color:#416AA3;}
+.accordionmenu li div.selected{border:1px solid #99BBE8; background:#E0ECFF;cursor:default;}
+.accordionmenu li div.selected a{color:#416AA3; outline:none;}
+.accordionmenu-item{padding:2px 0px 2px 20px;}

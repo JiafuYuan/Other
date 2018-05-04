@@ -1,0 +1,21 @@
+<link rel="stylesheet" type="text/css" href="/templates/sys/列表_图片_有标题_产品/css/css.css">
+
+      <div class="pro_list">
+        <ul>
+          
+          <%set DataTable articalDtnsTJe=get_article_list("goods", 0, 8, "status=0")%>
+<%foreach(DataRow drnsTJe in articalDtnsTJe.Rows)%>
+
+          <li>
+            <a class="pic" href="<%linkurl("goods_show",{drnsTJe[id]})%>" title="{drnsTJe[title]}"><img src="{drnsTJe[img_url]}" alt="{drnsTJe[title]}" /></a>
+            <div class="info">
+              <a class="name" href="<%linkurl("goods_show",{drnsTJe[id]})%>" title="{drnsTJe[title]}">{drnsTJe[title]}</a>
+              <div class="price">
+                <span>价格：</span>
+                <strong>￥{drnsTJe[sell_price]}</strong>
+              </div>
+            </div>
+          </li>
+          <%/foreach%>
+                   </ul>
+      </div>

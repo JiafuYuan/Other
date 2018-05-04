@@ -1,0 +1,81 @@
+﻿@model BW.MMS.Model.m_ClassEntity
+@{
+    ViewBag.Title = "班次编辑";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<form id="form-class">
+@Html.HiddenFor(model => model.ID)
+@Html.HiddenFor(model => model.classTypeID)
+<table class="table-form">
+    <tr>
+        <th>
+            班次名称
+        </th>
+        <td>
+            @Html.TextBoxFor(model => model.nvc_name, new
+           {
+               @class = "easyui-validatebox",
+               required = "true",
+               validType = "length[1,25]"
+           })
+            <span style="color: Red">*</span>
+        </td>
+        <th>
+            班次简称
+        </th>
+        <td>
+            @Html.TextBoxFor(model => model.nvc_shortname, new
+           {
+               @class = "easyui-validatebox",
+               validType = "length[1,25]"
+           })
+        </td>
+    </tr>
+    <tr>
+        <th>
+            开始时间
+        </th>
+        <td>
+            @Html.TextBoxFor(model => model.d_start, new
+           {
+               @class = "easyui-validatebox easyui-timespinner",
+               value = "8:00",
+               required = "true",
+               style = "width:153px",
+               missingMessage = "请设置开始时间"
+           })
+            <span style="color: Red">*</span>
+        </td>
+        <th>
+            结束时间
+        </th>
+        <td>
+            @Html.TextBoxFor(model => model.d_End, new
+           {
+               @class = "easyui-validatebox easyui-timespinner",
+               value = "8:30",
+               required = "true",
+               style = "width:153px",
+               missingMessage = "请设置结束时间"
+           })
+            <span style="color: Red">*</span>
+        </td>
+    </tr>
+    <tr>
+        <th>
+            表现形式
+        </th>
+        <td colspan="3">
+            @Html.TextBoxFor(model => model.nvc_descripe, new { @class = "easyui-validatebox", validType = "length[1,25]" })
+        </td>
+    </tr>
+    <tr>
+        <th>
+            备注
+        </th>
+        <td colspan="3">
+            @Html.TextAreaFor(model => model.nvc_remark, new { style = "width:98%; height:60px", @class = "easyui-validatebox", validType = "length[1,100]" })
+        </td>
+    </tr>
+</table>
+</form>

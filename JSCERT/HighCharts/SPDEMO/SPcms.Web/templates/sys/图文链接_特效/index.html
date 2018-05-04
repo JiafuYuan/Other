@@ -1,0 +1,16 @@
+
+<link type="text/css" href="/templates/sys/图文链接_特效/css/10.css" rel="stylesheet" />
+
+<%set DataTable articalDtBNXKT=get_article_list("news", 0, 8, "status=0")%>
+<%foreach(DataRow drBNXKT in articalDtBNXKT.Rows)%>
+<div class="bd view view-first">
+	<a target="_blank" href="<%linkurl("news_show",{drBNXKT[id]})%>" class="new-product-image"><img width="190" height="190" src="{drBNXKT[img_url]}"></a>
+	<div class="mask">
+		<h4 class="title"><a title="{drBNXKT[title]}" class="text-hide" target="_blank" href="<%linkurl("news_show",{drBNXKT[id]})%>">{drBNXKT[title]}</a></h4>
+		<p class="text">{drBNXKT[zhaiyao]}</p>
+	</div>
+</div>
+
+<%/foreach%>
+
+

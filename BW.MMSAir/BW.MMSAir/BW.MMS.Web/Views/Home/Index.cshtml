@@ -1,0 +1,224 @@
+﻿<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>唐口煤矿计量系统</title>
+    <meta name="viewport" content="width=device-width" />
+    @* <meta http-equiv="X-UA-Compatible" content="IE=edge" />*@
+    <link id="easyuiTheme" href="@Url.Content("~/Content/Easyui/themes/default/easyui.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/icons/icon.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/css/table.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/Easyui/extend/portal/portal.css")" rel="stylesheet" type="text/css" />
+    <script src="@Url.Content("~/Scripts/jquery-1.9.1.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/json2.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/BW.Common.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.cookie.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/initialize.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Content/Easyui/jquery.easyui.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Content/EasyUI/locale/easyui-lang-zh_CN.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Content/Easyui/extend/portal/jquery.portal.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Content/Easyui/extend/accordionmenu/jquery.accordionmenu.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Content/Easyui/extend/jquery.dialogwindow.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Content/Easyui/extend/mask.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.signalR-1.1.3.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/signalr/hubs")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Content/Highcharts/highcharts.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.search.js")" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            $(document).bind("keydown", function (e) {
+                if (e.keyCode == 8) {
+                    if ($("textarea").is(":focus") && $(e.target).attr("readOnly") != "readonly") {
+                        return true;
+                    } else if ($("input").is(":focus") && $(e.target).attr("readOnly") != "readonly") {
+                        return true;
+                    }
+                    else {
+                        e.preventDefault();
+                        return false;
+                    }
+                }
+            });
+
+            if ($.cookie('easyui-skin')) {
+                setTheme('easyuiTheme', $.cookie('easyui-skin'));
+                if ($.cookie('easyui-skin') == 'black' || $.cookie('easyui-skin') == 'test1') {
+                    document.getElementById("change").style.color = "#FFFFFF";
+                    document.getElementById("exit").style.color = "#FFFFFF";
+                    document.getElementById("head").style.backgroundImage = 'url(@Url.Content("~/Content/images/界面_031.jpg"))';
+                }
+                else {
+                    document.getElementById("change").style.color = "#001432";
+                    document.getElementById("exit").style.color = "#001432";
+                    document.getElementById("head").style.backgroundImage = 'url(@Url.Content("~/Content/images/界面_03.jpg"))';
+                }
+            }
+            $('#changetheme').menu({
+                onClick: function (item) {
+                    setTheme('easyuiTheme', item.text);
+                    if (item.text == 'black' || item.text == 'test1') {
+                        document.getElementById("change").style.color = "#FFFFFF";
+                        document.getElementById("exit").style.color = "#FFFFFF";
+                        document.getElementById("head").style.backgroundImage = 'url(@Url.Content("~/Content/images/界面_031.jpg"))';
+                    }
+                    else {
+                        document.getElementById("change").style.color = "#001432";
+                        document.getElementById("exit").style.color = "#001432";
+                        document.getElementById("head").style.backgroundImage = 'url(@Url.Content("~/Content/images/界面_03.jpg"))';
+                    }
+                }
+            });
+            var chat = $.connection.warn;
+            var isPrompt = false;
+            $.extend(chat.client, {
+                Prompt: function (message) {
+                    $.messager.show({
+                        title: '提示',
+                        msg: message,
+                        timeout: 0,
+                        showType: 'slide'
+                    });
+                },
+                ConnectFail: function (message) {
+                    if (!isPrompt) {
+                        $.messager.show({
+                            title: '提示',
+                            msg: message,
+                            timeout: 0,
+                            showType: 'slide'
+                        });
+                        isPrompt = true;
+                    }
+                },
+                Disconnect: function (message) {
+                    $.messager.show({
+                        title: '提示',
+                        msg: message,
+                        timeout: 0,
+                        showType: 'slide'
+                    });
+                }
+            });
+            $.connection.hub.start();
+            //初始化菜单
+            var options = {};
+            options['menu'] = '#menu';
+            options['url'] = '@Url.Action("GetMenu")';
+            options['menutype'] = 'accordion';
+            options['tabs'] = '#tabs';
+            options['tabsmenu'] = '#tabsMenu';
+            initialize(options);
+            //首页门户初始化
+            $('#portal').portal({
+                border: false,
+                fit: true
+            });
+
+            $("#loading").remove();
+            $("#loading-mask").fadeOut(500, function () {
+                $("#loading-mask").remove();
+            });
+         
+        });
+      
+      
+        //退出系统
+        function Exit() {
+            $.messager.confirm('提示', '您确定要退出系统吗？', function (action) {
+                if (action) {
+                    window.location.href = '@Url.Action("LoginOut", "Login")';
+                }
+            });
+        }
+    </script>
+</head>
+<body class="easyui-layout">
+    <div id="loading-mask" style="background-color: white; height: 100%; position: absolute;
+        left: 0; top: 0; width: 100%; z-index: 20000;">
+    </div>
+    <div id="loading" style="position: absolute; left: 45%; top: 40%; z-index: 20001;">
+        <div>
+            <img alt="加载中......" src="@Url.Content("~/Content/images/extanim32.gif")" width="32" height="32" style="margin-right:5px;float:left;vertical-align:top;"/>
+            <span style="font: bold 13px Helvetica, Arial, sans-serif; color: #444; line-height: 32px;">
+                正在加载数据......</span>
+        </div>
+    </div>
+    <object id="AcDesigner" classid="clsid:C84DF69C-0227-4846-919B-6B31168FE68A" codebase="@Url.Content("~/Content/Cab/AcReport.cab#version=2,8,9,0")">
+    </object>
+    <div id="head" data-options="region:'north',split:false" style='height: 70px; overflow: hidden;
+    background-image: url(@Url.Content("~/Content/images/界面_03.jpg")); background-repeat: no-repeat;'>
+        <div id="nav" style="height: 68px;width:420px; right: 0px; position: absolute;background-image: url(@Url.Content("~/Content/images/界面_032.png"));">
+            <div style="bottom: 20px; right: 220px; position: absolute;">
+                <a id="change" href="javascript:void(0)" class="easyui-menubutton" style="color: #001432"
+                    data-options="menu:'#changetheme',iconCls:'icon-theme'">更换皮肤 </a>
+                <div id="changetheme" style="width: 150px;">
+                    <div>
+                        default</div>
+                    <div>
+                        black</div>
+                    <div>
+                        bootstrap</div>
+                    <div>
+                        gray</div>
+                    <div>
+                        metro</div>
+                    <div>
+                        test1</div>
+                    <div>
+                        test2</div>
+                </div>
+                @Html.LinkButton("退出系统", "icon-exitapp", true, new { id = "exit", onclick = "Exit()", style = "color:#001432;" })
+            </div>
+        </div>
+    </div>
+    <div data-options="region:'west',split:true,iconCls:'icon-sitemap'" title="菜单列表"
+        style="width: 200px; overflow: hidden;">
+        <div id="menu">
+        </div>
+    </div>
+    <div data-options="region:'center'" style="overflow: hidden;">
+        <div id="tabs" data-options="fit:true,border:false" class="easyui-tabs">
+            <div title="首页" data-options="iconCls:'icon-house'" style="overflow: hidden;">
+                <div id="portal">
+                    <div style="width: 50%;">
+                        <div title="当月风量与计划" data-options="iconCls:'icon-chartbar',tools:[{iconCls:'icon-reload',handler:function(){wind();}}]">
+                            <div id="chartWind" style="width: 100%; height: 100%;">
+                            </div>
+                        </div>
+                        <div title="当月电量与计划" data-options="iconCls:'icon-chartbar',tools:[{iconCls:'icon-reload',handler:function(){power()}}]">
+                            <div id="chartPower" style="width: 100%; height: 100%;">
+                            </div>
+                        </div>
+                    </div>
+                    <div style="width: 50%;">
+                        <div title="当月水量与计划" data-options="iconCls:'icon-chartbar',tools:[{iconCls:'icon-reload',handler:function(){water()}}]">
+                            <div id="chartWater" style="width: 100%; height: 100%;">
+                            </div>
+                        </div>
+                        <div title="当月产量与计划" data-options="iconCls:'icon-chartbar',tools:[{iconCls:'icon-reload',handler:function(){production()}}]">
+                            <div id="chartProduction" style="width: 100%; height: 100%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-options="region:'south',split:false" style="height: 30px; text-align: right;
+        line-height: 25px; background: #efefef; overflow: hidden; padding-left: 5px;
+        padding-right: 15px;">
+        <span style="left: 10px; position: absolute;">当前用户：@ViewBag.RealName</span><span><a
+            target='_blank' href="http://www.njbestway.com">江苏万全集团</a> 版权所有 All rights
+            reserved.©2013</span>
+    </div>
+    <!--tabs右键菜单-->
+    <div id="tabsMenu" class="easyui-menu" style="width: 120px;">
+        <div name="close">
+            关闭</div>
+        <div name="Other">
+            关闭其他</div>
+        <div name="All">
+            关闭所有</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<%set string category_title=get_category_title(category_id,"新闻资讯")%>
+<title>{category_title} - {config.webname}</title>
+    <meta content="{config.webkeyword}" name="keywords" />
+    <meta content="{config.webdescription}" name="description" />
+<link href="<%templateskin%>/css/style.css" rel="stylesheet" type="text/css" />
+<link href="<%templateskin%>/css/commen.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="<%templateskin%>/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="<%templateskin%>/js/jquery.superslide.2.1.1.js"></script>
+<script type="text/javascript" src="<%templateskin%>/js/Html5.js"></script>
+</head>
+<body>
+<!--抬头开始-->
+<%template src="_header.html"%>
+        <div class="nmain clearfix">
+        	<div class="naside float_l"><h5>产品目录</h5></div>
+            <div class="nmainbox float_r"><small>当前位置：<a href="#">首页</a> - 新闻动态</small></div>
+        </div>
+    </div>
+    <!--大图结束-->
+    <div class="clear"></div>
+    <div id="nmainbody" class="clearfix">
+    	<!--产品分类-->
+    	<%template src="_left.html"%>
+        <div class="mainbox float_r">
+        	<div class="mainbox_2a">
+                    <ul class="clearfix">
+                       <%set DataTable news_list = get_article_list("news", category_id, page, "status=0", out totalcount, out pagelist, "news_list", category_id, "__id__")%><%foreach(DataRow dr in news_list.Rows)%>
+  <li class="clearfix"><a class="float_l" href="<%linkurl("news_show",{dr[id]})%>">&gt;&gt; {dr[title]}</a><span class="float_r">[<%datetostr({dr[add_time]},yyyy-MM-dd)%>]</span></li>
+<%/foreach%>
+                      
+                    </ul>
+                </div>
+            <div class="clear"></div>
+            <!--分页-->
+            <div class="sh_page text_c">
+          {pagelist}
+            </div>
+        </div>
+    </div>
+</section>
+<!--主体结束-->
+<!--产品展示-->
+
+<div class="clear"></div>
+<!--底部-->
+<%template src="_foot.html"%>
+<!--底部结束-->
+<!--ui:jxq/style:cyy/code:xcx-->
+</body>
+</html>

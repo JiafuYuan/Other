@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bestway="http://schemas.android.com/apk/res/com.bestway.kj915"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/common_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" >
+
+        <include layout="@layout/title" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/start"
+        android:layout_width="270dip"
+        android:layout_height="35dip"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dip"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="35dip"
+            android:layout_weight="2.6"
+            android:text="起始时间:"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/showdateFrom"
+            android:layout_width="0dp"
+            android:layout_height="35dip"
+            android:layout_weight="3.4"
+            android:background="@drawable/gaga"
+            android:gravity="center"
+            android:text=" 年  月"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/showtimeFrom"
+            android:layout_width="0dp"
+            android:layout_height="35dip"
+            android:layout_weight="2"
+            android:background="@drawable/gaga"
+            android:gravity="center"
+            android:text="00:00"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/time"
+        android:layout_width="270dip"
+        android:layout_height="35dip"
+        android:layout_below="@id/start"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dip"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="35dip"
+            android:layout_weight="2.6"
+            android:text="终止时间:"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/showdateTo"
+            android:layout_width="0dp"
+            android:layout_height="35dip"
+            android:layout_weight="3.4"
+            android:background="@drawable/gaga"
+            android:gravity="center"
+            android:text=" 年  月"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/showtimeTo"
+            android:layout_width="0dp"
+            android:layout_height="35dip"
+            android:layout_weight="2"
+            android:background="@drawable/gaga"
+            android:gravity="center"
+            android:text="23:59"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <com.bestway.kj915.custom.MyDropdownBox
+        android:id="@+id/department"
+        bestway:name="接车部门"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/time"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dip" >
+    </com.bestway.kj915.custom.MyDropdownBox>
+
+    <com.bestway.kj915.custom.MyDropdownBox
+        android:id="@+id/destination"
+        bestway:name="目的地"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/department"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dip" >
+    </com.bestway.kj915.custom.MyDropdownBox>
+    
+    <Button
+        android:id="@+id/query"
+        android:layout_width="140dip"
+        android:layout_height="55dip"
+        android:layout_below="@id/destination"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="7dip"
+        android:layout_marginTop="40dip"
+        android:background="@drawable/login_selector"
+        android:onClick="query"
+        android:text="查 询"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+</RelativeLayout>

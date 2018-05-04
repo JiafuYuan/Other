@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <View style="@style/list_item_seperator_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dip"
+        android:orientation="horizontal"
+        android:weightSum="5" >
+
+        <TextView
+            android:id="@+id/caozuo"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:width="0dip" />
+
+        <View style="@style/list_item_cell_seperator_layout" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="车辆类型"
+            android:textColor="@android:color/black"
+            android:width="0dip" />
+
+        <View style="@style/list_item_cell_seperator_layout" />
+
+        <TextView
+            android:id="@+id/goods_tv_wl"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="数量(辆)"
+            android:textColor="@android:color/black"
+            android:width="0dip" />
+
+        <View style="@style/list_item_cell_seperator_layout" />
+
+        <TextView
+            android:id="@+id/goods_tv_wlwz"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="点击删除"
+            android:textColor="@android:color/black"
+            android:width="0dip" />
+    </LinearLayout>
+
+    <View style="@style/list_item_seperator_layout" />
+
+</LinearLayout>

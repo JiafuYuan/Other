@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<menu>
+  <main>
+    <fid id="1">
+      <fnod>0</fnod>
+      <fname>新闻资讯</fname>
+      <flink>/news.html</flink>
+      <findex>100</findex>
+      <flayer>1</flayer>
+    </fid>
+    <fid id="2">
+      <fnod>0</fnod>
+      <fname>产品中心</fname>
+      <flink>/goods.html</flink>
+      <findex>100</findex>
+      <flayer>1</flayer>
+    </fid>
+    <fid id="3">
+      <fnod>0</fnod>
+      <fname>图片分享</fname>
+      <flink>/photo.html</flink>
+      <findex>100</findex>
+      <flayer>1</flayer>
+    </fid>
+    <fid id="4">
+      <fnod>0</fnod>
+      <fname>资源下载</fname>
+      <flink>/down.html</flink>
+      <findex>100</findex>
+      <flayer>1</flayer>
+    </fid>
+  </main>
+  <English>
+    <fid id="7">
+      <fnod>0</fnod>
+      <fname>英文新闻</fname>
+      <flink>/ENews.html</flink>
+      <findex>100</findex>
+      <flayer>1</flayer>
+    </fid>
+    <fid id="15">
+      <fnod>0</fnod>
+      <fname>产品中心</fname>
+      <flink>/Egoods.html</flink>
+      <findex>100</findex>
+      <flayer>1</flayer>
+    </fid>
+    <fid id="16">
+      <fnod>0</fnod>
+      <fname>下载中心</fname>
+      <flink>/Edown.html</flink>
+      <findex>100</findex>
+      <flayer>1</flayer>
+    </fid>
+    <fid id="26">
+      <fnod>0</fnod>
+      <fname>图片分享</fname>
+      <flink>/Ephoto.html</flink>
+      <findex>100</findex>
+      <flayer>1</flayer>
+    </fid>
+  </English>
+</menu>

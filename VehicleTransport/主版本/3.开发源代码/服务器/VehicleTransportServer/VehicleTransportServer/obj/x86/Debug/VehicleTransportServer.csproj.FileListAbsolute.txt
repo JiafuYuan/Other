@@ -1,0 +1,17 @@
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\服务器\VehicleTransportServer\VehicleTransportServer\bin\Debug\VehicleTransportServer.exe
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\服务器\VehicleTransportServer\VehicleTransportServer\bin\Debug\VehicleTransportServer.pdb
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\服务器\VehicleTransportServer\VehicleTransportServer\bin\Debug\BW_OleDbHelper.dll
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\服务器\VehicleTransportServer\VehicleTransportServer\bin\Debug\BW_ProgressBarDialog.dll
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\服务器\VehicleTransportServer\VehicleTransportServer\bin\Debug\BW_Socket.dll
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\服务器\VehicleTransportServer\VehicleTransportServer\bin\Debug\BW_XMLHelper.dll
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\服务器\VehicleTransportServer\VehicleTransportServer\bin\Debug\Common.dll
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\服务器\VehicleTransportServer\VehicleTransportServer\bin\Debug\DB_VehicleTransportManage.dll
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\服务器\VehicleTransportServer\VehicleTransportServer\bin\Debug\Common.pdb
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\服务器\VehicleTransportServer\VehicleTransportServer\bin\Debug\DB_VehicleTransportManage.pdb
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\服务器\VehicleTransportServer\VehicleTransportServer\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\服务器\VehicleTransportServer\VehicleTransportServer\obj\x86\Debug\VehicleTransportServer.FormMain.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\服务器\VehicleTransportServer\VehicleTransportServer\obj\x86\Debug\VehicleTransportServer.Properties.Resources.resources
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\服务器\VehicleTransportServer\VehicleTransportServer\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\服务器\VehicleTransportServer\VehicleTransportServer\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\服务器\VehicleTransportServer\VehicleTransportServer\obj\x86\Debug\VehicleTransportServer.exe
+D:\WorkFolder\KJ915机车运输管理系统\主版本\3.开发源代码\服务器\VehicleTransportServer\VehicleTransportServer\obj\x86\Debug\VehicleTransportServer.pdb

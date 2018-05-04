@@ -1,0 +1,5 @@
+@charset "utf-8";
+
+/*资讯焦点图*/
+.ifocus{width:300px;height:300px;visibility:hidden;}
+.ifocus img{width:300px;height:300px;}

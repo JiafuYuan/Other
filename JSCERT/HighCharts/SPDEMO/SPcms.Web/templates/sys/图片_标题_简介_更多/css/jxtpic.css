@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+/*图文链接
+------------------------------------------------------------------------------------*/
+.prolistbox{width:600px; margin:0 auto;}
+.prolist{ margin:12px 0px; display:block}
+.prolist a{color:#33309d; font:13px "微软雅黑"; margin-bottom:6px;}
+.prolist .pic img{margin-top:10px; }
+.prolistbox{display:block;}

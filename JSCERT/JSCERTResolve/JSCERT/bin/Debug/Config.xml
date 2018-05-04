@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+  <DBServer>192.168.8.88</DBServer>
+  <DBName>JscertWebsite</DBName>
+  <DBUserName>JscertWebsite</DBUserName>
+  <DBPassword>JscertWebsite</DBPassword>
+  <Tick>60</Tick>
+  <KeepRecordNumber>10000</KeepRecordNumber>
+  <Developer>南京首屏商擎网络技术有限公司</Developer>
+  <SoftID>1016</SoftID>
+  <SoftName>事件报送数据处理系统</SoftName>
+  <UserName>
+  </UserName>
+  <SerialNum>00000-00000-00000-00000-00000</SerialNum>
+  <ExcelFolder>E:\快盘\Work\JSCERT\图表\Excel</ExcelFolder>
+  <LocalIP>127.0.0.1</LocalIP>
+  <Port>8010</Port>
+  <MapY>100</MapY>
+  <ServerIP>172.21.2.67</ServerIP>
+  <MailUserName>yuanjiafu2008@163.com</MailUserName>
+  <MailPassWord>liulu19870424163</MailPassWord>
+  <MailServer>smtp.163.com</MailServer>
+  <MailReceiveName>369961187@qq.com</MailReceiveName>
+</Configuration>

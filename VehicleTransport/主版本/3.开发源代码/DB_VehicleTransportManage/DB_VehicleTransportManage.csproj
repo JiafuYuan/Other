@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3672D0D1-73A1-42AB-96C3-7C7B0E7263E7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DB_VehicleTransportManage</RootNamespace>
+    <AssemblyName>DB_VehicleTransportManage</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BW_OleDbHelper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\BW_OleDbHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\data_VehicleAlarm.cs" />
+    <Compile Include="BLL\data_VehicleAlarmEx.cs" />
+    <Compile Include="BLL\m_Address.cs" />
+    <Compile Include="BLL\m_AddressEx.cs" />
+    <Compile Include="BLL\m_Apply.cs" />
+    <Compile Include="BLL\m_ApplyEx.cs" />
+    <Compile Include="BLL\m_Area.cs" />
+    <Compile Include="BLL\m_Card.cs" />
+    <Compile Include="BLL\m_Department.cs" />
+    <Compile Include="BLL\m_DepartmentEx.cs" />
+    <Compile Include="BLL\m_GisMapFiles.cs" />
+    <Compile Include="BLL\m_Localizer.cs" />
+    <Compile Include="BLL\m_MaterielType.cs" />
+    <Compile Include="BLL\m_Message.cs" />
+    <Compile Include="BLL\m_PDA.cs" />
+    <Compile Include="BLL\m_Person.cs" />
+    <Compile Include="BLL\m_PersonEx.cs" />
+    <Compile Include="BLL\m_Plan.cs" />
+    <Compile Include="BLL\m_PlanEx.cs" />
+    <Compile Include="BLL\m_Plan_ApplyMaterie.cs" />
+    <Compile Include="BLL\m_Plan_ApplyVehicle.cs" />
+    <Compile Include="BLL\m_Plan_BackVehicle.cs" />
+    <Compile Include="BLL\m_Plan_CheckVehicle.cs" />
+    <Compile Include="BLL\m_Plan_GiveVehicle.cs" />
+    <Compile Include="BLL\m_Plan_Handover.cs" />
+    <Compile Include="BLL\m_Plan_HandoverEx.cs" />
+    <Compile Include="BLL\m_Plan_HandoverMaterie.cs" />
+    <Compile Include="BLL\m_Plan_Load.cs" />
+    <Compile Include="BLL\m_Plan_UnLoad.cs" />
+    <Compile Include="BLL\m_Plan_UnLoadEx.cs" />
+    <Compile Include="BLL\m_Plan_UnLoadMaterie.cs" />
+    <Compile Include="BLL\m_Rule.cs" />
+    <Compile Include="BLL\m_RuleDetail.cs" />
+    <Compile Include="BLL\m_RuleDetailEx.cs" />
+    <Compile Include="BLL\m_SystemConfig.cs" />
+    <Compile Include="BLL\m_SystemLog.cs" />
+    <Compile Include="BLL\m_User.cs" />
+    <Compile Include="BLL\m_Vehicle.cs" />
+    <Compile Include="BLL\m_VehicleMaintain.cs" />
+    <Compile Include="BLL\m_VehiclePlanDetail.cs" />
+    <Compile Include="BLL\m_VehiclePlanDetailEx.cs" />
+    <Compile Include="BLL\m_VehicleScrap.cs" />
+    <Compile Include="BLL\m_VehicleType.cs" />
+    <Compile Include="BLL\m_WifiBaseStation.cs" />
+    <Compile Include="BLL\v_Address.cs" />
+    <Compile Include="BLL\v_Apply.cs" />
+    <Compile Include="BLL\v_ApplyPlanVehicleDetail.cs" />
+    <Compile Include="BLL\v_AreaVehicle.cs" />
+    <Compile Include="BLL\v_DeriError.cs" />
+    <Compile Include="BLL\v_handover.cs" />
+    <Compile Include="BLL\v_Kj222Localizer.cs" />
+    <Compile Include="BLL\m_AreaEx.cs" />
+    <Compile Include="BLL\v_Kj222LocalizerEx.cs" />
+    <Compile Include="BLL\m_VehicleEx.cs" />
+    <Compile Include="BLL\m_CardEx.cs" />
+    <Compile Include="BLL\m_MaterielTypeEx.cs" />
+    <Compile Include="BLL\m_UserEx.cs" />
+    <Compile Include="BLL\m_LocalizerEx.cs" />
+    <Compile Include="BLL\m_RuleEx.cs" />
+    <Compile Include="BLL\m_SystemConfigEx.cs" />
+    <Compile Include="BLL\m_PDAEx.cs" />
+    <Compile Include="BLL\m_WifiBaseStationEx.cs" />
+    <Compile Include="BLL\m_VehicleTypeEx.cs" />
+    <Compile Include="BLL\v_PDA.cs" />
+    <Compile Include="BLL\v_Plan.cs" />
+    <Compile Include="BLL\v_PlanVehicleDetail.cs" />
+    <Compile Include="BLL\v_unload.cs" />
+    <Compile Include="BLL\v_VehicleAlarm.cs" />
+    <Compile Include="BLL\m_VehicleMaintainEx.cs" />
+    <Compile Include="BLL\v_AddressEx.cs" />
+    <Compile Include="BLL\v_PlanEx.cs" />
+    <Compile Include="BLL\m_MessageEx.cs" />
+    <Compile Include="BLL\m_Plan_BackVehicleEx.cs" />
+    <Compile Include="MySqlHelper.cs" />
+    <Compile Include="DAL\data_VehicleAlarm.cs" />
+    <Compile Include="DAL\m_Address.cs" />
+    <Compile Include="DAL\m_AddressEx.cs" />
+    <Compile Include="DAL\m_Apply.cs" />
+    <Compile Include="DAL\m_Area.cs" />
+    <Compile Include="DAL\m_Card.cs" />
+    <Compile Include="DAL\m_Department.cs" />
+    <Compile Include="DAL\m_GisMapFiles.cs" />
+    <Compile Include="DAL\m_Localizer.cs" />
+    <Compile Include="DAL\m_MaterielType.cs" />
+    <Compile Include="DAL\m_Message.cs" />
+    <Compile Include="DAL\m_PDA.cs" />
+    <Compile Include="DAL\m_Person.cs" />
+    <Compile Include="DAL\m_Plan.cs" />
+    <Compile Include="DAL\m_Plan_ApplyMaterie.cs" />
+    <Compile Include="DAL\m_Plan_ApplyVehicle.cs" />
+    <Compile Include="DAL\m_Plan_BackVehicle.cs" />
+    <Compile Include="DAL\m_Plan_CheckVehicle.cs" />
+    <Compile Include="DAL\m_Plan_GiveVehicle.cs" />
+    <Compile Include="DAL\m_Plan_Handover.cs" />
+    <Compile Include="DAL\m_Plan_HandoverEx.cs" />
+    <Compile Include="DAL\m_Plan_HandoverMaterie.cs" />
+    <Compile Include="DAL\m_Plan_Load.cs" />
+    <Compile Include="DAL\m_Plan_UnLoad.cs" />
+    <Compile Include="DAL\m_Plan_UnLoadEx.cs" />
+    <Compile Include="DAL\m_Plan_UnLoadMaterie.cs" />
+    <Compile Include="DAL\m_Rule.cs" />
+    <Compile Include="DAL\m_RuleDetail.cs" />
+    <Compile Include="DAL\m_SystemConfig.cs" />
+    <Compile Include="DAL\m_SystemLog.cs" />
+    <Compile Include="DAL\m_User.cs" />
+    <Compile Include="DAL\m_Vehicle.cs" />
+    <Compile Include="DAL\m_VehicleEx.cs" />
+    <Compile Include="DAL\m_VehicleMaintain.cs" />
+    <Compile Include="DAL\m_VehiclePlanDetail.cs" />
+    <Compile Include="DAL\m_VehicleScrap.cs" />
+    <Compile Include="DAL\m_VehicleType.cs" />
+    <Compile Include="DAL\m_WifiBaseStation.cs" />
+    <Compile Include="DAL\v_Address.cs" />
+    <Compile Include="DAL\v_Apply.cs" />
+    <Compile Include="DAL\v_ApplyPlanVehicleDetail.cs" />
+    <Compile Include="DAL\v_AreaVehicle.cs" />
+    <Compile Include="DAL\v_DeriError.cs" />
+    <Compile Include="DAL\v_handover.cs" />
+    <Compile Include="DAL\v_Kj222Localizer.cs" />
+    <Compile Include="DAL\v_PDA.cs" />
+    <Compile Include="DAL\v_Plan.cs" />
+    <Compile Include="DAL\v_PlanVehicleDetail.cs" />
+    <Compile Include="DAL\v_unload.cs" />
+    <Compile Include="DAL\v_VehicleAlarm.cs" />
+    <Compile Include="DB.cs" />
+    <Compile Include="Model\data_VehicleAlarm.cs" />
+    <Compile Include="Model\m_Address.cs" />
+    <Compile Include="Model\m_Apply.cs" />
+    <Compile Include="Model\m_Area.cs" />
+    <Compile Include="Model\m_Card.cs" />
+    <Compile Include="Model\m_Department.cs" />
+    <Compile Include="Model\m_GisMapFiles.cs" />
+    <Compile Include="Model\m_Localizer.cs" />
+    <Compile Include="Model\m_MaterielType.cs" />
+    <Compile Include="Model\m_Message.cs" />
+    <Compile Include="Model\m_PDA.cs" />
+    <Compile Include="Model\m_Person.cs" />
+    <Compile Include="Model\m_Plan.cs" />
+    <Compile Include="Model\m_Plan_ApplyMaterie.cs" />
+    <Compile Include="Model\m_Plan_ApplyVehicle.cs" />
+    <Compile Include="Model\m_Plan_BackVehicle.cs" />
+    <Compile Include="Model\m_Plan_CheckVehicle.cs" />
+    <Compile Include="Model\m_Plan_GiveVehicle.cs" />
+    <Compile Include="Model\m_Plan_Handover.cs" />
+    <Compile Include="Model\m_Plan_HandoverMaterie.cs" />
+    <Compile Include="Model\m_Plan_Load.cs" />
+    <Compile Include="Model\m_Plan_UnLoad.cs" />
+    <Compile Include="Model\m_Plan_UnLoadMaterie.cs" />
+    <Compile Include="Model\m_Rule.cs" />
+    <Compile Include="Model\m_RuleDetail.cs" />
+    <Compile Include="Model\m_SystemConfig.cs" />
+    <Compile Include="Model\m_SystemLog.cs" />
+    <Compile Include="Model\m_User.cs" />
+    <Compile Include="Model\m_Vehicle.cs" />
+    <Compile Include="Model\m_VehicleMaintain.cs" />
+    <Compile Include="Model\m_VehiclePlanDetail.cs" />
+    <Compile Include="Model\m_VehicleScrap.cs" />
+    <Compile Include="Model\m_VehicleType.cs" />
+    <Compile Include="Model\m_WifiBaseStation.cs" />
+    <Compile Include="Model\v_Address.cs" />
+    <Compile Include="Model\v_Apply.cs" />
+    <Compile Include="Model\v_ApplyPlanVehicleDetail.cs" />
+    <Compile Include="Model\v_AreaVehicle.cs" />
+    <Compile Include="Model\v_DeriError.cs" />
+    <Compile Include="Model\v_handover.cs" />
+    <Compile Include="Model\v_Kj222Localizer.cs" />
+    <Compile Include="Model\v_PDA.cs" />
+    <Compile Include="Model\v_Plan.cs" />
+    <Compile Include="Model\v_PlanVehicleDetail.cs" />
+    <Compile Include="Model\v_unload.cs" />
+    <Compile Include="Model\v_VehicleAlarm.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

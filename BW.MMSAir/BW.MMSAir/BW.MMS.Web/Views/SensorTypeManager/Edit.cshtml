@@ -1,0 +1,49 @@
+﻿@model BW.MMS.Model.m_SensorTypeEntity
+@{
+    ViewBag.Title = "传感器类型编辑";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<form id="form">
+@Html.HiddenFor(m => m.ID)
+<table class="table-form">
+    <tr>
+        <td>
+            类型编号
+        </td>
+        <td>
+            @Html.TextBoxFor(model => model.vc_Code, new
+                    {
+                        @class = "easyui-validatebox",
+                        style = "width:200px",
+                        required = "true",
+                        validType = "length[1,20]"
+                    })
+            <span style="color: Red">*</span>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            类型名称
+        </td>
+        <td>
+            @Html.TextBoxFor(model => model.vc_Name, new
+                    {
+                        @class = "easyui-validatebox",
+
+                        style = "width:200px",
+                        required = "true",
+                        validType = "length[1,30]"
+                    })
+            <span style="color: Red">*</span>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            备注
+        </td>
+        <td>
+            @Html.TextArea("vc_memo", new { @style = "width:200px;height:50px;", @class = "easyui-validatebox", validType = "length[1,200]" })
+        </td>
+    </tr>
+</table>
+</form>

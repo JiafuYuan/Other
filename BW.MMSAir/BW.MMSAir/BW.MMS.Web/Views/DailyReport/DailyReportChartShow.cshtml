@@ -1,0 +1,60 @@
+﻿@{
+    ViewBag.Title = "DailyReportChartShow";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script type="text/javascript">
+    $(function () {
+        $.ajax({
+            url: '@Url.Action("GetChartData")',
+            type: "POST",
+            async: false,
+            datatype: "json",
+            data: { dt_BeginDate: '@ViewData["dt_BeginDate"]', dt_EndDate: '@ViewData["dt_EndDate"]', type: '@ViewData["type"]' },
+            success: function (data) {
+                $('#container').highcharts({
+                    chart: {
+                        type: 'column'
+                    },
+                    credits: {
+                        enabled: false
+                    },
+                    title: {
+                        text: '@ViewData["dt_Date"] </br>日报表'
+                    },
+                    subtitle: {
+                        text: ''
+                    },
+                    xAxis: {
+                        categories: data.xAxis
+                    },
+                    yAxis: {
+                        min: 0,
+                        title: {
+                            text: '累计'
+                        }
+                    },
+                    tooltip: {
+                        headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                        pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                    '<td style="padding:0"><b>{point.y:.1f} </td></tr>',
+                        footerFormat: '</table>',
+                        shared: true,
+                        useHTML: true
+                    },
+                    plotOptions: {
+                        column: {
+                            pointPadding: 0.2,
+                            borderWidth: 0
+                        }
+                    },
+                    series: data.Series
+                });
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                $.messager.alert("提示", XMLHttpRequest.responseText, "error");
+            }
+        });
+    });
+</script>
+<div id="container">
+</div>

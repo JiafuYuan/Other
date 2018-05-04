@@ -1,0 +1,166 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script type="text/javascript">
+    $(function () {
+        $(window).resize(function () {
+            $('#gridAreaList').treegrid('resize');
+        });
+    });
+    function onBeforeLoad(row, param) {
+        $('#gridAreaList').treegrid('clearSelections');
+        param.txtValue = $('#txtName').val();
+    }
+
+    //新增
+    function Add() {
+        TopWindow.$.dialogwindow({
+            iconCls: 'icon-customers',
+            id: "AreaEdit",
+            title: '新增区域',
+            width: 550,
+            height: 300,
+            url: '@Url.Action("Edit")',
+            onClose: function () {
+                $('#gridAreaList').treegrid('reload');
+            },
+            buttons: [{
+                text: '保存',
+                iconCls: 'icon-ok',
+                handler: function () {
+                    if (TopWindow.$("#form").form('validate')) {
+                        var data = TopWindow.$("#form").serialize();
+                        $.ajax({
+                            url: '@Url.Action("Edit")',
+                            data: data,
+                            type: "POST",
+                            async: false,
+                            datatype: "json",
+                            success: function (data) {
+                                if (data.success) {
+                                    TopWindow.$.messager.alert("提示", data.message, "info", function () {
+                                        TopWindow.$('#AreaEdit').dialog('close');
+                                    });
+                                }
+                                else {
+                                    TopWindow.$.messager.alert("提示", data.message, "error");
+                                }
+                            },
+                            error: function (a, b, c) {
+                                TopWindow.$.messager.alert("提示", a.responseText, "error");
+                            }
+                        });
+                    }
+                }
+            }]
+        });
+    }
+    //编辑
+    function Edit() {
+        var rows = $('#gridAreaList').treegrid('getSelections');
+        if (rows.length == 0) {
+            TopWindow.$.messager.alert('提示:', '请选数据！', 'warning');
+            return;
+        }
+        if (rows.length > 1) {
+            TopWindow.$.messager.alert('提示:', '只能选择一条数据！', 'warning');
+            return;
+        }
+        TopWindow.$.dialogwindow({
+            iconCls: 'icon-customers',
+            id: "AreaEdit",
+            title: '修改区域',
+            width: 550,
+            height: 300,
+            url: '@Url.Action("Edit")/' + rows[0].id,
+            onClose: function () {
+                $('#gridAreaList').treegrid('reload');
+            },
+            buttons: [{
+                text: '保存',
+                iconCls: 'icon-ok',
+                handler: function () {
+                    if (TopWindow.$("#form").form('validate')) {
+                        var data = TopWindow.$("#form").serialize();
+                        $.ajax({
+                            url: '@Url.Action("Edit")',
+                            data: data,
+                            type: "POST",
+                            async: false,
+                            datatype: "json",
+                            success: function (data) {
+                                if (data.success) {
+                                    TopWindow.$.messager.alert("提示", data.message, "info", function () {
+                                        TopWindow.$('#AreaEdit').dialog('close');
+                                    });
+                                }
+                                else {
+                                    TopWindow.$.messager.alert("提示", data.message, "error");
+                                }
+                            },
+                            error: function (a, b, c) {
+                                TopWindow.$.messager.alert("提示", a.responseText, "error");
+                            }
+                        });
+                    }
+                }
+            }]
+        });
+    }
+    //删除
+    function Delete() {
+        var rows = $('#gridAreaList').treegrid('getSelections');
+        if (rows.length == 0) {
+            TopWindow.$.messager.alert('提示', '请选择要删除的数据！', 'info');
+            return;
+        }
+        var ids = [];
+
+        for (var i = 0; i < rows.length; i++) {
+            ids.push(rows[i].id);
+        }
+        TopWindow.$.messager.confirm('确认', '您确定要删除数据吗？', function (action) {
+            if (action) {
+                var url = '@Url.Action("Delete")';
+                var params = { id: ids.toString() }
+                $.post(url, params).success(function (data, textStatus) {
+                    if (data.success) {
+                        $('#gridAreaList').treegrid('reload');
+                        TopWindow.$.messager.alert("提示", data.message, "info");
+                    }
+                    else {
+                        TopWindow.$.messager.alert("提示", data.message, "error");
+                    }
+
+                }).error(function (XMLHttpRequest, textStatus, errorThrown) {
+                    TopWindow.$.messager.alert("提示", XMLHttpRequest.responseText, "error");
+                });
+            }
+        });
+    }
+</script>
+<div id="toolbar">
+    <div class="datagrid-toolbar panel-header search">
+        名称：
+        @Html.TextBox("txtName", "", new { onkeydown = "if(event.keyCode==13) $('#gridAreaList').treegrid('reload');" })
+        @Html.LinkButton("查询", "icon-search", new { onclick = "$('#gridAreaList').treegrid('reload')" })
+    </div>
+    @Html.LinkButton("新增", "icon-add", true, new { onclick = "Add()" })
+    @Html.LinkButton("修改", "icon-edit", true, new { onclick = "Edit()" })
+    @Html.LinkButton("删除", "icon-cancel", true, new { onclick = "Delete()" })
+    @Html.LinkButton("刷新", "icon-reload", true, new { onclick = "$('#gridAreaList').treegrid('reload')" })
+</div>
+@Html.TreeGrid("gridAreaList", "vc_Name", Url.Action("GetGridList"), ViewData["GridColumn"] as IEnumerable<object>, new
+{
+    fit = true,
+    animate = true,
+    striped = true,
+    idField = "id",
+    sortName = "vc_Name",
+    sortOrder = "asc",
+    toolbar = "#toolbar",
+    rownumbers = true,
+    singleSelect = true,
+    onBeforeLoad = new { function = "onBeforeLoad" }
+}, new { style = "overflow: hidden;" })

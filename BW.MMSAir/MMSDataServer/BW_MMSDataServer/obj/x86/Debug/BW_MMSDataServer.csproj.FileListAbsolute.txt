@@ -1,0 +1,27 @@
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\MMSDataServer\BW_MMSDataServer\obj\x86\Debug\Interop.SCH_RegistryEx.dll
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\MMSDataServer\BW_MMSDataServer\obj\x86\Debug\BW_MMSDataServer.csproj.ResolveComReference.cache
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\MMSDataServer\BW_MMSDataServer\bin\Debug\BW_MMSDataServer.exe
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\MMSDataServer\BW_MMSDataServer\bin\Debug\BW_MMSDataServer.pdb
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\MMSDataServer\BW_MMSDataServer\bin\Debug\BW_OleDbHelper.dll
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\MMSDataServer\BW_MMSDataServer\bin\Debug\BW_OpcNetClient.dll
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\MMSDataServer\BW_MMSDataServer\bin\Debug\BW_Socket.dll
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\MMSDataServer\BW_MMSDataServer\bin\Debug\BW_XMLHelper.dll
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\MMSDataServer\BW_MMSDataServer\bin\Debug\OpcNetApi.Com.dll
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\MMSDataServer\BW_MMSDataServer\bin\Debug\OpcNetApi.dll
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\MMSDataServer\BW_MMSDataServer\bin\Debug\BW.SocketDataModel.SensorModel.pdb
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\MMSDataServer\BW_MMSDataServer\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\MMSDataServer\BW_MMSDataServer\obj\x86\Debug\Bestway.Windows.Program.MMS.FormMain.resources
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\MMSDataServer\BW_MMSDataServer\obj\x86\Debug\Bestway.Windows.Program.MMS.FrmTest.resources
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\MMSDataServer\BW_MMSDataServer\obj\x86\Debug\Bestway.Windows.Program.MMS.Properties.Resources.resources
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\MMSDataServer\BW_MMSDataServer\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\MMSDataServer\BW_MMSDataServer\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\MMSDataServer\BW_MMSDataServer\obj\x86\Debug\BW_MMSDataServer.exe
+E:\01 北路\01 项目\BS项目\01 煤矿计量管理系统\主版本\源代码\MMSDataServer\BW_MMSDataServer\obj\x86\Debug\BW_MMSDataServer.pdb
+C:\Users\Administrator\Desktop\主版本\源代码\MMSDataServer\BW_MMSDataServer\obj\x86\Debug\Interop.SCH_RegistryEx.dll
+C:\Users\Administrator\Desktop\主版本\源代码\MMSDataServer\BW_MMSDataServer\obj\x86\Debug\BW_MMSDataServer.csproj.ResolveComReference.cache
+C:\Users\Administrator\Desktop\主版本\源代码\MMSDataServer\BW_MMSDataServer\obj\x86\Debug\BW_MMSDataServer.exe
+C:\Users\Administrator\Desktop\主版本\源代码\MMSDataServer\BW_MMSDataServer\obj\x86\Debug\BW_MMSDataServer.pdb
+D:\Work Folder\MyWork\MyWork\MyStudyCode\MVC实例\源代码\MMSDataServer\BW_MMSDataServer\obj\x86\Debug\Interop.SCH_RegistryEx.dll
+D:\Work Folder\MyWork\MyWork\MyStudyCode\MVC实例\源代码\MMSDataServer\BW_MMSDataServer\obj\x86\Debug\BW_MMSDataServer.csproj.ResolveComReference.cache
+D:\Work Folder\MyWork\MyWork\MyStudyCode\MVC实例\源代码\MMSDataServer\BW_MMSDataServer\obj\x86\Debug\BW_MMSDataServer.exe
+D:\Work Folder\MyWork\MyWork\MyStudyCode\MVC实例\源代码\MMSDataServer\BW_MMSDataServer\obj\x86\Debug\BW_MMSDataServer.pdb

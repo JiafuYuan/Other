@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="gb2312"?>
+<OutGetVehicleDistributedModel>
+
+    <Listv_AreaVehicle>
+
+        <v_AreaVehicle>
+
+            <AreaID>
+8
+            </AreaID>
+
+            <AreaName>
+1212121
+            </AreaName>
+
+            <EmptyVehicle>
+0
+            </EmptyVehicle>
+
+            <WeightVehicle>
+0
+            </WeightVehicle>
+        </v_AreaVehicle>
+
+        <v_AreaVehicle>
+
+            <AreaID>
+5
+            </AreaID>
+
+            <AreaName>
+换乘区
+            </AreaName>
+
+            <EmptyVehicle>
+0
+            </EmptyVehicle>
+
+            <WeightVehicle>
+0
+            </WeightVehicle>
+        </v_AreaVehicle>
+
+        <v_AreaVehicle>
+
+            <AreaID>
+2
+            </AreaID>
+
+            <AreaName>
+井底
+            </AreaName>
+
+            <EmptyVehicle>
+2
+            </EmptyVehicle>
+
+            <WeightVehicle>
+1
+            </WeightVehicle>
+        </v_AreaVehicle>
+
+        <v_AreaVehicle>
+
+            <AreaID>
+4
+            </AreaID>
+
+            <AreaName>
+井上
+            </AreaName>
+
+            <EmptyVehicle>
+0
+            </EmptyVehicle>
+
+            <WeightVehicle>
+0
+            </WeightVehicle>
+        </v_AreaVehicle>
+
+        <v_AreaVehicle>
+
+            <AreaID>
+3
+            </AreaID>
+
+            <AreaName>
+休息区
+            </AreaName>
+
+            <EmptyVehicle>
+0
+            </EmptyVehicle>
+
+            <WeightVehicle>
+1
+            </WeightVehicle>
+        </v_AreaVehicle>
+
+        <v_AreaVehicle>
+
+            <AreaID>
+1
+            </AreaID>
+
+            <AreaName>
+一区
+            </AreaName>
+
+            <EmptyVehicle>
+1
+            </EmptyVehicle>
+
+            <WeightVehicle>
+0
+            </WeightVehicle>
+        </v_AreaVehicle>
+    </Listv_AreaVehicle>
+
+</OutGetVehicleDistributedModel>

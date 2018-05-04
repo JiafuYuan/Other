@@ -1,0 +1,52 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="@Url.Content("~/Content/My97DatePicker/WdatePicker.js")" type="text/javascript"></script>
+<script type="text/javascript">
+    $(function () {
+        $(window).resize(function () {
+            $('#gridMonthReport').datagrid('resize');
+        });
+    });
+
+    function onBeforeLoad(param) {
+
+        $('#gridMonthReport').datagrid('clearSelections');
+        //        if ($('#beginMonth').val().trim().length == 0) {
+        //            $('#beginMonth').val(new Date().toLocaleDateString().substr(0, 10));
+        //        }
+        //        if ($('#endMonth').val().trim().length == 0) {
+        //            $('#endMonth').val(new Date().toLocaleDateString().substr(0, 10));
+        //        }
+        param.beginDate = $('#dt_BeginDate').val();
+    }
+    function onLoadSuccess(data) {
+        mergeCellsByField("gridMonthReport", "parentName,vc_name");
+    }
+   
+</script>
+<div id="toolbar" style="padding: 8px;">
+    月份：
+     @Html.DatePicker("dt_BeginDate", new
+   {
+       dateFmt = "'yyyy年MM月'"
+   }, new { @class = "Wdate", value = (new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, 0, 0, 0, 0)).ToString("yyyy年MM月") })
+  
+    @Html.LinkButton("查询", "icon-search", new { onclick = "$('#gridMonthReport').datagrid('load')" })
+</div>
+@Html.DataGrid("gridMonthReport", @Url.Action("GetGridList"), ViewData["GridColumn"] as IEnumerable<object>, new
+{
+    fit = true,
+    rownumbers = true,
+    singleSelect = true,
+    striped = true,
+    idField = "RecordDay",
+    sortName = "RecordDay",
+    sortOrder = "asc",
+    toolbar = "#toolbar",
+    pagination = false,
+    pageSize = 20,
+    onLoadSuccess = new { function = "onLoadSuccess" },
+    onBeforeLoad = new { function = "onBeforeLoad" }
+}, new { style = "overflow: hidden;" })

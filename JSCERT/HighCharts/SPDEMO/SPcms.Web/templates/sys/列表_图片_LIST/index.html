@@ -1,0 +1,10 @@
+<link rel="stylesheet" type="text/css" href="/templates/sys/列表_图片_LIST/css/css.css">
+      <div class="mainbox_2a">
+        <%set DataTable down_list = get_article_list("news", category_id, page, "status=0", out totalcount, out pagelist, "news_list", category_id, "__id__")%><!--取得一个分页DataTable-->
+        <%foreach(DataRow dr in down_list.Rows)%>
+        <dl>
+            <dt><a href="<%linkurl("news_show",{dr[id]})%>"><img src="{dr[img_url]}"/></a></dt>
+            <dd><a href="<%linkurl("news_show",{dr[id]})%>">{dr[title]}</a></dd>
+        </dl>
+  <%/foreach%>
+    </div>

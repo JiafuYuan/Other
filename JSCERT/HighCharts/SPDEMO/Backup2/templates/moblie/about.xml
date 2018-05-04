@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<about>
+<template name="手机站"
+  author="pop"
+  createdate = "2014-04-10"
+  version="1.0"
+  fordntver="V1.0 正式版" />
+  <menu>
+    
+    
+  </menu>
+</about>

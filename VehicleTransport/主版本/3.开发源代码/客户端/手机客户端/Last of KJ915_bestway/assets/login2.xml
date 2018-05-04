@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='gb2312' standalone='yes'?>
+<CommandObjectModel>
+
+    <CmdID>
+61398511
+    </CmdID>
+
+    <CmdType>
+Login
+    </CmdType>
+
+    <CmdModelXml>
+&lt;?xml version='1.0' encoding='gb2312' standalone='yes' ?&gt;&lt;InLoginModel&gt;&lt;UserName&gt;a&lt;/UserName&gt;&lt;PassWord&gt;a&lt;/PassWord&gt;&lt;UserType&gt;PDA&lt;/UserType&gt;&lt;/InLoginModel&gt;
+    </CmdModelXml>
+
+    <Result>
+true
+    </Result>
+
+    <DateTime>
+2014-08-25
+    </DateTime>
+
+    <ClientIP>
+192.168.111.107
+    </ClientIP>
+
+    <ClientPort>
+49144
+    </ClientPort>

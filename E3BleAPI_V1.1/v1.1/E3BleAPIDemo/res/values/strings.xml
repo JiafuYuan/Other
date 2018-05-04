@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">E3BleAPIDemo</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_add_device">Add</string>
+	<string name="action_add_scan">Scan</string>
+	<string name="action_passthrough">Port</string>
+	<string name="action_add_profile">Add Profile</string>
+	<string name="action_applay_profile">Apply Profile</string>
+	<string name="action_del_profile">Remove Profile</string>
+	<string name="action_set_time">Set Time</string>
+	<string name="action_get_time">Get Time</string>
+	
+	
+	<string name="strAddDeviceNext">Next</string>
+	<string name="strCheckInfo">请开关检查一下是否是想要添加的设备</string>
+	<string name="strPickupInfo">请开选择设备的分组</string>
+</resources>

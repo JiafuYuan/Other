@@ -1,0 +1,159 @@
+2014-09-17 09:08:19：连接成功
+2014-09-17 10:02:57：连接成功
+2014-09-17 10:09:36：连接成功
+2014-09-17 10:19:38：连接成功
+2014-09-17 10:20:07：insert into BW_KJ222.dbo.m_Localizer(AreaID,i_HID,i_Type,vc_Code,vc_Name,i_Flag,Point_X,Point_Y,i_PowerType) values (0,860520,1,'编号4','名称4',0,100,100,0);select @@IDENTITY
+语句已终止。
+不能将值 NULL 插入列 'i_ParentHID'，表 'BW_KJ222.dbo.m_Localizer'；列不允许有 Null 值。INSERT 失败。   在 System.Data.OleDb.OleDbDataReader.ProcessResults(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbDataReader.NextResult()
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteScalar()
+   在 Bestway.Windows.Tools.ADODB.OleDbHelper.ExecuteScale(String strSql, OleDbParameter[] parameters)
+2014-09-17 10:21:10：insert into BW_KJ222.dbo.m_Localizer(AreaID,i_HID,i_Type,vc_Code,vc_Name,i_Flag,Point_X,Point_Y,i_PowerType) values (0,860520,1,'编号4','名称4',0,100,100,0);select @@IDENTITY
+语句已终止。
+不能将值 NULL 插入列 'i_ParentHID'，表 'BW_KJ222.dbo.m_Localizer'；列不允许有 Null 值。INSERT 失败。   在 System.Data.OleDb.OleDbDataReader.ProcessResults(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbDataReader.NextResult()
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteScalar()
+   在 Bestway.Windows.Tools.ADODB.OleDbHelper.ExecuteScale(String strSql, OleDbParameter[] parameters)
+2014-09-17 10:21:16：心跳返回false
+2014-09-17 10:25:50：连接成功
+2014-09-17 10:28:53：连接成功
+2014-09-17 10:38:41：连接成功
+2014-09-17 10:41:18：心跳返回false
+2014-09-17 10:44:33：连接成功
+2014-09-17 10:47:45：连接成功
+2014-09-17 10:48:19：update m_Address set vc_Name='名称7',vc_Code='编号7',LocalizerStationID=27,AreaID=8,i_IsUpMine=0,i_IsDirectionStation=1,DirectionLocalizerStationID=12,vc_Memo='3336',i_Flag=0 where ID=19
+列名 'vc_Code' 无效。   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+   在 Bestway.Windows.Tools.ADODB.OleDbHelper.ExecuteSql(String strSql, OleDbParameter[] parameters, Int32 timeout)
+2014-09-17 10:54:17：连接成功
+2014-09-17 10:54:37：update m_Address set vc_Name='名称71',vc_Code='编号7',LocalizerStationID=27,AreaID=8,i_IsUpMine=0,i_IsDirectionStation=1,DirectionLocalizerStationID=12,vc_Memo='3336',i_Flag=0 where ID=19
+列名 'vc_Code' 无效。   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+   在 Bestway.Windows.Tools.ADODB.OleDbHelper.ExecuteSql(String strSql, OleDbParameter[] parameters, Int32 timeout)
+2014-09-17 10:55:39：连接成功
+2014-09-17 10:55:58：update m_Address set vc_Name='名称71',vc_Code='编号7',LocalizerStationID=27,AreaID=8,i_IsUpMine=0,i_IsDirectionStation=1,DirectionLocalizerStationID=14,vc_Memo='3336',i_Flag=0 where ID=19
+列名 'vc_Code' 无效。   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+   在 Bestway.Windows.Tools.ADODB.OleDbHelper.ExecuteSql(String strSql, OleDbParameter[] parameters, Int32 timeout)
+2014-09-17 10:58:02：连接成功
+2014-09-17 11:03:41：连接成功
+2014-09-17 11:10:41：连接成功
+2014-09-17 11:16:45：连接成功
+2014-09-17 11:18:51：连接成功
+2014-09-17 11:21:26：连接成功
+2014-09-17 11:45:55：连接成功
+2014-09-17 11:46:09：心跳返回false
+2014-09-17 11:49:57：连接成功
+2014-09-17 11:50:13：心跳返回false
+2014-09-17 13:28:28：连接成功
+2014-09-17 13:27:39：心跳返回false
+2014-09-17 13:27:54：心跳返回false
+2014-09-17 13:27:54：心跳返回false
+2014-09-17 13:28:09：心跳返回false
+2014-09-17 13:29:08：连接成功
+2014-09-17 13:29:52：Application_ThreadException：System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 VehicleTransportClient.FormMain.FormMain_Load(Object sender, EventArgs e) 位置 D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\FormMain.cs:行号 71
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Windows.Forms.Form.OnLoad(EventArgs e)
+   在 System.Windows.Forms.Form.OnCreateControl()
+   在 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   在 System.Windows.Forms.Control.CreateControl()
+   在 System.Windows.Forms.Control.WmShowWindow(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   在 System.Windows.Forms.Form.WmShowWindow(Message& m)
+   在 System.Windows.Forms.Form.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+方法名称:FormMain_Load
+2014-09-17 13:29:53：心跳返回false
+2014-09-17 13:30:13：心跳返回false
+2014-09-17 13:30:13：心跳返回false
+2014-09-17 13:30:28：心跳返回false
+2014-09-17 13:30:51：心跳返回false
+2014-09-17 13:31:06：心跳返回false
+2014-09-17 13:31:38：心跳返回false
+2014-09-17 13:31:58：心跳返回false
+2014-09-17 13:31:58：心跳返回false
+2014-09-17 13:32:13：心跳返回false
+2014-09-17 13:34:14：连接成功
+2014-09-17 13:34:43：Application_ThreadException：System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 VehicleTransportClient.FormMain.FormMain_Load(Object sender, EventArgs e) 位置 D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\FormMain.cs:行号 71
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Windows.Forms.Form.OnLoad(EventArgs e)
+   在 System.Windows.Forms.Form.OnCreateControl()
+   在 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   在 System.Windows.Forms.Control.CreateControl()
+   在 System.Windows.Forms.Control.WmShowWindow(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   在 System.Windows.Forms.Form.WmShowWindow(Message& m)
+   在 System.Windows.Forms.Form.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+方法名称:FormMain_Load
+2014-09-17 13:34:54：心跳返回false
+2014-09-17 13:35:09：心跳返回false
+2014-09-17 13:35:10：心跳返回false
+2014-09-17 13:35:25：心跳返回false
+2014-09-17 13:38:58：连接成功
+2014-09-17 13:39:12：心跳返回false
+2014-09-17 13:39:27：心跳返回false
+2014-09-17 13:39:28：心跳返回false
+2014-09-17 13:39:43：心跳返回false
+2014-09-17 13:39:58：心跳返回false
+2014-09-17 13:40:12：心跳返回false
+2014-09-17 13:40:27：心跳返回false
+2014-09-17 13:42:20：连接成功
+2014-09-17 13:42:40：Application_ThreadException：System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 VehicleTransportClient.FormMain.FormMain_Load(Object sender, EventArgs e) 位置 D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\FormMain.cs:行号 71
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Windows.Forms.Form.OnLoad(EventArgs e)
+   在 System.Windows.Forms.Form.OnCreateControl()
+   在 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   在 System.Windows.Forms.Control.CreateControl()
+   在 System.Windows.Forms.Control.WmShowWindow(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   在 System.Windows.Forms.Form.WmShowWindow(Message& m)
+   在 System.Windows.Forms.Form.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+方法名称:FormMain_Load
+2014-09-17 13:42:57：心跳返回false
+2014-09-17 13:43:12：心跳返回false
+2014-09-17 13:43:12：心跳返回false
+2014-09-17 13:50:29：连接成功
+2014-09-17 13:58:58：连接成功
+2014-09-17 14:09:44：连接断开由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 172.21.2.73:12345
+2014-09-17 14:14:50：连接断开由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 172.21.2.73:12345
+2014-09-17 14:15:51：心跳未返回数据包,重连
+2014-09-17 14:16:12：连接断开由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 172.21.2.73:12345
+2014-09-17 15:09:03：连接断开由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 172.21.2.73:12345
+2014-09-17 15:09:55：连接成功
+2014-09-17 15:13:40：Application_ThreadException：System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 VehicleTransportClient.FormMain.FormMain_Load(Object sender, EventArgs e) 位置 D:\Work Folder\KJ915机车运输管理系统\主版本\3.开发源代码\客户端\PC客户端\VehicleTransportClient\VehicleTransportClient\FormMain.cs:行号 71
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Windows.Forms.Form.OnLoad(EventArgs e)
+   在 System.Windows.Forms.Form.OnCreateControl()
+   在 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   在 System.Windows.Forms.Control.CreateControl()
+   在 System.Windows.Forms.Control.WmShowWindow(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   在 System.Windows.Forms.Form.WmShowWindow(Message& m)
+   在 System.Windows.Forms.Form.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+方法名称:FormMain_Load
+2014-09-17 15:14:26：连接成功
+2014-09-17 15:15:13：连接成功
+2014-09-17 16:33:58：连接成功
+2014-09-17 17:25:41：连接成功
+2014-09-17 17:31:52：连接关闭
