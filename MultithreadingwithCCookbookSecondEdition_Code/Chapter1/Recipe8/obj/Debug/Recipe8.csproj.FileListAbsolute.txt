@@ -1,0 +1,6 @@
+D:\SVNCode_Private\MultithreadingwithCCookbookSecondEdition_Code\Chapter1\Recipe8\bin\Debug\Chapter1.Recipe8.exe
+D:\SVNCode_Private\MultithreadingwithCCookbookSecondEdition_Code\Chapter1\Recipe8\bin\Debug\Chapter1.Recipe8.pdb
+D:\SVNCode_Private\MultithreadingwithCCookbookSecondEdition_Code\Chapter1\Recipe8\obj\Debug\Recipe8.csprojResolveAssemblyReference.cache
+D:\SVNCode_Private\MultithreadingwithCCookbookSecondEdition_Code\Chapter1\Recipe8\obj\Debug\Recipe8.csproj.CoreCompileInputs.cache
+D:\SVNCode_Private\MultithreadingwithCCookbookSecondEdition_Code\Chapter1\Recipe8\obj\Debug\Chapter1.Recipe8.exe
+D:\SVNCode_Private\MultithreadingwithCCookbookSecondEdition_Code\Chapter1\Recipe8\obj\Debug\Chapter1.Recipe8.pdb
